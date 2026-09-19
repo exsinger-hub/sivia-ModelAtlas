@@ -5,7 +5,7 @@ description: Review modeling diagrams and quantitative figures for source fideli
 
 # Audit Modeling Figure
 
-Read spec.json, data.json, source notes and the actual figure. Call `atlas_audit` on a generated bundle. Integrity checks cannot establish scientific validity or visual acceptance.
+For a manuscript overview, read prompt.md, brief.json, the draft evidence and actual image. Call `atlas_audit_overview` on its paired bundle. Check reference adaptations against viewed pages, but use the manuscript as authority for all model/arrow claims. For numerical figures read spec.json, data.json and source notes and call `atlas_audit`. Integrity checks cannot establish scientific validity or visual acceptance.
 
 Check the claim against the underlying inputs. Confirm units, axes, plotted subsets, prediction vs observation, interval meaning, baseline, optimization directions and attribution. For diagrams, compare model dependencies and feedback to the paper. For empirical plots, verify quantities were computed from actual supplied data; preserve demo labels.
 

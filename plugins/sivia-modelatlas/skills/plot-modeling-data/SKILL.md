@@ -5,7 +5,7 @@ description: Create reproducible MCM/ICM and data-modeling charts from CSV/JSON 
 
 # Plot Modeling Data
 
-Read the actual dataset and the user's intended comparison. Search `atlas_search_knowledge` for relevant figure cards. Reuse their communication principle and preserve source locators, not the source paper's numerical results.
+Read the actual dataset and the user's intended comparison. Search `atlas_search_styles(role="data_plot", collection="award")` for reviewed O/F references and explicitly extend to research/explanation when appropriate. Fetch and view the relevant page before transferring its design. `atlas_search_knowledge` supplies secondary recipe guidance. Reuse communication principles, never the source paper's numbers; retain source locators.
 
 Choose the recipe matching the question:
 

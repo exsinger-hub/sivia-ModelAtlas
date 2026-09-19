@@ -1,0 +1,910 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-09-19",
+  "scope": "Manuscript-to-figure style references, not solutions or generated papers.",
+  "taxonomy_note": "A–F are navigation profiles for common problem families, not permanent official definitions. Keep contest year and actual problem statement; distinguish problem F from award F (Finalist). Research transfer targets are editorial choices.",
+  "categories": [
+    {
+      "problem": "A",
+      "name": "连续变化与动力学",
+      "typical_methods": [
+        "微分方程",
+        "状态转移",
+        "多尺度机制",
+        "连续仿真"
+      ],
+      "figure_roles": [
+        "overview",
+        "mechanism",
+        "data_plot"
+      ],
+      "design_questions": [
+        "哪些状态和过程随时间变化？",
+        "模型之间是因果、守恒还是评估关系？"
+      ]
+    },
+    {
+      "problem": "B",
+      "name": "离散决策与优化",
+      "typical_methods": [
+        "组合优化",
+        "路径规划",
+        "搜索",
+        "资源配置"
+      ],
+      "figure_roles": [
+        "overview",
+        "algorithm",
+        "data_plot"
+      ],
+      "design_questions": [
+        "决策变量、约束与目标在哪里？",
+        "算法迭代与现实行动如何区分？"
+      ]
+    },
+    {
+      "problem": "C",
+      "name": "数据洞察与统计建模",
+      "typical_methods": [
+        "预测",
+        "统计推断",
+        "机器学习",
+        "不确定性"
+      ],
+      "figure_roles": [
+        "overview",
+        "data_plot",
+        "explanation"
+      ],
+      "design_questions": [
+        "训练、推断、检验是否分开？",
+        "图上哪些结果由真实数据支持？"
+      ]
+    },
+    {
+      "problem": "D",
+      "name": "网络系统与运筹",
+      "typical_methods": [
+        "网络流",
+        "控制",
+        "耦合系统",
+        "系统优化"
+      ],
+      "figure_roles": [
+        "overview",
+        "mechanism",
+        "data_plot"
+      ],
+      "design_questions": [
+        "网络边是流量、信息还是控制？",
+        "反馈和模式切换有没有混淆？"
+      ]
+    },
+    {
+      "problem": "E",
+      "name": "环境、生态与可持续性",
+      "typical_methods": [
+        "生态循环",
+        "环境风险",
+        "资源权衡",
+        "情景评估"
+      ],
+      "figure_roles": [
+        "overview",
+        "mechanism",
+        "data_plot"
+      ],
+      "design_questions": [
+        "系统边界与物质循环是什么？",
+        "自然过程与干预措施怎样关联？"
+      ]
+    },
+    {
+      "problem": "F",
+      "name": "政策、社会与决策",
+      "typical_methods": [
+        "多主体",
+        "政策模拟",
+        "利益相关者",
+        "多目标权衡"
+      ],
+      "figure_roles": [
+        "overview",
+        "mechanism",
+        "data_plot"
+      ],
+      "design_questions": [
+        "谁采取行动、谁受到影响？",
+        "政策、行为与指标之间有哪些有据可查的联系？"
+      ]
+    }
+  ],
+  "papers": [
+    {
+      "id": "mcm-2024-a-2400996",
+      "collection": "award",
+      "year": 2024,
+      "contest": "MCM",
+      "problem": "A",
+      "team": "2400996",
+      "title": "Adaptive Sex of Lamprey: gift or curse?",
+      "institution": "Wuhan University",
+      "award": "O",
+      "award_label": "Outstanding Winner",
+      "award_evidence": {
+        "url": "https://www.contest.comap.com/undergraduate/contests/mcm/contests/2024/results/",
+        "locator": "MCM Outstanding Winners, Problem A, Team 2400996",
+        "verification": "official team/problem/award matched to PDF header",
+        "checked_at": "2026-09-19"
+      },
+      "source_url": "https://github.com/yangchunwanwusheng/MCM-ICM--2024-",
+      "source_type": "public_mirror",
+      "pdf_url": "https://raw.githubusercontent.com/yangchunwanwusheng/MCM-ICM--2024-/ffea7fd98c1fbf7d25edcba4dbc834631e9adbf2/2024/A/student%20paper/2400996.pdf",
+      "sha256": "310382aa894d6207a77b2931929eaf39b562dcf5f121410d2db61580382e5bd5",
+      "pdf_pages": 24,
+      "version_note": "Pinned mirror commit ffea7fd; PDF page numbers are physical pages, not printed page labels.",
+      "rights": "Third-party paper: metadata and original analysis only in repository; no redistribution license presumed.",
+      "checked_at": "2026-09-19"
+    },
+    {
+      "id": "mcm-2024-b-2419984",
+      "collection": "award",
+      "year": 2024,
+      "contest": "MCM",
+      "problem": "B",
+      "team": "2419984",
+      "title": "Time is Life: Precise Localization and Faster Search",
+      "institution": "Tongji University",
+      "award": "O",
+      "award_label": "Outstanding Winner",
+      "award_evidence": {
+        "url": "https://www.contest.comap.com/undergraduate/contests/mcm/contests/2024/results/",
+        "locator": "MCM Outstanding Winners, Problem B, Team 2419984",
+        "verification": "official team/problem/award matched to PDF header",
+        "checked_at": "2026-09-19"
+      },
+      "source_url": "https://github.com/yangchunwanwusheng/MCM-ICM--2024-",
+      "source_type": "public_mirror",
+      "pdf_url": "https://raw.githubusercontent.com/yangchunwanwusheng/MCM-ICM--2024-/ffea7fd98c1fbf7d25edcba4dbc834631e9adbf2/2024/B/student%20paper/2419984.pdf",
+      "sha256": "020223cf16b41e39f77e4a7a93ff44917c1c67dd3ef7c541d1d3cec33b5c1625",
+      "pdf_pages": 25,
+      "version_note": "Pinned mirror commit ffea7fd; PDF page numbers are physical pages, not printed page labels.",
+      "rights": "Third-party paper: metadata and original analysis only in repository; no redistribution license presumed.",
+      "checked_at": "2026-09-19"
+    },
+    {
+      "id": "mcm-2024-c-2401919",
+      "collection": "award",
+      "year": 2024,
+      "contest": "MCM",
+      "problem": "C",
+      "team": "2401919",
+      "title": "Harnessing the Power of Momentum: How to Dominate a Tennis Match?",
+      "institution": "Renmin University",
+      "award": "O",
+      "award_label": "Outstanding Winner",
+      "award_evidence": {
+        "url": "https://www.contest.comap.com/undergraduate/contests/mcm/contests/2024/results/",
+        "locator": "MCM Outstanding Winners, Problem C, Team 2401919",
+        "verification": "official team/problem/award matched to PDF header",
+        "checked_at": "2026-09-19"
+      },
+      "source_url": "https://github.com/yangchunwanwusheng/MCM-ICM--2024-",
+      "source_type": "public_mirror",
+      "pdf_url": "https://raw.githubusercontent.com/yangchunwanwusheng/MCM-ICM--2024-/ffea7fd98c1fbf7d25edcba4dbc834631e9adbf2/2024/C/student%20paper/2401919.pdf",
+      "sha256": "405f96485bb0d5c86597b8c92e612449ca5441c6edbc383ef9583751f31982fd",
+      "pdf_pages": 27,
+      "version_note": "Pinned mirror commit ffea7fd; PDF page numbers are physical pages, not printed page labels.",
+      "rights": "Third-party paper: metadata and original analysis only in repository; no redistribution license presumed.",
+      "checked_at": "2026-09-19"
+    },
+    {
+      "id": "mcm-2024-d-2417831",
+      "collection": "award",
+      "year": 2024,
+      "contest": "ICM",
+      "problem": "D",
+      "team": "2417831",
+      "title": "Harmony of the Great Lakes: A Water Level Balance Approach",
+      "institution": "Tsinghua University",
+      "award": "O",
+      "award_label": "Outstanding Winner",
+      "award_evidence": {
+        "url": "https://www.contest.comap.com/undergraduate/contests/mcm/contests/2024/results/",
+        "locator": "ICM Outstanding Winners, Problem D, Team 2417831",
+        "verification": "official team/problem/award matched to PDF header",
+        "checked_at": "2026-09-19"
+      },
+      "source_url": "https://github.com/yangchunwanwusheng/MCM-ICM--2024-",
+      "source_type": "public_mirror",
+      "pdf_url": "https://raw.githubusercontent.com/yangchunwanwusheng/MCM-ICM--2024-/ffea7fd98c1fbf7d25edcba4dbc834631e9adbf2/2024/D/student%20paper/2417831.pdf",
+      "sha256": "bda368346bf9e6a161babe870740631d1d006784844d172c4f39f9ef33a4d3c4",
+      "pdf_pages": 25,
+      "version_note": "Pinned mirror commit ffea7fd; PDF page numbers are physical pages, not printed page labels.",
+      "rights": "Third-party paper: metadata and original analysis only in repository; no redistribution license presumed.",
+      "checked_at": "2026-09-19"
+    },
+    {
+      "id": "mcm-2024-e-2413552",
+      "collection": "award",
+      "year": 2024,
+      "contest": "ICM",
+      "problem": "E",
+      "team": "2413552",
+      "title": "Sustainability Study of the Property Insurance Industry Under Extreme Weather Conditions",
+      "institution": "Soochow University",
+      "award": "O",
+      "award_label": "Outstanding Winner",
+      "award_evidence": {
+        "url": "https://www.contest.comap.com/undergraduate/contests/mcm/contests/2024/results/",
+        "locator": "ICM Outstanding Winners, Problem E, Team 2413552",
+        "verification": "official team/problem/award matched to PDF header",
+        "checked_at": "2026-09-19"
+      },
+      "source_url": "https://github.com/yangchunwanwusheng/MCM-ICM--2024-",
+      "source_type": "public_mirror",
+      "pdf_url": "https://raw.githubusercontent.com/yangchunwanwusheng/MCM-ICM--2024-/ffea7fd98c1fbf7d25edcba4dbc834631e9adbf2/2024/E/student%20paper/2413552.pdf",
+      "sha256": "542e521223a47e31cad2b468cddba414e86e16d02d4ac7bba911fc4121004a77",
+      "pdf_pages": 25,
+      "version_note": "Pinned mirror commit ffea7fd; PDF page numbers are physical pages, not printed page labels. Do not substitute author ICM_E_2024_cyd.pdf: different figures/header. Author repository 2413552.pdf is a certificate.",
+      "rights": "Third-party paper: metadata and original analysis only in repository; no redistribution license presumed.",
+      "checked_at": "2026-09-19"
+    },
+    {
+      "id": "mcm-2024-f-2422054",
+      "collection": "award",
+      "year": 2024,
+      "contest": "ICM",
+      "problem": "F",
+      "team": "2422054",
+      "title": "Illegal Wildlife Trade: A Model-Based Solution for Tanzania",
+      "institution": "Shanghai Jiao Tong University",
+      "award": "O",
+      "award_label": "Outstanding Winner",
+      "award_evidence": {
+        "url": "https://www.contest.comap.com/undergraduate/contests/mcm/contests/2024/results/",
+        "locator": "ICM Outstanding Winners, Problem F, Team 2422054",
+        "verification": "official team/problem/award matched to PDF header",
+        "checked_at": "2026-09-19"
+      },
+      "source_url": "https://github.com/yangchunwanwusheng/MCM-ICM--2024-",
+      "source_type": "public_mirror",
+      "pdf_url": "https://raw.githubusercontent.com/yangchunwanwusheng/MCM-ICM--2024-/ffea7fd98c1fbf7d25edcba4dbc834631e9adbf2/2024/F/students%20paper/2422054.pdf",
+      "sha256": "35b00f410ccaa46ebee536f4423c18674990ed4dbd395d7a62c70cb640184051",
+      "pdf_pages": 25,
+      "version_note": "Pinned mirror commit ffea7fd; PDF page numbers are physical pages, not printed page labels.",
+      "rights": "Third-party paper: metadata and original analysis only in repository; no redistribution license presumed.",
+      "checked_at": "2026-09-19"
+    },
+    {
+      "id": "icm-2025-e-2515324",
+      "collection": "award",
+      "year": 2025,
+      "contest": "ICM",
+      "problem": "E",
+      "team": "2515324",
+      "title": "From Forest to Farm: Modeling Nitrogen Dynamics for Sustainable Agriculture",
+      "institution": "Beijing Institute of Technology",
+      "award": "F",
+      "award_label": "Finalist",
+      "award_evidence": {
+        "url": "https://www.contest.comap.com/undergraduate/contests/mcm/contests/2025/results/2025_ICM_Problem_E_Results.pdf",
+        "locator": "PDF page 6, Team 2515324, E, Finalist",
+        "verification": "official result row matched to submitted PDF header",
+        "checked_at": "2026-09-19"
+      },
+      "source_url": "https://github.com/LUKEQ420/MCM-ICM-2025-E-Nitrogen-Cycling-Model",
+      "source_type": "author_repository",
+      "pdf_url": "https://raw.githubusercontent.com/LUKEQ420/MCM-ICM-2025-E-Nitrogen-Cycling-Model/fb579acd7107706e055c8a10f921f9f56498a06a/paper/2515324.pdf",
+      "sha256": "2c566c95c1d4a1b4292176805253ad4f09ccfe9154e8809beb86f399347a8cdc",
+      "pdf_pages": 25,
+      "version_note": "Pinned author repository version fb579acd.",
+      "rights": "Third-party paper, link and original analysis; cache locally, do not redistribute automatically.",
+      "checked_at": "2026-09-19"
+    },
+    {
+      "id": "mcm-2026-c-2627351",
+      "collection": "award",
+      "year": 2026,
+      "contest": "MCM",
+      "problem": "C",
+      "team": "2627351",
+      "title": "Behind the Ballroom Scores: Reconstructing Fan Voting and Designing Fairer Rules for DWTS",
+      "institution": "Hunan University",
+      "award": "F",
+      "award_label": "Finalist",
+      "award_evidence": {
+        "url": "https://www.contest.comap.com/undergraduate/contests/mcm/contests/2026/results/2026_MCM_Problem_C_Results.pdf",
+        "locator": "PDF page 15, Team 2627351, C, Finalist",
+        "verification": "downloaded official 1201-page results PDF; exact team row matched to submitted PDF header",
+        "sha256": "cb408ade21c96a5d0a1487efe821712321591fd8765e4657f4aea6676b003f00",
+        "checked_at": "2026-09-19"
+      },
+      "source_url": "https://github.com/alectimison-maker/2026MCM-ICM_C",
+      "source_type": "author_repository",
+      "pdf_url": "https://raw.githubusercontent.com/alectimison-maker/2026MCM-ICM_C/2fcf7bb344e6fa7c295ec771b5be79c3a9ebd361/2627351_submitted_paper.pdf",
+      "sha256": "ab837f28944fce38f7677fe833ed89360ff38da754e47f7f406273dfae31bf55",
+      "pdf_pages": 34,
+      "version_note": "Pinned submitted version 2fcf7bb; physical PDF page = printed main-paper page + 1 for reviewed cases.",
+      "rights": "Third-party paper, link and original analysis; no redistribution license presumed.",
+      "checked_at": "2026-09-19"
+    },
+    {
+      "id": "research-lei-2024",
+      "collection": "research",
+      "year": 2024,
+      "contest": null,
+      "problem": null,
+      "team": null,
+      "award": null,
+      "award_label": null,
+      "title": "Capturing Momentum: Tennis Match Analysis Using Machine Learning and Time Series Theory",
+      "authors": [
+        "Jingdi Lei",
+        "Tianqi Kang",
+        "Yuluan Cao",
+        "Shiwei Ren"
+      ],
+      "publication_type": "preprint",
+      "source_url": "https://arxiv.org/abs/2404.13300",
+      "source_type": "primary_preprint",
+      "pdf_url": "https://arxiv.org/pdf/2404.13300v1",
+      "sha256": "75c402a05c9ac755377ffbb15028c6e6af7138ba5b93ca0bed35357664826adb",
+      "pdf_pages": 16,
+      "version_note": "arXiv v1; relevant to tennis modeling, no independently verified competition award claimed.",
+      "rights": "arXiv non-exclusive distribution license; no source figure redistribution in this repository.",
+      "checked_at": "2026-09-19"
+    }
+  ],
+  "cases": [
+    {
+      "id": "a-model-task-map",
+      "paper_id": "mcm-2024-a-2400996",
+      "title": "模型复用到多任务的双区总览",
+      "role": "overview",
+      "pdf_page": 5,
+      "figure": "Figure 3",
+      "problem_targets": [
+        "A"
+      ],
+      "tags": [
+        "总览",
+        "模型依赖",
+        "model reuse",
+        "multi-task"
+      ],
+      "visual_review": {
+        "status": "reviewed",
+        "checked_at": "2026-09-19",
+        "method": "PDF page rendered with Poppler and visually inspected with caption/context"
+      },
+      "composition": "左侧上下叠放机制与评估模型，右侧对应应用任务，底部补充任务；浅绿模块、粉色标题和虚线组框构成层级。",
+      "transfer": "用模型区与任务区区分‘建立方法’和‘回答问题’，共享模型通过明确标注的箭头复用。",
+      "do_not_transfer": "不照搬七鳃鳗模型、任务数量或源论文结论；粗细箭头只有在定义语义后使用。",
+      "limitations": "原图信息密集，小字号必须精简；获奖身份不等于每处排版都值得复刻。"
+    },
+    {
+      "id": "a-lifecycle-mechanism",
+      "paper_id": "mcm-2024-a-2400996",
+      "title": "生命周期与外部驱动的环形机制",
+      "role": "mechanism",
+      "pdf_page": 8,
+      "figure": "Figure 5",
+      "problem_targets": [
+        "A",
+        "E"
+      ],
+      "tags": [
+        "生态",
+        "状态",
+        "循环",
+        "dynamics",
+        "lifecycle"
+      ],
+      "visual_review": {
+        "status": "reviewed",
+        "checked_at": "2026-09-19",
+        "method": "PDF page rendered with Poppler and visually inspected with caption/context"
+      },
+      "composition": "幼体与成体围绕中心对象成环，变态和繁殖位于弧线上，外部资源驱动从侧面接入。",
+      "transfer": "有循环守恒或状态转换的草稿可用环形骨架，并把外部驱动放在环外。",
+      "do_not_transfer": "不把对象照片当作机制证据，不将相关关系自动绘成因果。",
+      "limitations": "闭环必须来自草稿；不是所有时间序列模型都存在反馈。"
+    },
+    {
+      "id": "b-localize-search-overview",
+      "paper_id": "mcm-2024-b-2419984",
+      "title": "定位、装备与搜索策略的非等宽布局",
+      "role": "overview",
+      "pdf_page": 4,
+      "figure": "Figure 2",
+      "problem_targets": [
+        "B"
+      ],
+      "tags": [
+        "总览",
+        "搜索",
+        "优化",
+        "routing",
+        "localization"
+      ],
+      "visual_review": {
+        "status": "reviewed",
+        "checked_at": "2026-09-19",
+        "method": "PDF page rendered with Poppler and visually inspected with caption/context"
+      },
+      "composition": "蓝色定位区与绿色装备评估区并排，下方粉色路径规划区较宽，右侧橙色评估/扩展形成独立窄栏。",
+      "transfer": "按作用分配区域尺寸：主模型占最大面积，验证或扩展用侧栏；跨区依赖单独走线。",
+      "do_not_transfer": "不因模型并排而暗示它们独立，不复制潜艇、设备、算法名。",
+      "limitations": "源图算法缩略图较小；复杂循环应拆成单独方法图。"
+    },
+    {
+      "id": "b-search-algorithm-results",
+      "paper_id": "mcm-2024-b-2419984",
+      "title": "搜索算法循环与路径／收敛成对展示",
+      "role": "algorithm",
+      "pdf_page": 19,
+      "figure": "Figures 11–12",
+      "problem_targets": [
+        "B",
+        "D"
+      ],
+      "tags": [
+        "算法",
+        "迭代",
+        "收敛",
+        "optimization",
+        "route"
+      ],
+      "visual_review": {
+        "status": "reviewed",
+        "checked_at": "2026-09-19",
+        "method": "PDF page rendered with Poppler and visually inspected with caption/context"
+      },
+      "composition": "上部循环流程包含终止判断，下部把空间路径和迭代收敛曲线并排。",
+      "transfer": "将算法机制与两种验证视角分层；终止分支用明确 Yes/No，路径与指标共享实验标识。",
+      "do_not_transfer": "不能从示意节点生成实际最优路径，不能借用原文收敛数值。",
+      "limitations": "路径坐标和收敛历史必须来自当前实验，图例说明距离或目标量定义。"
+    },
+    {
+      "id": "c-score-predict-overview",
+      "paper_id": "mcm-2024-c-2401919",
+      "title": "评分主干与检验、预测分支总览",
+      "role": "overview",
+      "pdf_page": 4,
+      "figure": "Figure 2",
+      "problem_targets": [
+        "C"
+      ],
+      "tags": [
+        "总览",
+        "统计",
+        "预测",
+        "prediction",
+        "validation"
+      ],
+      "visual_review": {
+        "status": "reviewed",
+        "checked_at": "2026-09-19",
+        "method": "PDF page rendered with Poppler and visually inspected with caption/context"
+      },
+      "composition": "数据经预处理进入中心评分模型，上接检验分支，右接评分结果，下接预测及诊断叶节点；灰绿配色，模型矩形与结果椭圆区分。",
+      "transfer": "突出一条主要推断链，检验与泛化作为分支；用形状和文字共同编码模型与输出。",
+      "do_not_transfer": "不把 PCA-TOPSIS 或 GM(1,1) 强加到其他草稿，不让检验箭头冒充前向推断。",
+      "limitations": "源图弱对比度可改善；缩印前检查浅灰箭头。"
+    },
+    {
+      "id": "c-phase-time-series",
+      "paper_id": "mcm-2024-c-2401919",
+      "title": "双对象趋势与阶段分隔",
+      "role": "data_plot",
+      "pdf_page": 12,
+      "figure": "Figure 7",
+      "problem_targets": [
+        "C"
+      ],
+      "tags": [
+        "时间序列",
+        "对照",
+        "阶段",
+        "time series"
+      ],
+      "visual_review": {
+        "status": "reviewed",
+        "checked_at": "2026-09-19",
+        "method": "PDF page rendered with Poppler and visually inspected with caption/context"
+      },
+      "composition": "两色得分轨迹共享时间轴，竖向虚线标记比赛阶段。",
+      "transfer": "用一致对象颜色与明确的阶段注释帮助比较；转折标注保持稀疏。",
+      "do_not_transfer": "不把模型评分直接称为心理状态，不复制原文曲线或指标量级。",
+      "limitations": "阶段边界要有标签，评分的归一化尺度和单位需由草稿解释。"
+    },
+    {
+      "id": "c-turning-point-validation",
+      "paper_id": "mcm-2024-c-2401919",
+      "title": "预测事件与真实事件的时间对齐",
+      "role": "data_plot",
+      "pdf_page": 17,
+      "figure": "Figure 9",
+      "problem_targets": [
+        "C"
+      ],
+      "tags": [
+        "预测",
+        "事件",
+        "turning point",
+        "validation"
+      ],
+      "visual_review": {
+        "status": "reviewed",
+        "checked_at": "2026-09-19",
+        "method": "PDF page rendered with Poppler and visually inspected with caption/context"
+      },
+      "composition": "离散脉冲标记预测与实际转折，按同一时间索引对照。",
+      "transfer": "把事件命中、漏报和时间偏差作为比较目标；拥挤时改为上下对齐事件轨道。",
+      "do_not_transfer": "不把二元事件平滑成连续预测，不能隐含未定义的命中容差。",
+      "limitations": "源图重叠可读性有限；图注必须说明转折定义与允许时间窗口。"
+    },
+    {
+      "id": "d-system-scene-overview",
+      "paper_id": "mcm-2024-d-2417831",
+      "title": "场景、网络、控制与评价的复合总图",
+      "role": "overview",
+      "pdf_page": 4,
+      "figure": "Figure 1",
+      "problem_targets": [
+        "A",
+        "D",
+        "E"
+      ],
+      "tags": [
+        "总览",
+        "系统",
+        "网络",
+        "control",
+        "network"
+      ],
+      "visual_review": {
+        "status": "reviewed",
+        "checked_at": "2026-09-19",
+        "method": "PDF page rendered with Poppler and visually inspected with caption/context"
+      },
+      "composition": "左上利益相关者与权重矩阵，左下湖泊链及控制器，右上敏感性结果，右下局部地图；曲线主箭头连接场景化模块。",
+      "transfer": "对象空间结构可承担叙事骨架，模型与验证围绕它组织；主箭头和局部关系分级。",
+      "do_not_transfer": "不把地图或数值缩略图当装饰随意生成，不能复制原文湖泊或实验。",
+      "limitations": "无数据时只画明确标记的示意，不伪造小图；多个区域仍需唯一阅读起点。"
+    },
+    {
+      "id": "d-control-feedback",
+      "paper_id": "mcm-2024-d-2417831",
+      "title": "控制切换与预测反馈双层机制",
+      "role": "mechanism",
+      "pdf_page": 14,
+      "figure": "Figure 9",
+      "problem_targets": [
+        "A",
+        "D"
+      ],
+      "tags": [
+        "控制",
+        "反馈",
+        "切换",
+        "feedback",
+        "controller"
+      ],
+      "visual_review": {
+        "status": "reviewed",
+        "checked_at": "2026-09-19",
+        "method": "PDF page rendered with Poppler and visually inspected with caption/context"
+      },
+      "composition": "双控制器并排，共用预测及参数调整主干，底部真实工况回传，上下构成闭环。",
+      "transfer": "显式区分控制模式切换与测量反馈；共享预测器只画一次。",
+      "do_not_transfer": "不自动补闭环或控制增益，不用同一种箭头混淆切换与信息流。",
+      "limitations": "每根返回箭头都须对应草稿中的可观测量或更新规则。"
+    },
+    {
+      "id": "e-linked-task-lanes",
+      "paper_id": "mcm-2024-e-2413552",
+      "title": "风险定价、社区与保护的三条关联泳道",
+      "role": "overview",
+      "pdf_page": 5,
+      "figure": "Figure 2",
+      "problem_targets": [
+        "E"
+      ],
+      "tags": [
+        "总览",
+        "风险",
+        "定价",
+        "sustainability",
+        "lanes"
+      ],
+      "visual_review": {
+        "status": "reviewed",
+        "checked_at": "2026-09-19",
+        "method": "PDF page rendered with Poppler and visually inspected with caption/context"
+      },
+      "composition": "红、蓝、绿三条水平泳道分区，定价模型居中成组，斜向或侧向连接把跨任务影响送入其他泳道。",
+      "transfer": "相关但不等同的任务可分泳道，跨任务关系用有方向、带含义的连接表达。",
+      "do_not_transfer": "不照搬保险公式、文物场景或三任务数量；不要复制立体装饰箭头。",
+      "limitations": "源图箭头语义有歧义，重绘须补连接标签。只适用固定版本 PDF 的第5页。"
+    },
+    {
+      "id": "f-actor-policy-map",
+      "paper_id": "mcm-2024-f-2422054",
+      "title": "目标、主体、行为与政策的关系总览",
+      "role": "overview",
+      "pdf_page": 6,
+      "figure": "Figure 1",
+      "problem_targets": [
+        "F"
+      ],
+      "tags": [
+        "总览",
+        "政策",
+        "主体",
+        "policy",
+        "stakeholder"
+      ],
+      "visual_review": {
+        "status": "reviewed",
+        "checked_at": "2026-09-19",
+        "method": "PDF page rendered with Poppler and visually inspected with caption/context"
+      },
+      "composition": "政府目标居中，主体与权力/资源/利益在左，行为在上，政策模型在下；蓝色分组和橙色任务标签。",
+      "transfer": "围绕主体行动与目标组织，而不是把每个章节画成流水线；区分主体、行为和指标。",
+      "do_not_transfer": "不移植源文政策结论、主体集合或经济机制。",
+      "limitations": "原图断词、拥挤和部分箭头不清晰；只借鉴角色分层，重建可读连接。"
+    },
+    {
+      "id": "f-policy-sensitivity-panels",
+      "paper_id": "mcm-2024-f-2422054",
+      "title": "多指标政策情景的小多图",
+      "role": "data_plot",
+      "pdf_page": 19,
+      "figure": "Figure 4",
+      "problem_targets": [
+        "C",
+        "E",
+        "F"
+      ],
+      "tags": [
+        "敏感性",
+        "政策",
+        "情景",
+        "small multiples",
+        "sensitivity"
+      ],
+      "visual_review": {
+        "status": "reviewed",
+        "checked_at": "2026-09-19",
+        "method": "PDF page rendered with Poppler and visually inspected with caption/context"
+      },
+      "composition": "2×3 小多图共享时间视角，六类政策结果分别展示基线曲线与参数扰动带。",
+      "transfer": "相同情景跨面板保留颜色；每个指标独立单位，时间索引对齐。",
+      "do_not_transfer": "源图扰动带不是统计置信区间，不得重标为95% CI。",
+      "limitations": "需保留参数变化幅度、基线和带状区域含义；六图缩印时注意轴字号。"
+    },
+    {
+      "id": "e-model-inheritance-overview",
+      "paper_id": "icm-2025-e-2515324",
+      "title": "基础模型到扩展模型与行动的继承总图",
+      "role": "overview",
+      "pdf_page": 4,
+      "figure": "Figure 2",
+      "problem_targets": [
+        "A",
+        "E"
+      ],
+      "tags": [
+        "总览",
+        "生态",
+        "继承",
+        "model extension",
+        "agriculture"
+      ],
+      "visual_review": {
+        "status": "reviewed",
+        "checked_at": "2026-09-19",
+        "method": "PDF page rendered with Poppler and visually inspected with caption/context"
+      },
+      "composition": "四个不等面积区域以非线性顺序组织基础模型、扩展模型与行动，颜色区分模块，内部辅以过程图形。",
+      "transfer": "将模型继承画为依赖关系；应用建议独立成区，内部用真正代表过程的图形。",
+      "do_not_transfer": "不规定草稿必须有三个模型，不复制原文生态变量。",
+      "limitations": "阅读顺序不按常规逐行；需要清晰编号或有意义的方向箭头。"
+    },
+    {
+      "id": "e-nitrogen-cycle",
+      "paper_id": "icm-2025-e-2515324",
+      "title": "营养传递与回归路径的循环机制",
+      "role": "mechanism",
+      "pdf_page": 6,
+      "figure": "Figure 3",
+      "problem_targets": [
+        "A",
+        "E"
+      ],
+      "tags": [
+        "机制",
+        "循环",
+        "守恒",
+        "nitrogen",
+        "ecology"
+      ],
+      "visual_review": {
+        "status": "reviewed",
+        "checked_at": "2026-09-19",
+        "method": "PDF page rendered with Poppler and visually inspected with caption/context"
+      },
+      "composition": "上部营养链形成弧形关系，多来源汇入有机物池，经分解者与矿质池返回；颜色区分通路。",
+      "transfer": "把物质池与过程区分，主循环突出，次要路径让出空间；图例说明流的物理含义。",
+      "do_not_transfer": "不把氮流、能量流和生物数量视为同一量，不补草稿未建模的环节。",
+      "limitations": "多对一汇入容易拥堵；合并走线只在语义一致时使用。"
+    },
+    {
+      "id": "e-aligned-state-trajectories",
+      "paper_id": "icm-2025-e-2515324",
+      "title": "生态状态分层时间轨迹",
+      "role": "data_plot",
+      "pdf_page": 9,
+      "figure": "Figure 5",
+      "problem_targets": [
+        "A",
+        "C",
+        "E"
+      ],
+      "tags": [
+        "生态",
+        "时间序列",
+        "多变量",
+        "trajectories"
+      ],
+      "visual_review": {
+        "status": "reviewed",
+        "checked_at": "2026-09-19",
+        "method": "PDF page rendered with Poppler and visually inspected with caption/context"
+      },
+      "composition": "生物状态与环境/分解者状态分为上下两图，共享月份时间轴，图例在图域外。",
+      "transfer": "不同量纲分层显示，相同变量在整篇论文保持颜色；相同时间边界帮助辨识滞后。",
+      "do_not_transfer": "不叠加无法比较的量纲，不把示例轨迹冒充稳定性证据。",
+      "limitations": "图例较小；需要明确状态单位、初值与仿真时间步。"
+    },
+    {
+      "id": "c-infer-compare-redesign",
+      "paper_id": "mcm-2026-c-2627351",
+      "title": "潜变量推断到规则比较与再设计",
+      "role": "overview",
+      "pdf_page": 5,
+      "figure": "Figure 1",
+      "problem_targets": [
+        "C",
+        "F"
+      ],
+      "tags": [
+        "总览",
+        "反演",
+        "决策",
+        "inference",
+        "policy"
+      ],
+      "visual_review": {
+        "status": "reviewed",
+        "checked_at": "2026-09-19",
+        "method": "PDF page rendered with Poppler and visually inspected with caption/context"
+      },
+      "composition": "数据清理进入反演模型，中段分叉到规则比较和特征分析，再汇入新规则；浅色虚线分区与小图标。",
+      "transfer": "保留‘共享估计—并行分析—决策合流’的结构，图标只服务于阶段动词。",
+      "do_not_transfer": "不复制投票规则或潜变量估计，不把推断量标为直接观测量。",
+      "limitations": "原图段落过长；压缩为动作和关键产物，详细模型说明留正文。"
+    },
+    {
+      "id": "c-parallel-inference",
+      "paper_id": "mcm-2026-c-2627351",
+      "title": "区间与点估计的并行推断",
+      "role": "overview",
+      "pdf_page": 7,
+      "figure": "Figure 2",
+      "problem_targets": [
+        "C"
+      ],
+      "tags": [
+        "总览",
+        "反演",
+        "区间",
+        "uncertainty",
+        "parallel"
+      ],
+      "visual_review": {
+        "status": "reviewed",
+        "checked_at": "2026-09-19",
+        "method": "PDF page rendered with Poppler and visually inspected with caption/context"
+      },
+      "composition": "共享定义位于顶层，下分可行区间与似然点估计两路，底部接比较指标。",
+      "transfer": "两种方法共享输入，输出明确标注点/区间；评价层只画一次并注明指标。",
+      "do_not_transfer": "不复制源图重复的评价盒子，不把可行域区间说成概率置信区间。",
+      "limitations": "交叉箭头易产生不存在的依赖；根据当前草稿重新确认每条连接。"
+    },
+    {
+      "id": "c-density-conflict-validation",
+      "paper_id": "mcm-2026-c-2627351",
+      "title": "比较轨迹、冲突密度与分箱比例",
+      "role": "data_plot",
+      "pdf_page": 13,
+      "figure": "Figures 5–6",
+      "problem_targets": [
+        "C",
+        "F"
+      ],
+      "tags": [
+        "分歧",
+        "密度",
+        "分箱",
+        "comparison",
+        "density"
+      ],
+      "visual_review": {
+        "status": "reviewed",
+        "checked_at": "2026-09-19",
+        "method": "PDF page rendered with Poppler and visually inspected with caption/context"
+      },
+      "composition": "上部双序列对照，下部密度图突出冲突样本，配合分箱比例热图。",
+      "transfer": "同一队列的总体分布和局部分歧并列，分箱同时报告样本量与比例口径。",
+      "do_not_transfer": "不由密度或分箱相关性推断因果，不把计数色阶误写成概率。",
+      "limitations": "源图曲线重叠较多；需说明筛选范围并检查稀疏分箱。"
+    },
+    {
+      "id": "research-staged-overview",
+      "paper_id": "research-lei-2024",
+      "title": "科研扩展：估计、解释与外部验证分区",
+      "role": "overview",
+      "pdf_page": 2,
+      "figure": "Figure 2",
+      "problem_targets": [
+        "C"
+      ],
+      "tags": [
+        "总览",
+        "机器学习",
+        "流程",
+        "machine learning"
+      ],
+      "visual_review": {
+        "status": "reviewed",
+        "checked_at": "2026-09-19",
+        "method": "PDF page rendered with Poppler and visually inspected with caption/context"
+      },
+      "composition": "五个浅色区域呈折返阅读路线，数据准备后接估计、检验、解释及外部预测。",
+      "transfer": "阶段分区和独立验证区可借鉴；箭头采用明确动词标签。",
+      "do_not_transfer": "不借用源文的‘证明’口吻或模型组合，不视为 O/F 案例。",
+      "limitations": "折返顺序需额外引导，避免把每种算法都画成一格。"
+    },
+    {
+      "id": "research-shap-pair",
+      "paper_id": "research-lei-2024",
+      "title": "科研扩展：解释分布与全局重要性配对",
+      "role": "explanation",
+      "pdf_page": 12,
+      "figure": "Figure 15",
+      "problem_targets": [
+        "C",
+        "E",
+        "F"
+      ],
+      "tags": [
+        "解释",
+        "SHAP",
+        "机器学习",
+        "feature importance"
+      ],
+      "visual_review": {
+        "status": "reviewed",
+        "checked_at": "2026-09-19",
+        "method": "PDF page rendered with Poppler and visually inspected with caption/context"
+      },
+      "composition": "左侧蜂群展示有符号贡献分布，右侧条形展示平均绝对贡献，特征列表对齐。",
+      "transfer": "把贡献方向与全局量级并列；色条与横轴分别解释。",
+      "do_not_transfer": "不把解释归因为因果，不让生成图像编造 SHAP 点或数值。",
+      "limitations": "要求当前模型的真实解释结果；长特征名需留足边距。"
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 {
   "name": "sivia-modelatlas",
-  "version": "0.1.0",
-  "description": "美赛 MCM/ICM 与数据建模作图：论文案例检索、模型流程图、可复现数据图和图表审查。",
+  "version": "0.2.0",
+  "description": "美赛论文草稿 → overview；经官方核奖的 O/F 图例库、A–F 分类与科研扩展、数据作图。",
   "author": {
     "name": "gatina"
   },
@@ -10,11 +10,19 @@
   "interface": {
     "displayName": "SIVIA ModelAtlas",
     "shortDescription": "美赛与数据建模论文作图",
-    "longDescription": "SIVIA 的独立并行项目。读取建模论文，检索带来源定位的知识卡片，生成可编辑流程图与数据绑定的 PNG/SVG/PDF，保存完整配置、数据快照和审查记录。",
+    "longDescription": "从已有美赛论文草稿出发，检索并查看 O/F 参考图，用宿主 ImageGen 绘制 overview，保存实际图像、完整 prompt 和草稿依据。知识库按 A–F 与图形角色分类，科研扩展独立标记；数值图来自真实数据。",
     "developerName": "gatina",
     "category": "Productivity",
-    "capabilities": ["Interactive", "Read", "Write"],
-    "defaultPrompt": ["读这篇美赛论文，检索相近案例并制作模型流程图。", "根据这份预测数据生成美赛论文图，保留源数据与可复现配置。", "检查这组建模图表的单位、区间含义、来源和版面。"],
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "defaultPrompt": [
+      "读这份美赛论文草稿，参考同类 O/F 论文，画一张 overview 并保留完整绘图 prompt。",
+      "按 A–F 类别扩建获奖图例库，核对官方奖项并查看原图；科研论文单独作为扩展。",
+      "根据这些真实建模数据画论文图，并检查单位、区间和来源。"
+    ],
     "brandColor": "#007C91"
   }
 }

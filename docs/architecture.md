@@ -1,11 +1,45 @@
 # Architecture
 
-The parallel project keeps Sivia's source → figure claim → design → draw → review → correction → paired-case workflow, specialized for modeling papers and data figures. It has its own repository, plugin namespace and local library.
+Primary path: manuscript → evidence/figure claim → O/F visual retrieval → actual page inspection →
+host-agent design/full production prompt → host ImageGen → review/correction → paired artifact.
 
-CLI and eight MCP tools call the same Python implementation. AnySearch discovers academic papers through its documented 3.1.1 REST endpoints. Local PDF/TXT/Markdown import stores source hashes and page text. Source-grounded cards are curated separately and retrieved with transparent token overlap ranking (not embeddings or an LLM reranker).
+The Python runtime provides reliable source retrieval and artifact handling, not an LLM or image model.
+Intake explicitly returns awaiting_agent_design and image_generated=false. It snapshots the draft,
+extracts PDF/MD/TXT/TeX text and retrieves award-core overview candidates; the host interprets the draft.
 
-The renderer takes JSON, optionally binding CSV columns. It validates numeric shape, alignment, finite values, time ordering, interval meaning and optimization directions before plotting. Matplotlib creates PNG/SVG/PDF; SVG text remains text and PDF embeds TrueType fonts. A workflow spec is a lightweight editable node/edge layout, not a full general-purpose diagram editor. Actual model fitting, OCR, native PowerPoint and rich ImageGen scenes are separate host-agent capabilities.
+## Data boundaries
 
-Each run is immutable by convention and gets a unique directory. Data snapshot, normalized spec, full input claim, artifact hashes and mechanical audit travel together. The SQLite run index links the bundle to the card/source IDs. A local HTML gallery embeds only produced artifacts and supports filtering and downloads without a service.
+- Versioned corpus.json: reviewed figures, pinned papers, official award evidence, A–F navigation and
+  original style-transfer notes. Research extensions are separate and cannot assert awards.
+- SQLite: ordinary discovery/import records, legacy general cards and quantitative render runs.
+- Ignored references cache: hash-verified third-party PDFs and rendered page images. Not redistribution.
+- Ignored draft sessions: original snapshot and full extracted text, candidate references and independently
+  versioned overview pairs. Never auto-uploaded or committed.
 
-Example numbers are synthetic fixture data. Tests verify rendering behavior, numerical semantics, source persistence, data rejection, bundle tamper detection and an actual MCP stdio round trip. These are engineering checks; they do not establish model performance or human approval.
+Term matching follows hard problem/role/collection filters. Transfer targets do not change original
+problem provenance. Coverage distinguishes original-category counts from reusable cross-category counts.
+Reference download is bounded and checksum-pinned; changed bytes require review. Poppler renders only
+the requested physical page. A rendered reference page is not a new overview or a current visual review.
+
+## Runtime and host responsibilities
+
+CLI and 14 MCP tools share Python implementation. Six added tools cover style search, coverage,
+reference fetching, draft preparation, actual image/prompt pairing and integrity audit.
+The plugin has five skills, with draft2overview primary and design-mcm-figure a compatibility route.
+MCP uses the official SDK stdio transport, without an HTTP daemon.
+
+AnySearch 3.1.1-compatible REST discovers academic capabilities, then searches academic or general web.
+The full installed AnySearch skill supports batch/hybrid discovery. Only normalized records persist;
+secret-bearing response envelopes never do. Search hits never automatically become curated cases.
+
+Conceptual overview generation uses the host's available image tool. Full prompt and evidence brief
+must accompany the actual image. Pairing validates a raster artifact and its source snapshot; it cannot
+establish image-model provenance, scientific fidelity or whether visual review really occurred.
+Host review and user acceptance are not inferred from checksums.
+
+The auxiliary Matplotlib renderer validates data shapes, alignment, finite values, time ordering and
+interval meaning before creating PNG/SVG/PDF bundles. It never fits arbitrary models. Workflow SVG is
+a constrained node/edge fallback. Native PowerPoint, OCR, SHAP calculation and automatic manuscript
+insertion are not provided by this runtime. Real data plots never come from image generation.
+
+Tests use explicitly synthetic fixtures; engineering success is not a claim about contest performance.

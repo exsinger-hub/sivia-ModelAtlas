@@ -13,7 +13,7 @@ class AnySearch:
         self.session = session or requests.Session()
 
     def request(self, method, path, **kwargs):
-        headers = {"X-Anysearch-Client": "sivia-modelatlas/0.1.0"}
+        headers = {"X-Anysearch-Client": "sivia-modelatlas/0.2.0"}
         key = os.environ.get("ANYSEARCH_API_KEY")
         if key:
             headers["Authorization"] = "Bearer " + key
@@ -28,18 +28,24 @@ class AnySearch:
         # Never persist the response envelope: it can include credentials.
         return body.get("data") or {}
 
-    def search(self, query, limit=5):
+    def search(self, query, limit=5, mode="academic"):
         if not query.strip() or not 1 <= limit <= 10:
             raise ValueError("Query required; limit must be 1..10")
+        if mode not in ("academic", "web"):
+            raise ValueError("AnySearch mode must be academic or web")
+        # Discover academic capability even for an explicit web query; contest papers
+        # often need exact team/official-site searches in addition to the academic index.
         discovery = self.request("GET", "/v1/sub-domains", params={"domain": "academic"})
         domains = discovery.get("domains", [])
         available = [s for d in domains for s in d.get("sub_domains", []) if s.get("sub_domain") == "academic.search"]
-        if not available:
+        if not available and mode == "academic":
             raise RuntimeError("AnySearch academic.search currently unavailable")
-        params = {name: "" for name, info in available[0].get("params", {}).items() if info.get("required")}
-        payload = {"query": query, "tag": "academic.search", "max_results": limit}
-        if params:
-            payload["params"] = params
+        payload = {"query": query, "max_results": limit}
+        if mode == "academic":
+            payload["tag"] = "academic.search"
+            params = {name: "" for name, info in available[0].get("params", {}).items() if info.get("required")}
+            if params:
+                payload["params"] = params
         data = self.request("POST", "/v1/search", json=payload)
         result = []
         for item in data.get("results", []):
@@ -49,5 +55,5 @@ class AnySearch:
             result.append({"id": "search-" + hashlib.sha256(url.encode()).hexdigest()[:16],
                            "title": item.get("title") or url, "url": url,
                            "snippet": item.get("content") or item.get("snippet") or "",
-                           "status": "discovered", "provider": "AnySearch", "query": query, "checked_at": now()})
+                           "status": "discovered", "provider": "AnySearch", "search_mode": mode, "query": query, "checked_at": now()})
         return result

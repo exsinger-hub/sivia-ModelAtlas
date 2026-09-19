@@ -23,7 +23,16 @@ def test_real_stdio_discovery_search_render(tmp_path, entrypoint):
             async with ClientSession(read,write,read_timeout_seconds=timedelta(seconds=20)) as session:
                 await session.initialize()
                 tool_list=await session.list_tools()
-                assert len(tool_list.tools)==8
+                assert len(tool_list.tools)==14
+                styles=await session.call_tool("atlas_search_styles",{"problem":"E","role":"overview"})
+                assert not styles.isError
+                assert "e-model-inheritance-overview" in str(styles.content)
+                assert "Outstanding Winner" in str(styles.content)
+                draft=tmp_path/"synthetic-draft.md"
+                draft.write_text("# TEST FIXTURE\nA synthetic model description, not a contest submission.",encoding="utf-8")
+                prepared=await session.call_tool("atlas_prepare_draft",{"path":str(draft),"problem":"C"})
+                assert not prepared.isError
+                assert "awaiting_agent_design" in str(prepared.content)
                 result=await session.call_tool("atlas_search_knowledge",{"query":"网球 动量"})
                 assert not result.isError
                 assert "mcm-c-match-flow" in str(result.content)

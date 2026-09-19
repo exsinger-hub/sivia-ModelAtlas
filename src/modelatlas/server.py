@@ -8,6 +8,8 @@ from .figures import render, verify_bundle
 from mcp.server.fastmcp import FastMCP
 from .common import read_json
 from .library import Library
+from .corpus import search_styles, fetch_reference, coverage
+from .drafts import prepare_draft, pair_overview, audit_overview
 
 server=FastMCP("SIVIA ModelAtlas", log_level="WARNING")
 # Font subsetting emits thousands of INFO lines; keep stdio pipes bounded.
@@ -29,16 +31,53 @@ def atlas_status() -> dict:
 
 
 @server.tool()
+def atlas_search_styles(query: str="", problem: str | None=None, role: str | None=None,
+                        collection: str="award", limit: int=5) -> list[dict]:
+    """Find visually reviewed O/F figure cases by A–F, role and terms. Default award core; research explicitly separate. Transfer targets are not original problem labels."""
+    return search_styles(query,problem,role,collection,limit)
+
+
+@server.tool()
+def atlas_style_coverage() -> dict:
+    """Report actual O/F source coverage, research extension and transfer cases by category."""
+    return coverage()
+
+
+@server.tool()
+def atlas_fetch_reference(case_id: str, render_page: bool=True) -> dict:
+    """Download hash-pinned public paper into private local cache; render its exact figure page. View returned image yourself. Never a new generated figure."""
+    return fetch_reference(case_id,library().root,render_page=render_page)
+
+
+@server.tool()
+def atlas_prepare_draft(path: str, problem: str | None=None, query: str="") -> dict:
+    """Prepare PDF/MD/TXT/TeX draft and O/F overview candidates. Intake only: follow draft2overview skill to interpret, design and call host image generation."""
+    return prepare_draft(path,library().root,problem,query)
+
+
+@server.tool()
+def atlas_pair_overview(session_dir: str, image_path: str, prompt_path: str, brief_path: str) -> dict:
+    """Pair actual overview raster with full prompt and draft evidence/review JSON. Does not generate, approve or insert an image into a manuscript."""
+    return pair_overview(session_dir,image_path,prompt_path,brief_path)
+
+
+@server.tool()
+def atlas_audit_overview(directory: str) -> dict:
+    """Verify overview bundle file hashes. Host visual review and user approval remain separate."""
+    return audit_overview(directory)
+
+
+@server.tool()
 def atlas_search_knowledge(query: str, kind: str="cards", limit: int=5) -> list[dict]:
     """Find local MCM/ICM figure cards with source locators and data guidance."""
     return library().search(query,kind,limit)
 
 
 @server.tool()
-def atlas_find_papers(query: str, limit: int=5) -> list[dict]:
-    """Search AnySearch academic sources and persist discovery metadata (not curated cards)."""
+def atlas_find_papers(query: str, limit: int=5, mode: str="academic") -> list[dict]:
+    """Search AnySearch academic or web (official award/author repositories); persist discovery only, never assign awards from snippets."""
     from .search import AnySearch
-    records=AnySearch().search(query,limit)
+    records=AnySearch().search(query,limit,mode)
     db=library()
     for record in records:
         db.put_source(record)
