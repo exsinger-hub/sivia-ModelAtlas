@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "description": "Published Paper-to-Overview examples only. Paths are relative to the repository root. Rounds are actual generation/edit calls, not independent papers or awards.",
+  "cases": [
+    {
+      "id": "2025-e-forest-to-farm",
+      "paper_id": "icm-2025-e-2515324",
+      "title": "From Forest to Farm",
+      "year": 2025,
+      "contest": "ICM",
+      "problem": "E",
+      "category": {"zh": "生态与环境", "en": "Ecology & environment"},
+      "source_award": "Finalist",
+      "team": "2515324",
+      "source_figure": "docs/assets/reference-overviews/2025-e-2515324-overview.jpg",
+      "source_case_id": "e-model-inheritance-overview",
+      "notes": {
+        "zh": "docs/examples/2025-e-paper2overview/README.md",
+        "en": "docs/examples/2025-e-paper2overview/README.en.md"
+      },
+      "brief": "docs/examples/2025-e-paper2overview/brief.json",
+      "full_prompt": "docs/examples/2025-e-paper2overview/full-prompt.md",
+      "latest_round": 2,
+      "rounds": [
+        {
+          "number": 1,
+          "operation": "generate",
+          "image": "docs/examples/2025-e-paper2overview/overview-v1.png",
+          "prompt": "docs/examples/2025-e-paper2overview/prompt.md"
+        },
+        {
+          "number": 2,
+          "operation": "edit",
+          "image": "docs/examples/2025-e-paper2overview/overview.png",
+          "prompt": "docs/examples/2025-e-paper2overview/correction-prompt.md"
+        }
+      ]
+    }
+  ]
+}

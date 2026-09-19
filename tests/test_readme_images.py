@@ -4,6 +4,7 @@ from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import unquote, urlsplit
 
+import pytest
 from PIL import Image
 
 from modelatlas.common import digest, read_json
@@ -11,6 +12,7 @@ from modelatlas.corpus import coverage, load_corpus
 
 
 ROOT = Path(__file__).resolve().parents[1]
+READMES = ("README.md", "README.en.md")
 
 
 class ReadmeHTML(HTMLParser):
@@ -21,6 +23,8 @@ class ReadmeHTML(HTMLParser):
         self.ids = set()
         self.link_stack = []
         self.details_depth = 0
+        self.table_rows = []
+        self.current_row = None
 
     def handle_starttag(self, tag, attrs):
         attrs = dict(attrs)
@@ -32,39 +36,41 @@ class ReadmeHTML(HTMLParser):
             self.link_stack.append(attrs.get("href"))
             if attrs.get("href"):
                 self.links.append(attrs["href"])
+        if tag == "tr":
+            self.current_row = []
         if tag == "img":
             self.images.append({
                 **attrs,
                 "link": self.link_stack[-1] if self.link_stack else None,
                 "details_depth": self.details_depth,
             })
+            if self.current_row is not None:
+                self.current_row.append(attrs["src"])
 
     def handle_endtag(self, tag):
         if tag == "a" and self.link_stack:
             self.link_stack.pop()
         if tag == "details":
             self.details_depth -= 1
+        if tag == "tr" and self.current_row is not None:
+            if self.current_row:
+                self.table_rows.append(self.current_row)
+            self.current_row = None
 
 
-def parse_readme():
-    text = (ROOT / "README.md").read_text(encoding="utf-8")
+def parse_readme(name="README.md"):
+    text = (ROOT / name).read_text(encoding="utf-8")
     parsed = ReadmeHTML()
     parsed.feed(text)
     return text, parsed
 
 
-def test_readme_embeds_real_reference_images_and_licenses():
-    text, parsed = parse_readme()
-    embedded = [image["src"] for image in parsed.images]
-    embedded += re.findall(r"!\[[^\]]*\]\(([^)]+)\)", text)
+def test_original_reference_assets_keep_integrity_and_licenses():
     directory = ROOT / "docs/assets/reference-overviews"
     manifest = read_json(directory / "manifest.json")
     cases = {c["id"]: c for c in load_corpus()["cases"]}
-    assert len(embedded) >= 2
-    assert "不是 ModelAtlas 生成结果" in text
     for asset in manifest["assets"]:
         path = directory / asset["file"]
-        assert path.relative_to(ROOT).as_posix() in embedded
         assert digest(path) == asset["sha256"]
         with Image.open(path) as image:
             assert image.size == (asset["width"], asset["height"])
@@ -78,32 +84,46 @@ def test_readme_embeds_real_reference_images_and_licenses():
         assert asset["source_url"].startswith("https://github.com/")
 
 
-def test_showcase_is_first_visible_full_width_image_and_cards_keep_aspect_ratio():
-    _, parsed = parse_readme()
+@pytest.mark.parametrize("name", READMES)
+def test_showcase_pairs_source_and_rounds_without_hiding_or_distorting_images(name):
+    text, parsed = parse_readme(name)
     local = [image for image in parsed.images if not urlsplit(image["src"]).scheme]
-    assert local[0]["src"] == "docs/examples/2025-e-paper2overview/overview.png"
-    assert local[0]["width"] == "100%"
-    assert local[0]["details_depth"] == 0
+    assert text.index('id="showcase"') < text.index("## Quick Start")
     for image in local:
         assert image["alt"].strip()
         assert image["link"] == image["src"]
         assert image.get("width") == "100%"
         assert "height" not in image  # Don't distort artwork to equalize card heights.
+        assert image["details_depth"] == 0
         assert (ROOT / image["src"]).is_file()
-    visible = {image["src"] for image in local if image["details_depth"] == 0}
-    assert "docs/assets/reference-overviews/2025-e-2515324-overview.jpg" in visible
-    assert "docs/assets/reference-overviews/2026-c-2627351-overview.png" in visible
+    showcase = read_json(ROOT / "docs/examples/showcase.json")
+    expected_images = set()
+    expected_rows = []
+    for case in showcase["cases"]:
+        assert case["id"] in parsed.ids
+        assert f'category-{case["problem"].lower()}' in parsed.ids
+        latest = next(r for r in case["rounds"] if r["number"] == case["latest_round"])
+        expected_rows.append([case["source_figure"], latest["image"]])
+        expected_rows.extend([before["image"], after["image"]]
+                             for before, after in zip(case["rounds"], case["rounds"][1:]))
+        expected_images.add(case["source_figure"])
+        expected_images.update(r["image"] for r in case["rounds"])
+        for round_ in case["rounds"]:
+            assert round_["prompt"] in parsed.links
+    assert parsed.table_rows == expected_rows
+    assert {image["src"] for image in local} == expected_images
     assert parsed.details_depth == 0
 
 
-def test_readme_local_navigation_and_category_anchors_resolve():
-    text, parsed = parse_readme()
+@pytest.mark.parametrize("name", READMES)
+def test_readme_local_navigation_and_category_anchors_resolve(name):
+    text, parsed = parse_readme(name)
     targets = parsed.links + re.findall(r"(?<!!)\[[^\]]*\]\(([^)]+)\)", text)
     for target in targets:
         parts = urlsplit(target)
         if parts.scheme or parts.netloc:
             continue
-        path = (ROOT / unquote(parts.path)) if parts.path else ROOT / "README.md"
+        path = (ROOT / unquote(parts.path)) if parts.path else ROOT / name
         assert path.exists(), target
         if parts.fragment:
             document = ReadmeHTML()
@@ -112,9 +132,10 @@ def test_readme_local_navigation_and_category_anchors_resolve():
     assert {"showcase", "library", "quick-start", "setup"} <= parsed.ids
 
 
-def test_quick_start_has_checkout_runtime_and_actual_skill_entry():
-    text, _ = parse_readme()
-    quick = text.split("## Quick Start", 1)[1].split('id="showcase"', 1)[0]
+@pytest.mark.parametrize("name", READMES)
+def test_quick_start_has_checkout_runtime_and_actual_skill_entry(name):
+    text, _ = parse_readme(name)
+    quick = text.split("## Quick Start", 1)[1].split('id="library"', 1)[0]
     assert "git clone https://github.com/exsinger-hub/sivia-ModelAtlas.git" in quick
     assert "cd sivia-ModelAtlas" in quick
     assert "python -m venv .venv" in quick
@@ -122,16 +143,24 @@ def test_quick_start_has_checkout_runtime_and_actual_skill_entry():
     skill = "plugins/sivia-modelatlas/skills/paper2overview/SKILL.md"
     assert skill in quick and (ROOT / skill).is_file()
     assert "ImageGen" in quick
-    assert "单独运行 CLI 只会准备论文与参考资料" in quick
+    assert ("单独运行 CLI 只会准备论文与参考资料" in quick
+            or "The CLI only prepares the paper and references" in quick)
     assert (ROOT / "docs/USAGE.md").is_file()
 
 
 def test_library_documentation_matches_actual_records_and_year_gaps():
     text, _ = parse_readme()
     stats = coverage()
-    assert f'{stats["award_papers"]} 篇获奖论文、{stats["award_cases"]} 个图例' in text
+    assert f'{stats["award_papers"]} 篇 O/F 论文、{stats["award_cases"]} 个图例' in text
     assert f'{stats["research_papers"]} 篇科研论文、{stats["research_cases"]} 个扩展图例' in text
-    assert '2026 已收录 C、D，A/B/E/F 待补' in text
+    english, _ = parse_readme("README.en.md")
+    assert f'{stats["award_papers"]} O/F papers with {stats["award_cases"]} figure cases' in english
+    assert f'{stats["research_papers"]} research papers with {stats["research_cases"]} additional cases' in english
+    for document in (text, english):
+        library = document.split('<a id="library"></a>', 1)[1].split("\n---", 1)[0]
+        assert len(library.splitlines()) <= 7
+        assert "<img" not in library and "<table" not in library
+        assert "knowledge-base/SOURCES.md" in library
     catalog = (ROOT / 'knowledge-base/CATALOG.md').read_text(encoding='utf-8')
     for case in load_corpus()['cases']:
         assert catalog.count(f'`{case["id"]}`') == 1
@@ -142,7 +171,7 @@ def test_library_documentation_matches_actual_records_and_year_gaps():
 
 def test_quick_start_documents_optional_editable_ppt_handoff():
     text, _ = parse_readme()
-    quick = text.split("## Quick Start", 1)[1].split('id="showcase"', 1)[0]
+    quick = text.split("## Quick Start", 1)[1].split('id="library"', 1)[0]
     assert "转为可编辑 PPT 矢量图（可选）" in quick
     assert "使用 Sivia" in quick
     assert "仅安装 ModelAtlas 不包含此能力" in quick
@@ -155,3 +184,46 @@ def test_quick_start_documents_optional_editable_ppt_handoff():
     assert "ModelAtlas 不内置 PNG → PPTX 转换器" in usage
     assert "从该 PPTX 导出的预览图" in usage
     assert "没有实际生成 PPTX 时，不标记转换完成" in usage
+
+
+def test_english_readme_has_language_switch_and_optional_ppt_instructions():
+    chinese, _ = parse_readme()
+    english, _ = parse_readme("README.en.md")
+    assert 'href="README.en.md">English' in chinese
+    assert 'href="README.md">中文' in english
+    assert "Installing ModelAtlas alone does not provide this capability" in english
+    for term in ("Node.js", "PowerPoint / WPS", "overview-editable.pptx", "native editable objects",
+                 "raster images", "docs/USAGE.md#editable-ppt"):
+        assert term in english
+
+
+def test_showcase_classification_matches_source_and_all_actual_generation_rounds():
+    showcase = read_json(ROOT / "docs/examples/showcase.json")
+    papers = {p["id"]: p for p in load_corpus()["papers"]}
+    assets = read_json(ROOT / "docs/assets/reference-overviews/manifest.json")["assets"]
+    indexed_images = set()
+    for case in showcase["cases"]:
+        paper = papers[case["paper_id"]]
+        for key in ("year", "contest", "problem", "team"):
+            assert case[key] == paper[key]
+        assert case["source_award"] == {"O": "Outstanding Winner", "F": "Finalist"}[paper["award"]]
+        original = next(a for a in assets if a["case_id"] == case["source_case_id"])
+        assert original["paper_id"] == case["paper_id"]
+        assert case["source_figure"] == "docs/assets/reference-overviews/" + original["file"]
+        brief = read_json(ROOT / case["brief"])
+        assert len(case["rounds"]) == len(brief["generation"]["chain"])
+        assert case["latest_round"] == max(r["number"] for r in case["rounds"])
+        for number, (round_, call) in enumerate(zip(case["rounds"], brief["generation"]["chain"]), 1):
+            assert round_["number"] == number
+            assert round_["operation"] == call["operation"]
+            assert Path(round_["image"]).name == call["output"]
+            assert Path(round_["prompt"]).name == call["prompt"]
+            assert (ROOT / round_["image"]).is_file()
+            assert (ROOT / round_["prompt"]).is_file()
+            indexed_images.add(round_["image"])
+        for notes in case["notes"].values():
+            assert (ROOT / notes).is_file()
+        assert (ROOT / case["full_prompt"]).is_file()
+    published_images = {p.relative_to(ROOT).as_posix() for p in (ROOT / "docs/examples").rglob("*")
+                        if p.suffix.lower() in {".png", ".jpg", ".jpeg", ".webp"}}
+    assert indexed_images == published_images

@@ -3,14 +3,78 @@
 <p align="center">为美赛论文生成 Overview</p>
 
 <p align="center">
+  中文 · <a href="README.en.md">English</a><br>
+  <a href="#showcase">成图对比</a> ·
   <a href="#quick-start">Quick Start</a> ·
-  <a href="#showcase">示例</a> ·
-  <a href="#library">插图知识库</a> ·
+  <a href="#library">知识库</a> ·
   <a href="docs/USAGE.md">使用文档</a>
 </p>
 
-ModelAtlas 是 [SIVIA](https://github.com/exsinger-hub/Sivia) 的数学建模版本。
-输入已有论文或草稿，生成 Our Work / 方法总览图，同时保存完整绘图 prompt、图注和论文依据。
+输入已有论文或草稿，生成 Our Work / 方法总览图，保留完整 prompt 与图注。
+确认成图后，可接续 [Sivia](https://github.com/exsinger-hub/Sivia) 制作可编辑 PPT。
+
+<a id="showcase"></a>
+
+## 成图对比
+
+按题号、年份、论文和生成轮次归档。点击图片查看高清版本。
+
+[E · 生态与环境](#category-e) · 2025 · 1 篇论文 · 2 轮成图
+
+<a id="category-e"></a>
+
+### E · 生态与环境 / 2025
+
+<a id="2025-e-forest-to-farm"></a>
+
+**From Forest to Farm** · 2025 ICM E · 来源论文 Finalist · Team 2515324
+
+<table>
+  <tr>
+    <th width="50%">获奖论文原图</th>
+    <th width="50%">ModelAtlas · 第 2 轮 / 当前版</th>
+  </tr>
+  <tr>
+    <td width="50%" align="center" valign="middle">
+      <a href="docs/assets/reference-overviews/2025-e-2515324-overview.jpg"><img src="docs/assets/reference-overviews/2025-e-2515324-overview.jpg" width="100%" alt="论文原图：2025 ICM E Finalist，Figure 2，三个氮循环模型的递进"></a>
+    </td>
+    <td width="50%" align="center" valign="middle">
+      <a href="docs/examples/2025-e-paper2overview/overview.png"><img src="docs/examples/2025-e-paper2overview/overview.png" width="100%" alt="ModelAtlas 第 2 轮：森林、农田、食物网及方案评价，底部从右向左衔接"></a>
+    </td>
+  </tr>
+  <tr>
+    <td align="center"><sub>Figure 2 · PDF p4 · 作者原图</sub></td>
+    <td align="center"><sub>阅读全文后重新设计 · PNG 1536 × 1024</sub></td>
+  </tr>
+</table>
+
+#### 两轮生成对比
+
+<table>
+  <tr>
+    <th width="50%">第 1 轮 · 初稿</th>
+    <th width="50%">第 2 轮 · 修订</th>
+  </tr>
+  <tr>
+    <td width="50%" align="center" valign="middle">
+      <a href="docs/examples/2025-e-paper2overview/overview-v1.png"><img src="docs/examples/2025-e-paper2overview/overview-v1.png" width="100%" alt="ModelAtlas 第 1 轮：初始模型场景与分析区布局"></a>
+    </td>
+    <td width="50%" align="center" valign="middle">
+      <a href="docs/examples/2025-e-paper2overview/overview.png"><img src="docs/examples/2025-e-paper2overview/overview.png" width="100%" alt="ModelAtlas 第 2 轮：调整收获箭头、阅读顺序与森林装饰"></a>
+    </td>
+  </tr>
+  <tr>
+    <td align="center"><sub>森林 → 农田 → 食物网</sub><br><a href="docs/examples/2025-e-paper2overview/prompt.md">第 1 轮 prompt</a></td>
+    <td align="center"><sub>收获箭头从作物引出；分析区接续食物网</sub><br><a href="docs/examples/2025-e-paper2overview/correction-prompt.md">第 2 轮 prompt</a></td>
+  </tr>
+</table>
+
+[当前版高清](docs/examples/2025-e-paper2overview/overview.png) ·
+[完整 prompt](docs/examples/2025-e-paper2overview/full-prompt.md) ·
+[论文与制作记录](docs/examples/2025-e-paper2overview/README.md) ·
+[原图与许可](docs/assets/reference-overviews/README.md)
+
+奖项属于来源论文。生成图是重设计示例，印刷尺寸检查与用户验收待完成。
 
 <a id="quick-start"></a>
 <a id="setup"></a>
@@ -70,78 +134,16 @@ python3 -m venv .venv
 
 这条流程由宿主完成生图；单独运行 CLI 只会准备论文与参考资料。[MCP 配置与命令说明](docs/USAGE.md)
 
-<a id="showcase"></a>
-
-## 示例
-
-**From Forest to Farm** · 2025 ICM E · 来源论文 Finalist
-
-<a href="docs/examples/2025-e-paper2overview/overview.png">
-  <img src="docs/examples/2025-e-paper2overview/overview.png" width="100%" alt="ModelAtlas 生成示例：森林氮循环、农田管理、食物网与方案评价">
-</a>
-
-[高清图片](docs/examples/2025-e-paper2overview/overview.png) ·
-[完整 prompt](docs/examples/2025-e-paper2overview/full-prompt.md) ·
-[论文与制作记录](docs/examples/2025-e-paper2overview/README.md)
-
-这张图由 ModelAtlas 阅读论文后生成。当前为 PNG 候选稿，出版尺寸审查尚未完成；修订前后对照及具体检查见制作记录。
-
 <a id="library"></a>
 
 ## 插图知识库
 
-按 A–F 题号整理 O/F 论文中的 Overview 和相关插图，另收录科研论文参考。
-目前有 **26 篇获奖论文、36 个图例**，以及 **3 篇科研论文、4 个扩展图例**。
-
-下面是作者原图，不是 ModelAtlas 生成结果。点击图片查看高清版本。
-
-<table>
-  <tr>
-    <th width="50%">E · 生态建模</th>
-    <th width="50%">C · 数据建模</th>
-  </tr>
-  <tr>
-    <td width="50%" align="center" valign="middle">
-      <a href="docs/assets/reference-overviews/2025-e-2515324-overview.jpg"><img src="docs/assets/reference-overviews/2025-e-2515324-overview.jpg" width="100%" alt="作者原图：2025 ICM E Finalist，氮循环模型的逐步扩展"></a>
-    </td>
-    <td width="50%" align="center" valign="middle">
-      <a href="docs/assets/reference-overviews/2026-c-2627351-overview.png"><img src="docs/assets/reference-overviews/2026-c-2627351-overview.png" width="100%" alt="作者原图：2026 MCM C Finalist，投票推断与规则比较"></a>
-    </td>
-  </tr>
-  <tr>
-    <td align="center">2025 ICM E · Finalist<br><sub>模型继承与农业建议</sub></td>
-    <td align="center">2026 MCM C · Finalist<br><sub>共享推断与并行分析</sub></td>
-  </tr>
-  <tr>
-    <td align="center"><a href="knowledge-base/CATALOG.md#2025-e">论文与图例</a></td>
-    <td align="center"><a href="knowledge-base/CATALOG.md#2026-c">论文与图例</a></td>
-  </tr>
-</table>
-
-| 类别 | 常见方向 | 2025 论文 | 2026 论文 | 全部论文 / 图例 |
-| :---: | --- | :---: | :---: | :---: |
-| [A](knowledge-base/CATALOG.md#a) | 连续变化、动力学 | 1 | — | 4 / 5 |
-| [B](knowledge-base/CATALOG.md#b) | 离散决策、优化 | 1 | — | 4 / 5 |
-| [C](knowledge-base/CATALOG.md#c) | 数据洞察、统计建模 | 1 | 1 | 5 / 9 |
-| [D](knowledge-base/CATALOG.md#d) | 网络系统、运筹控制 | 1 | 1 | 5 / 6 |
-| [E](knowledge-base/CATALOG.md#e) | 环境、生态、可持续性 | 1 | — | 4 / 6 |
-| [F](knowledge-base/CATALOG.md#f) | 政策、社会决策 | 1 | — | 4 / 5 |
-
-2025 已覆盖 A–F。2026 已收录 C、D，A/B/E/F 待补；“—”不代表当年没有获奖论文。[来源核验](knowledge-base/SOURCES.md)
-
-```sh
-modelatlas styles --year 2025 --problem A
-modelatlas styles --year 2026 --problem D
-```
-
-[全部图例](knowledge-base/CATALOG.md) · [科研参考](knowledge-base/CATALOG.md#research) ·
-[入库标准](knowledge-base/README.md) · [结构化索引](src/modelatlas/knowledge/corpus.json) ·
-[展示图片许可](docs/assets/reference-overviews/README.md)
+按 A–F 与年份检索：26 篇 O/F 论文、36 个图例；另有 3 篇科研论文、4 个扩展图例。
+[图例目录](knowledge-base/CATALOG.md) · [来源与年份覆盖](knowledge-base/SOURCES.md) · [检索与入库说明](knowledge-base/README.md)
 
 ---
 
-[使用文档](docs/USAGE.md) ·
-[绘图规范](plugins/sivia-modelatlas/skills/paper2overview/references/production-contract.md) ·
-[架构](docs/architecture.md) · [变更记录](docs/CHANGELOG.md) · [MIT License](LICENSE)
+[使用文档](docs/USAGE.md) · [绘图规范](plugins/sivia-modelatlas/skills/paper2overview/references/production-contract.md) ·
+[成图索引](docs/examples/showcase.json) · [变更记录](docs/CHANGELOG.md) · [MIT License](LICENSE)
 
-基于 [SIVIA](https://github.com/exsinger-hub/Sivia)。第三方论文与插图保留各自版权。
+基于 [Sivia](https://github.com/exsinger-hub/Sivia)。第三方论文与插图保留各自版权。

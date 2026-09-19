@@ -1,5 +1,7 @@
 include AGENTS.md
+include README.en.md
 recursive-include docs *.md
+recursive-include docs/examples *.png *.json
 recursive-include docs/assets *.png *.jpg *.json *.txt
 recursive-include knowledge-base *.md
 recursive-include scripts *.py *.ps1

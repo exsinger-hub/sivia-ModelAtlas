@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "checked_at": "2026-09-19",
-  "purpose": "README illustration-knowledge-base previews explicitly requested by the user. Not ModelAtlas-generated outputs.",
+  "purpose": "Licensed original author figures for reference and source-versus-generated comparisons. These are not ModelAtlas-generated outputs; showcase.json lists actual generated cases separately.",
   "assets": [
     {
       "file": "2025-e-2515324-overview.jpg",

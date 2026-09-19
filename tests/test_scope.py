@@ -57,7 +57,8 @@ def test_removed_backends_and_dependency_stack():
 
 def test_readme_keeps_knowledge_links_and_link_targets_exist():
     readme = (ROOT / "README.md").read_text(encoding="utf-8")
-    for path in ("knowledge-base/CATALOG.md", "knowledge-base/README.md", "src/modelatlas/knowledge/corpus.json",
+    for path in ("knowledge-base/CATALOG.md", "knowledge-base/README.md", "knowledge-base/SOURCES.md",
                  "plugins/sivia-modelatlas/skills/paper2overview/references/production-contract.md"):
         assert path in readme and (ROOT / path).is_file()
+    assert (ROOT / "src/modelatlas/knowledge/corpus.json").is_file()
     assert "scripts/demo.py" not in readme

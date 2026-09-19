@@ -1,7 +1,26 @@
 # 真实论文测试：2025 ICM E
 
+[English](README.en.md) · [全部成图](../../../README.md#showcase)
+
 本例测试 ModelAtlas 的 Paper → Overview 全链路：已有论文输入、全文理解、参考图阅读、
 实际 ImageGen 生成、视觉检查与修正、图片/prompt/证据配对。不是解题、写论文或重跑仿真。
+
+## 原图与当前版
+
+| 论文作者原图 · Figure 2, PDF p4 | ModelAtlas · 第 2 轮 |
+| :---: | :---: |
+| [![论文原图](../../assets/reference-overviews/2025-e-2515324-overview.jpg)](../../assets/reference-overviews/2025-e-2515324-overview.jpg) | [![当前生成图](overview.png)](overview.png) |
+
+## 两轮生成对比
+
+| 第 1 轮 · 初稿 | 第 2 轮 · 修订 |
+| :---: | :---: |
+| [![第一轮](overview-v1.png)](overview-v1.png) | [![第二轮](overview.png)](overview.png) |
+| [第 1 轮 prompt](prompt.md) | [第 2 轮 prompt](correction-prompt.md) |
+
+修订将收获箭头移到作物冠层，分析区改为从右向左接续食物网，并简化森林装饰。
+
+### 当前版高清
 
 ![新生成的 overview 修订版](overview.png)
 
@@ -18,7 +37,7 @@
   缓存 PDF 与提取全文仅保存在本地，不随此示例发布。
 
 这是**已知参考论文的重设计测试**，不是未见样本盲测，不能由单例推断通用成功率。
-使用的图片都是本次新生成；作者原 overview 仍在 README 的参考知识库区，二者不混淆。
+两轮生成图均来自实际 ImageGen 调用；作者原 overview 在上方单独标注并排展示。
 
 ## 执行与修正
 

@@ -2,6 +2,8 @@
 
 ## Unreleased — 2026-09-20
 
+- Put classified source/redesign and generation-round comparisons first in README; keep the library as a compact text entry.
+- Add an English README and English example notes, with a shared showcase index covering every published generated image.
 - Rewrite README with source Quick Start, visible examples and concise library navigation.
 - Document the optional Sivia handoff from an approved Overview to editable PPTX, including dependencies and editability checks.
 - Expand the reviewed corpus to 26 O/F papers / 36 cases, plus 3 research papers / 4 cases.

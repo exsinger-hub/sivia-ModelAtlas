@@ -45,4 +45,5 @@ def test_generated_example_keeps_prompts_and_review_boundaries():
     assert len(brief["manuscript_evidence"]) >= 7
     readme = (ROOT / "README.md").read_text(encoding="utf-8")
     assert "docs/examples/2025-e-paper2overview/overview.png" in readme
-    assert "这张图由 ModelAtlas 阅读论文后生成" in readme
+    assert "阅读全文后重新设计" in readme
+    assert "奖项属于来源论文" in readme

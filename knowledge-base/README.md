@@ -37,7 +37,8 @@ O 为 Outstanding Winner，F 为 Finalist，不与题号 F 混淆。
 
 ## 图片与版权
 
-README 展示两张有作者 MIT 许可的原图，见[来源与许可](../docs/assets/reference-overviews/README.md)。
+已保存两张有作者 MIT 许可的原图，见[来源与许可](../docs/assets/reference-overviews/README.md)。
+README 只在有对应生成案例时展示原图对比；参考原图不计为 ModelAtlas 成图。
 其余来源只保存元数据和原创读图分析；第三方 PDF、水印扫描页和私人稿件不自动上传。
 
 本库参考与[ModelAtlas 实际生成示例](../docs/examples/2025-e-paper2overview/README.md)分开记录。
