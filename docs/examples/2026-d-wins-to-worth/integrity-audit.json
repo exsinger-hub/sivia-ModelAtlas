@@ -1,0 +1,44 @@
+{
+  "passed": true,
+  "files": {
+    "brief.json": true,
+    "overview.png": true,
+    "prompt.md": true
+  },
+  "visual_review": {
+    "status": "pending",
+    "review_type": "informed visual self-review; not independent acceptance",
+    "execution_test": "completed: full paper read, reference viewed, actual image generated, inspected and corrected where needed",
+    "checks": [
+      "Five-stage sequence distinguishes revenue from profit/cash.",
+      "Attendance capacity limit and censored demand remain explicit.",
+      "Revenue, EBITDA and DCF shown as valuation cross-checks, not an invented weighted formula.",
+      "No move/sign/trade, target leverage, cash floor, debt limit and salary cap are visible.",
+      "Feedback labelled Update as games are observed returns to performance; exogenous scenarios grouped separately.",
+      "Removed dark background and accidental printed section/page instructions; final title and labels readable.",
+      "No numeric business outcome or code execution result is shown."
+    ],
+    "issues": [
+      {
+        "severity": "pending_gate",
+        "detail": "180mm physical-size/grayscale proof and independent review not performed. Small connector labels require checking in the manuscript layout."
+      }
+    ],
+    "publication_gate": "pending",
+    "user_approval": "not_recorded"
+  },
+  "user_approval": "not_recorded",
+  "scope": "File integrity only; not source fidelity, image quality or award verification.",
+  "hashes": {
+    "overview.png": "d47578483dd6755145d79cd8614ca76297e9b0e4febc0d22d2bcc976a556fe5e",
+    "full-prompt.md": "c83840dd2f0b51b25dda869ce19decaa9afa0e37b7c3b5e610bd65ad860d7c10",
+    "brief.json": "1de2fc906d01d4424e2b235793662376907832675cf6c17c6359a98e790c88d6"
+  },
+  "intake_sha256": "73646259b2dd433de1b194fafd7233c29b33ce08a8138defab21381f903a6522",
+  "paired_copy_hashes": {
+    "brief.json": "5578a2c29c692c76dab53043014aa8277262f6f9c53f3b420099a4621c9fbf26",
+    "overview.png": "d47578483dd6755145d79cd8614ca76297e9b0e4febc0d22d2bcc976a556fe5e",
+    "prompt.md": "a241cbd5e5e0fc4bae7e4f6cbc211d0519d6cc458915c30657e870ed524cd170"
+  },
+  "copy_note": "Local pairing preserves text content but may normalize line endings on Windows. hashes refers to published files; paired_copy_hashes refers to the audited local bundle."
+}

@@ -1,0 +1,122 @@
+{
+  "source": {
+    "paper_id": "mcm-2024-a-2405424",
+    "title": "Lamprey: a Vivid Example of the Doctrine of the Mean",
+    "pdf_url": "https://raw.githubusercontent.com/yangchunwanwusheng/MCM-ICM--2024-/ffea7fd98c1fbf7d25edcba4dbc834631e9adbf2/2024/A/student%20paper/2405424.pdf",
+    "pdf_sha256": "3976866832e31712b42c11a241c413db2f056e48c24a3768ff0c41c1460b44c6",
+    "award": "Outstanding Winner",
+    "award_evidence": {
+      "url": "https://www.contest.comap.com/undergraduate/contests/mcm/contests/2024/results/",
+      "locator": "MCM Outstanding Winners, Problem A, Team 2405424",
+      "verification": "Official COMAP winner section and institution matched; team number checked in the pinned PDF.",
+      "checked_at": "2026-09-19"
+    },
+    "full_manuscript_read": true,
+    "pdf_pages": 25,
+    "intake_format": "PDF"
+  },
+  "claim": "Resource-dependent sex ratios couple lamprey reproduction to per-individual resources, creating a negative population-feedback loop compared with no-parasite and fixed-sex-ratio ecosystems.",
+  "manuscript_evidence": [
+    {
+      "locator": "PDF pp6–8, §3.1",
+      "supports": "Resource competition in the ideal ecosystem without parasites; Lotka–Volterra differences."
+    },
+    {
+      "locator": "PDF pp8–12, §3.2",
+      "supports": "Fixed-sex-ratio lamprey parasites added to the competition system, with Nicholson–Bailey dynamics."
+    },
+    {
+      "locator": "PDF pp12–14, §3.3",
+      "supports": "More per-individual resources reduces male fraction; reduced male fraction increases reproduction, increasing population and reducing per-individual resources."
+    },
+    {
+      "locator": "PDF p14, §3.4; pp18–19, §4.3",
+      "supports": "Resources and surviving species form the authors' entropy-weighted ecological stability index."
+    },
+    {
+      "locator": "PDF pp15–21, §4; pp22–23, §5",
+      "supports": "Compare ecosystems and resource fluctuations; fishing and initial-population sensitivity."
+    }
+  ],
+  "model_relationships": [
+    {
+      "source": "Resources per individual",
+      "target": "Male fraction",
+      "meaning": "Negative relation within the source model",
+      "locator": "§3.3 pp12–14"
+    },
+    {
+      "source": "Male fraction",
+      "target": "Reproduction",
+      "meaning": "Negative relation under the female-limited reproduction assumption",
+      "locator": "§3.2–3.3"
+    },
+    {
+      "source": "Reproduction",
+      "target": "Lamprey abundance",
+      "meaning": "Positive contribution to population",
+      "locator": "§3.2–3.3"
+    },
+    {
+      "source": "Lamprey abundance",
+      "target": "Resources per individual",
+      "meaning": "Negative resource-per-capita effect; closes negative feedback",
+      "locator": "§3.3"
+    }
+  ],
+  "references": [
+    {
+      "case_id": "a-typed-ecological-relations",
+      "borrowed": "Source Figure2, PDFp4, was visually inspected. Preserve distinctions between resource competition, host–parasite dynamics and adaptive feedback; use three scenario vignettes.",
+      "not_borrowed": "Source pixels, layout coordinates, paper-specific numerical results, team/award labels and unsupported causal claims."
+    }
+  ],
+  "caption": "Conceptual overview of the lamprey ecosystem model. Three ecological scenarios share resource competition and are compared using resource availability, surviving species and the paper's stability index. Resource-dependent male fraction couples reproduction and population abundance to per-individual resources, closing a negative feedback loop. Host–parasite dynamics and sensitivity tests provide the surrounding ecological context. No simulation values are reproduced.",
+  "placement": "End of Introduction / Our Work, before assumptions. Intended 180mm full-text width; physical print proof pending.",
+  "generation": {
+    "backend": "built-in image_gen.imagegen",
+    "status": "generated",
+    "artifact_id": "exec-a7393d31-87f2-4b21-85a3-04141c839ad1.png",
+    "actual_size": [
+      1536,
+      1024
+    ],
+    "image_sha256": "bf37fcd2754f138c052013ac19a6b1b7b6bc2f63f6b2fdba5d05637dbfd0398d",
+    "chain": [
+      {
+        "operation": "generate",
+        "prompt": "prompt.md",
+        "output": "overview.png",
+        "artifact_id": "exec-a7393d31-87f2-4b21-85a3-04141c839ad1.png",
+        "sha256": "bf37fcd2754f138c052013ac19a6b1b7b6bc2f63f6b2fdba5d05637dbfd0398d"
+      }
+    ],
+    "exact_prompt_record": "full-prompt.md",
+    "empirical_rerun": false,
+    "native_editability": false
+  },
+  "review": {
+    "status": "pending",
+    "review_type": "informed visual self-review; not independent acceptance",
+    "execution_test": "completed: full paper read, reference viewed, actual image generated, inspected and corrected where needed",
+    "checks": [
+      "Three scenarios are distinct: no parasite, fixed sex ratio, resource-dependent sex ratio.",
+      "Four loop signs and directions checked: resources -> male fraction (minus), male fraction -> reproduction (minus), reproduction -> abundance (plus), abundance -> resources (minus).",
+      "Host–parasite scene is associated with the population, not drawn as an additional trophic edge.",
+      "Labels retain Lotka–Volterra, Nicholson–Bailey and entropy-weighted stability; no invented numerical results.",
+      "Final 1536x1024 image viewed; no visibly clipped labels."
+    ],
+    "issues": [
+      {
+        "severity": "pending_gate",
+        "detail": "180mm physical-size/grayscale proof and independent review not performed. Small connector labels require checking in the manuscript layout."
+      }
+    ],
+    "publication_gate": "pending",
+    "user_approval": "not_recorded"
+  },
+  "source_notes": [
+    "Population-level sex-ratio response, not an assertion that individual adults change sex.",
+    "The resource and entropy-weighted stability metrics are the authors' idealized model constructs, not universally established biological measures."
+  ]
+}

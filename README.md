@@ -4,7 +4,7 @@
 
 <p align="center">
   中文 · <a href="README.en.md">English</a><br>
-  <a href="#showcase">成图对比</a> ·
+  <a href="#showcase">成图展示</a> ·
   <a href="#quick-start">Quick Start</a> ·
   <a href="#library">知识库</a> ·
   <a href="docs/USAGE.md">使用文档</a>
@@ -15,66 +15,119 @@
 
 <a id="showcase"></a>
 
-## 成图对比
+## Paper → Overview
 
-按题号、年份、论文和生成轮次归档。点击图片查看高清版本。
+2024–2026 · 6 篇论文 · 2 组原图对比 · 4 张独立成图。点击图片查看高清版。
 
-[E · 生态与环境](#category-e) · 2025 · 1 篇论文 · 2 轮成图
+[2025 E](#2025-e-forest-to-farm) · [2026 C](#2026-c-ballroom-voting) · [更多成图](#generated)
+
+### 论文原图 → ModelAtlas
 
 <a id="category-e"></a>
-
-### E · 生态与环境 / 2025
-
 <a id="2025-e-forest-to-farm"></a>
 
-**From Forest to Farm** · 2025 ICM E · 来源论文 Finalist · Team 2515324
+#### 2025 ICM E · From Forest to Farm
+
+生态与环境 · 来源论文 Finalist · Team 2515324
 
 <table>
   <tr>
     <th width="50%">获奖论文原图</th>
-    <th width="50%">ModelAtlas · 第 2 轮 / 当前版</th>
+    <th width="50%">ModelAtlas · 最终成图</th>
   </tr>
   <tr>
     <td width="50%" align="center" valign="middle">
-      <a href="docs/assets/reference-overviews/2025-e-2515324-overview.jpg"><img src="docs/assets/reference-overviews/2025-e-2515324-overview.jpg" width="100%" alt="论文原图：2025 ICM E Finalist，Figure 2，三个氮循环模型的递进"></a>
+      <a href="docs/assets/reference-overviews/2025-e-2515324-overview.jpg"><img src="docs/assets/reference-overviews/2025-e-2515324-overview.jpg" width="100%" alt="论文原图: 2025 ICM E, From Forest to Farm"></a>
     </td>
     <td width="50%" align="center" valign="middle">
-      <a href="docs/examples/2025-e-paper2overview/overview.png"><img src="docs/examples/2025-e-paper2overview/overview.png" width="100%" alt="ModelAtlas 第 2 轮：森林、农田、食物网及方案评价，底部从右向左衔接"></a>
+      <a href="docs/examples/2025-e-paper2overview/overview.png"><img src="docs/examples/2025-e-paper2overview/overview.png" width="100%" alt="ModelAtlas 最终成图: 森林、农田与食物网的模型递进"></a>
     </td>
   </tr>
   <tr>
-    <td align="center"><sub>Figure 2 · PDF p4 · 作者原图</sub></td>
-    <td align="center"><sub>阅读全文后重新设计 · PNG 1536 × 1024</sub></td>
+    <td align="center"><sub>Figure 2 · PDF p4</sub></td>
+    <td align="center"><sub>阅读全文后重新设计</sub></td>
   </tr>
 </table>
 
-#### 两轮生成对比
+[论文与图注](docs/examples/2025-e-paper2overview/README.md) · [完整 prompt](docs/examples/2025-e-paper2overview/full-prompt.md)
+
+<a id="category-c"></a>
+<a id="2026-c-ballroom-voting"></a>
+
+#### 2026 MCM C · Behind the Ballroom Scores
+
+隐变量推断 · 来源论文 Finalist · Team 2627351
 
 <table>
   <tr>
-    <th width="50%">第 1 轮 · 初稿</th>
-    <th width="50%">第 2 轮 · 修订</th>
+    <th width="50%">获奖论文原图</th>
+    <th width="50%">ModelAtlas · 最终成图</th>
   </tr>
   <tr>
     <td width="50%" align="center" valign="middle">
-      <a href="docs/examples/2025-e-paper2overview/overview-v1.png"><img src="docs/examples/2025-e-paper2overview/overview-v1.png" width="100%" alt="ModelAtlas 第 1 轮：初始模型场景与分析区布局"></a>
+      <a href="docs/assets/reference-overviews/2026-c-2627351-overview.png"><img src="docs/assets/reference-overviews/2026-c-2627351-overview.png" width="100%" alt="论文原图: 2026 MCM C, Behind the Ballroom Scores"></a>
     </td>
     <td width="50%" align="center" valign="middle">
-      <a href="docs/examples/2025-e-paper2overview/overview.png"><img src="docs/examples/2025-e-paper2overview/overview.png" width="100%" alt="ModelAtlas 第 2 轮：调整收获箭头、阅读顺序与森林装饰"></a>
+      <a href="docs/examples/2026-c-ballroom-voting/overview.png"><img src="docs/examples/2026-c-ballroom-voting/overview.png" width="100%" alt="ModelAtlas 最终成图: 票份额推断、规则比较与混合效应分析"></a>
     </td>
   </tr>
   <tr>
-    <td align="center"><sub>森林 → 农田 → 食物网</sub><br><a href="docs/examples/2025-e-paper2overview/prompt.md">第 1 轮 prompt</a></td>
-    <td align="center"><sub>收获箭头从作物引出；分析区接续食物网</sub><br><a href="docs/examples/2025-e-paper2overview/correction-prompt.md">第 2 轮 prompt</a></td>
+    <td align="center"><sub>Figure 1 · PDF p5</sub></td>
+    <td align="center"><sub>阅读全文后重新设计</sub></td>
   </tr>
 </table>
 
-[当前版高清](docs/examples/2025-e-paper2overview/overview.png) ·
-[完整 prompt](docs/examples/2025-e-paper2overview/full-prompt.md) ·
-[论文与制作记录](docs/examples/2025-e-paper2overview/README.md) ·
-[原图与许可](docs/assets/reference-overviews/README.md)
+[论文与图注](docs/examples/2026-c-ballroom-voting/README.md) · [完整 prompt](docs/examples/2026-c-ballroom-voting/full-prompt.md)
 
-奖项属于来源论文。生成图是重设计示例，印刷尺寸检查与用户验收待完成。
+<a id="generated"></a>
+
+### 更多成图
+
+<a id="category-a"></a>
+<a id="2024-a-lamprey"></a>
+
+#### 2024 MCM A · Lamprey
+
+生态反馈 · 来源论文 Outstanding Winner
+
+<a href="docs/examples/2024-a-lamprey/overview.png"><img src="docs/examples/2024-a-lamprey/overview.png" width="100%" alt="ModelAtlas: 三种生态情景与资源—性别比例—繁殖的反馈环。"></a>
+
+[论文与图注](docs/examples/2024-a-lamprey/README.md) · [完整 prompt](docs/examples/2024-a-lamprey/full-prompt.md)
+
+<a id="category-b"></a>
+<a id="2024-b-deep-sea-rescue"></a>
+
+#### 2024 MCM B · Unlocking the Abyss
+
+定位与搜救 · 来源论文 Outstanding Winner
+
+<a href="docs/examples/2024-b-deep-sea-rescue/overview.png"><img src="docs/examples/2024-b-deep-sea-rescue/overview.png" width="100%" alt="ModelAtlas: 定位预测、装备选择与逐轮更新的搜索策略。"></a>
+
+[论文与图注](docs/examples/2024-b-deep-sea-rescue/README.md) · [完整 prompt](docs/examples/2024-b-deep-sea-rescue/full-prompt.md)
+
+<a id="category-f"></a>
+<a id="2025-f-cyber-policy"></a>
+
+#### 2025 ICM F · Cracking the Cyber-Puzzle
+
+政策评价 · 来源论文 Outstanding Winner
+
+<a href="docs/examples/2025-f-cyber-policy/overview.png"><img src="docs/examples/2025-f-cyber-policy/overview.png" width="100%" alt="ModelAtlas: 国家画像、政策变化与社会因素三路证据汇合。"></a>
+
+[论文与图注](docs/examples/2025-f-cyber-policy/README.md) · [完整 prompt](docs/examples/2025-f-cyber-policy/full-prompt.md)
+
+<a id="category-d"></a>
+<a id="2026-d-wins-to-worth"></a>
+
+#### 2026 ICM D · From Wins to Worth
+
+经营与决策 · 来源论文 Finalist
+
+<a href="docs/examples/2026-d-wins-to-worth/overview.png"><img src="docs/examples/2026-d-wins-to-worth/overview.png" width="100%" alt="ModelAtlas: 从比赛表现到上座率、现金流和球队估值的决策链。"></a>
+
+[论文与图注](docs/examples/2026-d-wins-to-worth/README.md) · [完整 prompt](docs/examples/2026-d-wins-to-worth/full-prompt.md)
+
+奖项属于来源论文。新成图展示论文方法，不代表重新验证了数值结果。[原图署名与许可](docs/assets/reference-overviews/README.md)。
 
 <a id="quick-start"></a>
 <a id="setup"></a>

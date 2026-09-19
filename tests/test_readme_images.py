@@ -85,7 +85,7 @@ def test_original_reference_assets_keep_integrity_and_licenses():
 
 
 @pytest.mark.parametrize("name", READMES)
-def test_showcase_pairs_source_and_rounds_without_hiding_or_distorting_images(name):
+def test_showcase_pairs_each_paper_with_only_its_final_image(name):
     text, parsed = parse_readme(name)
     local = [image for image in parsed.images if not urlsplit(image["src"]).scheme]
     assert text.index('id="showcase"') < text.index("## Quick Start")
@@ -103,13 +103,22 @@ def test_showcase_pairs_source_and_rounds_without_hiding_or_distorting_images(na
         assert case["id"] in parsed.ids
         assert f'category-{case["problem"].lower()}' in parsed.ids
         latest = next(r for r in case["rounds"] if r["number"] == case["latest_round"])
-        expected_rows.append([case["source_figure"], latest["image"]])
-        expected_rows.extend([before["image"], after["image"]]
-                             for before, after in zip(case["rounds"], case["rounds"][1:]))
-        expected_images.add(case["source_figure"])
-        expected_images.update(r["image"] for r in case["rounds"])
-        for round_ in case["rounds"]:
-            assert round_["prompt"] in parsed.links
+        assert case["final_image"] == latest["image"]
+        if case["presentation"] == "comparison":
+            expected_rows.append([case["source_figure"], latest["image"]])
+            expected_images.add(case["source_figure"])
+        else:
+            assert case["presentation"] == "standalone"
+            assert case["source_figure"] is None
+        expected_images.add(latest["image"])
+        assert case["full_prompt"] in text
+        for round_ in case["rounds"][:-1]:
+            assert round_["image"] not in text  # History stays behind the case link.
+    assert len(local) == len(expected_images) == 8
+    assert len(expected_rows) == 2
+    assert len(showcase["cases"]) == 6
+    assert {c["year"] for c in showcase["cases"]} == {2024, 2025, 2026}
+    assert {c["problem"] for c in showcase["cases"]} == set("ABCDEF")
     assert parsed.table_rows == expected_rows
     assert {image["src"] for image in local} == expected_images
     assert parsed.details_depth == 0
@@ -207,9 +216,14 @@ def test_showcase_classification_matches_source_and_all_actual_generation_rounds
         for key in ("year", "contest", "problem", "team"):
             assert case[key] == paper[key]
         assert case["source_award"] == {"O": "Outstanding Winner", "F": "Finalist"}[paper["award"]]
-        original = next(a for a in assets if a["case_id"] == case["source_case_id"])
-        assert original["paper_id"] == case["paper_id"]
-        assert case["source_figure"] == "docs/assets/reference-overviews/" + original["file"]
+        reference = next(c for c in load_corpus()["cases"] if c["id"] == case["source_case_id"])
+        assert reference["paper_id"] == case["paper_id"]
+        if case["presentation"] == "comparison":
+            original = next(a for a in assets if a["case_id"] == case["source_case_id"])
+            assert original["paper_id"] == case["paper_id"]
+            assert case["source_figure"] == "docs/assets/reference-overviews/" + original["file"]
+        else:
+            assert case["source_figure"] is None
         brief = read_json(ROOT / case["brief"])
         assert len(case["rounds"]) == len(brief["generation"]["chain"])
         assert case["latest_round"] == max(r["number"] for r in case["rounds"])
@@ -227,3 +241,57 @@ def test_showcase_classification_matches_source_and_all_actual_generation_rounds
     published_images = {p.relative_to(ROOT).as_posix() for p in (ROOT / "docs/examples").rglob("*")
                         if p.suffix.lower() in {".png", ".jpg", ".jpeg", ".webp"}}
     assert indexed_images == published_images
+
+
+def test_every_final_has_actual_generation_history_evidence_and_hashes():
+    """These are integrity checks, not a substitute for scientific/visual review."""
+    showcase = read_json(ROOT / "docs/examples/showcase.json")
+    for case in showcase["cases"]:
+        brief = read_json(ROOT / case["brief"])
+        directory = (ROOT / case["brief"]).parent
+        final = ROOT / case["final_image"]
+        generation = brief["generation"]
+        assert generation["backend"] == "built-in image_gen.imagegen"
+        assert generation["status"] == "generated"
+        assert digest(final) == generation["image_sha256"]
+        assert generation["empirical_rerun"] is False
+        assert generation["native_editability"] is False
+        with Image.open(final) as image:
+            assert list(image.size) == generation["actual_size"] == [1536, 1024]
+            image.verify()
+        full_prompt = (ROOT / case["full_prompt"]).read_text(encoding="utf-8")
+        for call in generation["chain"]:
+            assert (directory / call["prompt"]).read_text(encoding="utf-8").strip() in full_prompt
+            if "sha256" in call:
+                assert digest(directory / call["output"]) == call["sha256"]
+        assert brief["review"]["status"] == "pending"
+        assert brief["review"]["user_approval"] == "not_recorded"
+        assert brief["manuscript_evidence"] and brief["model_relationships"]
+        audit = read_json(directory / "integrity-audit.json")
+        assert audit["passed"] is True
+        assert all(audit["files"].values())
+        if "hashes" in audit:
+            for name, checksum in audit["hashes"].items():
+                path = directory / name
+                assert digest(path) == checksum
+        if "source" in brief:
+            paper = next(p for p in load_corpus()["papers"] if p["id"] == case["paper_id"])
+            assert brief["source"]["pdf_sha256"] == paper["sha256"]
+            assert brief["source"]["full_manuscript_read"] is True
+            assert brief["source"]["pdf_pages"] == paper["pdf_pages"]
+
+
+def test_case_pages_display_only_final_images_and_have_working_local_links():
+    for case in read_json(ROOT / "docs/examples/showcase.json")["cases"]:
+        for notes in case["notes"].values():
+            path = ROOT / notes
+            text = path.read_text(encoding="utf-8")
+            images = re.findall(r"!\[[^\]]*\]\(([^)]+)\)", text)
+            expected = 2 if case["presentation"] == "comparison" else 1
+            assert len(images) == expected
+            assert images.count("overview.png") == 1
+            assert not any("overview-v" in target for target in images)
+            for target in re.findall(r"\[[^\]]*\]\(([^)]+)\)", text):
+                parts = urlsplit(target)
+                if not parts.scheme and parts.path:
+                    assert (path.parent / unquote(parts.path)).exists(), (notes, target)

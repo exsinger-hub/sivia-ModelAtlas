@@ -1,0 +1,45 @@
+# Complete ImageGen prompt record
+
+## Call 1 · generate
+
+Output: `overview-v1.png` · artifact `exec-7f808b0f-8b69-437e-9d6b-e4bdd00cc5bb.png`.
+
+Use case: infographic-diagram
+Asset: an English scientific overview for a mathematical modeling manuscript, landscape 1536 x 1024. Intended full-page text width 180 mm at the end of Introduction.
+Purpose and authority: Explain the manuscript "From Wins to Worth: A Quantitative Model of Performance, Attendance, Revenue, and Valuation for Sports Teams". A single forecasting-and-finance chain supports rolling player and leverage decisions under cash and debt constraints. Draw model architecture, not investment advice or asserted numerical results.
+
+Composition: polished white journal illustration with a dominant left-to-right business chain across upper/middle canvas (about60%), a lower decision cockpit (about30%) and a narrow readable footer. Title "From wins to worth". Five stages on one horizontal track, ample connector gutters, each a concrete meaningful mini-scene and 2–3 short labels. Palette dark slate, teal-blue for prediction, muted gold for revenue, plum for value, copper dashed feedback. No gradient-filled PowerPoint boxes, no decorative chart values, no brand/team jerseys.
+
+Stages:
+1 "Performance": basketball half-court, small player silhouettes with a ball; beneath "Elo ratings" -> "Expected wins". Small top incoming label "Game results + schedule".
+2 "Demand": small arena seating bowl with an explicit capacity boundary; beneath "Censored demand" and "Attendance". Tiny annotation "Capacity limit". The scene makes latent demand versus observed capacity concept visible without a quantitative graph.
+3 "Revenue": readable ticket icon and broadcast icon; beneath "Dynamic pricing" and "Tickets + media + sponsors".
+4 "Cash flow": ledger with two labeled sides "Revenue" and "Costs + interest", not fake numbers; output "Profit + cash". A discreet side input labeled "Salary + operating costs".
+5 "Value": three narrow, equally sized comparison lenses or mini document cards titled "Revenue multiple", "EBITDA multiple", "DCF"; grouped by the label "Valuation cross-checks". No unsupported exact weight or claim all three always averaged.
+
+Connections: Performance -> Demand, label "Expected wins"; Demand -> Revenue, label "Attendance"; Revenue -> Cash flow, label "Revenue"; Cash flow -> Value, label "Financial position". Draw exactly four main short arrows. A small extra short arrow from Revenue to the Revenue multiple lens can be omitted if it causes clutter; the meaning of financial position is sufficient.
+
+Below the chain, a wide sparse panel "Rolling decisions". Its left section "Player actions" shows three distinct choices "No move", "Sign", "Trade", with a small bracket label "Strength · popularity · salary". Center section "Financing" shows "Target leverage" -> "Borrow / repay". Right section "Feasibility gates" has three clean outlined checklist items "Cash floor", "Debt limit", "Salary cap". One down-arrow from Value enters the decision panel. A single dashed copper feedback line outside the main nodes runs from the entire Rolling decisions panel along the lower-left outer gutter back to Performance, labeled "Update as games are observed". Do not point feedback into empty space or imply future data is known.
+
+Footer: separate understated analysis bar titled "Stress tests" with three icons/labels "Injury", "Interest rate", "Market size", followed by "Monte Carlo + sensitivity". These are exogenous scenarios, not measured outcome curves. Small note "Conceptual framework · no numerical results". No generic rising bar charts, dollar figures, percentages, axes, player identities or sports logos.
+
+Visual grammar: distinguish prediction blue, financial value gold/plum, decision constraints neutral slate, copper feedback. One coherent vector-like editorial illustration style, fine restrained shading, short connectors with visible endpoints, no shadows or texture noise. Labels legible and evenly spaced. Scientific structure dominates illustration.
+
+Evidence authority: sections5–6 pp9–13 performance and capacity-censored attendance; section7 pp13–15 finance and revenue/EBITDA/DCF valuation comparisons; section8 pp15–18 action/leverage optimization and rolling known-information updates; section9 pp18–20 scenarios; section10 pp20–23 Monte Carlo and single-factor sensitivity. Injury is shown as scenario, not falsely claimed validated stochastic process. Source baseline uses revenue multiple valuation; other lenses are cross-checks. No code rerun or empirical result is implied.
+
+Reference adaptation: source overview inspected at PDFp4; preserve forecasting chain and finance-to-decision relation, replace serpentine boxes with direct semantic scenes and actual feedback, avoid its crowded clipped list items. No source pixels, award/team labels, copied numerical findings, branding or watermark.
+Final check: five-stage chain readable; capacity constraint not lost; revenue distinct from profit/cash; valuation cross-checks not a invented weighted estimator; constraints visible; feedback returns to model with observed data; exactly labels supported by manuscript; no fabricated charts.
+
+## Call 2 · edit
+
+Input: `overview-v1.png`.
+
+Output: `overview.png` · artifact `exec-d6a1eae9-d4a5-4481-b119-79b8a2b859b7.png`.
+
+Use case: precise-object-edit. Input is the existing From wins to worth overview.
+Preserve all five stages, their illustrations, method labels, connections, lower decision panel and feedback. Change only presentation:
+- Replace every smoky, blurry, dark, colored background OUTSIDE panels with solid pure white (#FFFFFF), throughout title, arrow gutters, outside margins, feedback route and footer. No vignette, shadow, halo or gradient. Main title must be crisp solid navy on white, not navy on dark blue.
+- Remove the long subtitle under "From wins to worth" entirely. Keep the short main title.
+- Remove every parenthetical source citation printed in panels: "(Sections 5–6, pp9–13)", "(Section6, pp9–13)", "(Section7, pp13–15)", "(Section8, pp15–18)", and the section references in Stress tests. These were instructions, not figure labels. Use the space for balanced padding.
+- Make dashed feedback and its label darker copper for contrast against white.
+Do not remove or change Performance, Demand, Revenue, Cash flow, Value, Elo ratings, Expected wins, Censored demand, Attendance, Capacity limit, Dynamic pricing, Tickets + media + sponsors, Revenue multiple, EBITDA multiple, DCF, Valuation cross-checks, Player actions, No move, Sign, Trade, Target leverage, Borrow / repay, Cash floor, Debt limit, Salary cap, or stress tests. No new numbers or conclusions. Final must be clean white publication-style illustration, no dark poster effects.

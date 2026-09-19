@@ -1,6 +1,6 @@
 {
-  "schema_version": 1,
-  "description": "Published Paper-to-Overview examples only. Paths are relative to the repository root. Rounds are actual generation/edit calls, not independent papers or awards.",
+  "schema_version": 2,
+  "description": "Six paper-based examples: two source-versus-final comparisons and four standalone final images. README excludes intermediate rounds; actual generation history remains indexed for reproducibility. Paths are repository-relative.",
   "cases": [
     {
       "id": "2025-e-forest-to-farm",
@@ -9,7 +9,10 @@
       "year": 2025,
       "contest": "ICM",
       "problem": "E",
-      "category": {"zh": "生态与环境", "en": "Ecology & environment"},
+      "category": {
+        "zh": "生态与环境",
+        "en": "Ecology & environment"
+      },
       "source_award": "Finalist",
       "team": "2515324",
       "source_figure": "docs/assets/reference-overviews/2025-e-2515324-overview.jpg",
@@ -33,6 +36,197 @@
           "operation": "edit",
           "image": "docs/examples/2025-e-paper2overview/overview.png",
           "prompt": "docs/examples/2025-e-paper2overview/correction-prompt.md"
+        }
+      ],
+      "presentation": "comparison",
+      "final_image": "docs/examples/2025-e-paper2overview/overview.png"
+    },
+    {
+      "id": "2026-c-ballroom-voting",
+      "paper_id": "mcm-2026-c-2627351",
+      "title": "Behind the Ballroom Scores",
+      "year": 2026,
+      "contest": "MCM",
+      "problem": "C",
+      "category": {
+        "zh": "隐变量推断",
+        "en": "Latent-variable inference"
+      },
+      "source_award": "Finalist",
+      "team": "2627351",
+      "presentation": "comparison",
+      "source_figure": "docs/assets/reference-overviews/2026-c-2627351-overview.png",
+      "source_case_id": "c-infer-compare-redesign",
+      "notes": {
+        "zh": "docs/examples/2026-c-ballroom-voting/README.md",
+        "en": "docs/examples/2026-c-ballroom-voting/README.en.md"
+      },
+      "brief": "docs/examples/2026-c-ballroom-voting/brief.json",
+      "full_prompt": "docs/examples/2026-c-ballroom-voting/full-prompt.md",
+      "final_image": "docs/examples/2026-c-ballroom-voting/overview.png",
+      "latest_round": 2,
+      "rounds": [
+        {
+          "number": 1,
+          "operation": "generate",
+          "image": "docs/examples/2026-c-ballroom-voting/overview-v1.png",
+          "prompt": "docs/examples/2026-c-ballroom-voting/prompt.md"
+        },
+        {
+          "number": 2,
+          "operation": "edit",
+          "image": "docs/examples/2026-c-ballroom-voting/overview.png",
+          "prompt": "docs/examples/2026-c-ballroom-voting/correction-prompt.md"
+        }
+      ]
+    },
+    {
+      "id": "2024-a-lamprey",
+      "paper_id": "mcm-2024-a-2405424",
+      "title": "Lamprey: a Vivid Example of the Doctrine of the Mean",
+      "year": 2024,
+      "contest": "MCM",
+      "problem": "A",
+      "category": {
+        "zh": "生态反馈",
+        "en": "Ecological feedback"
+      },
+      "source_award": "Outstanding Winner",
+      "team": "2405424",
+      "presentation": "standalone",
+      "source_figure": null,
+      "source_case_id": "a-typed-ecological-relations",
+      "notes": {
+        "zh": "docs/examples/2024-a-lamprey/README.md",
+        "en": "docs/examples/2024-a-lamprey/README.en.md"
+      },
+      "brief": "docs/examples/2024-a-lamprey/brief.json",
+      "full_prompt": "docs/examples/2024-a-lamprey/full-prompt.md",
+      "final_image": "docs/examples/2024-a-lamprey/overview.png",
+      "latest_round": 1,
+      "rounds": [
+        {
+          "number": 1,
+          "operation": "generate",
+          "image": "docs/examples/2024-a-lamprey/overview.png",
+          "prompt": "docs/examples/2024-a-lamprey/prompt.md"
+        }
+      ]
+    },
+    {
+      "id": "2024-b-deep-sea-rescue",
+      "paper_id": "mcm-2024-b-2407038",
+      "title": "Unlocking the Abyss",
+      "year": 2024,
+      "contest": "MCM",
+      "problem": "B",
+      "category": {
+        "zh": "定位与搜救",
+        "en": "Localization & rescue"
+      },
+      "source_award": "Outstanding Winner",
+      "team": "2407038",
+      "presentation": "standalone",
+      "source_figure": null,
+      "source_case_id": "b-rescue-multiscale-overview",
+      "notes": {
+        "zh": "docs/examples/2024-b-deep-sea-rescue/README.md",
+        "en": "docs/examples/2024-b-deep-sea-rescue/README.en.md"
+      },
+      "brief": "docs/examples/2024-b-deep-sea-rescue/brief.json",
+      "full_prompt": "docs/examples/2024-b-deep-sea-rescue/full-prompt.md",
+      "final_image": "docs/examples/2024-b-deep-sea-rescue/overview.png",
+      "latest_round": 2,
+      "rounds": [
+        {
+          "number": 1,
+          "operation": "generate",
+          "image": "docs/examples/2024-b-deep-sea-rescue/overview-v1.png",
+          "prompt": "docs/examples/2024-b-deep-sea-rescue/prompt.md"
+        },
+        {
+          "number": 2,
+          "operation": "edit",
+          "image": "docs/examples/2024-b-deep-sea-rescue/overview.png",
+          "prompt": "docs/examples/2024-b-deep-sea-rescue/correction-prompt.md"
+        }
+      ]
+    },
+    {
+      "id": "2025-f-cyber-policy",
+      "paper_id": "icm-2025-f-2513705",
+      "title": "Cracking the Cyber-Puzzle: KDMF in Action",
+      "year": 2025,
+      "contest": "ICM",
+      "problem": "F",
+      "category": {
+        "zh": "政策评价",
+        "en": "Policy evaluation"
+      },
+      "source_award": "Outstanding Winner",
+      "team": "2513705",
+      "presentation": "standalone",
+      "source_figure": null,
+      "source_case_id": "f-cyber-policy-evidence-map",
+      "notes": {
+        "zh": "docs/examples/2025-f-cyber-policy/README.md",
+        "en": "docs/examples/2025-f-cyber-policy/README.en.md"
+      },
+      "brief": "docs/examples/2025-f-cyber-policy/brief.json",
+      "full_prompt": "docs/examples/2025-f-cyber-policy/full-prompt.md",
+      "final_image": "docs/examples/2025-f-cyber-policy/overview.png",
+      "latest_round": 2,
+      "rounds": [
+        {
+          "number": 1,
+          "operation": "generate",
+          "image": "docs/examples/2025-f-cyber-policy/overview-v1.png",
+          "prompt": "docs/examples/2025-f-cyber-policy/prompt.md"
+        },
+        {
+          "number": 2,
+          "operation": "edit",
+          "image": "docs/examples/2025-f-cyber-policy/overview.png",
+          "prompt": "docs/examples/2025-f-cyber-policy/correction-prompt.md"
+        }
+      ]
+    },
+    {
+      "id": "2026-d-wins-to-worth",
+      "paper_id": "icm-2026-d-2608869",
+      "title": "From Wins to Worth",
+      "year": 2026,
+      "contest": "ICM",
+      "problem": "D",
+      "category": {
+        "zh": "经营与决策",
+        "en": "Operations & decisions"
+      },
+      "source_award": "Finalist",
+      "team": "2608869",
+      "presentation": "standalone",
+      "source_figure": null,
+      "source_case_id": "d-wins-to-value-chain",
+      "notes": {
+        "zh": "docs/examples/2026-d-wins-to-worth/README.md",
+        "en": "docs/examples/2026-d-wins-to-worth/README.en.md"
+      },
+      "brief": "docs/examples/2026-d-wins-to-worth/brief.json",
+      "full_prompt": "docs/examples/2026-d-wins-to-worth/full-prompt.md",
+      "final_image": "docs/examples/2026-d-wins-to-worth/overview.png",
+      "latest_round": 2,
+      "rounds": [
+        {
+          "number": 1,
+          "operation": "generate",
+          "image": "docs/examples/2026-d-wins-to-worth/overview-v1.png",
+          "prompt": "docs/examples/2026-d-wins-to-worth/prompt.md"
+        },
+        {
+          "number": 2,
+          "operation": "edit",
+          "image": "docs/examples/2026-d-wins-to-worth/overview.png",
+          "prompt": "docs/examples/2026-d-wins-to-worth/correction-prompt.md"
         }
       ]
     }

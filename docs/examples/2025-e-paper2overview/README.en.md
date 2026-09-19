@@ -5,26 +5,11 @@
 Source paper: *From Forest to Farm: Modeling Nitrogen Dynamics for Sustainable Agriculture*.
 Team **2515324**, **Finalist**. The award belongs to the paper, not to the generated figures.
 
-## Original and current redesign
+## Original and final redesign
 
-| Authors’ original · Figure 2, PDF p4 | ModelAtlas · Round 2 |
+| Authors’ original · Figure 2, PDF p4 | ModelAtlas · final image |
 | :---: | :---: |
 | [![Original overview](../../assets/reference-overviews/2025-e-2515324-overview.jpg)](../../assets/reference-overviews/2025-e-2515324-overview.jpg) | [![Current redesign](overview.png)](overview.png) |
-
-## Generation rounds
-
-| Round 1 · Initial draft | Round 2 · Revision |
-| :---: | :---: |
-| [![Round 1](overview-v1.png)](overview-v1.png) | [![Round 2](overview.png)](overview.png) |
-| [Generation prompt](prompt.md) | [Correction prompt](correction-prompt.md) |
-
-Round 2 moves the harvest arrow to the crop canopy, connects the food web to scenario analysis,
-and continues right to left along the bottom. Forest decoration is simplified.
-These are two consecutive ImageGen calls, not independent style candidates.
-
-### Current image
-
-![Current overview, round 2](overview.png)
 
 [Full prompt history](full-prompt.md) · [Evidence & caption](brief.json) · [Initial design](design-spec.json)
 

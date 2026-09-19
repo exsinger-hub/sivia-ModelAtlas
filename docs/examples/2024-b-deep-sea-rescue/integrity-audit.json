@@ -1,0 +1,44 @@
+{
+  "passed": true,
+  "files": {
+    "brief.json": true,
+    "overview.png": true,
+    "prompt.md": true
+  },
+  "visual_review": {
+    "status": "pending",
+    "review_type": "informed visual self-review; not independent acceptance",
+    "execution_test": "completed: full paper read, reference viewed, actual image generated, inspected and corrected where needed",
+    "checks": [
+      "Removed unrequested team/contest attribution from the generated illustration.",
+      "Removed the disconnected duplicate Deploy box; the single actual deployment now says Uses allocated equipment.",
+      "Currents/density/seafloor feed supported forecasting and motion methods.",
+      "GA objective arrows retain cost down, availability up and readiness time down.",
+      "Grid prior -> deploy -> search evidence -> Bayesian update and next-interval feedback are visible.",
+      "Searched-cells exclusion explicitly says in this model; trajectory and search cycle are conceptual.",
+      "Final image viewed; no fabricated quantitative trajectory or performance metric."
+    ],
+    "issues": [
+      {
+        "severity": "pending_gate",
+        "detail": "180mm physical-size/grayscale proof and independent review not performed. Small connector labels require checking in the manuscript layout."
+      }
+    ],
+    "publication_gate": "pending",
+    "user_approval": "not_recorded"
+  },
+  "user_approval": "not_recorded",
+  "scope": "File integrity only; not source fidelity, image quality or award verification.",
+  "hashes": {
+    "overview.png": "5bdec93b3d4238b62231244af2c604369569341471f8a7ef91beb1a6387d5002",
+    "full-prompt.md": "2646e7db5d71470315dac9ea43cda994913446062f2fbf092872b7965f208820",
+    "brief.json": "4fd0c9bde14d8aef630b9edb476c46cc40180562525ee6c8b3b9e6748fa1f3f6"
+  },
+  "intake_sha256": "3532e6cb77e04f698b6b54ca76045961bfce18ff9dc4539e2a2af195c43eaa84",
+  "paired_copy_hashes": {
+    "brief.json": "747b6772957220dffade0a1488d9dd8599bb41bff87b5f871da2c0c48ba5ded7",
+    "overview.png": "5bdec93b3d4238b62231244af2c604369569341471f8a7ef91beb1a6387d5002",
+    "prompt.md": "2836e3f5846529147c87289d8dfa7acb81c033f65af4c6dace8c90f2192928e9"
+  },
+  "copy_note": "Local pairing preserves text content but may normalize line endings on Windows. hashes refers to published files; paired_copy_hashes refers to the audited local bundle."
+}

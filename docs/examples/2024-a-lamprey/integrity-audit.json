@@ -1,0 +1,42 @@
+{
+  "passed": true,
+  "files": {
+    "brief.json": true,
+    "overview.png": true,
+    "prompt.md": true
+  },
+  "visual_review": {
+    "status": "pending",
+    "review_type": "informed visual self-review; not independent acceptance",
+    "execution_test": "completed: full paper read, reference viewed, actual image generated, inspected and corrected where needed",
+    "checks": [
+      "Three scenarios are distinct: no parasite, fixed sex ratio, resource-dependent sex ratio.",
+      "Four loop signs and directions checked: resources -> male fraction (minus), male fraction -> reproduction (minus), reproduction -> abundance (plus), abundance -> resources (minus).",
+      "Host–parasite scene is associated with the population, not drawn as an additional trophic edge.",
+      "Labels retain Lotka–Volterra, Nicholson–Bailey and entropy-weighted stability; no invented numerical results.",
+      "Final 1536x1024 image viewed; no visibly clipped labels."
+    ],
+    "issues": [
+      {
+        "severity": "pending_gate",
+        "detail": "180mm physical-size/grayscale proof and independent review not performed. Small connector labels require checking in the manuscript layout."
+      }
+    ],
+    "publication_gate": "pending",
+    "user_approval": "not_recorded"
+  },
+  "user_approval": "not_recorded",
+  "scope": "File integrity only; not source fidelity, image quality or award verification.",
+  "hashes": {
+    "overview.png": "bf37fcd2754f138c052013ac19a6b1b7b6bc2f63f6b2fdba5d05637dbfd0398d",
+    "full-prompt.md": "a22a6ecdfa595a27469a7889d31214c643c74978f80d1c946b0b9be67b843b1e",
+    "brief.json": "5bf397e4f96172c56e6b2f5e77e72bfc1ef2482073278e323caf016e730564c0"
+  },
+  "intake_sha256": "3976866832e31712b42c11a241c413db2f056e48c24a3768ff0c41c1460b44c6",
+  "paired_copy_hashes": {
+    "brief.json": "458cdd151cab4f916d1ac896fb0b315f24028bc09b17f8b133298617e3148b42",
+    "overview.png": "bf37fcd2754f138c052013ac19a6b1b7b6bc2f63f6b2fdba5d05637dbfd0398d",
+    "prompt.md": "76b6880866ee136130383ddf1465a2213586c6ec6ed5e73c5b11eb558f13b7f2"
+  },
+  "copy_note": "Local pairing preserves text content but may normalize line endings on Windows. hashes refers to published files; paired_copy_hashes refers to the audited local bundle."
+}

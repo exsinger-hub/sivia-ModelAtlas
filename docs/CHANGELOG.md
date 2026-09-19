@@ -2,7 +2,10 @@
 
 ## Unreleased — 2026-09-20
 
-- Put classified source/redesign and generation-round comparisons first in README; keep the library as a compact text entry.
+- Organize bilingual README by six papers from 2024–2026: two original/final comparisons and four standalone final figures (eight images total).
+- Add five actual ImageGen examples with full-paper evidence, exact prompts, correction records and file-integrity pairing; keep intermediate outputs off the showcase.
+- Use verified 2026 C Finalist for the second comparison; do not mislabel the discovered 2026 E Honorable Mention as O/F.
+- Keep the illustration library as a compact text entry.
 - Add an English README and English example notes, with a shared showcase index covering every published generated image.
 - Rewrite README with source Quick Start, visible examples and concise library navigation.
 - Document the optional Sivia handoff from an approved Overview to editable PPTX, including dependencies and editability checks.

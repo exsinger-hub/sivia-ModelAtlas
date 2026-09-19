@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="README.md">中文</a> · English<br>
-  <a href="#showcase">Figure comparisons</a> ·
+  <a href="#showcase">Examples</a> ·
   <a href="#quick-start">Quick Start</a> ·
   <a href="#library">Reference library</a> ·
   <a href="docs/USAGE.md">Documentation (中文)</a>
@@ -15,66 +15,119 @@ After approving the image, optionally use [Sivia](https://github.com/exsinger-hu
 
 <a id="showcase"></a>
 
-## Figure comparisons
+## Paper → Overview
 
-Organized by problem, year, paper and generation round. Click any image for full resolution.
+2024–2026 · 6 papers · 2 original/final pairs · 4 standalone figures. Click any image for full resolution.
 
-[E · Ecology & environment](#category-e) · 2025 · 1 paper · 2 rounds
+[2025 E](#2025-e-forest-to-farm) · [2026 C](#2026-c-ballroom-voting) · [More figures](#generated)
+
+### Original → ModelAtlas
 
 <a id="category-e"></a>
-
-### E · Ecology & environment / 2025
-
 <a id="2025-e-forest-to-farm"></a>
 
-**From Forest to Farm** · 2025 ICM E · Source paper: Finalist · Team 2515324
+#### 2025 ICM E · From Forest to Farm
+
+Ecology & environment · Source paper Finalist · Team 2515324
 
 <table>
   <tr>
-    <th width="50%">Original paper figure</th>
-    <th width="50%">ModelAtlas · Round 2 / current</th>
+    <th width="50%">Authors’ original</th>
+    <th width="50%">ModelAtlas · final image</th>
   </tr>
   <tr>
     <td width="50%" align="center" valign="middle">
-      <a href="docs/assets/reference-overviews/2025-e-2515324-overview.jpg"><img src="docs/assets/reference-overviews/2025-e-2515324-overview.jpg" width="100%" alt="Original Figure 2 from a 2025 ICM E Finalist paper: progression through three nitrogen-cycle models"></a>
+      <a href="docs/assets/reference-overviews/2025-e-2515324-overview.jpg"><img src="docs/assets/reference-overviews/2025-e-2515324-overview.jpg" width="100%" alt="Original: 2025 ICM E, From Forest to Farm"></a>
     </td>
     <td width="50%" align="center" valign="middle">
-      <a href="docs/examples/2025-e-paper2overview/overview.png"><img src="docs/examples/2025-e-paper2overview/overview.png" width="100%" alt="ModelAtlas round 2: forest, farmland, food web and scenario evaluation, continuing right to left along the bottom"></a>
+      <a href="docs/examples/2025-e-paper2overview/overview.png"><img src="docs/examples/2025-e-paper2overview/overview.png" width="100%" alt="ModelAtlas final: forest, farm and food-web model progression"></a>
     </td>
   </tr>
   <tr>
-    <td align="center"><sub>Figure 2 · PDF p4 · Authors’ original</sub></td>
-    <td align="center"><sub>Redesigned from the full paper · PNG 1536 × 1024</sub></td>
+    <td align="center"><sub>Figure 2 · PDF p4</sub></td>
+    <td align="center"><sub>Redesigned from the full paper</sub></td>
   </tr>
 </table>
 
-#### Generation rounds
+[Paper & caption](docs/examples/2025-e-paper2overview/README.en.md) · [Full prompt](docs/examples/2025-e-paper2overview/full-prompt.md)
+
+<a id="category-c"></a>
+<a id="2026-c-ballroom-voting"></a>
+
+#### 2026 MCM C · Behind the Ballroom Scores
+
+Latent-variable inference · Source paper Finalist · Team 2627351
 
 <table>
   <tr>
-    <th width="50%">Round 1 · Initial draft</th>
-    <th width="50%">Round 2 · Revision</th>
+    <th width="50%">Authors’ original</th>
+    <th width="50%">ModelAtlas · final image</th>
   </tr>
   <tr>
     <td width="50%" align="center" valign="middle">
-      <a href="docs/examples/2025-e-paper2overview/overview-v1.png"><img src="docs/examples/2025-e-paper2overview/overview-v1.png" width="100%" alt="ModelAtlas round 1: initial model scenes and analysis layout"></a>
+      <a href="docs/assets/reference-overviews/2026-c-2627351-overview.png"><img src="docs/assets/reference-overviews/2026-c-2627351-overview.png" width="100%" alt="Original: 2026 MCM C, Behind the Ballroom Scores"></a>
     </td>
     <td width="50%" align="center" valign="middle">
-      <a href="docs/examples/2025-e-paper2overview/overview.png"><img src="docs/examples/2025-e-paper2overview/overview.png" width="100%" alt="ModelAtlas round 2: revised harvest arrow, reading order and forest decoration"></a>
+      <a href="docs/examples/2026-c-ballroom-voting/overview.png"><img src="docs/examples/2026-c-ballroom-voting/overview.png" width="100%" alt="ModelAtlas final: fan-share inference, parallel rule audit and mixed-effects analysis"></a>
     </td>
   </tr>
   <tr>
-    <td align="center"><sub>Forest → farmland → food web</sub><br><a href="docs/examples/2025-e-paper2overview/prompt.md">Round 1 prompt</a></td>
-    <td align="center"><sub>Harvest originates at crops; analysis follows the food web</sub><br><a href="docs/examples/2025-e-paper2overview/correction-prompt.md">Round 2 prompt</a></td>
+    <td align="center"><sub>Figure 1 · PDF p5</sub></td>
+    <td align="center"><sub>Redesigned from the full paper</sub></td>
   </tr>
 </table>
 
-[Current image, full resolution](docs/examples/2025-e-paper2overview/overview.png) ·
-[Full prompt](docs/examples/2025-e-paper2overview/full-prompt.md) ·
-[Paper & production notes](docs/examples/2025-e-paper2overview/README.en.md) ·
-[Original image & license](docs/assets/reference-overviews/README.md)
+[Paper & caption](docs/examples/2026-c-ballroom-voting/README.en.md) · [Full prompt](docs/examples/2026-c-ballroom-voting/full-prompt.md)
 
-The award belongs to the source paper. Generated figures are redesign examples; print-size checks and user approval remain pending.
+<a id="generated"></a>
+
+### More generated figures
+
+<a id="category-a"></a>
+<a id="2024-a-lamprey"></a>
+
+#### 2024 MCM A · Lamprey
+
+Ecological feedback · Source paper Outstanding Winner
+
+<a href="docs/examples/2024-a-lamprey/overview.png"><img src="docs/examples/2024-a-lamprey/overview.png" width="100%" alt="ModelAtlas: Three ecological scenarios and the resource–sex-ratio–reproduction feedback loop."></a>
+
+[Paper & caption](docs/examples/2024-a-lamprey/README.en.md) · [Full prompt](docs/examples/2024-a-lamprey/full-prompt.md)
+
+<a id="category-b"></a>
+<a id="2024-b-deep-sea-rescue"></a>
+
+#### 2024 MCM B · Unlocking the Abyss
+
+Localization & rescue · Source paper Outstanding Winner
+
+<a href="docs/examples/2024-b-deep-sea-rescue/overview.png"><img src="docs/examples/2024-b-deep-sea-rescue/overview.png" width="100%" alt="ModelAtlas: Position prediction, equipment allocation and an updating search strategy."></a>
+
+[Paper & caption](docs/examples/2024-b-deep-sea-rescue/README.en.md) · [Full prompt](docs/examples/2024-b-deep-sea-rescue/full-prompt.md)
+
+<a id="category-f"></a>
+<a id="2025-f-cyber-policy"></a>
+
+#### 2025 ICM F · Cracking the Cyber-Puzzle
+
+Policy evaluation · Source paper Outstanding Winner
+
+<a href="docs/examples/2025-f-cyber-policy/overview.png"><img src="docs/examples/2025-f-cyber-policy/overview.png" width="100%" alt="ModelAtlas: Country profiles, policy changes and national-context evidence converge on a policy brief."></a>
+
+[Paper & caption](docs/examples/2025-f-cyber-policy/README.en.md) · [Full prompt](docs/examples/2025-f-cyber-policy/full-prompt.md)
+
+<a id="category-d"></a>
+<a id="2026-d-wins-to-worth"></a>
+
+#### 2026 ICM D · From Wins to Worth
+
+Operations & decisions · Source paper Finalist
+
+<a href="docs/examples/2026-d-wins-to-worth/overview.png"><img src="docs/examples/2026-d-wins-to-worth/overview.png" width="100%" alt="ModelAtlas: A decision chain from game performance to attendance, cash flow and team value."></a>
+
+[Paper & caption](docs/examples/2026-d-wins-to-worth/README.en.md) · [Full prompt](docs/examples/2026-d-wins-to-worth/full-prompt.md)
+
+Awards belong to the source papers. Generated figures are method illustrations, not rerun results. [Original-image credits & licenses](docs/assets/reference-overviews/README.md).
 
 <a id="quick-start"></a>
 <a id="setup"></a>

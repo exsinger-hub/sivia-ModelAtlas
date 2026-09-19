@@ -1,0 +1,140 @@
+{
+  "source": {
+    "paper_id": "icm-2026-d-2608869",
+    "title": "From Wins to Worth: A Quantitative Model of Performance, Attendance, Revenue, and Valuation for Sports Teams",
+    "pdf_url": "https://raw.githubusercontent.com/WeiLai-OpsFin/comap-icm-2026-d-finalist-wnba-team-valuation-model/3efa32aa320bbab0569f89a5e080cee2b60b5ea2/docs/2608869.pdf",
+    "pdf_sha256": "af57e494a2cb0713b881c64ebd02b16686f9df0992b33562a7919cd1981fd161",
+    "award": "Finalist",
+    "award_evidence": {
+      "url": "https://www.contest.comap.com/undergraduate/contests/mcm/contests/2026/results/2026_ICM_Problem_D_Results.pdf",
+      "locator": "PDF physical page 3, first row: Team 2608869, Problem D, Finalist",
+      "verification": "Official COMAP result row visually inspected and matched to author PDF summary sheet; institution retained as printed.",
+      "sha256": "0c911fca8f6bb00ed12f5d577b495cad638ebc56193fdd3b1fd1a7f3ad2b2965",
+      "checked_at": "2026-09-20"
+    },
+    "full_manuscript_read": true,
+    "pdf_pages": 32,
+    "intake_format": "extracted text; source PDF has malformed glyphs"
+  },
+  "claim": "Performance and capacity-censored demand feed a financial chain whose valuation and feasibility constraints support rolling player and leverage decisions.",
+  "manuscript_evidence": [
+    {
+      "locator": "PDF pp9–10, §5",
+      "supports": "Elo performance model maps game information to expected wins."
+    },
+    {
+      "locator": "PDF pp11–13, §6",
+      "supports": "Capacity-censored attendance demand and dynamic ticket pricing."
+    },
+    {
+      "locator": "PDF pp13–15, §7",
+      "supports": "Revenue, operating/salary costs, interest, profit and cash; revenue/EBITDA/DCF valuation lenses; target-leverage borrowing/repayment."
+    },
+    {
+      "locator": "PDF pp15–18, §8",
+      "supports": "No move/sign/trade decisions, salary/cash/debt feasibility and rolling updates using available information."
+    },
+    {
+      "locator": "PDF pp18–20, §9; pp20–23, §10",
+      "supports": "Injury, interest-rate and market-size scenarios; Monte Carlo and sensitivity analysis."
+    }
+  ],
+  "model_relationships": [
+    {
+      "source": "Performance",
+      "target": "Demand",
+      "meaning": "Expected wins inform attendance",
+      "locator": "§5–6"
+    },
+    {
+      "source": "Demand",
+      "target": "Revenue",
+      "meaning": "Attendance and pricing drive ticket revenue",
+      "locator": "§6"
+    },
+    {
+      "source": "Revenue",
+      "target": "Cash flow",
+      "meaning": "Subtract operating costs, salaries and interest",
+      "locator": "§7"
+    },
+    {
+      "source": "Cash flow",
+      "target": "Valuation and decisions",
+      "meaning": "Financial position supports valuation checks and constrained decisions",
+      "locator": "§7–8"
+    },
+    {
+      "source": "Rolling decisions",
+      "target": "Performance and next state",
+      "meaning": "Player-action changes and information updates; not look-ahead forecasting",
+      "locator": "§8"
+    }
+  ],
+  "references": [
+    {
+      "case_id": "d-wins-to-value-chain",
+      "borrowed": "Source Our Works overview at PDFp4 was visually inspected. Retain the performance-to-value chain and decision constraints; replace crowded serpentine boxes with a straight chain and outer feedback route.",
+      "not_borrowed": "Source pixels, layout coordinates, paper-specific numerical results, team/award labels and unsupported causal claims."
+    }
+  ],
+  "caption": "Conceptual overview of a sports-team decision model. Elo-based performance drives capacity-constrained attendance and revenue, which enters a financial ledger and valuation cross-checks. Player actions and financing are evaluated under cash, debt and salary constraints and updated as games are observed. Scenario and sensitivity checks remain separate from the main operating chain. No numerical forecast or investment recommendation is reproduced.",
+  "placement": "End of Introduction / Our Work, before assumptions. Intended 180mm full-text width; physical print proof pending.",
+  "generation": {
+    "backend": "built-in image_gen.imagegen",
+    "status": "generated",
+    "artifact_id": "exec-d6a1eae9-d4a5-4481-b119-79b8a2b859b7.png",
+    "actual_size": [
+      1536,
+      1024
+    ],
+    "image_sha256": "d47578483dd6755145d79cd8614ca76297e9b0e4febc0d22d2bcc976a556fe5e",
+    "chain": [
+      {
+        "operation": "generate",
+        "prompt": "prompt.md",
+        "output": "overview-v1.png",
+        "artifact_id": "exec-7f808b0f-8b69-437e-9d6b-e4bdd00cc5bb.png",
+        "sha256": "0545afa7fd83eecc082caa56b403f405edc5ceecee7f1b1c4a0021e78d2a6261"
+      },
+      {
+        "operation": "edit",
+        "prompt": "correction-prompt.md",
+        "input": "overview-v1.png",
+        "output": "overview.png",
+        "artifact_id": "exec-d6a1eae9-d4a5-4481-b119-79b8a2b859b7.png",
+        "sha256": "d47578483dd6755145d79cd8614ca76297e9b0e4febc0d22d2bcc976a556fe5e"
+      }
+    ],
+    "exact_prompt_record": "full-prompt.md",
+    "empirical_rerun": false,
+    "native_editability": false
+  },
+  "review": {
+    "status": "pending",
+    "review_type": "informed visual self-review; not independent acceptance",
+    "execution_test": "completed: full paper read, reference viewed, actual image generated, inspected and corrected where needed",
+    "checks": [
+      "Five-stage sequence distinguishes revenue from profit/cash.",
+      "Attendance capacity limit and censored demand remain explicit.",
+      "Revenue, EBITDA and DCF shown as valuation cross-checks, not an invented weighted formula.",
+      "No move/sign/trade, target leverage, cash floor, debt limit and salary cap are visible.",
+      "Feedback labelled Update as games are observed returns to performance; exogenous scenarios grouped separately.",
+      "Removed dark background and accidental printed section/page instructions; final title and labels readable.",
+      "No numeric business outcome or code execution result is shown."
+    ],
+    "issues": [
+      {
+        "severity": "pending_gate",
+        "detail": "180mm physical-size/grayscale proof and independent review not performed. Small connector labels require checking in the manuscript layout."
+      }
+    ],
+    "publication_gate": "pending",
+    "user_approval": "not_recorded"
+  },
+  "source_notes": [
+    "Direct PDF intake encountered malformed font surrogate text. The session uses the previously extracted complete 32-page text with affected glyphs replaced; the original overview was visually inspected. PDF SHA remains recorded separately.",
+    "Author repository code is a later reconstruction, not independently verified competition execution. This example uses the paper only.",
+    "Source baseline uses revenue multiples; EBITDA/DCF are comparison lenses. Injury is drawn as a scenario, not a validated stochastic process."
+  ]
+}

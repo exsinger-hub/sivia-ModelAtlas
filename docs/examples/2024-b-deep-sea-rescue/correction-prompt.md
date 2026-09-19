@@ -1,0 +1,9 @@
+Use case: precise-object-edit
+Asset: final manuscript overview, landscape 1536 x 1024.
+Input image: edit target, the existing deep-sea rescue overview. Preserve the scientific panels, ocean scene, equipment, text typography, colors and legible grid cycle.
+
+Make two narrowly scoped corrections:
+1. Remove the two subtitle lines below "Locate, equip and search": remove the long paper title AND "Team 2407038 | 2024 MCM B". Leave just the main title with calm white space. No author, team, contest, award, branding or watermark anywhere.
+2. The small extra orange "Deploy" box at the upper right of the Search and update region is disconnected from the real deployment and must disappear. Remove that duplicate box and the vertical equipment-to-box arrow. The actual boat step titled "Deploy" in the center-left of the search row is the ONLY deployment. Indicate the equipment allocation dependency via a small readable secondary label immediately below its existing "Deploy" heading: "Uses allocated equipment". Do not add a new long connecting arrow, new duplicate deployment or new boat. Keep the actual cycle: Poisson grid prior -> Deploy -> Search evidence -> Bayesian update, with dashed amber Next interval feedback from Bayesian update to the actual Deploy boat.
+
+Invariants: currents -> ARIMA + Monte Carlo and ridge regression; density -> ridge regression; motion model bounded by seafloor; qualitative trajectory; three GA objectives cost down, availability up, readiness time down; equipment allocation; Poisson prior derived from predicted position; searched cells excluded in this model; Bayesian next-interval feedback. Keep conceptual search cycle label and checks/extensions strip. No new quantitative results. No other scientific edits, no flattening into a generic diagram. Read all labels before finishing.

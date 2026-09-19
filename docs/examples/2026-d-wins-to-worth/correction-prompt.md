@@ -1,0 +1,7 @@
+Use case: precise-object-edit. Input is the existing From wins to worth overview.
+Preserve all five stages, their illustrations, method labels, connections, lower decision panel and feedback. Change only presentation:
+- Replace every smoky, blurry, dark, colored background OUTSIDE panels with solid pure white (#FFFFFF), throughout title, arrow gutters, outside margins, feedback route and footer. No vignette, shadow, halo or gradient. Main title must be crisp solid navy on white, not navy on dark blue.
+- Remove the long subtitle under "From wins to worth" entirely. Keep the short main title.
+- Remove every parenthetical source citation printed in panels: "(Sections 5–6, pp9–13)", "(Section6, pp9–13)", "(Section7, pp13–15)", "(Section8, pp15–18)", and the section references in Stress tests. These were instructions, not figure labels. Use the space for balanced padding.
+- Make dashed feedback and its label darker copper for contrast against white.
+Do not remove or change Performance, Demand, Revenue, Cash flow, Value, Elo ratings, Expected wins, Censored demand, Attendance, Capacity limit, Dynamic pricing, Tickets + media + sponsors, Revenue multiple, EBITDA multiple, DCF, Valuation cross-checks, Player actions, No move, Sign, Trade, Target leverage, Borrow / repay, Cash floor, Debt limit, Salary cap, or stress tests. No new numbers or conclusions. Final must be clean white publication-style illustration, no dark poster effects.

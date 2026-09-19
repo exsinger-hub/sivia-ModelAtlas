@@ -1,0 +1,43 @@
+{
+  "passed": true,
+  "files": {
+    "brief.json": true,
+    "overview.png": true,
+    "prompt.md": true
+  },
+  "visual_review": {
+    "status": "pending",
+    "review_type": "informed visual self-review; not independent acceptance",
+    "execution_test": "completed: full paper read, reference viewed, actual image generated, inspected and corrected where needed",
+    "checks": [
+      "Observed weekly data enter the whole inference region; feasible-set and likelihood methods remain complementary.",
+      "Corrected the inference output to fork once to each analysis panel, with no rule-audit -> mixed-effects dependency.",
+      "Hidden fan shares explicitly not observed vote totals.",
+      "Rank, Percentage and Judges' Save are parallel choices on the same contestants/week.",
+      "MARS retains the AND-gated protection condition and temporal Tune1–17/Test18–34 separation.",
+      "Final image inspected; white background and high-contrast title; no numeric performance results reproduced."
+    ],
+    "issues": [
+      {
+        "severity": "pending_gate",
+        "detail": "180mm physical-size/grayscale proof and independent review not performed. Small connector labels require checking in the manuscript layout."
+      }
+    ],
+    "publication_gate": "pending",
+    "user_approval": "not_recorded"
+  },
+  "user_approval": "not_recorded",
+  "scope": "File integrity only; not source fidelity, image quality or award verification.",
+  "hashes": {
+    "overview.png": "7d1536e95f53007cbdecb14d0cbaa61f1d22b42fa0b3c6bc8ea40a22b1de41b9",
+    "full-prompt.md": "8ee0897dbf4af4b2e81e7203bea15a2ae2273ba9e16e3d1bf48e14783a6cbdd6",
+    "brief.json": "2194a8803e973ada809e6b92d632c416fc94d500a586d0f9081e7bcbf723af6b"
+  },
+  "intake_sha256": "ab837f28944fce38f7677fe833ed89360ff38da754e47f7f406273dfae31bf55",
+  "paired_copy_hashes": {
+    "brief.json": "fa4cb4b2a0330febe4368b79a6dba6e7c258f25ef1ae24635d75b0ded2234608",
+    "overview.png": "7d1536e95f53007cbdecb14d0cbaa61f1d22b42fa0b3c6bc8ea40a22b1de41b9",
+    "prompt.md": "45f123ae69ee74b3853abd8a1ee3301956ae589985d50a06b048468f21c64f2a"
+  },
+  "copy_note": "Local pairing preserves text content but may normalize line endings on Windows. hashes refers to published files; paired_copy_hashes refers to the audited local bundle."
+}

@@ -1,0 +1,138 @@
+{
+  "source": {
+    "paper_id": "icm-2025-f-2513705",
+    "title": "Cracking the Cyber-Puzzle: KDMF in Action",
+    "pdf_url": "https://raw.githubusercontent.com/Jackksonns/MCM-ICM-Outstanding-Papers/d29267cb9e993419749e6111981b30a44183fdf8/2025/F/2513705.pdf",
+    "pdf_sha256": "c2ef017c4976b5fcc91a439939c301d9c8bc1dc312e161c205eb7bab7b15900a",
+    "award": "Outstanding Winner",
+    "award_evidence": {
+      "url": "https://www.contest.comap.com/undergraduate/contests/mcm/contests/2025/results/",
+      "locator": "ICM Outstanding Winners, Problem F, Team 2513705",
+      "verification": "Official COMAP award and institution matched; year/problem/team visually checked on the PDF summary sheet.",
+      "checked_at": "2026-09-20"
+    },
+    "full_manuscript_read": true,
+    "pdf_pages": 33,
+    "intake_format": "PDF"
+  },
+  "claim": "Descriptive country profiles, policy-text/DID analysis and demographic associations form three complementary evidence streams for cybersecurity policy advice.",
+  "manuscript_evidence": [
+    {
+      "locator": "PDF pp6–12, §4",
+      "supports": "Four country indicators are introduced; K-means clustering specifically uses NCSI and Legal Measures, with elbow/silhouette and PCA analysis."
+    },
+    {
+      "locator": "PDF pp13–17, §5",
+      "supports": "LDA describes six policy topics; before/after treated/control differences are analyzed with covariates."
+    },
+    {
+      "locator": "PDF pp17–20, §6",
+      "supports": "MIC, factor analysis and regression characterize demographic and socioeconomic associations."
+    },
+    {
+      "locator": "PDF p21, §7",
+      "supports": "DID-coefficient perturbation and MIC input-noise sensitivity."
+    },
+    {
+      "locator": "PDF pp22–23, §9; p25 memo",
+      "supports": "Advice integrates the streams; reporting bias and imperfect controls limit interpretation."
+    }
+  ],
+  "model_relationships": [
+    {
+      "source": "NCSI + legal measures",
+      "target": "K-means",
+      "meaning": "Descriptive clustering input; other indicators are not added to the clustering pair",
+      "locator": "§4"
+    },
+    {
+      "source": "Policy texts",
+      "target": "LDA themes",
+      "meaning": "Topic extraction",
+      "locator": "§5"
+    },
+    {
+      "source": "Policy changes and covariates",
+      "target": "Difference-in-differences",
+      "meaning": "Treated/control before/after analysis",
+      "locator": "§5"
+    },
+    {
+      "source": "Demographics",
+      "target": "MIC and factor analysis/regression",
+      "meaning": "Association analysis, not causal proof",
+      "locator": "§6"
+    },
+    {
+      "source": "Three evidence streams",
+      "target": "Policy brief",
+      "meaning": "Combined interpretation",
+      "locator": "§9; memo"
+    }
+  ],
+  "references": [
+    {
+      "case_id": "f-cyber-policy-evidence-map",
+      "borrowed": "Unnumbered Our Work illustration on physical PDFp4 was visually inspected. Retain the three task groups but lay them out in parallel with an explicit advice merge.",
+      "not_borrowed": "Source pixels, layout coordinates, paper-specific numerical results, team/award labels and unsupported causal claims."
+    }
+  ],
+  "caption": "Method overview of KDMF. Country indicators support descriptive clustering; policy texts and demographic covariates support topic-based difference-in-differences analysis; demographic data support MIC and regression-based associations. The three evidence streams converge on policy advice, with perturbation and noise checks shown separately. Cluster marks and comparison cells are schematic; no estimated effect or statistical result is reproduced.",
+  "placement": "End of Introduction / Our Work, before assumptions. Intended 180mm full-text width; physical print proof pending.",
+  "generation": {
+    "backend": "built-in image_gen.imagegen",
+    "status": "generated",
+    "artifact_id": "exec-477b9ce6-523e-443a-abc8-8a478b43bce6.png",
+    "actual_size": [
+      1536,
+      1024
+    ],
+    "image_sha256": "65a0104cecb9bed02238b1b2576bde3fc85c90fa79b884c7e45948cb6fc0ddf3",
+    "chain": [
+      {
+        "operation": "generate",
+        "prompt": "prompt.md",
+        "output": "overview-v1.png",
+        "artifact_id": "exec-9c88d354-b53e-48bb-95e6-963a51dc9935.png",
+        "sha256": "43d6b8f0df3465c6b686dcd0b1ab82c1f9ffe3e3da7ac4229b68781131e34d39"
+      },
+      {
+        "operation": "edit",
+        "prompt": "correction-prompt.md",
+        "input": "overview-v1.png",
+        "output": "overview.png",
+        "artifact_id": "exec-477b9ce6-523e-443a-abc8-8a478b43bce6.png",
+        "sha256": "65a0104cecb9bed02238b1b2576bde3fc85c90fa79b884c7e45948cb6fc0ddf3"
+      }
+    ],
+    "exact_prompt_record": "full-prompt.md",
+    "empirical_rerun": false,
+    "native_editability": false
+  },
+  "review": {
+    "status": "pending",
+    "review_type": "informed visual self-review; not independent acceptance",
+    "execution_test": "completed: full paper read, reference viewed, actual image generated, inspected and corrected where needed",
+    "checks": [
+      "Clustering input explicitly NCSI + legal measures; three clusters labelled schematic.",
+      "All six source policy themes are present.",
+      "DID matrix has treated/control rows and before/after columns.",
+      "Corrected covariate arrow now enters the DID method, not the final association result.",
+      "MIC and regression remain association methods; no claimed causal effect or efficacy ranking.",
+      "Three streams converge on policy brief; white background and title contrast corrected.",
+      "Final saved image inspected for labels and connector endpoints."
+    ],
+    "issues": [
+      {
+        "severity": "pending_gate",
+        "detail": "180mm physical-size/grayscale proof and independent review not performed. Small connector labels require checking in the manuscript layout."
+      }
+    ],
+    "publication_gate": "pending",
+    "user_approval": "not_recorded"
+  },
+  "source_notes": [
+    "The source's policy-effect sign interpretations and some coefficient descriptions are internally inconsistent. The overview omits numeric effects, rankings and claims of validated effectiveness.",
+    "Shared indicators are shown at the policy-analysis grouping level; the figure does not specify a new regression."
+  ]
+}

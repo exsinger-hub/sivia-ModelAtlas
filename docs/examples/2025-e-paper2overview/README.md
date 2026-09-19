@@ -5,24 +5,13 @@
 本例测试 ModelAtlas 的 Paper → Overview 全链路：已有论文输入、全文理解、参考图阅读、
 实际 ImageGen 生成、视觉检查与修正、图片/prompt/证据配对。不是解题、写论文或重跑仿真。
 
-## 原图与当前版
+## 原图与最终成图
 
-| 论文作者原图 · Figure 2, PDF p4 | ModelAtlas · 第 2 轮 |
+| 论文作者原图 · Figure 2, PDF p4 | ModelAtlas · 最终成图 |
 | :---: | :---: |
 | [![论文原图](../../assets/reference-overviews/2025-e-2515324-overview.jpg)](../../assets/reference-overviews/2025-e-2515324-overview.jpg) | [![当前生成图](overview.png)](overview.png) |
 
-## 两轮生成对比
-
-| 第 1 轮 · 初稿 | 第 2 轮 · 修订 |
-| :---: | :---: |
-| [![第一轮](overview-v1.png)](overview-v1.png) | [![第二轮](overview.png)](overview.png) |
-| [第 1 轮 prompt](prompt.md) | [第 2 轮 prompt](correction-prompt.md) |
-
-修订将收获箭头移到作物冠层，分析区改为从右向左接续食物网，并简化森林装饰。
-
-### 当前版高清
-
-![新生成的 overview 修订版](overview.png)
+[完整 prompt](full-prompt.md) · [论文依据与图注](brief.json)
 
 ## 输入与来源
 
@@ -83,7 +72,6 @@
 完整生成链、图像哈希、具体检查项和待验证事项均在 [brief.json](brief.json)；
 文件哈希校验与科学内容自审分开记录，不把前者当成后者的证明。
 [实际文件配对校验结果](integrity-audit.json)：图片、prompt、brief 三项均通过。
-项目回归检查为 **42 passed**，其中两项核对本例图像、生成链、来源绑定与待验收状态；
 自动化检查不替代视觉审查。
 
 ## 图注与放置
