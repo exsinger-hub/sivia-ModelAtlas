@@ -23,6 +23,33 @@
 **知识库保留，不随功能精简删除。** 已核验并逐图阅读的种子库包括：
 **8 篇 O/F 论文、18 个获奖图例；1 篇科研预印本、2 个扩展图例。**
 
+### Overview 参考图预览
+
+以下直接展示知识库中的作者原图，**不是 ModelAtlas 生成结果**。图片来自作者的 MIT 许可仓库，
+点击图片可查看清晰原图；模型与结论属于来源论文，仅借鉴其视觉表达。
+
+**2025 ICM E · Finalist · 从基础模型到扩展模型**
+
+![2025 ICM E Finalist 2515324：氮循环模型继承与绿色农业建议的 overview 参考图](docs/assets/reference-overviews/2025-e-2515324-overview.jpg)
+
+案例 `e-model-inheritance-overview`，论文 PDF 第 4 页 Figure 2。
+看点：基础模型、农业扩展、食物网与应用建议分区组织。
+[作者原图](https://github.com/LUKEQ420/MCM-ICM-2025-E-Nitrogen-Cycling-Model/blob/fb579acd7107706e055c8a10f921f9f56498a06a/paper/figures/our%20work.jpg)
+· [来源论文](https://github.com/LUKEQ420/MCM-ICM-2025-E-Nitrogen-Cycling-Model/blob/fb579acd7107706e055c8a10f921f9f56498a06a/paper/2515324.pdf)
+
+**2026 MCM C · Finalist · 共享推断、并行分析与决策合流**
+
+![2026 MCM C Finalist 2627351：投票推断、并行分析与规则再设计的 overview 参考图](docs/assets/reference-overviews/2026-c-2627351-overview.png)
+
+案例 `c-infer-compare-redesign`，论文 PDF 第 5 页 Figure 1。
+看点：共同输入经过推断后分为两条分析路线，再汇入规则设计。
+[作者原图](https://github.com/alectimison-maker/2026MCM-ICM_C/blob/2fcf7bb344e6fa7c295ec771b5be79c3a9ebd361/paper/workflow_flowchart.png)
+· [来源论文](https://github.com/alectimison-maker/2026MCM-ICM_C/blob/2fcf7bb344e6fa7c295ec771b5be79c3a9ebd361/2627351_submitted_paper.pdf)
+
+[图片来源、许可与校验记录](docs/assets/reference-overviews/README.md)。这里展示的是参考库，实际生成案例待完成测试后单独加入。
+
+### A–F 分类目录
+
 | 类别入口（常见方向，非永久题型定义） | 获奖论文 | 原题所属图例 |
 | --- | --- | --- |
 | A：连续变化、动力学 | 2024 O · 2400996 | 2 |
@@ -41,8 +68,8 @@ O/F 对照官方结果核验，科研扩展独立标记；题目 F 不等于奖�
 [逐图目录与来源](knowledge-base/CATALOG.md) · [知识库组织与入库标准](knowledge-base/README.md)
 · [结构化知识库](src/modelatlas/knowledge/corpus.json)
 
-这仍是种子库，不是全历年获奖论文全集。仓库保存元数据和原创分析；第三方 PDF/页面图像只在本地
-缓存，不把参考图冒充项目新成图，也不默认再分发第三方插图。
+这仍是种子库，不是全历年获奖论文全集。除上方保留作者许可的两张展示图外，仓库保存元数据和
+原创分析；第三方 PDF/页面缓存仍留在本地，不把参考图冒充项目新成图，也不自动发布其他插图。
 
 ## 安装与运行
 

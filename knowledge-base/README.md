@@ -48,5 +48,7 @@ modelatlas reference e-model-inheritance-overview
 参考案例是他人论文的读图分析。生产案例必须是本项目实际生成的 overview，
 配对完整 prompt、输入论文依据、图注与审查，不能用参考页面或未执行 prompt 充数。
 
-仓库只保存元数据与原创分析；PDF、页面图片和私人论文不自动上传。
+README 按用户要求展示两张有作者 MIT 许可的原始 overview，附来源及完整许可，
+见 [展示图记录](../docs/assets/reference-overviews/README.md)。它们不是本项目生成结果。
+除此之外，仓库保存元数据与原创分析；PDF、页面缓存和私人论文不自动上传。
 旧数值配方卡片/SQLite 接口已从运行时代码删除，已有本地数据库和输出文件未清理。

@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-09-19",
+  "purpose": "README illustration-knowledge-base previews explicitly requested by the user. Not ModelAtlas-generated outputs.",
+  "assets": [
+    {
+      "file": "2025-e-2515324-overview.jpg",
+      "case_id": "e-model-inheritance-overview",
+      "paper_id": "icm-2025-e-2515324",
+      "pdf_page": 4,
+      "figure": "Figure 2",
+      "source_url": "https://github.com/LUKEQ420/MCM-ICM-2025-E-Nitrogen-Cycling-Model/blob/fb579acd7107706e055c8a10f921f9f56498a06a/paper/figures/our%20work.jpg",
+      "download_url": "https://raw.githubusercontent.com/LUKEQ420/MCM-ICM-2025-E-Nitrogen-Cycling-Model/fb579acd7107706e055c8a10f921f9f56498a06a/paper/figures/our%20work.jpg",
+      "sha256": "76e1dc99be7b2e63e5d4b8ac78874cefa8abc14e2189749ddadd53b13d7254b0",
+      "width": 6682,
+      "height": 3376,
+      "license": "MIT",
+      "license_file": "LICENSE-2025-E.txt",
+      "license_url": "https://github.com/LUKEQ420/MCM-ICM-2025-E-Nitrogen-Cycling-Model/blob/fb579acd7107706e055c8a10f921f9f56498a06a/LICENSE",
+      "copyright": "Copyright (c) 2025 JQ-Luke",
+      "modifications": "None; original author asset copied byte-for-byte. Display scaled by Markdown renderer.",
+      "kind": "reference_not_generated"
+    },
+    {
+      "file": "2026-c-2627351-overview.png",
+      "case_id": "c-infer-compare-redesign",
+      "paper_id": "mcm-2026-c-2627351",
+      "pdf_page": 5,
+      "figure": "Figure 1",
+      "source_url": "https://github.com/alectimison-maker/2026MCM-ICM_C/blob/2fcf7bb344e6fa7c295ec771b5be79c3a9ebd361/paper/workflow_flowchart.png",
+      "download_url": "https://raw.githubusercontent.com/alectimison-maker/2026MCM-ICM_C/2fcf7bb344e6fa7c295ec771b5be79c3a9ebd361/paper/workflow_flowchart.png",
+      "sha256": "d40601aa46a9604952bb69e6ae73d5e21beea25e6bf5e55c3b79e85a1486a15d",
+      "width": 1200,
+      "height": 839,
+      "license": "MIT",
+      "license_file": "LICENSE-2026-C.txt",
+      "license_url": "https://github.com/alectimison-maker/2026MCM-ICM_C/blob/2fcf7bb344e6fa7c295ec771b5be79c3a9ebd361/LICENSE",
+      "copyright": "Copyright (c) 2026 Team 2627351, Hunan University",
+      "modifications": "None; original author asset copied byte-for-byte. Display scaled by Markdown renderer.",
+      "kind": "reference_not_generated"
+    }
+  ]
+}
