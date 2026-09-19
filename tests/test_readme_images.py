@@ -110,3 +110,17 @@ def test_readme_local_navigation_and_category_anchors_resolve():
             document.feed(path.read_text(encoding="utf-8"))
             assert unquote(parts.fragment) in document.ids, target
     assert {"showcase", "library", "quick-start", "setup"} <= parsed.ids
+
+
+def test_quick_start_has_checkout_runtime_and_actual_skill_entry():
+    text, _ = parse_readme()
+    quick = text.split("## Quick Start", 1)[1].split('id="showcase"', 1)[0]
+    assert "git clone https://github.com/exsinger-hub/sivia-ModelAtlas.git" in quick
+    assert "cd sivia-ModelAtlas" in quick
+    assert "python -m venv .venv" in quick
+    assert 'pip install -e ".[mcp]"' in quick
+    skill = "plugins/sivia-modelatlas/skills/paper2overview/SKILL.md"
+    assert skill in quick and (ROOT / skill).is_file()
+    assert "ImageGen" in quick
+    assert "单独运行 CLI 只会准备论文与参考资料" in quick
+    assert (ROOT / "docs/USAGE.md").is_file()
