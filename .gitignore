@@ -1,0 +1,15 @@
+.venv/
+__pycache__/
+*.pyc
+*.egg-info/
+.pytest_cache/
+build/
+dist/
+.env
+.env.*
+plugins/**/runtime.json
+.modelatlas/
+workspace/
+outputs/
+*.sqlite*
+*.log

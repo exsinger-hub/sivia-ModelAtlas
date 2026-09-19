@@ -1,0 +1,7 @@
+include AGENTS.md
+recursive-include docs *.md
+recursive-include knowledge-base *.md
+recursive-include examples *.json
+recursive-include scripts *.py *.ps1
+recursive-include plugins *.json *.md *.py
+recursive-exclude plugins runtime.json
