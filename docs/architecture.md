@@ -1,45 +1,40 @@
-# Architecture
+# Paper → Overview architecture
 
-Primary path: manuscript → evidence/figure claim → O/F visual retrieval → actual page inspection →
-host-agent design/full production prompt → host ImageGen → review/correction → paired artifact.
+A single pipeline: full paper → source-linked figure claim → illustration references → scene design
+and full prompt → host ImageGen → visual review/correction → actual image/prompt/evidence bundle.
 
-The Python runtime provides reliable source retrieval and artifact handling, not an LLM or image model.
-Intake explicitly returns awaiting_agent_design and image_generated=false. It snapshots the draft,
-extracts PDF/MD/TXT/TeX text and retrieves award-core overview candidates; the host interprets the draft.
+## Runtime
+
+- papers.py snapshots/extracts PDF/MD/TXT/TeX, returns overview candidates and awaiting_agent_design.
+  Image generation remains a host capability, not a hidden Python service.
+- corpus.py loads the preserved reviewed illustration library, applies transparent filtered term
+  matching, verifies source bytes/page counts and renders exact reference pages with Poppler.
+- search.py uses AnySearch academic/web discovery and returns normalized metadata. Search results
+  do not acquire award or curated status automatically.
+- CLI and seven MCP tools call the same functions. One paper2overview skill coordinates the workflow.
+
+The runtime has no standalone plot renderer, numerical modeling stack, generic HTML gallery or
+SQLite card service. NumPy and Matplotlib are not dependencies.
 
 ## Data boundaries
 
-- Versioned corpus.json: reviewed figures, pinned papers, official award evidence, A–F navigation and
-  original style-transfer notes. Research extensions are separate and cannot assert awards.
-- SQLite: ordinary discovery/import records, legacy general cards and quantitative render runs.
-- Ignored references cache: hash-verified third-party PDFs and rendered page images. Not redistribution.
-- Ignored draft sessions: original snapshot and full extracted text, candidate references and independently
-  versioned overview pairs. Never auto-uploaded or committed.
+corpus.json remains the complete 9-paper/20-case reference library. Original year/problem provenance,
+official award evidence, transfer targets, visual review notes and research status remain unchanged.
+Supporting mechanism, algorithm and data-plot references can guide part of an overview without
+expanding product scope.
 
-Term matching follows hard problem/role/collection filters. Transfer targets do not change original
-problem provenance. Coverage distinguishes original-category counts from reusable cross-category counts.
-Reference download is bounded and checksum-pinned; changed bytes require review. Poppler renders only
-the requested physical page. A rendered reference page is not a new overview or a current visual review.
+.modelatlas/references holds private local PDF/page caches. New paper sessions go into
+.modelatlas/papers; each overview pair has a new child directory with actual image, prompt, evidence,
+caption, review and hashes. Existing .modelatlas/drafts sessions can still be paired by supplying
+their directory because the session contract is unchanged. Old databases and outputs are not deleted,
+migrated, opened or reseeded automatically.
 
-## Runtime and host responsibilities
+Only the host can interpret the full paper, perform generation and inspect scientific/visual
+fidelity. Hash checks cannot prove scientific correctness, image-tool provenance or user acceptance.
+No automatic manuscript insertion, original-paper redistribution or Git upload of private material.
 
-CLI and 14 MCP tools share Python implementation. Six added tools cover style search, coverage,
-reference fetching, draft preparation, actual image/prompt pairing and integrity audit.
-The plugin has five skills, with draft2overview primary and design-mcm-figure a compatibility route.
-MCP uses the official SDK stdio transport, without an HTTP daemon.
+## 0.3.0 migration
 
-AnySearch 3.1.1-compatible REST discovers academic capabilities, then searches academic or general web.
-The full installed AnySearch skill supports batch/hybrid discovery. Only normalized records persist;
-secret-bearing response envelopes never do. Search hits never automatically become curated cases.
-
-Conceptual overview generation uses the host's available image tool. Full prompt and evidence brief
-must accompany the actual image. Pairing validates a raster artifact and its source snapshot; it cannot
-establish image-model provenance, scientific fidelity or whether visual review really occurred.
-Host review and user acceptance are not inferred from checksums.
-
-The auxiliary Matplotlib renderer validates data shapes, alignment, finite values, time ordering and
-interval meaning before creating PNG/SVG/PDF bundles. It never fits arbitrary models. Workflow SVG is
-a constrained node/edge fallback. Native PowerPoint, OCR, SHAP calculation and automatic manuscript
-insertion are not provided by this runtime. Real data plots never come from image generation.
-
-Tests use explicitly synthetic fixtures; engineering success is not a claim about contest performance.
+Use paper2overview instead of draft2overview, atlas_prepare_paper instead of atlas_prepare_draft,
+and modelatlas.papers instead of modelatlas.drafts. Removed legacy commands/tools intentionally fail
+rather than silently route into another product. Feature removal is recoverable from Git history.

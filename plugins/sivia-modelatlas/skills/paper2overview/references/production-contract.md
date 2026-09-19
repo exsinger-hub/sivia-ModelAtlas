@@ -1,4 +1,4 @@
-# Production contract
+# Paper-to-overview production contract
 
 ## Complete prompt
 

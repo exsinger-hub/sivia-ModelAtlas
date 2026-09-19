@@ -2,7 +2,6 @@ from __future__ import annotations
 
 import hashlib
 import json
-import re
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -22,8 +21,3 @@ def write_json(path, value):
 
 def digest(path):
     return hashlib.sha256(Path(path).read_bytes()).hexdigest()
-
-
-def slug(value):
-    cleaned = re.sub(r"[^a-z0-9_-]+", "-", str(value).lower()).strip("-")
-    return cleaned[:64] or "figure"

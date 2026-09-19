@@ -11,7 +11,7 @@ import pytest
 
 from modelatlas.common import digest, read_json, write_json
 from modelatlas.corpus import coverage, fetch_reference, load_corpus, search_styles, validate_corpus
-from modelatlas.drafts import audit_overview, pair_overview, prepare_draft
+from modelatlas.papers import audit_overview, pair_overview, prepare_paper
 from modelatlas.search import AnySearch
 
 
@@ -114,13 +114,13 @@ def test_draft_intake_does_not_generate_or_modify_original(tmp_path):
     path = tmp_path / "synthetic.md"
     path.write_text("# Synthetic test only\nA model with one stated dependency.", encoding="utf-8")
     before = digest(path)
-    result = prepare_draft(path, tmp_path / "local", "C")
+    result = prepare_paper(path, tmp_path / "local", "C")
     assert result["status"] == "awaiting_agent_design"
     assert result["image_generated"] is False
     assert digest(path) == before == result["source_sha256"]
     assert Path(result["text_path"]).read_text(encoding="utf-8") == path.read_text(encoding="utf-8")
     assert read_json(result["style_candidates_path"])
-    second = prepare_draft(path, tmp_path / "local", "C")
+    second = prepare_paper(path, tmp_path / "local", "C")
     assert result["directory"] != second["directory"]
 
 
@@ -130,13 +130,13 @@ def test_blank_pdf_is_not_a_read_draft(tmp_path):
     path = tmp_path / "scanned.pdf"
     writer.write(path)
     with pytest.raises(ValueError, match="OCR"):
-        prepare_draft(path, tmp_path / "local")
+        prepare_paper(path, tmp_path / "local")
 
 
 def pairing_fixture(tmp_path):
     draft = tmp_path / "fixture.md"
     draft.write_text("# Synthetic test fixture\nA feeds B.", encoding="utf-8")
-    session = prepare_draft(draft, tmp_path / "local", "C")
+    session = prepare_paper(draft, tmp_path / "local", "C")
     # A tiny synthetic raster tests packaging, not overview quality or generation.
     raster = tmp_path / "fixture.png"
     Image.new("RGB", (20, 20), "white").save(raster)
@@ -202,7 +202,7 @@ def test_anysearch_web_mode_no_fabricated_vertical_tag():
 def test_plugin_primary_entry_and_version():
     root = Path(__file__).resolve().parents[1]
     plugin = root / "plugins/sivia-modelatlas"
-    assert read_json(plugin / ".codex-plugin/plugin.json")["version"] == "0.2.0"
-    skill = (plugin / "skills/draft2overview/SKILL.md").read_text(encoding="utf-8")
+    assert read_json(plugin / ".codex-plugin/plugin.json")["version"] == "0.3.0"
+    skill = (plugin / "skills/paper2overview/SKILL.md").read_text(encoding="utf-8")
     assert "ImageGen-first" in skill and "atlas_fetch_reference" in skill
-    assert len(list((plugin / "skills").glob("*/SKILL.md"))) == 5
+    assert {p.parent.name for p in (plugin / "skills").glob("*/SKILL.md")} == {"paper2overview"}

@@ -4,6 +4,7 @@ import hashlib
 import requests
 
 from .common import now
+from . import __version__
 
 
 class AnySearch:
@@ -13,7 +14,7 @@ class AnySearch:
         self.session = session or requests.Session()
 
     def request(self, method, path, **kwargs):
-        headers = {"X-Anysearch-Client": "sivia-modelatlas/0.2.0"}
+        headers = {"X-Anysearch-Client": "sivia-modelatlas/" + __version__}
         key = os.environ.get("ANYSEARCH_API_KEY")
         if key:
             headers["Authorization"] = "Bearer " + key

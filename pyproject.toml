@@ -4,11 +4,11 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "sivia-modelatlas"
-version = "0.2.0"
-description = "SIVIA draft-to-overview for MCM/ICM papers, verified O/F figure references and data figures"
+version = "0.3.0"
+description = "Paper to overview with a verified MCM/ICM illustration knowledge base"
 requires-python = ">=3.10"
 license = "MIT"
-dependencies = ["numpy>=1.24,<3", "matplotlib>=3.7,<4", "pypdf>=4,<7", "requests>=2.31,<3", "Pillow>=9,<13"]
+dependencies = ["pypdf>=4,<7", "requests>=2.31,<3", "Pillow>=9,<13"]
 
 [project.optional-dependencies]
 mcp = ["mcp>=1.12,<2"]

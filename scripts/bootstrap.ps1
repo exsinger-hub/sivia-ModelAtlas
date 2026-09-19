@@ -7,6 +7,6 @@ if (-not (Test-Path -LiteralPath '.venv/Scripts/python.exe')) {
 }
 & .venv/Scripts/python.exe -m pip install -e '.[mcp,dev]'
 if ($LASTEXITCODE -ne 0) { throw 'Dependency installation failed' }
-& .venv/Scripts/python.exe -m modelatlas init
-if ($LASTEXITCODE -ne 0) { throw 'Library initialization failed' }
-Write-Host 'Ready. Run .venv/Scripts/python.exe scripts/demo.py'
+& .venv/Scripts/python.exe -m modelatlas coverage
+if ($LASTEXITCODE -ne 0) { throw 'Knowledge-base validation failed' }
+Write-Host 'Ready. Run .venv/Scripts/python.exe -m modelatlas paper2overview path/to/paper.pdf'

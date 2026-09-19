@@ -1,7 +1,7 @@
 {
   "name": "sivia-modelatlas",
-  "version": "0.2.0",
-  "description": "美赛论文草稿 → overview；经官方核奖的 O/F 图例库、A–F 分类与科研扩展、数据作图。",
+  "version": "0.3.0",
+  "description": "Paper → Overview：读取美赛论文，参考核验过的插图知识库，生成论文总览图并保存完整 prompt。",
   "author": {
     "name": "gatina"
   },
@@ -9,8 +9,8 @@
   "mcpServers": "./.mcp.json",
   "interface": {
     "displayName": "SIVIA ModelAtlas",
-    "shortDescription": "美赛与数据建模论文作图",
-    "longDescription": "从已有美赛论文草稿出发，检索并查看 O/F 参考图，用宿主 ImageGen 绘制 overview，保存实际图像、完整 prompt 和草稿依据。知识库按 A–F 与图形角色分类，科研扩展独立标记；数值图来自真实数据。",
+    "shortDescription": "Paper → Overview · 论文总览图",
+    "longDescription": "只做 Paper → Overview。读取已有论文，检索并查看 O/F 与科研插图参考，使用宿主 ImageGen 生成并审查 overview，保存实际图片、完整 prompt 和论文依据。保留 A–F 分类插图知识库。",
     "developerName": "gatina",
     "category": "Productivity",
     "capabilities": [
@@ -19,9 +19,9 @@
       "Write"
     ],
     "defaultPrompt": [
-      "读这份美赛论文草稿，参考同类 O/F 论文，画一张 overview 并保留完整绘图 prompt。",
-      "按 A–F 类别扩建获奖图例库，核对官方奖项并查看原图；科研论文单独作为扩展。",
-      "根据这些真实建模数据画论文图，并检查单位、区间和来源。"
+      "阅读这篇美赛论文，参考插图知识库，生成 overview 并保留完整 prompt。",
+      "为这份论文草稿画一张 Our Work 总览图，核对模型之间的关系。",
+      "检查并修改这张 overview，确保与论文的模型、输入输出和结论一致。"
     ],
     "brandColor": "#007C91"
   }

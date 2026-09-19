@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.3.0 — 2026-09-19
+
+- Focus exclusively on Paper → Overview; one paper2overview skill and seven supporting MCP tools.
+- Preserve all 9 source papers / 20 reviewed illustration cases and the README knowledge-base section.
+- Rename draft2overview to paper2overview and atlas_prepare_draft to atlas_prepare_paper.
+- Remove standalone plotting, numerical/vector recipes, demo, generic gallery, legacy SQLite/card APIs
+  and auxiliary skills. Drop NumPy/Matplotlib dependencies.
+- Keep paper snapshots, host ImageGen workflow, full-prompt pairing and overview audits.
+- Existing private PDFs, databases and generated files remain untouched; removed code is in Git history.
+
 ## 0.2.0 — 2026-09-19
 
 - Recenter product on existing manuscript → overview, not problem → paper or a generic plotting CLI.

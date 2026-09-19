@@ -1,4 +1,4 @@
-"""Draft intake and honest image/prompt pairing; design is performed by the host agent."""
+"""Paper intake and actual overview/prompt pairing; the host agent performs design."""
 from pathlib import Path
 import shutil
 from uuid import uuid4
@@ -9,7 +9,7 @@ from .common import digest, now, read_json, write_json
 from .corpus import search_styles
 
 
-def prepare_draft(path, workspace, problem=None, query=""):
+def prepare_paper(path, workspace, problem=None, query=""):
     source = Path(path).resolve()
     source_hash = digest(source)
     suffix = source.suffix.lower()
@@ -23,11 +23,11 @@ def prepare_draft(path, workspace, problem=None, query=""):
         text = source.read_text(encoding="utf-8-sig")
         pages, empty_pages = [text], []
     else:
-        raise ValueError("Draft must be PDF, Markdown, TXT or TeX; export DOCX to PDF first")
+        raise ValueError("Paper must be PDF, Markdown, TXT or TeX; export DOCX to PDF first")
     if not text.strip():
         raise ValueError("Empty draft")
     styles = search_styles(query, problem, "overview", "award", 5)
-    directory = Path(workspace).resolve() / "drafts" / uuid4().hex
+    directory = Path(workspace).resolve() / "papers" / uuid4().hex
     directory.mkdir(parents=True, exist_ok=False)
     snapshot = directory / ("source" + suffix)
     shutil.copyfile(source, snapshot)
@@ -41,7 +41,7 @@ def prepare_draft(path, workspace, problem=None, query=""):
                "empty_text_pages": empty_pages, "problem": problem,
                "style_candidates_path": str(directory / "style-candidates.json"),
                "status": "awaiting_agent_design", "image_generated": False,
-               "next_step": "Read full draft; interpret model/evidence relationships; view relevant source figures; follow draft2overview skill. This command does not design or generate an image."}
+               "next_step": "Read the full paper; interpret model/evidence relationships; view relevant illustrations; follow paper2overview. This command does not design or generate an image."}
     write_json(directory / "session.json", session)
     return session
 
@@ -94,7 +94,7 @@ def pair_overview(session_dir, image_path, prompt_path, brief_path):
     (directory / "prompt.md").write_text(prompt, encoding="utf-8")
     write_json(directory / "brief.json", brief)
     manifest = {"schema_version": 1, "created_at": now(), "directory": str(directory),
-                "draft_sha256": session["source_sha256"], "image": "overview" + extension,
+                "paper_sha256": session["source_sha256"], "image": "overview" + extension,
                 "image_size": list(size), "status": "paired_artifact", "visual_review": brief["review"],
                 "user_approval": "not_recorded", "semantic_fidelity": "host_review_required",
                 "files": {p.name: digest(p) for p in directory.iterdir() if p.is_file()}}

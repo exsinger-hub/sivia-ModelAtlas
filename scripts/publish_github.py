@@ -44,7 +44,7 @@ def main():
                 print("Root entries:",[x["name"] for x in contents.json()])
         return
     if response.status_code==404:
-        response=session.post("https://api.github.com/user/repos",json={"name":args.name,"private":True,"description":"SIVIA companion for MCM/ICM and reproducible data-modeling figures"},timeout=25)
+        response=session.post("https://api.github.com/user/repos",json={"name":args.name,"private":True,"description":"Paper to overview with a verified MCM/ICM illustration knowledge base"},timeout=25)
         if response.status_code!=201:
             raise SystemExit(f"Repository creation failed: HTTP {response.status_code}")
     elif response.status_code!=200:

@@ -1,62 +1,52 @@
-# ModelAtlas 知识库
+# 插图知识库 · 服务于 Paper → Overview
 
-## 两个主集合
+知识库完整保留。目标是为论文 overview 提供经过读图的视觉组织参考，不是通用作图平台。
 
-**award 核心库**：官方结果验证的 O／F 美赛论文，逐页读图。
-**research 扩展库**：科研论文/预印本的有效图形表达，奖项字段为 null。
-检索默认只查 award；使用 research 或 all 显式扩展。普通检索结果不在这两个已审阅集合中。
+## 核心库与扩展库
 
-源数据是 `src/modelatlas/knowledge/corpus.json`。目前 9 篇论文、20 个图例：
-8 篇获奖论文（6 O + 2 F）、18 个图例；1 篇科研预印本、2 个图例。
-全部图例实际查看过对应 PDF 图页；不代表为当前用户完成了20张新图。
+**award**：官方结果核验的 O/F 美赛论文。**research**：科研论文/预印本，奖项字段为 null。
+源数据为 `src/modelatlas/knowledge/corpus.json`：8 篇获奖论文（6 O + 2 F）、18 个图例；
+1 篇科研预印本、2 个扩展图例，共 9 篇 / 20 例。均读过实际 PDF 图页，不是20张新生成的图。
 
-## 分类与检索
+按原始年份及 A–F 题号分类，再记录角色、关系/方法标签与迁移类别 problem_targets。
+A–F 中文方向只是常见问题的导航；迁移到另一类别不改变来源论文的真实题号或奖项。
 
-先按原始 A–F 题号分库，保留年份和题目；再按图形角色、方法/关系标签以及 problem_targets 检索。
-problem_targets 是编辑判断的迁移适用性，不会改变来源论文的真实类别。
-A–F 的中文方向是常见任务的导航简介，不是永久官方题目定义。
+[逐图目录](CATALOG.md)列出实际案例 ID、来源、PDF 页码、图号与原创读图分析。
 
-角色：overview（总览）、mechanism（机制）、algorithm（算法）、
-data_plot（数值图）、explanation（模型解释）。统计覆盖同时报告原题图例与可迁移图例，避免混算。
+## 读取参考图
 
 ```sh
-modelatlas coverage
-modelatlas styles --problem E --role overview
-modelatlas styles "feedback" --collection all
-modelatlas reference d-control-feedback
+modelatlas styles --problem E
+modelatlas styles "循环" --problem E --role mechanism
+modelatlas styles --collection research --role all
+modelatlas reference e-model-inheritance-overview
 ```
 
-检索为过滤后透明词项匹配，不是向量数据库或自动深度理解。
-[逐图目录](CATALOG.md)给出每个可取回案例的 ID 和具体图号。
+默认查 overview + award。原有 mechanism、algorithm、data_plot、explanation 图例继续作为
+局部表达参考，不提供对应独立绘制功能。检索是过滤后的词项匹配，不是自动深度理解。
 
-## 每条证据链
+取回来源时校验固定 SHA-256 与页数，再渲染指定物理页。必须打开实际页面并读图注和上下文；
+返回 page_rendered_not_reviewed 不等于当前 agent 已看图。缓存文件只留在本地。
 
-论文记录：题目、年份、队号、原题号、奖项、官方核奖 URL/定位、论文来源、固定版本和 SHA-256、
-物理页数、版权说明。镜像明确标成镜像，科研论文保留发表状态。
+## 入库证据
 
-图例记录：paper_id、物理 PDF 页码、图号、角色、标签、迁移类别、实际读图记录、原创构图分析、
-可借鉴内容、不能迁移的模型/结论和源图局限。O/F 标签不意味着图形质量完美。
+论文记录保留年份、题号、队号、官方奖项证明 URL/行或页码、作者源/镜像说明、固定 PDF 版本、
+哈希、页数和权利说明。O 是 Outstanding Winner，F 是 Finalist；题目 F 不是奖项。
 
-下载时验证哈希和页数，再用 Poppler 渲染指定页。原文更换版本会失败，需人工/agent 复核后更新。
-真实发现过版本陷阱：2024 队2413552的作者仓库里，按队号命名的文件是证书；
-另一论文修订版的队号/图号和图页不同。本库使用核对过的固定镜像，不能混用定位。
+图例保留物理 PDF 页、图号、构图、可迁移原则、不应移植的科学内容、原图局限及实际读图记录。
+物理页码与纸面印刷页码不能混用；版本变化需复核，不能静默重设哈希。
+2024 队2413552的作者仓库存在证书和不同论文修订版，本库定位只针对已固定的镜像版本。
 
-## 扩库流程
+科研扩展单独记录出版状态和 DOI/版本；当前 Lei 等 arXiv v1 提供 overview 与 SHAP 配对图参考，
+不冒称同行评审期刊文章或已核验获奖论文。
 
-AnySearch 检索 → 取原文 → 核对官方奖项（仅核心库）→ 读图/图注/上下文 → 原创分析 →
-分类/固定版本 → 更新 corpus → 运行测试和 coverage → 实际取回图页校验。
+扩库流程：AnySearch 发现 → 读取原文 → 核验官方奖项（核心库）→ 查看图与上下文 →
+原创分析/分类 → 固定版本 → 更新 corpus → 测试与实际图页取回验证。
 
-当前研究扩展为 Lei 等 arXiv v1 的 overview 与 SHAP 配对图。仅描述可迁移的视觉组织；
-预印本不是已同行评审的期刊论文，也没有经验证的获奖身份。后续生态、网络、政策研究可继续加入，
-但不能把未阅读的链接提前算成案例。
+## 与成图记录分开
 
-## 与旧卡片和生产案例的区别
+参考案例是他人论文的读图分析。生产案例必须是本项目实际生成的 overview，
+配对完整 prompt、输入论文依据、图注与审查，不能用参考页面或未执行 prompt 充数。
 
-sources.json / cards.json 及 SQLite 保留一般来源、早期数值绘图建议、搜索发现、导入文本和运行记录。
-`atlas_add_card` 只写普通卡片，不跳过核奖/读图进入 corpus。
-
-草稿会话在 .modelatlas/drafts；参考 PDF/图页在 .modelatlas/references。实际成图经 pair-overview
-保存为图像 + 完整 prompt + 草稿依据 + 图注/放置建议 + review + hashes。
-参考图、原创生产图、demo 测试图和未执行 prompt 不混称“成图案例”。
-
-只提交元数据和原创分析。第三方原文/图像、私人草稿、数据及 API 密钥不随 Git 分发。
+仓库只保存元数据与原创分析；PDF、页面图片和私人论文不自动上传。
+旧数值配方卡片/SQLite 接口已从运行时代码删除，已有本地数据库和输出文件未清理。
