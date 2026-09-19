@@ -70,7 +70,7 @@ def load_corpus():
     return validate_corpus(json.loads(files("modelatlas").joinpath("knowledge/corpus.json").read_text(encoding="utf-8")))
 
 
-def search_styles(query="", problem=None, role=None, collection="award", limit=5):
+def search_styles(query="", problem=None, role=None, collection="award", limit=5, year=None):
     """Transparent term matching after hard filters; does not invent semantic relevance."""
     if collection not in COLLECTIONS or role is not None and role not in ROLES:
         raise ValueError("Invalid collection or figure role")
@@ -78,6 +78,8 @@ def search_styles(query="", problem=None, role=None, collection="award", limit=5
         raise ValueError("Problem must be one of A–F")
     if not 1 <= limit <= 100:
         raise ValueError("Limit must be 1..100")
+    if year is not None and (type(year) is not int or not 1900 <= year <= 2100):
+        raise ValueError("Year must be an integer between 1900 and 2100")
     data = load_corpus()
     papers = {p["id"]: p for p in data["papers"]}
     terms = set(re.findall(r"[a-z0-9]+|[\u4e00-\u9fff]", query.lower()))
@@ -86,6 +88,8 @@ def search_styles(query="", problem=None, role=None, collection="award", limit=5
         paper = papers[case["paper_id"]]
         if collection != "all" and paper["collection"] != collection:
             continue
+        if year is not None and paper["year"] != year:
+            continue
         if problem and problem not in case["problem_targets"] or role and role != case["role"]:
             continue
         searchable = json.dumps({k: case[k] for k in ("title", "tags", "composition", "transfer")}, ensure_ascii=False).lower()
@@ -93,7 +97,11 @@ def search_styles(query="", problem=None, role=None, collection="award", limit=5
         if terms and not matched:
             continue
         result.append({**case, "paper": paper, "matched_terms": matched, "score": len(matched)})
-    return sorted(result, key=lambda c: (-c["score"], c["id"]))[:limit]
+    # At equal text relevance, prefer the original contest category, then recent years.
+    # Transfer targets remain eligible but do not displace own-category references by ID.
+    return sorted(result, key=lambda c: (-c["score"],
+                  bool(problem and c["paper"].get("problem") != problem),
+                  -c["paper"]["year"], c["id"]))[:limit]
 
 
 def coverage():
@@ -108,7 +116,14 @@ def coverage():
                            "F": sum(p["award"] == "F" for p in own),
                            "own_problem_cases": sum(papers[c["paper_id"]].get("problem") == problem for c in data["cases"]),
                            "transferable_cases": sum(problem in c["problem_targets"] for c in data["cases"])})
-    return {"categories": categories, "papers": len(papers), "cases": len(data["cases"]),
+    years = []
+    for year in sorted({p["year"] for p in papers.values() if p["collection"] == "award"}, reverse=True):
+        own = [p for p in papers.values() if p["collection"] == "award" and p["year"] == year]
+        ids = {p["id"] for p in own}
+        years.append({"year": year, "award_papers": len(own),
+                      "award_cases": sum(c["paper_id"] in ids for c in data["cases"]),
+                      "problems": {problem: sum(p["problem"] == problem for p in own) for problem in "ABCDEF"}})
+    return {"categories": categories, "years": years, "papers": len(papers), "cases": len(data["cases"]),
             "award_papers": sum(p["collection"] == "award" for p in papers.values()),
             "research_papers": sum(p["collection"] == "research" for p in papers.values()),
             "award_cases": sum(papers[c["paper_id"]]["collection"] == "award" for c in data["cases"]),

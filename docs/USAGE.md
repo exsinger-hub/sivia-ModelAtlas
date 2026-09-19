@@ -28,12 +28,16 @@ macOS / Linux 将 Python 路径换为 `.venv/bin/python`。
 ```sh
 modelatlas paper2overview path/to/paper.pdf --problem E
 modelatlas styles --problem E
+modelatlas styles --year 2025 --problem A
+modelatlas styles --year 2026 --problem D
 modelatlas reference e-model-inheritance-overview
 modelatlas styles --role all --collection all
 ```
 
 默认只推荐 Overview。机制、算法和数据图保留作局部表达参考。
 题号 A–F 是检索分类，不是固定不变的建模类型；题号 F 与 Finalist 奖项分开记录。
+`--year` 按来源论文年份过滤。文本匹配分数相同时，先推荐原题号相同的图例，再按年份从新到旧排序。
+`coverage` 同时给出逐年覆盖和缺口。扫描版参考页仍可直接渲染查看，空文本不代表空白页。
 
 ## AnySearch
 

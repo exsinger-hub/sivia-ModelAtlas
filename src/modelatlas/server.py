@@ -22,9 +22,9 @@ def atlas_prepare_paper(path: str, problem: str | None = None, query: str = "") 
 
 @server.tool()
 def atlas_search_styles(query: str = "", problem: str | None = None, role: str = "overview",
-                        collection: str = "award", limit: int = 5) -> list[dict]:
-    """Search preserved illustration references. Default overview + verified O/F core; role=all includes supporting visual references, collection=research selects extensions."""
-    return search_styles(query, problem, None if role == "all" else role, collection, limit)
+                        collection: str = "award", limit: int = 5, year: int | None = None) -> list[dict]:
+    """Search reviewed illustrations. Default overview + verified O/F; year filters source year. Equal text matches prefer original problem category then recent years. role=all includes supporting references; collection=research selects extensions."""
+    return search_styles(query, problem, None if role == "all" else role, collection, limit, year)
 
 
 @server.tool()

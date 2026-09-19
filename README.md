@@ -74,7 +74,7 @@ python3 -m venv .venv
 ## 插图知识库
 
 按 A–F 题号整理 O/F 论文中的 Overview 和相关插图，另收录科研论文参考。
-目前有 **8 篇获奖论文、18 个图例**，以及 **1 篇科研论文、2 个扩展图例**。
+目前有 **26 篇获奖论文、36 个图例**，以及 **3 篇科研论文、4 个扩展图例**。
 
 下面是作者原图，不是 ModelAtlas 生成结果。点击图片查看高清版本。
 
@@ -101,14 +101,21 @@ python3 -m venv .venv
   </tr>
 </table>
 
-| 类别 | 常见方向 | 获奖论文 | 图例 |
-| :---: | --- | :---: | :---: |
-| [A](knowledge-base/CATALOG.md#2024-a) | 连续变化、动力学 | 1 | 2 |
-| [B](knowledge-base/CATALOG.md#2024-b) | 离散决策、优化 | 1 | 2 |
-| [C](knowledge-base/CATALOG.md#2024-c) | 数据洞察、统计建模 | 2 | 6 |
-| [D](knowledge-base/CATALOG.md#2024-d) | 网络系统、运筹控制 | 1 | 2 |
-| [E](knowledge-base/CATALOG.md#2024-e) | 环境、生态、可持续性 | 2 | 4 |
-| [F](knowledge-base/CATALOG.md#2024-f) | 政策、社会决策 | 1 | 2 |
+| 类别 | 常见方向 | 2025 论文 | 2026 论文 | 全部论文 / 图例 |
+| :---: | --- | :---: | :---: | :---: |
+| [A](knowledge-base/CATALOG.md#a) | 连续变化、动力学 | 1 | — | 4 / 5 |
+| [B](knowledge-base/CATALOG.md#b) | 离散决策、优化 | 1 | — | 4 / 5 |
+| [C](knowledge-base/CATALOG.md#c) | 数据洞察、统计建模 | 1 | 1 | 5 / 9 |
+| [D](knowledge-base/CATALOG.md#d) | 网络系统、运筹控制 | 1 | 1 | 5 / 6 |
+| [E](knowledge-base/CATALOG.md#e) | 环境、生态、可持续性 | 1 | — | 4 / 6 |
+| [F](knowledge-base/CATALOG.md#f) | 政策、社会决策 | 1 | — | 4 / 5 |
+
+2025 已覆盖 A–F。2026 已收录 C、D，A/B/E/F 待补；“—”不代表当年没有获奖论文。[来源核验](knowledge-base/SOURCES.md)
+
+```sh
+modelatlas styles --year 2025 --problem A
+modelatlas styles --year 2026 --problem D
+```
 
 [全部图例](knowledge-base/CATALOG.md) · [科研参考](knowledge-base/CATALOG.md#research) ·
 [入库标准](knowledge-base/README.md) · [结构化索引](src/modelatlas/knowledge/corpus.json) ·

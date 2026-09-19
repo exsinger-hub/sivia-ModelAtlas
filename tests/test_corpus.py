@@ -18,12 +18,12 @@ from modelatlas.search import AnySearch
 def test_core_coverage_and_award_proof():
     corpus = load_corpus()
     stats = coverage()
-    assert stats["award_papers"] == 8
-    assert stats["research_papers"] == 1
-    assert stats["award_cases"] == 18
-    assert stats["research_cases"] == 2
-    assert all(c["award_papers"] >= 1 for c in stats["categories"])
-    assert sum(c["own_problem_cases"] for c in stats["categories"]) == 18
+    assert stats["award_papers"] == 26
+    assert stats["research_papers"] == 3
+    assert stats["award_cases"] == 36
+    assert stats["research_cases"] == 4
+    assert all(c["award_papers"] >= 4 for c in stats["categories"])
+    assert sum(c["own_problem_cases"] for c in stats["categories"]) == 36
     assert all(p["award_evidence"]["checked_at"] for p in corpus["papers"] if p["collection"] == "award")
 
 
@@ -44,7 +44,7 @@ def test_corpus_rejects_false_provenance(mutation, match):
 
 def test_style_filters_preserve_original_problem_and_research_status():
     core = search_styles(limit=100)
-    assert len(core) == 18 and all(c["paper"]["collection"] == "award" for c in core)
+    assert len(core) == 36 and all(c["paper"]["collection"] == "award" for c in core)
     extension = search_styles("SHAP", "F", collection="research")
     assert len(extension) == 1
     assert extension[0]["paper"]["award"] is None
@@ -56,10 +56,29 @@ def test_style_filters_preserve_original_problem_and_research_status():
     assert all(c["paper"]["award"] == "O" for c in core if c["paper"]["problem"] == "F")
 
 
-@pytest.mark.parametrize("options", [{"problem":"G"},{"collection":"winner"},{"role":"solution"},{"limit":0}])
+@pytest.mark.parametrize("options", [{"problem":"G"},{"collection":"winner"},{"role":"solution"},{"limit":0},{"year":"2025"},{"year":True},{"year":25}])
 def test_bad_retrieval_filters(options):
     with pytest.raises(ValueError):
         search_styles(**options)
+
+
+def test_recent_year_coverage_does_not_hide_gaps():
+    years = {row["year"]: row for row in coverage()["years"]}
+    assert years[2025]["problems"] == dict.fromkeys("ABCDEF", 1)
+    assert years[2026]["problems"] == dict(A=0, B=0, C=1, D=1, E=0, F=0)
+    assert all(c["paper"]["year"] == 2025 for c in search_styles(year=2025, limit=100))
+    assert search_styles(year=2022) == []
+    recent = search_styles(problem="D", role="overview", year=2026)
+    assert recent[0]["id"] == "d-wins-to-value-chain"
+    assert recent[0]["paper"]["award"] == "F"
+
+
+def test_default_ranking_keeps_own_category_before_transfer_cases():
+    results = search_styles(problem="E", role="overview", limit=100)
+    assert results[0]["id"] == "e-model-inheritance-overview"
+    own = [c for c in results if c["paper"]["problem"] == "E"]
+    assert results[:len(own)] == own
+    assert [c["paper"]["year"] for c in own] == sorted([c["paper"]["year"] for c in own], reverse=True)
 
 
 def reference_fixture(monkeypatch):

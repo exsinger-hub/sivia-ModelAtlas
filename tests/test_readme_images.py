@@ -7,7 +7,7 @@ from urllib.parse import unquote, urlsplit
 from PIL import Image
 
 from modelatlas.common import digest, read_json
-from modelatlas.corpus import load_corpus
+from modelatlas.corpus import coverage, load_corpus
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -124,3 +124,17 @@ def test_quick_start_has_checkout_runtime_and_actual_skill_entry():
     assert "ImageGen" in quick
     assert "单独运行 CLI 只会准备论文与参考资料" in quick
     assert (ROOT / "docs/USAGE.md").is_file()
+
+
+def test_library_documentation_matches_actual_records_and_year_gaps():
+    text, _ = parse_readme()
+    stats = coverage()
+    assert f'{stats["award_papers"]} 篇获奖论文、{stats["award_cases"]} 个图例' in text
+    assert f'{stats["research_papers"]} 篇科研论文、{stats["research_cases"]} 个扩展图例' in text
+    assert '2026 已收录 C、D，A/B/E/F 待补' in text
+    catalog = (ROOT / 'knowledge-base/CATALOG.md').read_text(encoding='utf-8')
+    for case in load_corpus()['cases']:
+        assert catalog.count(f'`{case["id"]}`') == 1
+    for year in stats['years']:
+        row = f'| {year["year"]} | ' + ' | '.join(str(year['problems'][p] or '—') for p in 'ABCDEF') + ' |'
+        assert row in catalog

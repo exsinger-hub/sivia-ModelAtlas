@@ -23,6 +23,7 @@ def build_parser():
     command.add_argument("--problem", choices=list("ABCDEF"))
     command.add_argument("--role", choices=[*ROLES, "all"], default="overview")
     command.add_argument("--collection", choices=COLLECTIONS, default="award")
+    command.add_argument("--year", type=int, help="Filter by the source paper's year")
     command.add_argument("--limit", type=int, default=5)
     command = sub.add_parser("reference", help="Fetch a pinned PDF and its exact illustration page")
     command.add_argument("case_id")
@@ -54,7 +55,7 @@ def main():
             result = coverage()
         elif args.command == "styles":
             role = None if args.role == "all" else args.role
-            result = search_styles(args.query, args.problem, role, args.collection, args.limit)
+            result = search_styles(args.query, args.problem, role, args.collection, args.limit, args.year)
         elif args.command == "reference":
             result = fetch_reference(args.case_id, workspace, render_page=not args.pdf_only)
         elif args.command == "literature":

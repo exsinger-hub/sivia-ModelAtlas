@@ -1,5 +1,13 @@
 # Changelog
 
+## Unreleased — 2026-09-20
+
+- Rewrite README with source Quick Start, visible examples and concise library navigation.
+- Expand the reviewed corpus to 26 O/F papers / 36 cases, plus 3 research papers / 4 cases.
+- Complete 2025 A–F coverage; add verified 2026 D alongside existing 2026 C. Record remaining 2026 gaps explicitly.
+- Add year filtering to CLI/MCP, year-by-category coverage, and own-category/recent-year tie-breaking.
+- Keep all earlier sources and generated examples; source PDFs and rendered reference pages remain local.
+
 ## 0.3.0 — 2026-09-19
 
 - Focus exclusively on Paper → Overview; one paper2overview skill and seven supporting MCP tools.

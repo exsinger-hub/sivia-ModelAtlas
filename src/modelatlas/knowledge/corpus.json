@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-09-19",
+  "checked_at": "2026-09-20",
   "scope": "Manuscript-to-figure style references, not solutions or generated papers.",
   "taxonomy_note": "A–F are navigation profiles for common problem families, not permanent official definitions. Keep contest year and actual problem statement; distinguish problem F from award F (Finalist). Research transfer targets are editorial choices.",
   "categories": [
@@ -328,6 +328,547 @@
       "version_note": "Pinned submitted version 2fcf7bb; physical PDF page = printed main-paper page + 1 for reviewed cases.",
       "rights": "Third-party paper, link and original analysis; no redistribution license presumed.",
       "checked_at": "2026-09-19"
+    },
+    {
+      "id": "mcm-2023-a-2303950",
+      "collection": "award",
+      "year": 2023,
+      "contest": "MCM",
+      "problem": "A",
+      "team": "2303950",
+      "title": "A Methodology to Simulate Drought-Stricken Plant Communities",
+      "institution": "Beijing Institute of Technology",
+      "topic": "干旱植物群落",
+      "award": "O",
+      "award_label": "Outstanding Winner",
+      "award_evidence": {
+        "url": "https://www.contest.comap.com/undergraduate/contests/mcm/contests/2023/results/",
+        "locator": "MCM Outstanding Winners, Problem A, Team 2303950",
+        "verification": "Official COMAP winner section and institution matched; team number checked in the pinned PDF.",
+        "checked_at": "2026-09-19"
+      },
+      "source_url": "https://github.com/yangchunwanwusheng/MCM-ICM--2024-/tree/ffea7fd98c1fbf7d25edcba4dbc834631e9adbf2",
+      "source_type": "public_mirror",
+      "pdf_url": "https://raw.githubusercontent.com/yangchunwanwusheng/MCM-ICM--2024-/ffea7fd98c1fbf7d25edcba4dbc834631e9adbf2/2023/A/2303950.pdf",
+      "sha256": "1a4391237b13ae8472532c77065375f067bd5f2c337824ac69c8436de84117e4",
+      "pdf_pages": 25,
+      "version_note": "Pinned mirror commit ffea7fd98c1fbf7d25edcba4dbc834631e9adbf2; use physical PDF pages, not printed page numbers.",
+      "rights": "Third-party paper: metadata and original analysis only; no redistribution license presumed. Source PDFs and rendered pages remain local.",
+      "checked_at": "2026-09-19"
+    },
+    {
+      "id": "mcm-2023-b-2300136",
+      "collection": "award",
+      "year": 2023,
+      "contest": "MCM",
+      "problem": "B",
+      "team": "2300136",
+      "title": "From Poachers to Conservationists: Community-Based Wildlife Preservation in Maasai Mara",
+      "institution": "Tsinghua University",
+      "topic": "野生动物保护与社区政策",
+      "award": "O",
+      "award_label": "Outstanding Winner",
+      "award_evidence": {
+        "url": "https://www.contest.comap.com/undergraduate/contests/mcm/contests/2023/results/",
+        "locator": "MCM Outstanding Winners, Problem B, Team 2300136",
+        "verification": "Official COMAP winner section and institution matched; team number checked in the pinned PDF.",
+        "checked_at": "2026-09-19"
+      },
+      "source_url": "https://github.com/yangchunwanwusheng/MCM-ICM--2024-/tree/ffea7fd98c1fbf7d25edcba4dbc834631e9adbf2",
+      "source_type": "public_mirror",
+      "pdf_url": "https://raw.githubusercontent.com/yangchunwanwusheng/MCM-ICM--2024-/ffea7fd98c1fbf7d25edcba4dbc834631e9adbf2/2023/B/2300136.pdf",
+      "sha256": "7773d0f57cf1c0a5a9dcbc66854e37557e7ef5fed5104ad7b61a452462f9b898",
+      "pdf_pages": 25,
+      "version_note": "Pinned mirror commit ffea7fd98c1fbf7d25edcba4dbc834631e9adbf2; use physical PDF pages, not printed page numbers.",
+      "rights": "Third-party paper: metadata and original analysis only; no redistribution license presumed. Source PDFs and rendered pages remain local.",
+      "checked_at": "2026-09-19"
+    },
+    {
+      "id": "mcm-2023-c-2309397",
+      "collection": "award",
+      "year": 2023,
+      "contest": "MCM",
+      "problem": "C",
+      "team": "2309397",
+      "title": "Uncover the Hidden Secrets in Wordle Results",
+      "institution": "Nanjing University of Posts & Telecommunications",
+      "topic": "Wordle 结果预测",
+      "award": "O",
+      "award_label": "Outstanding Winner",
+      "award_evidence": {
+        "url": "https://www.contest.comap.com/undergraduate/contests/mcm/contests/2023/results/",
+        "locator": "MCM Outstanding Winners, Problem C, Team 2309397",
+        "verification": "Official COMAP winner section and institution matched; team number checked in the pinned PDF.",
+        "checked_at": "2026-09-19"
+      },
+      "source_url": "https://github.com/yangchunwanwusheng/MCM-ICM--2024-/tree/ffea7fd98c1fbf7d25edcba4dbc834631e9adbf2",
+      "source_type": "public_mirror",
+      "pdf_url": "https://raw.githubusercontent.com/yangchunwanwusheng/MCM-ICM--2024-/ffea7fd98c1fbf7d25edcba4dbc834631e9adbf2/2023/C/2309397.pdf",
+      "sha256": "b5d6620888f90d2737bc8c2f6f0547c8f2d8d432b0ccf3480b6eb4948daba37e",
+      "pdf_pages": 25,
+      "version_note": "Pinned mirror commit ffea7fd98c1fbf7d25edcba4dbc834631e9adbf2; use physical PDF pages, not printed page numbers.",
+      "rights": "Third-party paper: metadata and original analysis only; no redistribution license presumed. Source PDFs and rendered pages remain local.",
+      "checked_at": "2026-09-19"
+    },
+    {
+      "id": "icm-2023-d-2300229",
+      "collection": "award",
+      "year": 2023,
+      "contest": "ICM",
+      "problem": "D",
+      "team": "2300229",
+      "title": "Methods of Measuring Priority via Graph Models: Who Is the Top 1?",
+      "institution": "University of Electronic Science and Technology of China",
+      "topic": "可持续发展目标排序",
+      "award": "O",
+      "award_label": "Outstanding Winner",
+      "award_evidence": {
+        "url": "https://www.contest.comap.com/undergraduate/contests/mcm/contests/2023/results/",
+        "locator": "ICM Outstanding Winners, Problem D, Team 2300229",
+        "verification": "Official COMAP winner section and institution matched; team number checked in the pinned PDF.",
+        "checked_at": "2026-09-19"
+      },
+      "source_url": "https://github.com/yangchunwanwusheng/MCM-ICM--2024-/tree/ffea7fd98c1fbf7d25edcba4dbc834631e9adbf2",
+      "source_type": "public_mirror",
+      "pdf_url": "https://raw.githubusercontent.com/yangchunwanwusheng/MCM-ICM--2024-/ffea7fd98c1fbf7d25edcba4dbc834631e9adbf2/2023/D/2300229.pdf",
+      "sha256": "59edf77d28881fd212f91c9caa5ac36c0030f061d7990e2cd73f1f08310b268c",
+      "pdf_pages": 25,
+      "version_note": "Pinned mirror commit ffea7fd98c1fbf7d25edcba4dbc834631e9adbf2; use physical PDF pages, not printed page numbers.",
+      "rights": "Third-party paper: metadata and original analysis only; no redistribution license presumed. Source PDFs and rendered pages remain local.",
+      "checked_at": "2026-09-19"
+    },
+    {
+      "id": "icm-2023-e-2308000",
+      "collection": "award",
+      "year": 2023,
+      "contest": "ICM",
+      "problem": "E",
+      "team": "2308000",
+      "title": "The brighter the light, the deeper the shadows",
+      "institution": "China University of Geosciences Beijing",
+      "topic": "光污染风险与干预",
+      "award": "O",
+      "award_label": "Outstanding Winner",
+      "award_evidence": {
+        "url": "https://www.contest.comap.com/undergraduate/contests/mcm/contests/2023/results/",
+        "locator": "ICM Outstanding Winners, Problem E, Team 2308000",
+        "verification": "Official COMAP winner section and institution matched; team number checked in the pinned PDF.",
+        "checked_at": "2026-09-19"
+      },
+      "source_url": "https://github.com/yangchunwanwusheng/MCM-ICM--2024-/tree/ffea7fd98c1fbf7d25edcba4dbc834631e9adbf2",
+      "source_type": "public_mirror",
+      "pdf_url": "https://raw.githubusercontent.com/yangchunwanwusheng/MCM-ICM--2024-/ffea7fd98c1fbf7d25edcba4dbc834631e9adbf2/2023/E/2308000.pdf",
+      "sha256": "c0d098c3d00a2ba93c695a34e49224681252a1ed629284a020ad08192cc18ed2",
+      "pdf_pages": 25,
+      "version_note": "Pinned mirror commit ffea7fd98c1fbf7d25edcba4dbc834631e9adbf2; use physical PDF pages, not printed page numbers.",
+      "rights": "Third-party paper: metadata and original analysis only; no redistribution license presumed. Source PDFs and rendered pages remain local.",
+      "checked_at": "2026-09-19"
+    },
+    {
+      "id": "icm-2023-f-2311517",
+      "collection": "award",
+      "year": 2023,
+      "contest": "ICM",
+      "problem": "F",
+      "team": "2311517",
+      "title": "Towards a Greener Climate -- Analysis Based on 4M System",
+      "institution": "Renmin University of China",
+      "topic": "绿色 GDP 与气候政策",
+      "award": "O",
+      "award_label": "Outstanding Winner",
+      "award_evidence": {
+        "url": "https://www.contest.comap.com/undergraduate/contests/mcm/contests/2023/results/",
+        "locator": "ICM Outstanding Winners, Problem F, Team 2311517",
+        "verification": "Official COMAP winner section and institution matched; team number checked in the pinned PDF.",
+        "checked_at": "2026-09-19"
+      },
+      "source_url": "https://github.com/yangchunwanwusheng/MCM-ICM--2024-/tree/ffea7fd98c1fbf7d25edcba4dbc834631e9adbf2",
+      "source_type": "public_mirror",
+      "pdf_url": "https://raw.githubusercontent.com/yangchunwanwusheng/MCM-ICM--2024-/ffea7fd98c1fbf7d25edcba4dbc834631e9adbf2/2023/F/2311517.pdf",
+      "sha256": "f297154c9c74f998147b2ee3094253ce61af68d4a90841c6a69058efdb877f98",
+      "pdf_pages": 25,
+      "version_note": "Pinned mirror commit ffea7fd98c1fbf7d25edcba4dbc834631e9adbf2; use physical PDF pages, not printed page numbers.",
+      "rights": "Third-party paper: metadata and original analysis only; no redistribution license presumed. Source PDFs and rendered pages remain local.",
+      "checked_at": "2026-09-19"
+    },
+    {
+      "id": "mcm-2024-a-2405424",
+      "collection": "award",
+      "year": 2024,
+      "contest": "MCM",
+      "problem": "A",
+      "team": "2405424",
+      "title": "Lamprey: a Vivid Example of the Doctrine of the Mean",
+      "institution": "Xi'an Jiaotong University",
+      "topic": "七鳃鳗与种间关系",
+      "award": "O",
+      "award_label": "Outstanding Winner",
+      "award_evidence": {
+        "url": "https://www.contest.comap.com/undergraduate/contests/mcm/contests/2024/results/",
+        "locator": "MCM Outstanding Winners, Problem A, Team 2405424",
+        "verification": "Official COMAP winner section and institution matched; team number checked in the pinned PDF.",
+        "checked_at": "2026-09-19"
+      },
+      "source_url": "https://github.com/yangchunwanwusheng/MCM-ICM--2024-/tree/ffea7fd98c1fbf7d25edcba4dbc834631e9adbf2",
+      "source_type": "public_mirror",
+      "pdf_url": "https://raw.githubusercontent.com/yangchunwanwusheng/MCM-ICM--2024-/ffea7fd98c1fbf7d25edcba4dbc834631e9adbf2/2024/A/student%20paper/2405424.pdf",
+      "sha256": "3976866832e31712b42c11a241c413db2f056e48c24a3768ff0c41c1460b44c6",
+      "pdf_pages": 25,
+      "version_note": "Pinned mirror commit ffea7fd98c1fbf7d25edcba4dbc834631e9adbf2; use physical PDF pages, not printed page numbers.",
+      "rights": "Third-party paper: metadata and original analysis only; no redistribution license presumed. Source PDFs and rendered pages remain local.",
+      "checked_at": "2026-09-19"
+    },
+    {
+      "id": "mcm-2024-b-2407038",
+      "collection": "award",
+      "year": 2024,
+      "contest": "MCM",
+      "problem": "B",
+      "team": "2407038",
+      "title": "Unlocking the Abyss: A Dynamical Model for Deep-Sea Adventure Safety and Rescue Strategies",
+      "institution": "University of Electronic Science and Technology of China",
+      "topic": "潜水器定位与搜索",
+      "award": "O",
+      "award_label": "Outstanding Winner",
+      "award_evidence": {
+        "url": "https://www.contest.comap.com/undergraduate/contests/mcm/contests/2024/results/",
+        "locator": "MCM Outstanding Winners, Problem B, Team 2407038",
+        "verification": "Official COMAP winner section and institution matched; team number checked in the pinned PDF.",
+        "checked_at": "2026-09-19"
+      },
+      "source_url": "https://github.com/yangchunwanwusheng/MCM-ICM--2024-/tree/ffea7fd98c1fbf7d25edcba4dbc834631e9adbf2",
+      "source_type": "public_mirror",
+      "pdf_url": "https://raw.githubusercontent.com/yangchunwanwusheng/MCM-ICM--2024-/ffea7fd98c1fbf7d25edcba4dbc834631e9adbf2/2024/B/student%20paper/2407038.pdf",
+      "sha256": "3532e6cb77e04f698b6b54ca76045961bfce18ff9dc4539e2a2af195c43eaa84",
+      "pdf_pages": 25,
+      "version_note": "Pinned mirror commit ffea7fd98c1fbf7d25edcba4dbc834631e9adbf2; use physical PDF pages, not printed page numbers.",
+      "rights": "Third-party paper: metadata and original analysis only; no redistribution license presumed. Source PDFs and rendered pages remain local.",
+      "checked_at": "2026-09-19"
+    },
+    {
+      "id": "mcm-2024-c-2401298",
+      "collection": "award",
+      "year": 2024,
+      "contest": "MCM",
+      "problem": "C",
+      "team": "2401298",
+      "title": "\"Momentum\" Exists In Tennis Game As Residual Effect - A Dual-Temporal Bayesian Network Model",
+      "institution": "Fudan University",
+      "topic": "网球势头与贝叶斯网络",
+      "award": "O",
+      "award_label": "Outstanding Winner",
+      "award_evidence": {
+        "url": "https://www.contest.comap.com/undergraduate/contests/mcm/contests/2024/results/",
+        "locator": "MCM Outstanding Winners, Problem C, Team 2401298",
+        "verification": "Official COMAP winner section and institution matched; team number checked in the pinned PDF.",
+        "checked_at": "2026-09-19"
+      },
+      "source_url": "https://github.com/yangchunwanwusheng/MCM-ICM--2024-/tree/ffea7fd98c1fbf7d25edcba4dbc834631e9adbf2",
+      "source_type": "public_mirror",
+      "pdf_url": "https://raw.githubusercontent.com/yangchunwanwusheng/MCM-ICM--2024-/ffea7fd98c1fbf7d25edcba4dbc834631e9adbf2/2024/C/student%20paper/2401298.pdf",
+      "sha256": "7c480dd8fa44e6a47c315d7f4ae9e624e35c194b051bfb9d655c1f22e8372e57",
+      "pdf_pages": 25,
+      "version_note": "Pinned mirror commit ffea7fd98c1fbf7d25edcba4dbc834631e9adbf2; use physical PDF pages, not printed page numbers.",
+      "rights": "Third-party paper: metadata and original analysis only; no redistribution license presumed. Source PDFs and rendered pages remain local.",
+      "checked_at": "2026-09-19"
+    },
+    {
+      "id": "icm-2024-d-2419588",
+      "collection": "award",
+      "year": 2024,
+      "contest": "ICM",
+      "problem": "D",
+      "team": "2419588",
+      "title": "Optimizing Great Lakes Water Management: An Adaptive Hydrological Network Approach",
+      "institution": "National University of Defense Technology",
+      "topic": "五大湖水文网络与控制",
+      "award": "O",
+      "award_label": "Outstanding Winner",
+      "award_evidence": {
+        "url": "https://www.contest.comap.com/undergraduate/contests/mcm/contests/2024/results/",
+        "locator": "ICM Outstanding Winners, Problem D, Team 2419588",
+        "verification": "Official COMAP winner section and institution matched; team number checked in the pinned PDF.",
+        "checked_at": "2026-09-19"
+      },
+      "source_url": "https://github.com/yangchunwanwusheng/MCM-ICM--2024-/tree/ffea7fd98c1fbf7d25edcba4dbc834631e9adbf2",
+      "source_type": "public_mirror",
+      "pdf_url": "https://raw.githubusercontent.com/yangchunwanwusheng/MCM-ICM--2024-/ffea7fd98c1fbf7d25edcba4dbc834631e9adbf2/2024/D/student%20paper/2419588.pdf",
+      "sha256": "71276d1fb9a9762f33eaa53e01e975d4fcaaa2b3175ace4e1dcb48daa42bda55",
+      "pdf_pages": 27,
+      "version_note": "Pinned mirror commit ffea7fd98c1fbf7d25edcba4dbc834631e9adbf2; use physical PDF pages, not printed page numbers.",
+      "rights": "Third-party paper: metadata and original analysis only; no redistribution license presumed. Source PDFs and rendered pages remain local.",
+      "checked_at": "2026-09-19"
+    },
+    {
+      "id": "icm-2024-e-2400860",
+      "collection": "award",
+      "year": 2024,
+      "contest": "ICM",
+      "problem": "E",
+      "team": "2400860",
+      "title": "Veils of Uncertainty: Weaving Risk into the Tapestry of Preservation Under the Weather's Watch",
+      "institution": "Zhejiang Sci-Tech University",
+      "topic": "极端天气保险与建筑保护",
+      "award": "O",
+      "award_label": "Outstanding Winner",
+      "award_evidence": {
+        "url": "https://www.contest.comap.com/undergraduate/contests/mcm/contests/2024/results/",
+        "locator": "ICM Outstanding Winners, Problem E, Team 2400860",
+        "verification": "Official COMAP winner section and institution matched; team number checked in the pinned PDF.",
+        "checked_at": "2026-09-19"
+      },
+      "source_url": "https://github.com/yangchunwanwusheng/MCM-ICM--2024-/tree/ffea7fd98c1fbf7d25edcba4dbc834631e9adbf2",
+      "source_type": "public_mirror",
+      "pdf_url": "https://raw.githubusercontent.com/yangchunwanwusheng/MCM-ICM--2024-/ffea7fd98c1fbf7d25edcba4dbc834631e9adbf2/2024/E/student%20paper/2400860.pdf",
+      "sha256": "bf4d56e0d416b31eeb2003079878f9ed738721eba1a6dbc3f3477a3226558b8e",
+      "pdf_pages": 27,
+      "version_note": "Pinned mirror commit ffea7fd98c1fbf7d25edcba4dbc834631e9adbf2; use physical PDF pages, not printed page numbers.",
+      "rights": "Third-party paper: metadata and original analysis only; no redistribution license presumed. Source PDFs and rendered pages remain local.",
+      "checked_at": "2026-09-19"
+    },
+    {
+      "id": "icm-2024-f-2409949",
+      "collection": "award",
+      "year": 2024,
+      "contest": "ICM",
+      "problem": "F",
+      "team": "2409949",
+      "title": "Roaring Silence: Can We Break the Chains of Illegal Wildlife Trade?",
+      "institution": "Renmin University of China",
+      "topic": "野生动物贸易治理",
+      "award": "O",
+      "award_label": "Outstanding Winner",
+      "award_evidence": {
+        "url": "https://www.contest.comap.com/undergraduate/contests/mcm/contests/2024/results/",
+        "locator": "ICM Outstanding Winners, Problem F, Team 2409949",
+        "verification": "Official COMAP winner section and institution matched; team number checked in the pinned PDF.",
+        "checked_at": "2026-09-19"
+      },
+      "source_url": "https://github.com/yangchunwanwusheng/MCM-ICM--2024-/tree/ffea7fd98c1fbf7d25edcba4dbc834631e9adbf2",
+      "source_type": "public_mirror",
+      "pdf_url": "https://raw.githubusercontent.com/yangchunwanwusheng/MCM-ICM--2024-/ffea7fd98c1fbf7d25edcba4dbc834631e9adbf2/2024/F/students%20paper/2409949.pdf",
+      "sha256": "85ce1b82f0ab77ae495069ed9948d0702fc755c3fb9eabfbebbe2f2e3ba16a7e",
+      "pdf_pages": 22,
+      "version_note": "Pinned mirror commit ffea7fd98c1fbf7d25edcba4dbc834631e9adbf2; use physical PDF pages, not printed page numbers.",
+      "rights": "Third-party paper: metadata and original analysis only; no redistribution license presumed. Source PDFs and rendered pages remain local.",
+      "checked_at": "2026-09-19"
+    },
+    {
+      "id": "research-kool-2019",
+      "collection": "research",
+      "year": 2019,
+      "contest": null,
+      "problem": null,
+      "team": null,
+      "award": null,
+      "award_label": null,
+      "title": "Attention, Learn to Solve Routing Problems!",
+      "authors": [
+        "Wouter Kool",
+        "Herke van Hoof",
+        "Max Welling"
+      ],
+      "publication_type": "conference_paper",
+      "publication_note": "ICLR 2019; status stated on the arXiv abstract and pinned PDF header.",
+      "source_url": "https://arxiv.org/abs/1803.08475v3",
+      "source_type": "primary_preprint",
+      "pdf_url": "https://arxiv.org/pdf/1803.08475v3",
+      "sha256": "fa783d096ff3986d5e9745acf75152cecb4ec7b3d1d0798ba765449e9eace4fd",
+      "pdf_pages": 25,
+      "version_note": "arXiv 1803.08475v3, revised 2019-02-07; figure locations refer to this version.",
+      "rights": "arXiv non-exclusive distribution license; source figures and PDF not redistributed.",
+      "checked_at": "2026-09-19"
+    },
+    {
+      "id": "research-lu-deepxde-2020",
+      "collection": "research",
+      "year": 2020,
+      "contest": null,
+      "problem": null,
+      "team": null,
+      "award": null,
+      "award_label": null,
+      "title": "DeepXDE: A deep learning library for solving differential equations",
+      "authors": [
+        "Lu Lu",
+        "Xuhui Meng",
+        "Zhiping Mao",
+        "George E. Karniadakis"
+      ],
+      "publication_type": "preprint",
+      "publication_note": "This record uses the arXiv v2 manuscript; the abstract links related publication DOI 10.1137/19M1274067, not used for figure pagination.",
+      "related_doi": "10.1137/19M1274067",
+      "source_url": "https://arxiv.org/abs/1907.04502v2",
+      "source_type": "primary_preprint",
+      "pdf_url": "https://arxiv.org/pdf/1907.04502v2",
+      "sha256": "d17f9bf6b8f346baaa52b6ec81223c53dd3da6899324114c72c7e8c3432d9368",
+      "pdf_pages": 21,
+      "version_note": "arXiv 1907.04502v2, revised 2020-02-14; not the publisher's pagination.",
+      "rights": "arXiv abstract links CC BY-NC-SA 4.0. Repository includes only metadata and original analysis, not source figures or PDF.",
+      "checked_at": "2026-09-19"
+    },
+    {
+      "id": "mcm-2025-a-2501567",
+      "collection": "award",
+      "year": 2025,
+      "contest": "MCM",
+      "problem": "A",
+      "team": "2501567",
+      "title": "Step Chronicles: A Multiscale Model Linking Wear Patterns and Temporal Use in Ancient Staircases",
+      "institution": "Zhejiang University",
+      "topic": "楼梯磨损与使用历史",
+      "award": "O",
+      "award_label": "Outstanding Winner",
+      "award_evidence": {
+        "url": "https://www.contest.comap.com/undergraduate/contests/mcm/contests/2025/results/",
+        "locator": "MCM Outstanding Winners, Problem A, Team 2501567",
+        "verification": "Official COMAP award and institution matched; year/problem/team visually checked on the PDF summary sheet.",
+        "checked_at": "2026-09-20"
+      },
+      "source_url": "https://github.com/Jackksonns/MCM-ICM-Outstanding-Papers/tree/d29267cb9e993419749e6111981b30a44183fdf8",
+      "source_type": "public_mirror",
+      "pdf_url": "https://raw.githubusercontent.com/Jackksonns/MCM-ICM-Outstanding-Papers/d29267cb9e993419749e6111981b30a44183fdf8/2025/A/2501567.pdf",
+      "sha256": "99f75a4412d9608cf56aa9689b93cb6408505ad0d86a6b24e0654ca3738d1811",
+      "pdf_pages": 25,
+      "version_note": "Pinned mirror commit d29267cb9e993419749e6111981b30a44183fdf8. Image-only, watermarked mirror: first and figure pages visually read; text extraction is empty, not evidence of an empty page.",
+      "rights": "Third-party paper: metadata and original figure analysis only; no redistribution license presumed. Watermarked reference pages are not republished.",
+      "checked_at": "2026-09-20"
+    },
+    {
+      "id": "mcm-2025-b-2501687",
+      "collection": "award",
+      "year": 2025,
+      "contest": "MCM",
+      "problem": "B",
+      "team": "2501687",
+      "title": "Economy, Ecology, and Social Welfare: A Win-Win Approach for Sustainable Tourism in Juneau",
+      "institution": "Peking University",
+      "topic": "旅游承载与多目标优化",
+      "award": "O",
+      "award_label": "Outstanding Winner",
+      "award_evidence": {
+        "url": "https://www.contest.comap.com/undergraduate/contests/mcm/contests/2025/results/",
+        "locator": "MCM Outstanding Winners, Problem B, Team 2501687",
+        "verification": "Official COMAP award and institution matched; year/problem/team visually checked on the PDF summary sheet.",
+        "checked_at": "2026-09-20"
+      },
+      "source_url": "https://github.com/Jackksonns/MCM-ICM-Outstanding-Papers/tree/d29267cb9e993419749e6111981b30a44183fdf8",
+      "source_type": "public_mirror",
+      "pdf_url": "https://raw.githubusercontent.com/Jackksonns/MCM-ICM-Outstanding-Papers/d29267cb9e993419749e6111981b30a44183fdf8/2025/B/2501687.pdf",
+      "sha256": "a051d6fb2a4e5a26dbf4bdc81d70c10c99ba8328692f6e1bec9b941bd9d8bc2e",
+      "pdf_pages": 25,
+      "version_note": "Pinned mirror commit d29267cb9e993419749e6111981b30a44183fdf8. Image-only, watermarked mirror: first and figure pages visually read; text extraction is empty, not evidence of an empty page.",
+      "rights": "Third-party paper: metadata and original figure analysis only; no redistribution license presumed. Watermarked reference pages are not republished.",
+      "checked_at": "2026-09-20"
+    },
+    {
+      "id": "mcm-2025-c-2510862",
+      "collection": "award",
+      "year": 2025,
+      "contest": "MCM",
+      "problem": "C",
+      "team": "2510862",
+      "title": "2028 Olympic Medal Predictions: Multi-Effect Analysis and Strategic Insights",
+      "institution": "Dongbei University of Finance and Economics",
+      "topic": "奥运奖牌预测与解释",
+      "award": "O",
+      "award_label": "Outstanding Winner",
+      "award_evidence": {
+        "url": "https://www.contest.comap.com/undergraduate/contests/mcm/contests/2025/results/",
+        "locator": "MCM Outstanding Winners, Problem C, Team 2510862",
+        "verification": "Official COMAP award and institution matched; year/problem/team visually checked on the PDF summary sheet.",
+        "checked_at": "2026-09-20"
+      },
+      "source_url": "https://github.com/Jackksonns/MCM-ICM-Outstanding-Papers/tree/d29267cb9e993419749e6111981b30a44183fdf8",
+      "source_type": "public_mirror",
+      "pdf_url": "https://raw.githubusercontent.com/Jackksonns/MCM-ICM-Outstanding-Papers/d29267cb9e993419749e6111981b30a44183fdf8/2025/C/2510862.pdf",
+      "sha256": "5c3195af166a2f9cab30b3afbe88a7f479e96bbab3d129bbd424e50538cf9140",
+      "pdf_pages": 25,
+      "version_note": "Pinned mirror commit d29267cb9e993419749e6111981b30a44183fdf8. Image-only, watermarked mirror: first and figure pages visually read; text extraction is empty, not evidence of an empty page.",
+      "rights": "Third-party paper: metadata and original figure analysis only; no redistribution license presumed. Watermarked reference pages are not republished.",
+      "checked_at": "2026-09-20"
+    },
+    {
+      "id": "icm-2025-d-2516219",
+      "collection": "award",
+      "year": 2025,
+      "contest": "ICM",
+      "problem": "D",
+      "team": "2516219",
+      "title": "A Multi-Methodological Framework for Post-Disaster Traffic Optimization and Sustainable Mobility Planning in Baltimore",
+      "institution": "National University of Defense Technology",
+      "topic": "灾后交通与网络优化",
+      "award": "O",
+      "award_label": "Outstanding Winner",
+      "award_evidence": {
+        "url": "https://www.contest.comap.com/undergraduate/contests/mcm/contests/2025/results/",
+        "locator": "ICM Outstanding Winners, Problem D, Team 2516219",
+        "verification": "Official COMAP award and institution matched; year/problem/team visually checked on the PDF summary sheet.",
+        "checked_at": "2026-09-20"
+      },
+      "source_url": "https://github.com/Jackksonns/MCM-ICM-Outstanding-Papers/tree/d29267cb9e993419749e6111981b30a44183fdf8",
+      "source_type": "public_mirror",
+      "pdf_url": "https://raw.githubusercontent.com/Jackksonns/MCM-ICM-Outstanding-Papers/d29267cb9e993419749e6111981b30a44183fdf8/2025/D/2516219.pdf",
+      "sha256": "1fa3d702b2539f5805215076a2568118d456b692dc4d38b8c4360bc5a37e00cc",
+      "pdf_pages": 25,
+      "version_note": "Pinned mirror commit d29267cb9e993419749e6111981b30a44183fdf8. Image-only, watermarked mirror: first and figure pages visually read; text extraction is empty, not evidence of an empty page.",
+      "rights": "Third-party paper: metadata and original figure analysis only; no redistribution license presumed. Watermarked reference pages are not republished.",
+      "checked_at": "2026-09-20"
+    },
+    {
+      "id": "icm-2025-f-2513705",
+      "collection": "award",
+      "year": 2025,
+      "contest": "ICM",
+      "problem": "F",
+      "team": "2513705",
+      "title": "Cracking the Cyber-Puzzle: KDMF in Action",
+      "institution": "Beijing Normal University",
+      "topic": "网络安全政策评价",
+      "award": "O",
+      "award_label": "Outstanding Winner",
+      "award_evidence": {
+        "url": "https://www.contest.comap.com/undergraduate/contests/mcm/contests/2025/results/",
+        "locator": "ICM Outstanding Winners, Problem F, Team 2513705",
+        "verification": "Official COMAP award and institution matched; year/problem/team visually checked on the PDF summary sheet.",
+        "checked_at": "2026-09-20"
+      },
+      "source_url": "https://github.com/Jackksonns/MCM-ICM-Outstanding-Papers/tree/d29267cb9e993419749e6111981b30a44183fdf8",
+      "source_type": "public_mirror",
+      "pdf_url": "https://raw.githubusercontent.com/Jackksonns/MCM-ICM-Outstanding-Papers/d29267cb9e993419749e6111981b30a44183fdf8/2025/F/2513705.pdf",
+      "sha256": "c2ef017c4976b5fcc91a439939c301d9c8bc1dc312e161c205eb7bab7b15900a",
+      "pdf_pages": 33,
+      "version_note": "Pinned mirror commit d29267cb9e993419749e6111981b30a44183fdf8. Public PDF includes 33 physical pages; unnumbered overview is on page 4.",
+      "rights": "Third-party paper: metadata and original figure analysis only; no redistribution license presumed. Watermarked reference pages are not republished.",
+      "checked_at": "2026-09-20"
+    },
+    {
+      "id": "icm-2026-d-2608869",
+      "collection": "award",
+      "year": 2026,
+      "contest": "ICM",
+      "problem": "D",
+      "team": "2608869",
+      "title": "From Wins to Worth: A Quantitative Model of Performance, Attendance, Revenue, and Valuation for Sports Teams",
+      "institution": "Beijing Normal-Hong Kong Baptist",
+      "topic": "球队表现、估值与决策",
+      "award": "F",
+      "award_label": "Finalist",
+      "award_evidence": {
+        "url": "https://www.contest.comap.com/undergraduate/contests/mcm/contests/2026/results/2026_ICM_Problem_D_Results.pdf",
+        "locator": "PDF physical page 3, first row: Team 2608869, Problem D, Finalist",
+        "verification": "Official COMAP result row visually inspected and matched to author PDF summary sheet; institution retained as printed.",
+        "sha256": "0c911fca8f6bb00ed12f5d577b495cad638ebc56193fdd3b1fd1a7f3ad2b2965",
+        "checked_at": "2026-09-20"
+      },
+      "source_url": "https://github.com/WeiLai-OpsFin/comap-icm-2026-d-finalist-wnba-team-valuation-model/tree/3efa32aa320bbab0569f89a5e080cee2b60b5ea2",
+      "source_type": "author_repository",
+      "pdf_url": "https://raw.githubusercontent.com/WeiLai-OpsFin/comap-icm-2026-d-finalist-wnba-team-valuation-model/3efa32aa320bbab0569f89a5e080cee2b60b5ea2/docs/2608869.pdf",
+      "sha256": "af57e494a2cb0713b881c64ebd02b16686f9df0992b33562a7919cd1981fd161",
+      "pdf_pages": 32,
+      "version_note": "Pinned author repository commit 3efa32aa320bbab0569f89a5e080cee2b60b5ea2. PDF has 32 physical pages despite printed 'of 25'; repository's rebuilt code/results are not the submitted paper. Byte identity with the competition submission is not independently verified.",
+      "rights": "Author-hosted public PDF; repository stores only metadata and original analysis, not PDF or figure redistribution.",
+      "checked_at": "2026-09-20"
     },
     {
       "id": "research-lei-2024",
@@ -851,6 +1392,579 @@
       "transfer": "同一队列的总体分布和局部分歧并列，分箱同时报告样本量与比例口径。",
       "do_not_transfer": "不由密度或分箱相关性推断因果，不把计数色阶误写成概率。",
       "limitations": "源图曲线重叠较多；需说明筛选范围并检查稀疏分箱。"
+    },
+    {
+      "id": "a-growth-to-community-map",
+      "paper_id": "mcm-2023-a-2303950",
+      "title": "从单物种生长到群落问题的模型映射",
+      "role": "overview",
+      "pdf_page": 4,
+      "figure": "Figure 2",
+      "problem_targets": [
+        "A",
+        "E"
+      ],
+      "tags": [
+        "总览",
+        "模型递进",
+        "干旱",
+        "model-task mapping"
+      ],
+      "visual_review": {
+        "status": "reviewed",
+        "checked_at": "2026-09-19",
+        "method": "Pinned PDF physical page rendered with Poppler (2000 px); figure, caption and surrounding section visually inspected."
+      },
+      "composition": "左侧三层模型以 foundation 虚线递进，中部 Models / Problems 转接，右侧六个问题附模型编号。",
+      "transfer": "把模型的继承关系与模型服务哪些问题分开表达；多任务共享一个模型时用编号映射减少交叉线。",
+      "do_not_transfer": "不移植干旱、竞争、促进的科学关系或物种数量结论；虚线只有在草稿确有模型继承时使用。",
+      "limitations": "右侧六条长标签字号偏小；模型与任务两区的信息密度应重新平衡。"
+    },
+    {
+      "id": "b-policy-system-overview",
+      "paper_id": "mcm-2023-b-2300136",
+      "title": "政策情景侧栏与四子系统评价网络",
+      "role": "overview",
+      "pdf_page": 8,
+      "figure": "Figure 1",
+      "problem_targets": [
+        "B",
+        "D",
+        "E",
+        "F"
+      ],
+      "tags": [
+        "总览",
+        "政策",
+        "子系统",
+        "情景",
+        "AHP"
+      ],
+      "visual_review": {
+        "status": "reviewed",
+        "checked_at": "2026-09-19",
+        "method": "Pinned PDF physical page rendered with Poppler (2000 px); figure, caption and surrounding section visually inspected."
+      },
+      "composition": "左侧并列政策清单和评分说明，右侧四个蓝色子系统以有文字含义的黄色箭头互联，外围回路表示间接资源压力。",
+      "transfer": "把外部可选行动与系统内部影响网络分区；在连线上写清作用，把评分汇总单列。",
+      "do_not_transfer": "不复制政策效果方向、AHP 权重或生态因果；原图的分数构造不代表新论文的有效指标。",
+      "limitations": "政策清单到子系统的输入关系未逐一画出；粗箭头与正文都较多，需按核心论点压缩。"
+    },
+    {
+      "id": "c-wordle-task-lanes",
+      "paper_id": "mcm-2023-c-2309397",
+      "title": "预测、回归与分类的横向任务泳道",
+      "role": "overview",
+      "pdf_page": 4,
+      "figure": "Figure 2",
+      "problem_targets": [
+        "C"
+      ],
+      "tags": [
+        "总览",
+        "时间序列",
+        "预测",
+        "任务泳道",
+        "ARIMA",
+        "Bootstrap"
+      ],
+      "visual_review": {
+        "status": "reviewed",
+        "checked_at": "2026-09-19",
+        "method": "Pinned PDF physical page rendered with Poppler (2000 px); figure, caption and surrounding section visually inspected."
+      },
+      "composition": "五条虚线泳道各自从任务进入方法；第一条的 ARIMA 与 BP 两路在组合预测处合流，再接区间预测。",
+      "transfer": "相对独立的子问题用平行泳道；同一任务内的方法分支与合流保持一致阅读方向。",
+      "do_not_transfer": "不直接复用算法组合或预测区间；任务间的上下箭头需按新草稿确认，不能由编号推断依赖。",
+      "limitations": "原图浅绿文字及渐变对比不足，字号较小；五条泳道容易退化为章节清单。"
+    },
+    {
+      "id": "d-graph-priority-scenarios",
+      "paper_id": "icm-2023-d-2300229",
+      "title": "网络度量、优先级与情景模拟分区",
+      "role": "overview",
+      "pdf_page": 4,
+      "figure": "Figure 1",
+      "problem_targets": [
+        "D",
+        "F"
+      ],
+      "tags": [
+        "总览",
+        "图网络",
+        "优先级",
+        "情景",
+        "TOPSIS"
+      ],
+      "visual_review": {
+        "status": "reviewed",
+        "checked_at": "2026-09-19",
+        "method": "Pinned PDF physical page rendered with Poppler (2000 px); figure, caption and surrounding section visually inspected."
+      },
+      "composition": "四个区域形成左上建图、左下排序、右上动态模拟、右下冲击情景的折返结构；底部独立安排敏感性检查。",
+      "transfer": "按图结构、决策、模拟、外部冲击划分区域；跨区箭头只携带明确的模型输出，验证区独立。",
+      "do_not_transfer": "不把 Spearman 相关当因果，不迁移 SDG 排序、资源分配关系或源图 Robust 结论。",
+      "limitations": "跨区路径需要清晰编号；颜色种类过多，底部稳健性应写检查内容而非预设结论。"
+    },
+    {
+      "id": "e-risk-to-intervention-lanes",
+      "paper_id": "icm-2023-e-2308000",
+      "title": "风险评价与干预优化的上下双层结构",
+      "role": "overview",
+      "pdf_page": 5,
+      "figure": "Figure 2",
+      "problem_targets": [
+        "E",
+        "F"
+      ],
+      "tags": [
+        "总览",
+        "风险",
+        "干预",
+        "指标",
+        "目标规划"
+      ],
+      "visual_review": {
+        "status": "reviewed",
+        "checked_at": "2026-09-19",
+        "method": "Pinned PDF physical page rendered with Poppler (2000 px); figure, caption and surrounding section visually inspected."
+      },
+      "composition": "上层由指标分成损害与需求系统，经权重与 GE 矩阵输出风险；下层为干预规划、方案求解和效果分析，并接收上层风险信息。",
+      "transfer": "把现状评价与行动选择画成两条层级；共享指标只放一次，跨层箭头标明传递的是评分还是约束。",
+      "do_not_transfer": "不移植 GE 分级阈值、指标权重、城市结论或策略效果；风险评价不等于干预因果证据。",
+      "limitations": "橙黄及浅粉文字对比弱，多个长词被拆断；重画需改深色正文并扩大节点宽度。"
+    },
+    {
+      "id": "f-green-gdp-policy-overview",
+      "paper_id": "icm-2023-f-2311517",
+      "title": "指标评估、成本收益与政策情景合流",
+      "role": "overview",
+      "pdf_page": 4,
+      "figure": "Figure 2",
+      "problem_targets": [
+        "F",
+        "E"
+      ],
+      "tags": [
+        "总览",
+        "政策",
+        "成本收益",
+        "双分支",
+        "绿色GDP"
+      ],
+      "visual_review": {
+        "status": "reviewed",
+        "checked_at": "2026-09-19",
+        "method": "Pinned PDF physical page rendered with Poppler (2000 px); figure, caption and surrounding section visually inspected."
+      },
+      "composition": "左上核算方法与左下气候影响两路并行，右侧成本收益区汇合；底部国家案例将改变与不改变分成两条路径。",
+      "transfer": "宏观评估与案例决策分层；并行证据在决策区汇合，用对照分支表达不同政策情景。",
+      "do_not_transfer": "不复用 GGDP 改革有效、资源耗尽或经济崩溃等源文判断；情景箭头须注明假设而非必然因果。",
+      "limitations": "装饰图标和 Task 标签占空间，分支结论语气过强；新图应保留条件与不确定性。"
+    },
+    {
+      "id": "a-typed-ecological-relations",
+      "paper_id": "mcm-2024-a-2405424",
+      "title": "资源与物种之间的多类型关系图",
+      "role": "mechanism",
+      "pdf_page": 4,
+      "figure": "Figure 2",
+      "problem_targets": [
+        "A",
+        "E"
+      ],
+      "tags": [
+        "机制",
+        "生态网络",
+        "资源",
+        "关系类型",
+        "Lotka-Volterra"
+      ],
+      "visual_review": {
+        "status": "reviewed",
+        "checked_at": "2026-09-19",
+        "method": "Pinned PDF physical page rendered with Poppler (2000 px); figure, caption and surrounding section visually inspected."
+      },
+      "composition": "环境资源居中，三个生物群体呈三角分布；蓝、绿、红边区分源文的捕食、寄生及间接影响，左侧设文字图例。",
+      "transfer": "用稳定的空间位置表示对象，图例定义不同边的含义；直接过程与间接作用需用不同线型或标签双重编码。",
+      "do_not_transfer": "不迁移源文把环境资源视为猎物等假设；双向箭头不能自动解释为相同强度的相互作用。",
+      "limitations": "红绿编码不利于色觉辨识，背景渐变影响对比；这是建模机制图，不是全文 Our Work 流程。"
+    },
+    {
+      "id": "b-rescue-multiscale-overview",
+      "paper_id": "mcm-2024-b-2407038",
+      "title": "轨迹预测、装备决策与概率搜索的三层总览",
+      "role": "overview",
+      "pdf_page": 4,
+      "figure": "Figure 1",
+      "problem_targets": [
+        "B",
+        "D"
+      ],
+      "tags": [
+        "总览",
+        "搜索",
+        "动力学",
+        "优化",
+        "多尺度",
+        "Monte Carlo"
+      ],
+      "visual_review": {
+        "status": "reviewed",
+        "checked_at": "2026-09-19",
+        "method": "Pinned PDF physical page rendered with Poppler (2000 px); figure, caption and surrounding section visually inspected."
+      },
+      "composition": "顶部章节条下方排列三条内容带，分别组合海流与受力示意、装备与优化目标、网格与搜索概率；模型外推位于底部。",
+      "transfer": "每一层用输入、关键机制、输出组织；用小型对象示意表达物理过程，以不同层级区分预测、决策与搜索。",
+      "do_not_transfer": "不复制示意曲线或地图作为新实验结果，不迁移装备、概率分布和海域参数。",
+      "limitations": "原图细节多、字号小，顶层章节条信息重复；Overview 应保留核心关系并把细节移到分图。"
+    },
+    {
+      "id": "c-test-predict-generalize",
+      "paper_id": "mcm-2024-c-2401298",
+      "title": "指标定义、假设检验、预测与泛化的四分区",
+      "role": "overview",
+      "pdf_page": 4,
+      "figure": "Figure 1",
+      "problem_targets": [
+        "C"
+      ],
+      "tags": [
+        "总览",
+        "统计检验",
+        "贝叶斯",
+        "泛化",
+        "残差"
+      ],
+      "visual_review": {
+        "status": "reviewed",
+        "checked_at": "2026-09-19",
+        "method": "Pinned PDF physical page rendered with Poppler (2000 px); figure, caption and surrounding section visually inspected."
+      },
+      "composition": "左列为表现度量及假设检验，右列为含势头模型与无势头基线以及泛化；各区内部有流程，但区间没有明确连线。",
+      "transfer": "把测量、检验、建模和外部应用分区；基线作为显式比较对象，结果与方法使用一致的视觉角色。",
+      "do_not_transfer": "不将检验直接画成证明势头存在；不移植贝叶斯依赖、泛化范围或源文结论。",
+      "limitations": "原图缺少跨区关系，存在交叉细箭头与高饱和边框；新图需按论文补充有依据的主阅读路径。"
+    },
+    {
+      "id": "d-hydrology-stakeholder-control",
+      "paper_id": "icm-2024-d-2419588",
+      "title": "水文系统、利益权衡与控制的四区总览",
+      "role": "overview",
+      "pdf_page": 4,
+      "figure": "Figure 1 (Our Work; source repeats this number)",
+      "problem_targets": [
+        "D",
+        "E",
+        "F"
+      ],
+      "tags": [
+        "总览",
+        "水文",
+        "利益相关者",
+        "控制",
+        "MPC"
+      ],
+      "visual_review": {
+        "status": "reviewed",
+        "checked_at": "2026-09-19",
+        "method": "Pinned PDF physical page rendered with Poppler (2000 px); figure, caption and surrounding section visually inspected."
+      },
+      "composition": "左上为数据和水文子模型，左下为利益主体与最优水位，右上为控制目标和仿真，右下为两条模型修正与应用。",
+      "transfer": "把物理系统、利益权衡和控制策略分开，修正与评价单列；四区按主从关系安排而非仅按章节等分。",
+      "do_not_transfer": "不迁移最优水位、满意度权重或控制效果；并列面板本身不证明模型间存在数据依赖。",
+      "limitations": "原 PDF 前页地图与本页 Our Work 重复使用 Figure 1；以物理页4及图注定位。图中文字拼写及跨区关系需要重画时核对。"
+    },
+    {
+      "id": "e-parallel-risk-preservation",
+      "paper_id": "icm-2024-e-2400860",
+      "title": "保险决策与建筑价值的并行评价总览",
+      "role": "overview",
+      "pdf_page": 5,
+      "figure": "Figure 1",
+      "problem_targets": [
+        "E",
+        "F"
+      ],
+      "tags": [
+        "总览",
+        "风险",
+        "保险",
+        "多指标",
+        "AHP",
+        "CRITIC"
+      ],
+      "visual_review": {
+        "status": "reviewed",
+        "checked_at": "2026-09-19",
+        "method": "Pinned PDF physical page rendered with Poppler (2000 px); figure, caption and surrounding section visually inspected."
+      },
+      "composition": "左侧为损失、风险、保费与收入的链条，右侧把文化、经济、历史指标汇合为建筑价值；下方横条承接案例与评估。",
+      "transfer": "并行模型保持独立输入与输出；共同应用横跨底部，但只添加论文明确存在的传递关系。",
+      "do_not_transfer": "不迁移破产概率、风险等级、价格或建筑评分；无需为视觉对称凭空创建共享变量。",
+      "limitations": "缩写密集且部分箭头仅靠相邻位置暗示，底部章节项可删减；正文应解释必要缩写。"
+    },
+    {
+      "id": "f-hub-and-spoke-work-map",
+      "paper_id": "icm-2024-f-2409949",
+      "title": "以项目为中心的六模块工作地图",
+      "role": "overview",
+      "pdf_page": 4,
+      "figure": "Figure 2",
+      "problem_targets": [
+        "F",
+        "B"
+      ],
+      "tags": [
+        "总览",
+        "政策",
+        "项目",
+        "主体",
+        "蜂窝",
+        "hub-and-spoke"
+      ],
+      "visual_review": {
+        "status": "reviewed",
+        "checked_at": "2026-09-19",
+        "method": "Pinned PDF physical page rendered with Poppler (2000 px); figure, caption and surrounding section visually inspected."
+      },
+      "composition": "中心 Our Work 六边形被六个模块围绕，左右两侧用水平说明行对应设计、客户选择、合作、影响、敏感性与备忘录。",
+      "transfer": "对没有严格先后顺序的任务采用中心辐射布局；模块标题短，方法细节放在对应外侧注释。",
+      "do_not_transfer": "不把空间相邻解释为依赖或因果，不移植合作主体、政策效果或项目优劣判断。",
+      "limitations": "并无箭头表示执行顺序，长说明缩小后难读；若新论文有强依赖应改用带方向的流程。"
+    },
+    {
+      "id": "research-routing-decoder-steps",
+      "paper_id": "research-kool-2019",
+      "title": "路径构造中的逐步选择与不可行项遮罩",
+      "role": "algorithm",
+      "pdf_page": 4,
+      "figure": "Figure 2",
+      "problem_targets": [
+        "B",
+        "D"
+      ],
+      "tags": [
+        "算法",
+        "路径规划",
+        "注意力",
+        "状态",
+        "mask",
+        "routing"
+      ],
+      "visual_review": {
+        "status": "reviewed",
+        "checked_at": "2026-09-19",
+        "method": "Pinned PDF physical page rendered with Poppler (2000 px); figure, caption and surrounding section visually inspected."
+      },
+      "composition": "四个同构面板按解码步排列，节点位置保持固定；共享图例区分嵌入、消息、查询和输出概率，被访问节点逐步淡化。",
+      "transfer": "用少量连续状态解释算法如何改变可选集合；共享图例与固定对象位置降低跨步比较成本，可作为 Overview 的局部方法区。",
+      "do_not_transfer": "不移植注意力权重或路线为当前算法结果；此图只描述解码过程，不是完整训练与求解总流程。",
+      "limitations": "面板中的符号和多类虚线较密，需根据目标论文简化；配图路线为源文示例而非新实验。"
+    },
+    {
+      "id": "research-pinn-constraint-overview",
+      "paper_id": "research-lu-deepxde-2020",
+      "title": "共享预测器、物理约束与损失合流",
+      "role": "overview",
+      "pdf_page": 4,
+      "figure": "Figure 1",
+      "problem_targets": [
+        "A",
+        "C",
+        "D",
+        "E"
+      ],
+      "tags": [
+        "总览",
+        "物理约束",
+        "微分方程",
+        "PINN",
+        "共享模型",
+        "loss"
+      ],
+      "visual_review": {
+        "status": "reviewed",
+        "checked_at": "2026-09-19",
+        "method": "Pinned PDF physical page rendered with Poppler (2000 px); figure, caption and surrounding section visually inspected."
+      },
+      "composition": "左侧网络输出共享解估计，上下分为 PDE 残差和边界/初值约束，分别汇入同一损失，再指向参数优化结果。",
+      "transfer": "共享预测模块只画一次；数据路径、约束分支和优化目标分别表达，数学算子靠近被约束的输出。",
+      "do_not_transfer": "不替新论文添加 PINN、边界条件或扩散方程；图中优化参数不是外部验证结果。",
+      "limitations": "源图内部连线较密，方程必须逐字核对；新图若包含额外观测损失，需另由论文依据补充。"
+    },
+    {
+      "id": "a-stair-wear-model-tree",
+      "paper_id": "mcm-2025-a-2501567",
+      "title": "物理模型、使用反演与验证的任务树",
+      "role": "overview",
+      "pdf_page": 4,
+      "figure": "Unnumbered diagram, section 1.3 Our Work",
+      "problem_targets": [
+        "A",
+        "C"
+      ],
+      "tags": [
+        "总览",
+        "磨损",
+        "反演",
+        "树状",
+        "验证"
+      ],
+      "visual_review": {
+        "status": "reviewed",
+        "checked_at": "2026-09-20",
+        "method": "Pinned PDF physical page rendered with Poppler at 2000 px and visually inspected with first-page identity and surrounding section; image-only pages read directly, not inferred from OCR."
+      },
+      "composition": "Our Work 主干分出采集、物理、频率、单阶段磨损、一致性、修复和疲劳分析；右侧红线独立连接验证与修正。",
+      "transfer": "任务树适合多个分析共享物理模型的论文；把验证和修正路径放到外侧，避免与层级分支混淆。",
+      "do_not_transfer": "不复制磨损定律、参数估计或修复判断；红线必须对应草稿里真实存在的验证数据。",
+      "limitations": "源图无图号且镜像有水印；分支较多，重画需合并次要任务并明确红线方向。"
+    },
+    {
+      "id": "b-tourism-model-to-policy",
+      "paper_id": "mcm-2025-b-2501687",
+      "title": "数据准备、效用建模、求解与政策应用",
+      "role": "overview",
+      "pdf_page": 4,
+      "figure": "Figure 2",
+      "problem_targets": [
+        "B",
+        "E",
+        "F"
+      ],
+      "tags": [
+        "总览",
+        "旅游",
+        "效用",
+        "多目标",
+        "政策"
+      ],
+      "visual_review": {
+        "status": "reviewed",
+        "checked_at": "2026-09-20",
+        "method": "Pinned PDF physical page rendered with Poppler at 2000 px and visually inspected with first-page identity and surrounding section; image-only pages read directly, not inferred from OCR."
+      },
+      "composition": "四个区域分别放数据处理、模型设计、规划检验、模型应用；经济、环境、社会福利三路汇成总效用，底部承接建议与迁移。",
+      "transfer": "把数据加工与目标函数设计分区；优化后的建议和异地应用分层，目标分解保持并行。",
+      "do_not_transfer": "不复制游客上限、投资比例或异地政策结论；源图求解器标签与摘要写法不一致，不能直接照抄。",
+      "limitations": "跨区箭头方向与文中计算顺序需重新核对；水印、渐变及小字影响阅读。"
+    },
+    {
+      "id": "c-medal-predict-explain-evaluate",
+      "paper_id": "mcm-2025-c-2510862",
+      "title": "奖牌预测与解释、政策效应的四区布局",
+      "role": "overview",
+      "pdf_page": 4,
+      "figure": "Figure 1",
+      "problem_targets": [
+        "C",
+        "F"
+      ],
+      "tags": [
+        "总览",
+        "预测",
+        "解释",
+        "Stacking",
+        "Bootstrap",
+        "DID"
+      ],
+      "visual_review": {
+        "status": "reviewed",
+        "checked_at": "2026-09-20",
+        "method": "Pinned PDF physical page rendered with Poppler at 2000 px and visually inspected with first-page identity and surrounding section; image-only pages read directly, not inferred from OCR."
+      },
+      "composition": "左侧分为奖牌数量与首次获奖预测，右侧分为赛事解释和教练效应；预测主区连接两类后续分析，方法与输出在各区内部成组。",
+      "transfer": "预测、解释与干预效应分别设置区域，基模型合并到一个集成节点；区间估计靠近预测输出。",
+      "do_not_transfer": "不复用国家排名、预测数值、SHAP 结果或因果效应；DID 需独立识别假设，不能由预测箭头替代。",
+      "limitations": "源图同时塞入大量国家和结果，字号偏小；Overview 应保留模型关系，把具体结果另放。"
+    },
+    {
+      "id": "d-transport-diagnose-redesign",
+      "paper_id": "icm-2025-d-2516219",
+      "title": "从灾害诊断到多模态交通改进",
+      "role": "overview",
+      "pdf_page": 5,
+      "figure": "Figure 3",
+      "problem_targets": [
+        "D",
+        "B"
+      ],
+      "tags": [
+        "总览",
+        "交通",
+        "网络",
+        "多模态",
+        "优化"
+      ],
+      "visual_review": {
+        "status": "reviewed",
+        "checked_at": "2026-09-20",
+        "method": "Pinned PDF physical page rendered with Poppler at 2000 px and visually inspected with first-page identity and surrounding section; image-only pages read directly, not inferred from OCR."
+      },
+      "composition": "数据区通向灾害影响分析，再转到网络表征、多模态需求与综合交通廊道；四条跨区箭头用罗马数字标出阅读顺序。",
+      "transfer": "折返布局用编号明确顺序，每区内部保留输入、方法、输出；将系统描述与改进方案分开。",
+      "do_not_transfer": "不移植交通均衡条件、网络定义、福利增长或排放改善数值；验证改进效果必须来自当前论文。",
+      "limitations": "图上的系统建模顺序与正文叙述需辨析，不能把版面顺序一律视为计算依赖；镜像有水印。"
+    },
+    {
+      "id": "f-cyber-policy-evidence-map",
+      "paper_id": "icm-2025-f-2513705",
+      "title": "聚类、政策评价与人口因素的环形组织",
+      "role": "overview",
+      "pdf_page": 4,
+      "figure": "Unnumbered diagram, section 1.3 Our Work",
+      "problem_targets": [
+        "F",
+        "C"
+      ],
+      "tags": [
+        "总览",
+        "政策",
+        "聚类",
+        "LDA",
+        "DID",
+        "MIC"
+      ],
+      "visual_review": {
+        "status": "reviewed",
+        "checked_at": "2026-09-20",
+        "method": "Pinned PDF physical page rendered with Poppler at 2000 px and visually inspected with first-page identity and surrounding section; image-only pages read directly, not inferred from OCR."
+      },
+      "composition": "上方共享数据与聚类横条，下方左右两路围绕中心安全主题：左侧政策主题与差分评价，右侧人口数据和相关因素分析。",
+      "transfer": "共享准备放上方，独立证据路径围绕中心研究目标展开；中心只放研究对象，避免重复方法清单。",
+      "do_not_transfer": "不把环形外观当成反馈机制；不将相关性与政策因果识别混为一谈，不移植源文评价结果。",
+      "limitations": "外圈箭头容易暗示不存在的循环，重画应按草稿改为有起点和终点的分支；原图未编号。"
+    },
+    {
+      "id": "d-wins-to-value-chain",
+      "paper_id": "icm-2026-d-2608869",
+      "title": "竞技表现到估值决策的折返主链",
+      "role": "overview",
+      "pdf_page": 4,
+      "figure": "Unnumbered diagram, section 1.3 Our works",
+      "problem_targets": [
+        "D",
+        "C",
+        "F"
+      ],
+      "tags": [
+        "总览",
+        "主链",
+        "决策",
+        "风险",
+        "估值",
+        "Elo"
+      ],
+      "visual_review": {
+        "status": "reviewed",
+        "checked_at": "2026-09-20",
+        "method": "Pinned PDF physical page rendered with Poppler at 2000 px and visually inspected with first-page identity and surrounding section; image-only pages read directly, not inferred from OCR."
+      },
+      "composition": "矩形方法框与圆形中间结果交替构成三行折返路线；顶部给目标，底部列交付，右侧竖栏概括风险与稳健性。",
+      "transfer": "用形状区分处理方法与中间产物；让一条主链贯穿多模型，横向风险检查独立但标明对应阶段。",
+      "do_not_transfer": "不移植票房、杠杆、球队估值或最优行动；原图的风险侧栏不是已执行验证的证明。",
+      "limitations": "最下层方法框文字挤压边界，风险栏没有明确作用连线；新图需调整间距并核对风险与主链的连接。"
     },
     {
       "id": "research-staged-overview",

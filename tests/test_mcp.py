@@ -43,7 +43,10 @@ def test_real_stdio_paper_overview_contract(tmp_path, entrypoint):
                 assert "e-model-inheritance-overview" in {c["id"] for c in styles}
                 assert all(c["role"] == "overview" for c in styles)
                 stats = payload(await session.call_tool("atlas_style_coverage", {}))
-                assert stats["cases"] == 20
+                assert stats["cases"] == 40
+                recent = payload(await session.call_tool("atlas_search_styles", {"year": 2026, "problem": "D"}))
+                assert recent[0]["id"] == "d-wins-to-value-chain"
+                assert all(c["paper"]["year"] == 2026 for c in recent)
 
                 paper = tmp_path / "synthetic-paper.md"
                 paper.write_text("# TEST FIXTURE\nA synthetic model A feeds B; not a real contest paper.", encoding="utf-8")

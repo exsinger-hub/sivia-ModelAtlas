@@ -1,54 +1,43 @@
-# 插图知识库 · 服务于 Paper → Overview
+# 插图知识库
 
-知识库完整保留。目标是为论文 overview 提供经过读图的视觉组织参考，不是通用作图平台。
+为 Paper → Overview 提供构图参考，按原始题号 A–F、年份和图形角色分类。
 
-## 核心库与扩展库
+- 获奖论文：26 篇（23 O、3 F），36 个图例。
+- 科研扩展：3 篇，4 个图例；不标美赛奖项。
+- 2025 覆盖 A–F；2026 已有 C、D，A/B/E/F 待补。
 
-**award**：官方结果核验的 O/F 美赛论文。**research**：科研论文/预印本，奖项字段为 null。
-源数据为 `src/modelatlas/knowledge/corpus.json`：8 篇获奖论文（6 O + 2 F）、18 个图例；
-1 篇科研预印本、2 个扩展图例，共 9 篇 / 20 例。均读过实际 PDF 图页，不是20张新生成的图。
+[逐图目录](CATALOG.md) · [近期来源与缺口](SOURCES.md) · [结构化索引](../src/modelatlas/knowledge/corpus.json)
 
-按原始年份及 A–F 题号分类，再记录角色、关系/方法标签与迁移类别 problem_targets。
-A–F 中文方向只是常见问题的导航；迁移到另一类别不改变来源论文的真实题号或奖项。
-
-[逐图目录](CATALOG.md)列出实际案例 ID、来源、PDF 页码、图号与原创读图分析。
-
-## 读取参考图
+## 查找与读图
 
 ```sh
-modelatlas styles --problem E
+modelatlas styles --year 2025 --problem A
+modelatlas styles --year 2026 --problem D
 modelatlas styles "循环" --problem E --role mechanism
 modelatlas styles --collection research --role all
-modelatlas reference e-model-inheritance-overview
+modelatlas reference d-wins-to-value-chain
 ```
 
-默认查 overview + award。原有 mechanism、algorithm、data_plot、explanation 图例继续作为
-局部表达参考，不提供对应独立绘制功能。检索是过滤后的词项匹配，不是自动深度理解。
+默认检索 O/F 库中的 Overview。机制、算法和数据图可作为局部表达参考，不提供独立绘制功能。
+`--year` 按原论文年份筛选；题号过滤包含标注为可迁移的参考，来源真实题号不变。
+文本匹配分数相同，优先原题号相同的案例，再按年份从新到旧排序。
 
-取回来源时校验固定 SHA-256 与页数，再渲染指定物理页。必须打开实际页面并读图注和上下文；
-返回 page_rendered_not_reviewed 不等于当前 agent 已看图。缓存文件只留在本地。
+取回参考时校验 SHA-256 与 PDF 页数，再渲染指定物理页。必须打开图片，核对图注及上下文。
+扫描页可以直接读图；返回 `page_rendered_not_reviewed` 不等于当前使用者已审阅。
 
-## 入库证据
+## 入库要求
 
-论文记录保留年份、题号、队号、官方奖项证明 URL/行或页码、作者源/镜像说明、固定 PDF 版本、
-哈希、页数和权利说明。O 是 Outstanding Winner，F 是 Finalist；题目 F 不是奖项。
+每篇论文保存来源 URL、固定版本、SHA-256、页数与权利说明；获奖论文另保留官方 COMAP 队号、题号、奖项及证据位置。
+O 为 Outstanding Winner，F 为 Finalist，不与题号 F 混淆。
 
-图例保留物理 PDF 页、图号、构图、可迁移原则、不应移植的科学内容、原图局限及实际读图记录。
-物理页码与纸面印刷页码不能混用；版本变化需复核，不能静默重设哈希。
-2024 队2413552的作者仓库存在证书和不同论文修订版，本库定位只针对已固定的镜像版本。
+每个图例记录物理页、图号或未编号位置、构图、适用布局、不可移植内容、原图局限及实际读图记录。
+科研参考单列出版状态和版本。参考图只帮助组织表达，当前论文决定科学内容和每条箭头。
 
-科研扩展单独记录出版状态和 DOI/版本；当前 Lei 等 arXiv v1 提供 overview 与 SHAP 配对图参考，
-不冒称同行评审期刊文章或已核验获奖论文。
+来源发现使用 AnySearch；完成原文、奖项与图页核验后才入库。来源内容变化时复核版本，不静默替换哈希。
 
-扩库流程：AnySearch 发现 → 读取原文 → 核验官方奖项（核心库）→ 查看图与上下文 →
-原创分析/分类 → 固定版本 → 更新 corpus → 测试与实际图页取回验证。
+## 图片与版权
 
-## 与成图记录分开
+README 展示两张有作者 MIT 许可的原图，见[来源与许可](../docs/assets/reference-overviews/README.md)。
+其余来源只保存元数据和原创读图分析；第三方 PDF、水印扫描页和私人稿件不自动上传。
 
-参考案例是他人论文的读图分析。生产案例必须是本项目实际生成的 overview，
-配对完整 prompt、输入论文依据、图注与审查，不能用参考页面或未执行 prompt 充数。
-
-README 按用户要求展示两张有作者 MIT 许可的原始 overview，附来源及完整许可，
-见 [展示图记录](../docs/assets/reference-overviews/README.md)。它们不是本项目生成结果。
-除此之外，仓库保存元数据与原创分析；PDF、页面缓存和私人论文不自动上传。
-旧数值配方卡片/SQLite 接口已从运行时代码删除，已有本地数据库和输出文件未清理。
+本库参考与[ModelAtlas 实际生成示例](../docs/examples/2025-e-paper2overview/README.md)分开记录。
