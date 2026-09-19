@@ -18,6 +18,24 @@
 输入可以是完整论文或已有草稿。参考图用于学习构图，模型、关系与结论必须来自输入论文。
 概念 overview 由宿主 ImageGen 生成；没有图像生成能力时，会明确标为设计/prompt 未成图。
 
+## 真实 Paper → Overview 测试
+
+选择 **2025 ICM E · Finalist · Team 2515324** 的已有论文
+*From Forest to Farm: Modeling Nitrogen Dynamics for Sustainable Agriculture*，
+读取全部 25 页后，用宿主 ImageGen 实际生成并修正一张 overview。
+
+**下面是本项目新生成的测试图，不是论文原图。**
+
+![ModelAtlas 实际测试：森林氮循环、农田管理、食物网与方案评价的 overview](docs/examples/2025-e-paper2overview/overview.png)
+
+[测试过程与逐页依据](docs/examples/2025-e-paper2overview/README.md)
+· [两轮完整 prompt](docs/examples/2025-e-paper2overview/full-prompt.md)
+· [结构化证据与审查](docs/examples/2025-e-paper2overview/brief.json)
+
+已完成：全文读取、参考图阅读、新图生成、箭头修正、实际图像检查和文件配对校验。
+这是已知来源论文的重设计测试，不是盲测；未重跑原论文模型。
+交付为 **1536 × 1024 PNG 候选图**，独立审查、印刷尺寸验证和用户验收仍待完成。
+
 ## 插图知识库
 
 **知识库保留，不随功能精简删除。** 已核验并逐图阅读的种子库包括：
@@ -46,7 +64,7 @@
 [作者原图](https://github.com/alectimison-maker/2026MCM-ICM_C/blob/2fcf7bb344e6fa7c295ec771b5be79c3a9ebd361/paper/workflow_flowchart.png)
 · [来源论文](https://github.com/alectimison-maker/2026MCM-ICM_C/blob/2fcf7bb344e6fa7c295ec771b5be79c3a9ebd361/2627351_submitted_paper.pdf)
 
-[图片来源、许可与校验记录](docs/assets/reference-overviews/README.md)。这里展示的是参考库，实际生成案例待完成测试后单独加入。
+[图片来源、许可与校验记录](docs/assets/reference-overviews/README.md)。这里展示的是作者参考库，上方的实际生成测试单独归档。
 
 ### A–F 分类目录
 

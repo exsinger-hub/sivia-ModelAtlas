@@ -1,0 +1,47 @@
+{
+  "passed": true,
+  "files": {
+    "brief.json": true,
+    "overview.png": true,
+    "prompt.md": true
+  },
+  "visual_review": {
+    "status": "pending",
+    "review_type": "informed self_review; no independent reviewer",
+    "execution_test": "completed: real paper read, real image generated, corrected, inspected and paired",
+    "content_checks": "passed at overview scope by visual self-review",
+    "checks": [
+      "Opened final saved overview.png at native1536x1024; no obvious clipped labels or crossings through unrelated text.",
+      "FENCM, AENCM and AE-FW-NCM spellings correct and expansion order visible.",
+      "Forest loop: inorganic N->producers->consumers, producer/consumer returns->organic N, decomposition->inorganic N.",
+      "Agriculture: sowing enters crops, fertilizer enters soil, corrected harvest arrow originates at crop canopy rather than weeds.",
+      "Food web: crops->pests; weeds->pests; pests->predatory insects/bats/birds; predatory insects->bats/birds; bats/birds->snakes:9/9 visible.",
+      "Crops/weeds competition uses blunt-ended link, not a trophic arrow.",
+      "Main flow now a->b->c->d->e->f; scenarios are alternatives, not sequential steps.",
+      "Bat pollination appears in scenario group only; no spurious baseline pollination edge.",
+      "N turnover remains labelled stability proxy; no fabricated quantitative results.",
+      "Rhizobia/legumes and straw reuse are enclosed as literature-supported extensions."
+    ],
+    "issues": [
+      {
+        "severity": "moderate",
+        "location": "small annotation typography and full-width print",
+        "detail": "Raster output has no verifiable native font metadata; label sizes vary. The180mm print-width and8pt minimum have not been demonstrated. Do not claim publication-ready approval."
+      },
+      {
+        "severity": "pending_gate",
+        "location": "independent and grayscale review",
+        "detail": "No independent unprimed title/L3-hidden grayscale reading or physical print proof performed; self-review is not independent acceptance."
+      }
+    ],
+    "initial_findings_corrected": [
+      "Harvest adjacency ambiguity",
+      "Detached analysis input arrow",
+      "Overly detailed upper forest decoration and smaller labels"
+    ],
+    "publication_gate": "pending",
+    "user_approval": "not_recorded"
+  },
+  "user_approval": "not_recorded",
+  "scope": "File integrity only; not source fidelity, image quality or award verification."
+}

@@ -1,0 +1,190 @@
+{
+  "artifact_mode": "direction_review",
+  "source": {
+    "title": "From Forest to Farm: Modeling Nitrogen Dynamics for Sustainable Agriculture",
+    "team": "2515324",
+    "year": 2025,
+    "problem": "ICM E",
+    "pdf_sha256": "2c566c95c1d4a1b4292176805253ad4f09ccfe9154e8809beb86f399347a8cdc",
+    "url": "https://github.com/LUKEQ420/MCM-ICM-2025-E-Nitrogen-Cycling-Model/blob/fb579acd7107706e055c8a10f921f9f56498a06a/paper/2515324.pdf",
+    "pages_read": "1-25",
+    "mode": "informed redesign; source overview seen, not blind"
+  },
+  "execution": {
+    "deliverable": "original raster overview + exact production prompt + source evidence + review",
+    "renderer": "built-in image_gen.imagegen",
+    "output": "overview.png",
+    "editable": false
+  },
+  "claim": "A conserved forest nitrogen-cycle model is progressively extended with seasonal farm management and a multispecies food web, enabling management-scenario comparison before formulating sustainable-agriculture recommendations.",
+  "paper_figure_signature": {
+    "topology": "FENCM -> AENCM -> AE-FW-NCM -> parallel management scenarios -> evaluation and sensitivity -> guidance; literature-supported extensions separately scoped",
+    "novelty": "Common nitrogen bookkeeping ties ecosystem succession, species interactions and farm management together",
+    "input": "compartments and modeled species interactions; representative parameter choices",
+    "output": "scenario comparison and model-informed recommendations",
+    "boundaries": [
+      "Forest total N is assumed conserved; agricultural N has external inputs/outputs",
+      "Bat pollination is a scenario extension",
+      "Nitrogen turnover is the paper's proxy, not externally validated stability",
+      "Rhizobia/legumes and straw reuse are literature-supported recommendations"
+    ]
+  },
+  "narrative_map": {
+    "first_glance": "Natural nitrogen cycling becomes a managed multispecies farm model.",
+    "working": "Track what each extension adds and how alternative management scenarios are evaluated.",
+    "technical": "Equations/parameters remain in Sections 4-8; no generated empirical plots.",
+    "reading_logic": "left-to-right model inheritance, then downstream analysis band",
+    "focal_region": "seven-node food web",
+    "levels": {
+      "L1": [
+        "three model stages",
+        "scenario/evaluation/guidance"
+      ],
+      "L2": [
+        "forest cycle",
+        "farm N input/output",
+        "food-web edge direction",
+        "chemical condition",
+        "modeled versus literature boundary"
+      ],
+      "L3": [
+        "method note and retained-context labels"
+      ]
+    }
+  },
+  "abstraction_map": [
+    {
+      "contract": "forest compartments and returns",
+      "mode": "grouped",
+      "visual": "four-compartment loop",
+      "expansion": "paper Sections 4.1-4.2, pp5-8",
+      "invariant": "producer/consumer losses return to organic N, decomposition returns inorganic N"
+    },
+    {
+      "contract": "farm management operands",
+      "mode": "direct/textual",
+      "visual": "crops/weeds, seasonal influence, sowing, harvest, fertilizer, chemical-use condition",
+      "expansion": "Sections 5.1-5.4 pp9-15",
+      "invariant": "open N budget; intervention and competition are not trophic transfer"
+    },
+    {
+      "contract": "Eq20 n-species matrix dynamics",
+      "mode": "grouped",
+      "visual": "exact seven-species web",
+      "expansion": "Sections6.1.1-6.1.2 pp16-18",
+      "invariant": "all nine prey-to-predator edges; C connects only crops/weeds; shared environment retained"
+    },
+    {
+      "contract": "simulation and analysis",
+      "mode": "direct/textual",
+      "visual": "alternative scenarios -> two N metrics and sensitivity",
+      "expansion": "Sections6.1.3-6.3.1 pp18-21; Section8 pp22-23"
+    },
+    {
+      "contract": "additional management recommendations",
+      "mode": "textual",
+      "visual": "literature-supported extensions boundary",
+      "expansion": "Sections6.3.2-7 pp21-22",
+      "invariant": "not an additional simulated treatment"
+    }
+  ],
+  "node_edge_ledger": "Exact labels, nine food-web edges, forest loop, agricultural inputs/outputs and main directed connections are frozen in prompt.md.",
+  "equation_operand_ledger": [
+    {
+      "location": "Eq2-5 pp6-8",
+      "role": "producer growth from inorganic N; trophic transfer; organic returns and decomposition",
+      "encoding": "aggregate compartment loop; no literal equations",
+      "caution": "Eq5 printed uptake uses Norg while prose/Eq2 describe Ninorg; show prose-defined compartment topology, do not claim equation correction"
+    },
+    {
+      "location": "Eq6-14 pp9-15",
+      "role": "crop-weed competition, seasonal rates, sow/harvest pulses, conditional chemical and fertilizer application",
+      "encoding": "explicit scene and scope label"
+    },
+    {
+      "location": "Eq15-20 pp16-18",
+      "role": "predation A, assimilation B transpose, competition C transpose, producer uptake Ninorg*R and mortality Gamma acting on N",
+      "encoding": "exact food web and shared-soil/management context; operands detailed in source"
+    },
+    {
+      "location": "Eq21-22 p18",
+      "role": "N transformation integral and H/I; paper calls turnover a stability indicator",
+      "encoding": "named metrics only; no invented values or generic external-validation claim"
+    },
+    {
+      "location": "Eq23 pp20-21",
+      "role": "bat population contributes to crop growth",
+      "encoding": "separate no-chemicals + bat-pollination scenario"
+    },
+    {
+      "location": "Eq24 p22",
+      "role": "harvest residue accounting",
+      "encoding": "straw reuse recommendation, not a simulated feedback"
+    }
+  ],
+  "evidence_ledger": {
+    "assets_viewed": [
+      "docs/assets/reference-overviews/2025-e-2515324-overview.jpg",
+      ".modelatlas/reference-study/2025-2515324-p6.png",
+      ".modelatlas/reference-study/2025-2515324-p16.png"
+    ],
+    "reuse": "No empirical pixels sent for generative redraw; original symbolic scenes only",
+    "budget": "0% numeric evidence; scoped overview of modeling/analysis rather than result figure",
+    "limitations": "No model rerun; no generalization of paper's ecological claims beyond its assumptions"
+  },
+  "permitted_omissions": [
+    "Forest species-level chain aggregated as consumers; full chain equations in Section4",
+    "Parameter values, raw curves and result percentages omitted because this is introductory workflow overview",
+    "Detailed matrix operands and exact ODEs remain in Sections4-6",
+    "Chrysoperla discussion appears under biocontrol alternatives, not as an eighth modeled species"
+  ],
+  "negative_paths": [
+    "No forest fertilizer/harvest",
+    "No baseline bat-pollination edge",
+    "No rhizobia/straw simulation branch",
+    "No nitrogen-flux arrow for competition",
+    "No sequential arrows between alternative scenarios",
+    "No external validation label"
+  ],
+  "visual_grammar_receipt": {
+    "primary_spine": "model extension left-to-right then analysis beneath",
+    "entry": "forest",
+    "exit": "guidance",
+    "focal": "larger food-web scene",
+    "role_to_shape": "plant silhouettes/species glyphs; labeled compartments; isolated scenario list; dashed recommendation scope",
+    "connector_prominence": "thick charcoal workflow; thin teal nitrogen; ochre external inputs; dashed influence; blunt competition",
+    "typography": "sans 2 weights, title13pt, headers10pt, labels8-9pt working target",
+    "palette": "charcoal,teal,ochre,sage on white",
+    "grayscale_plan": "inspect if available; no unprimed independent reviewer available",
+    "content_hull": "94% width x94% height",
+    "whitespace": "gutters route connectors and separate semantic scopes",
+    "forbidden": "card wall, fake curves, award badges, generic outcomes",
+    "reference_firewall": "paper controls content; original overview only model inheritance grammar; original mechanism only pool/process distinction",
+    "review_sizes": "actual native image and reduced display; intended180mm, formal physical-size typesetting gate pending for raster"
+  },
+  "style_dna": {
+    "skeleton": "unequal three-scene spine over scoped analysis band",
+    "focal": "food-web network",
+    "shape_language": "flat ecological glyphs and explicit flux loops",
+    "evidence_weight": "schematic only",
+    "line_behavior": "thin curved local arcs; thick straight main arrows",
+    "whitespace": "narrow logical gutters, no decorative empty panels"
+  },
+  "review_plan": {
+    "type": "self_review, informed",
+    "checks": [
+      "acronyms",
+      "forest-vs-farm N boundary",
+      "nine food-web edges and negative paths",
+      "scenario scope",
+      "readability",
+      "clip/overlap"
+    ],
+    "pending": [
+      "independent unprimed review",
+      "physical print proof",
+      "user approval"
+    ],
+    "native_gates": "not applicable to requested raster"
+  }
+}
