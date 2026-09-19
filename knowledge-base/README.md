@@ -8,6 +8,9 @@
 
 [逐图目录](CATALOG.md) · [近期来源与缺口](SOURCES.md) · [结构化索引](../src/modelatlas/knowledge/corpus.json)
 
+[构图与细节准则](VISUAL-GRAMMAR.md)：按实际模型选择对象和关系，不套统一卡片。检索结果附带
+`design_guidance`，包括可用对象、应避开的布局、逐图科学边界和检查项。来源记录与原创设计建议分开保存。
+
 ## 查找与读图
 
 ```sh

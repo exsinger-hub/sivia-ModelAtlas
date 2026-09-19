@@ -4,9 +4,9 @@
 
 Source paper：*From Wins to Worth: A Quantitative Model of Performance, Attendance, Revenue, and Valuation for Sports Teams* · Finalist · Team 2608869.
 
-[![A decision chain from game performance to attendance, cash flow and team value.](overview.png)](overview.png)
+[![Arena seats explain capacity censoring; explicit revenue terms and a forward timeline connect operations to decisions.](overview.png)](overview.png)
 
-A decision chain from game performance to attendance, cash flow and team value.
+Arena seats explain capacity censoring; explicit revenue terms and a forward timeline connect operations to decisions.
 
 [Full prompt](full-prompt.md) · [Evidence & caption](brief.json) · [File integrity](integrity-audit.json)
 

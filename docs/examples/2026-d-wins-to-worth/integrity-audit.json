@@ -7,21 +7,20 @@
   },
   "visual_review": {
     "status": "pending",
-    "review_type": "informed visual self-review; not independent acceptance",
-    "execution_test": "completed: full paper read, reference viewed, actual image generated, inspected and corrected where needed",
+    "review_type": "informed visual self-review of actual outputs; not independent acceptance",
+    "execution_test": "Completed full-image inspection of three real redesign/edit outputs; earlier versions retained, final selected for showcase.",
     "checks": [
-      "Five-stage sequence distinguishes revenue from profit/cash.",
-      "Attendance capacity limit and censored demand remain explicit.",
-      "Revenue, EBITDA and DCF shown as valuation cross-checks, not an invented weighted formula.",
-      "No move/sign/trade, target leverage, cash floor, debt limit and salary cap are visible.",
-      "Feedback labelled Update as games are observed returns to performance; exogenous scenarios grouped separately.",
-      "Removed dark background and accidental printed section/page instructions; final title and labels readable.",
-      "No numeric business outcome or code execution result is shown."
+      "Replaced five equal business panels with an arena-capacity mechanism, revenue/cost ledger and forward decision timeline.",
+      "Attendance = min(D*, K); price and attendance multiply for ticket revenue; no price-to-capacity operand route.",
+      "Revenue and costs remain additive/subtractive; cash is a separate state affected by financing.",
+      "Baseline revenue-multiple valuation is expressed explicitly; EBITDA and DCF remain cross-checks, not a weighted average.",
+      "Removed the ambiguous outer return loop in favor of explicit local roster-to-strength/popularity/salary labels.",
+      "Schematic cap curve has no fitted parameters; no financial outcome or numerical forecast is claimed."
     ],
     "issues": [
       {
         "severity": "pending_gate",
-        "detail": "180mm physical-size/grayscale proof and independent review not performed. Small connector labels require checking in the manuscript layout."
+        "detail": "Physical 180mm print/grayscale proof and independent acceptance remain pending. README uses a raster preview; mathematical label readability should be checked in the target manuscript."
       }
     ],
     "publication_gate": "pending",
@@ -30,15 +29,15 @@
   "user_approval": "not_recorded",
   "scope": "File integrity only; not source fidelity, image quality or award verification.",
   "hashes": {
-    "overview.png": "d47578483dd6755145d79cd8614ca76297e9b0e4febc0d22d2bcc976a556fe5e",
-    "full-prompt.md": "c83840dd2f0b51b25dda869ce19decaa9afa0e37b7c3b5e610bd65ad860d7c10",
-    "brief.json": "1de2fc906d01d4424e2b235793662376907832675cf6c17c6359a98e790c88d6"
+    "overview.png": "46973b9a6fa3348ce0bc367a2ddea8dbe608c3a92d5905679441d9bebe833253",
+    "full-prompt.md": "ba0e1b04a172e80de1b9f4f35f79e52f700004cdb42ca1e3ad16e743c36cfd34",
+    "brief.json": "ff3da550545b00facaf4e89a8ba7a6b8a9b600c3fcf064d1de10ef505f4d6069"
+  },
+  "paired_copy_hashes": {
+    "brief.json": "aa478e2967260e557552f45482b4c474b04f3767a38e56ef5a9e3a5f9ed11059",
+    "overview.png": "46973b9a6fa3348ce0bc367a2ddea8dbe608c3a92d5905679441d9bebe833253",
+    "prompt.md": "16b3ce8290e661749d75a000ab5bc1eab03d36ea26d46dc4f572ddee4f8d3b67"
   },
   "intake_sha256": "73646259b2dd433de1b194fafd7233c29b33ce08a8138defab21381f903a6522",
-  "paired_copy_hashes": {
-    "brief.json": "5578a2c29c692c76dab53043014aa8277262f6f9c53f3b420099a4621c9fbf26",
-    "overview.png": "d47578483dd6755145d79cd8614ca76297e9b0e4febc0d22d2bcc976a556fe5e",
-    "prompt.md": "a241cbd5e5e0fc4bae7e4f6cbc211d0519d6cc458915c30657e870ed524cd170"
-  },
-  "copy_note": "Local pairing preserves text content but may normalize line endings on Windows. hashes refers to published files; paired_copy_hashes refers to the audited local bundle."
+  "copy_note": "Published hashes cover exact repository bytes; paired copies may normalize newlines/JSON formatting. Each set was independently verified."
 }

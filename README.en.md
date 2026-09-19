@@ -68,7 +68,7 @@ Latent-variable inference · Source paper Finalist · Team 2627351
       <a href="docs/assets/reference-overviews/2026-c-2627351-overview.png"><img src="docs/assets/reference-overviews/2026-c-2627351-overview.png" width="100%" alt="Original: 2026 MCM C, Behind the Ballroom Scores"></a>
     </td>
     <td width="50%" align="center" valign="middle">
-      <a href="docs/examples/2026-c-ballroom-voting/overview.png"><img src="docs/examples/2026-c-ballroom-voting/overview.png" width="100%" alt="ModelAtlas final: fan-share inference, parallel rule audit and mixed-effects analysis"></a>
+      <a href="docs/examples/2026-c-ballroom-voting/overview.png"><img src="docs/examples/2026-c-ballroom-voting/overview.png" width="100%" alt="ModelAtlas final: feasible fan shares, matched weekly rules and conditional rank protection"></a>
     </td>
   </tr>
   <tr>
@@ -112,7 +112,7 @@ Localization & rescue · Source paper Outstanding Winner
 
 Policy evaluation · Source paper Outstanding Winner
 
-<a href="docs/examples/2025-f-cyber-policy/overview.png"><img src="docs/examples/2025-f-cyber-policy/overview.png" width="100%" alt="ModelAtlas: Country profiles, policy changes and national-context evidence converge on a policy brief."></a>
+<a href="docs/examples/2025-f-cyber-policy/overview.png"><img src="docs/examples/2025-f-cyber-policy/overview.png" width="100%" alt="ModelAtlas: Country-year records, policy themes and symbolic treated/control changes."></a>
 
 [Paper & caption](docs/examples/2025-f-cyber-policy/README.en.md) · [Full prompt](docs/examples/2025-f-cyber-policy/full-prompt.md)
 
@@ -123,7 +123,7 @@ Policy evaluation · Source paper Outstanding Winner
 
 Operations & decisions · Source paper Finalist
 
-<a href="docs/examples/2026-d-wins-to-worth/overview.png"><img src="docs/examples/2026-d-wins-to-worth/overview.png" width="100%" alt="ModelAtlas: A decision chain from game performance to attendance, cash flow and team value."></a>
+<a href="docs/examples/2026-d-wins-to-worth/overview.png"><img src="docs/examples/2026-d-wins-to-worth/overview.png" width="100%" alt="ModelAtlas: Arena capacity, price × attendance, an accounting ledger and rolling decisions."></a>
 
 [Paper & caption](docs/examples/2026-d-wins-to-worth/README.en.md) · [Full prompt](docs/examples/2026-d-wins-to-worth/full-prompt.md)
 
@@ -162,7 +162,8 @@ python3 -m venv .venv
 ```text
 Follow plugins/sivia-modelatlas/skills/paper2overview/SKILL.md
 to create an English overview figure for this MCM/ICM paper.
-Use relevant library figures for composition, and verify model relationships and arrows against the paper.
+Use concrete objects and model operations from the library; avoid interchangeable module cards.
+Verify formulas and arrow endpoints, check the exact full prompt, then generate and inspect the image.
 Deliver the image, full prompt and caption.
 ```
 
@@ -194,7 +195,7 @@ Image generation runs in the host. The CLI only prepares the paper and reference
 ## Reference library
 
 Search by problem A–F and year: 26 O/F papers with 36 figure cases, plus 3 research papers with 4 additional cases.
-[Figure catalog](knowledge-base/CATALOG.md) · [Sources & year coverage](knowledge-base/SOURCES.md) · [Search & inclusion criteria (中文)](knowledge-base/README.md)
+[Figure catalog](knowledge-base/CATALOG.md) · [Sources & year coverage](knowledge-base/SOURCES.md) · [Search & inclusion criteria (中文)](knowledge-base/README.md) · [Scene grammar](plugins/sivia-modelatlas/skills/paper2overview/references/scene-grammar.md)
 
 ---
 

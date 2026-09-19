@@ -7,20 +7,19 @@
   },
   "visual_review": {
     "status": "pending",
-    "review_type": "informed visual self-review; not independent acceptance",
-    "execution_test": "completed: full paper read, reference viewed, actual image generated, inspected and corrected where needed",
+    "review_type": "informed visual self-review of actual outputs; not independent acceptance",
+    "execution_test": "Completed full-image inspection of three real redesign/edit outputs; earlier versions retained, final selected for showcase.",
     "checks": [
-      "Observed weekly data enter the whole inference region; feasible-set and likelihood methods remain complementary.",
-      "Corrected the inference output to fork once to each analysis panel, with no rule-audit -> mixed-effects dependency.",
-      "Hidden fan shares explicitly not observed vote totals.",
-      "Rank, Percentage and Judges' Save are parallel choices on the same contestants/week.",
-      "MARS retains the AND-gated protection condition and temporal Tune1–17/Test18–34 separation.",
-      "Final image inspected; white background and high-contrast title; no numeric performance results reproduced."
+      "Replaced repeated colored panels with a feasible-share domain, matched-rule table and dominant conditional rank operation.",
+      "Final review: fan inference has no route to Judge outcome; observed-judge input is locally labeled.",
+      "Feasible-set bounds and complementary likelihood point share the inferred-output junction; no simplex-vertex input to likelihood.",
+      "MARS retains judge-elite AND worse-fan-rank conditions, positive-part gate, targeted subtraction and argmax elimination.",
+      "No empirical vote totals or performance claims; earlier/later season evaluation remains distinct."
     ],
     "issues": [
       {
         "severity": "pending_gate",
-        "detail": "180mm physical-size/grayscale proof and independent review not performed. Small connector labels require checking in the manuscript layout."
+        "detail": "Physical 180mm print/grayscale proof and independent acceptance remain pending. README uses a raster preview; mathematical label readability should be checked in the target manuscript."
       }
     ],
     "publication_gate": "pending",
@@ -29,15 +28,15 @@
   "user_approval": "not_recorded",
   "scope": "File integrity only; not source fidelity, image quality or award verification.",
   "hashes": {
-    "overview.png": "7d1536e95f53007cbdecb14d0cbaa61f1d22b42fa0b3c6bc8ea40a22b1de41b9",
-    "full-prompt.md": "8ee0897dbf4af4b2e81e7203bea15a2ae2273ba9e16e3d1bf48e14783a6cbdd6",
-    "brief.json": "2194a8803e973ada809e6b92d632c416fc94d500a586d0f9081e7bcbf723af6b"
+    "overview.png": "a2c2f03a89584d1fdf00679d1130b9ff48a837547912e9cf5607d3c2e6b15b93",
+    "full-prompt.md": "b3802bf5183d5c469acfd1117a26ba72f1395f73de0c275b4619df2cfd7fd355",
+    "brief.json": "f91e766dff3cefc6ed0f6543416c14a855f2c35ee3087c9cfe83806dbde20306"
+  },
+  "paired_copy_hashes": {
+    "brief.json": "d19451b2cb9234e31a94a22e67df6390aeb593067870f727fe965491018fcdaf",
+    "overview.png": "a2c2f03a89584d1fdf00679d1130b9ff48a837547912e9cf5607d3c2e6b15b93",
+    "prompt.md": "4adfdb1c772546e88e8a89e297f313a454ef5549f51ba3f31b25fe93a1e45b42"
   },
   "intake_sha256": "ab837f28944fce38f7677fe833ed89360ff38da754e47f7f406273dfae31bf55",
-  "paired_copy_hashes": {
-    "brief.json": "fa4cb4b2a0330febe4368b79a6dba6e7c258f25ef1ae24635d75b0ded2234608",
-    "overview.png": "7d1536e95f53007cbdecb14d0cbaa61f1d22b42fa0b3c6bc8ea40a22b1de41b9",
-    "prompt.md": "45f123ae69ee74b3853abd8a1ee3301956ae589985d50a06b048468f21c64f2a"
-  },
-  "copy_note": "Local pairing preserves text content but may normalize line endings on Windows. hashes refers to published files; paired_copy_hashes refers to the audited local bundle."
+  "copy_note": "Published hashes cover exact repository bytes; paired copies may normalize newlines/JSON formatting. Each set was independently verified."
 }

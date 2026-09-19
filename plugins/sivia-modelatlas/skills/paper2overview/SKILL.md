@@ -33,16 +33,29 @@ For new source discovery use AnySearch: discover academic subdomains/required pa
 with exact team IDs, official results and author-repository web queries. `atlas_find_papers` returns
 discovery only. Do not send private manuscript text in queries or infer awards from snippets.
 Record case/page/figure, borrowed visual principles and excluded source-specific models/results/defects.
+Read the returned `design_guidance`: its object carriers, exclusions and endpoint checks are original
+composition advice, not additional facts from the award paper. Select a profile by the actual model
+relationship; A–F must not become six compulsory layouts. Generated examples remain candidates until accepted.
 If references are unavailable, state the limitation and proceed from the paper when feasible.
 
 ## Design and draw
 
 Read [production contract](references/production-contract.md) before writing the complete prompt.
+Read [scene grammar](references/scene-grammar.md) when designing or substantially recomposing a figure.
 Choose a paper-specific scene structure: shared-inference branches, model-to-task mapping, actor
 relations, feedback, spatial organization or process cycles. Neither dense box inventories nor sparse
 pipelines are universal overview templates. Specify region hierarchy, exact labels, connections and
 their meanings, semantic colors, meaningful objects and reading order. Preserve interpretation-changing
 boundaries and conditions; omit detail only with a stated source-grounded reason.
+
+Freeze the detailed overview-template binding before writing. For the shipped full-English-overview
+profile, check the exact per-call prompt using `python -m modelatlas.prompting --prompt PROMPT_PATH`.
+The frozen Sivia template floor is 15,356 non-whitespace Unicode characters; the current tool ceiling
+is 32,000 total characters. A different template/language needs an explicitly reviewed binding, not
+a silently lowered floor. Never count concatenated call history or pad with repeated instructions.
+Expand the actual objects, operands, geometry and exclusions. Full redesign revisions retain a complete
+prompt; small user-scoped corrections need not expand the task into a full redesign. Record exact text,
+counts and its hash. Passing length checks does not approve the image.
 
 Use SIVIA's **ImageGen-first** route with the host's available image tool and applicable image skill.
 Preserve the full prompt and actual image. Do not pass off source-page screenshots as new output.

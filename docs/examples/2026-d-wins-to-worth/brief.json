@@ -78,17 +78,17 @@
       "not_borrowed": "Source pixels, layout coordinates, paper-specific numerical results, team/award labels and unsupported causal claims."
     }
   ],
-  "caption": "Conceptual overview of a sports-team decision model. Elo-based performance drives capacity-constrained attendance and revenue, which enters a financial ledger and valuation cross-checks. Player actions and financing are evaluated under cash, debt and salary constraints and updated as games are observed. Scenario and sensitivity checks remain separate from the main operating chain. No numerical forecast or investment recommendation is reproduced.",
+  "caption": "The team decision model shown through its operative quantities. Competitive strength and demand lead to attendance limited by arena capacity. Price and attendance generate ticket revenue, which joins other income before costs are deducted. Baseline valuation, liquidity and leverage remain distinct, while roster and financing choices advance with the available state. The arena, cap relationship and decision timeline are schematic, not a simulation rerun.",
   "placement": "End of Introduction / Our Work, before assumptions. Intended 180mm full-text width; physical print proof pending.",
   "generation": {
     "backend": "built-in image_gen.imagegen",
     "status": "generated",
-    "artifact_id": "exec-d6a1eae9-d4a5-4481-b119-79b8a2b859b7.png",
+    "artifact_id": "exec-15f1dc94-182a-4b08-b5b7-b87d28dadd34.png",
     "actual_size": [
       1536,
       1024
     ],
-    "image_sha256": "d47578483dd6755145d79cd8614ca76297e9b0e4febc0d22d2bcc976a556fe5e",
+    "image_sha256": "46973b9a6fa3348ce0bc367a2ddea8dbe608c3a92d5905679441d9bebe833253",
     "chain": [
       {
         "operation": "generate",
@@ -101,32 +101,125 @@
         "operation": "edit",
         "prompt": "correction-prompt.md",
         "input": "overview-v1.png",
-        "output": "overview.png",
+        "output": "overview-v2.png",
         "artifact_id": "exec-d6a1eae9-d4a5-4481-b119-79b8a2b859b7.png",
         "sha256": "d47578483dd6755145d79cd8614ca76297e9b0e4febc0d22d2bcc976a556fe5e"
+      },
+      {
+        "operation": "edit",
+        "prompt": "redesign-prompt.md",
+        "input": "overview-v2.png",
+        "output": "overview-v3.png",
+        "artifact_id": "exec-d3e6a40a-aa89-4798-bedf-780bedaa6443.png",
+        "sha256": "e20332f898f9e24bbc1528676e0236078d5d3087fa168e2192bf8b49851972ab",
+        "prompt_detail": {
+          "profile": "sivia-overview-v1",
+          "binding": {
+            "purpose": "Full English overview designs and substantial redesigns; not an arbitrary universal minimum for small unrelated edits.",
+            "source_repository": "https://github.com/exsinger-hub/Sivia",
+            "source_version": "1.1.0+codex.20260909060506",
+            "template_path": "skills/design-scientific-figure/references/templates/overview-template.txt",
+            "template_sha256": "cd73e60b51a15e005defd61190705846cb3f50a6582a33119be07b2fe78921f9",
+            "minimum_non_whitespace_characters": 15356,
+            "maximum_total_characters": 32000,
+            "metric": "Unicode code points excluding whitespace; count exact submitted prompt, one image call at a time",
+            "count_verified_on": "2026-09-20",
+            "limitation": "Length does not prove useful detail, source fidelity, image quality or user acceptance. Do not pad or concatenate prior calls to pass."
+          },
+          "total_characters": 28070,
+          "non_whitespace_characters": 23792,
+          "submitted_utf8_sha256": "50588b8ebee76546459d3b5a462160baac38ea06a85c27d1953b17a86917c8fb",
+          "length_pass": true,
+          "tool_limit_pass": true,
+          "passed": true,
+          "template_bytes_verified": true,
+          "scope": "Exact prompt-text length only; source/visual review and user approval are separate."
+        }
+      },
+      {
+        "operation": "edit",
+        "prompt": "redesign-correction-prompt.md",
+        "input": "overview-v3.png",
+        "output": "overview-v4.png",
+        "artifact_id": "exec-5e68f115-f6da-4f99-b697-c07df9cd435d.png",
+        "sha256": "b82a5765d93f1e3f995c90c3438124600b6f8dfc0615f192c137df22e02225ca",
+        "prompt_detail": {
+          "profile": "sivia-overview-v1",
+          "binding": {
+            "purpose": "Full English overview designs and substantial redesigns; not an arbitrary universal minimum for small unrelated edits.",
+            "source_repository": "https://github.com/exsinger-hub/Sivia",
+            "source_version": "1.1.0+codex.20260909060506",
+            "template_path": "skills/design-scientific-figure/references/templates/overview-template.txt",
+            "template_sha256": "cd73e60b51a15e005defd61190705846cb3f50a6582a33119be07b2fe78921f9",
+            "minimum_non_whitespace_characters": 15356,
+            "maximum_total_characters": 32000,
+            "metric": "Unicode code points excluding whitespace; count exact submitted prompt, one image call at a time",
+            "count_verified_on": "2026-09-20",
+            "limitation": "Length does not prove useful detail, source fidelity, image quality or user acceptance. Do not pad or concatenate prior calls to pass."
+          },
+          "total_characters": 31106,
+          "non_whitespace_characters": 26342,
+          "submitted_utf8_sha256": "a84bc58978022ee7bbee5f9c25f5ebb0829d7926ee2a0a3e7b68130231a42308",
+          "length_pass": true,
+          "tool_limit_pass": true,
+          "passed": true,
+          "template_bytes_verified": true,
+          "scope": "Exact prompt-text length only; source/visual review and user approval are separate."
+        }
+      },
+      {
+        "operation": "edit",
+        "prompt": "redesign-routing-prompt.md",
+        "input": "overview-v4.png",
+        "output": "overview.png",
+        "artifact_id": "exec-15f1dc94-182a-4b08-b5b7-b87d28dadd34.png",
+        "sha256": "46973b9a6fa3348ce0bc367a2ddea8dbe608c3a92d5905679441d9bebe833253",
+        "prompt_detail": {
+          "profile": "sivia-overview-v1",
+          "binding": {
+            "purpose": "Full English overview designs and substantial redesigns; not an arbitrary universal minimum for small unrelated edits.",
+            "source_repository": "https://github.com/exsinger-hub/Sivia",
+            "source_version": "1.1.0+codex.20260909060506",
+            "template_path": "skills/design-scientific-figure/references/templates/overview-template.txt",
+            "template_sha256": "cd73e60b51a15e005defd61190705846cb3f50a6582a33119be07b2fe78921f9",
+            "minimum_non_whitespace_characters": 15356,
+            "maximum_total_characters": 32000,
+            "metric": "Unicode code points excluding whitespace; count exact submitted prompt, one image call at a time",
+            "count_verified_on": "2026-09-20",
+            "limitation": "Length does not prove useful detail, source fidelity, image quality or user acceptance. Do not pad or concatenate prior calls to pass."
+          },
+          "total_characters": 30683,
+          "non_whitespace_characters": 26011,
+          "submitted_utf8_sha256": "8c9ddc67e505add86ed71b8e6bf8cd89aa24e4348dcd4be3c43115912766ae00",
+          "length_pass": true,
+          "tool_limit_pass": true,
+          "passed": true,
+          "template_bytes_verified": true,
+          "scope": "Exact prompt-text length only; source/visual review and user approval are separate."
+        }
       }
     ],
     "exact_prompt_record": "full-prompt.md",
     "empirical_rerun": false,
-    "native_editability": false
+    "native_editability": false,
+    "prompt_detail_profile": "sivia-overview-v1"
   },
   "review": {
     "status": "pending",
-    "review_type": "informed visual self-review; not independent acceptance",
-    "execution_test": "completed: full paper read, reference viewed, actual image generated, inspected and corrected where needed",
+    "review_type": "informed visual self-review of actual outputs; not independent acceptance",
+    "execution_test": "Completed full-image inspection of three real redesign/edit outputs; earlier versions retained, final selected for showcase.",
     "checks": [
-      "Five-stage sequence distinguishes revenue from profit/cash.",
-      "Attendance capacity limit and censored demand remain explicit.",
-      "Revenue, EBITDA and DCF shown as valuation cross-checks, not an invented weighted formula.",
-      "No move/sign/trade, target leverage, cash floor, debt limit and salary cap are visible.",
-      "Feedback labelled Update as games are observed returns to performance; exogenous scenarios grouped separately.",
-      "Removed dark background and accidental printed section/page instructions; final title and labels readable.",
-      "No numeric business outcome or code execution result is shown."
+      "Replaced five equal business panels with an arena-capacity mechanism, revenue/cost ledger and forward decision timeline.",
+      "Attendance = min(D*, K); price and attendance multiply for ticket revenue; no price-to-capacity operand route.",
+      "Revenue and costs remain additive/subtractive; cash is a separate state affected by financing.",
+      "Baseline revenue-multiple valuation is expressed explicitly; EBITDA and DCF remain cross-checks, not a weighted average.",
+      "Removed the ambiguous outer return loop in favor of explicit local roster-to-strength/popularity/salary labels.",
+      "Schematic cap curve has no fitted parameters; no financial outcome or numerical forecast is claimed."
     ],
     "issues": [
       {
         "severity": "pending_gate",
-        "detail": "180mm physical-size/grayscale proof and independent review not performed. Small connector labels require checking in the manuscript layout."
+        "detail": "Physical 180mm print/grayscale proof and independent acceptance remain pending. README uses a raster preview; mathematical label readability should be checked in the target manuscript."
       }
     ],
     "publication_gate": "pending",
@@ -136,5 +229,25 @@
     "Direct PDF intake encountered malformed font surrogate text. The session uses the previously extracted complete 32-page text with affected glyphs replaced; the original overview was visually inspected. PDF SHA remains recorded separately.",
     "Author repository code is a later reconstruction, not independently verified competition execution. This example uses the paper only.",
     "Source baseline uses revenue multiples; EBITDA/DCF are comparison lenses. Injury is drawn as a scenario, not a validated stochastic process."
-  ]
+  ],
+  "style_adaptation": {
+    "source": "Sivia",
+    "version": "1.1.0+codex.20260909060506",
+    "inspected_cases": [
+      "trace",
+      "reasoning-between-words",
+      "eventbridge-rl"
+    ],
+    "borrowed": "Persistent object identity, concrete intermediate representations, selective before/after change and asymmetric mechanism emphasis.",
+    "excluded": "Source-specific science, results, whole panel layouts, generic metric chips and weak connector endpoints.",
+    "public_record": "../../../src/modelatlas/knowledge/visual-guidance.json"
+  },
+  "design_revision": {
+    "date": "2026-09-20",
+    "reason": "User feedback: excessive modularization and insufficient prompt detail.",
+    "status": "candidate_awaiting_user_feedback",
+    "latest_round": 5,
+    "old_image": "overview-v2.png",
+    "new_image": "overview.png"
+  }
 }

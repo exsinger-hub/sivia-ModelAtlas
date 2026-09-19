@@ -8,7 +8,7 @@
 | :---: | :---: |
 | [![Original](../../assets/reference-overviews/2026-c-2627351-overview.png)](../../assets/reference-overviews/2026-c-2627351-overview.png) | [![ModelAtlas](overview.png)](overview.png) |
 
-先推断隐藏票份额，再并行比较规则与个体差异。
+可行域解释隐藏票份额；同周对照连接到右侧的条件保护公式。新版放大实际操作，去掉重复模块底板。
 
 [完整 prompt](full-prompt.md) · [论文依据与图注](brief.json) · [文件校验](integrity-audit.json)
 

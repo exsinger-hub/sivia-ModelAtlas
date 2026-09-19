@@ -36,9 +36,23 @@ modelatlas styles --role all --collection all
 
 默认只推荐 Overview。机制、算法和数据图保留作局部表达参考。
 题号 A–F 是检索分类，不是固定不变的建模类型；题号 F 与 Finalist 奖项分开记录。
+
+`styles` 与 `reference` 同时返回 `design_guidance`：具体对象、构图选择、不可照搬内容和逐图检查项。
+原论文仍决定科学内容；这些原创建议不改变奖项、来源或入库数量。
+
 `--year` 按来源论文年份过滤。文本匹配分数相同时，先推荐原题号相同的图例，再按年份从新到旧排序。
 `coverage` 同时给出逐年覆盖和缺口。扫描版参考页仍可直接渲染查看，空文本不代表空白页。
 
+## 完整绘图 prompt 检查
+
+```sh
+python -m modelatlas.prompting --prompt path/to/prompt.md
+```
+
+适用于完整英文 overview 设计与重画：使用已核验的 Sivia 模板绑定，每次实际提交文本至少
+15,356 个非空白字符，且不超过当前工具的 32,000 个总字符。可加 `--template` 指向已安装的
+overview 模板，复核版本哈希。每次调用单独计数，不把多轮历史合并计算；补对象、操作和端点细节，不凑字数。
+检查报告记录文本哈希，不能证明图片正确或已获认可。[构图准则](../knowledge-base/VISUAL-GRAMMAR.md)
 ## AnySearch
 
 ```sh

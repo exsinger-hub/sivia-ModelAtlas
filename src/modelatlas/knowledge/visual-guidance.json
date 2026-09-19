@@ -1,0 +1,197 @@
+{
+  "schema_version": 1,
+  "scope": "Composition guidance only. Manuscripts remain authoritative for models, edges and results. Generated redesigns are candidates pending user acceptance, not new award references.",
+  "sivia_reference": {
+    "repository": "https://github.com/exsinger-hub/Sivia",
+    "installed_version": "1.1.0+codex.20260909060506",
+    "reviewed": "2026-09-20",
+    "method": "Read paired prompts and inspect actual figures. Select principles, not whole layouts. Original Sivia image/prompt files are not redistributed here.",
+    "cases": [
+      {
+        "id": "reasoning-between-words",
+        "borrow": "Persistent identity across a local before/after change; allocate most area to the actual gate.",
+        "exclude": "Language-model mechanisms, benchmark metrics and repeated boxed panels."
+      },
+      {
+        "id": "eventbridge-rl",
+        "borrow": "Observed state, candidate action and updated state remain visibly the same entity across time.",
+        "exclude": "Reinforcement-learning algorithms, invented probabilities and decorative process cards."
+      },
+      {
+        "id": "trace",
+        "borrow": "Show the evidence carrier and the transformation, not a generic icon for each step.",
+        "exclude": "Multimodal-agent architecture, weak endpoint routing and unsupported performance chips."
+      }
+    ]
+  },
+  "global_review": [
+    "Hide headings: can the scientific object and transformation still be recognized?",
+    "Each enclosure must denote a real boundary, matrix, coordinate domain or meaningful grouping; a method name alone is insufficient.",
+    "Can two unrelated paper examples swap layouts unchanged? If yes, redesign around the paper's actual relation.",
+    "Name the operand at both ends of each arrow. Prefer an explicit local source label over a tangled global route.",
+    "Use one dominant transformation with asymmetric support. More prompt detail must not become more in-figure prose.",
+    "Prompt length is a completeness gate, not proof of correctness or visual quality."
+  ],
+  "profiles": {
+    "A": {
+      "name": "Physical mechanism / state evolution",
+      "use_when": "The manuscript centers on a physical, biological or dynamical mechanism.",
+      "carriers": [
+        "Physical state or cross-section",
+        "Signed interaction graph with named state variables",
+        "Same object under source-supported conditions"
+      ],
+      "layout": "A continuous mechanism or feedback loop; place validation beside the state it tests.",
+      "avoid": [
+        "Equal cards for each equation",
+        "Generic nature clip art replacing state changes",
+        "Unexplained plus/minus signs"
+      ],
+      "checks": [
+        "Which state changes?",
+        "Where does feedback return?",
+        "Are signs and timescales supported?"
+      ]
+    },
+    "B": {
+      "name": "Spatial decisions / iterative search",
+      "use_when": "The manuscript couples location, resources and an iterative decision.",
+      "carriers": [
+        "Map or physical cross-section",
+        "Spatial belief/support field",
+        "Actual resource location and next search region"
+      ],
+      "layout": "Use geography as the common coordinate frame; add local refinement and a state-update return.",
+      "avoid": [
+        "Independent map thumbnails with inconsistent coordinates",
+        "Equipment icon grids without constraints",
+        "An arrow to a title rather than an updated belief"
+      ],
+      "checks": [
+        "Is location identity preserved?",
+        "Does observation update the same spatial state?",
+        "Are feasible actions and resource limits visible?"
+      ]
+    },
+    "C": {
+      "name": "Evidence / inference / matched comparison",
+      "use_when": "Observed records constrain a latent variable or support comparisons.",
+      "carriers": [
+        "Named input rows",
+        "Feasible region or uncertainty interval",
+        "Matched identities before and after an operator"
+      ],
+      "layout": "Make inference or the distinguishing operator dominant; route parallel analyses independently.",
+      "avoid": [
+        "Anonymous data icons",
+        "A chain that serializes independent analyses",
+        "Inferred quantities drawn as directly observed measurements"
+      ],
+      "checks": [
+        "Observed versus inferred?",
+        "Which inputs are held fixed?",
+        "Which conditional branch has zero change?"
+      ]
+    },
+    "D": {
+      "name": "State / capacity / accounting / decision",
+      "use_when": "The manuscript links operational state to economics and constrained actions.",
+      "carriers": [
+        "Capacity-bearing physical object",
+        "Explicit revenue/cost operands",
+        "Current state and forward decision time"
+      ],
+      "layout": "Integrate the physical limit with a ledger and a compact rolling state update; no five-card business pipeline.",
+      "avoid": [
+        "Generic business icons instead of arithmetic",
+        "Profit equated with liquidity",
+        "Different valuation lenses silently averaged"
+      ],
+      "checks": [
+        "Which boundary clips demand?",
+        "Which quantities add or subtract?",
+        "Can the decision use only information available at that time?"
+      ]
+    },
+    "E": {
+      "name": "Interactions / environmental transitions",
+      "use_when": "The manuscript centers on ecological relations or interventions.",
+      "carriers": [
+        "Organisms/resources with typed interactions",
+        "One environment changing under an intervention",
+        "Shared identity across scenarios"
+      ],
+      "layout": "A food web, landscape transition or feedback mechanism with secondary scenario comparison.",
+      "avoid": [
+        "Leaf icons in every module",
+        "Unlabeled arrows between species",
+        "Confusing scenario assumptions with observed results"
+      ],
+      "checks": [
+        "What do edge types mean?",
+        "Which interaction changes?",
+        "Are energy, biomass and control arrows distinguished?"
+      ]
+    },
+    "F": {
+      "name": "Evidence / policy contrast / interpretation",
+      "use_when": "The manuscript compares policies, populations or social outcomes.",
+      "carriers": [
+        "Country/actor × time records",
+        "Text spans mapped to policy themes",
+        "Treated/control before/after contrast"
+      ],
+      "layout": "Make the evidence structure and actual comparison dominant; descriptive grouping remains a smaller branch.",
+      "avoid": [
+        "Government and shield clip art",
+        "Same colors for unrelated groupings",
+        "Associations presented as causal effects"
+      ],
+      "checks": [
+        "Are policy groups distinct from descriptive clusters?",
+        "What is differenced and what is held comparable?",
+        "Are claims limited by measurement and source consistency?"
+      ]
+    }
+  },
+  "case_notes": {
+    "c-infer-compare-redesign": {
+      "critique": "Previous redesign split inference, rules, traits and MARS into repeated framed modules; few objects explained the actual operations.",
+      "replacement": "Feasible share simplex → shared rule-conditional shares → two parallel analyses; enlarge rank rails and the AND-gated subtraction.",
+      "scientific_guards": [
+        "Fan shares are relative, not measured totals.",
+        "Feasible-set and likelihood estimators have separate raw-data inputs.",
+        "Observed judges feed Judge outcome; inferred shares feed Inferred fan outcome.",
+        "Judge elite AND worse fan rank; otherwise S = S0; eliminate argmax S.",
+        "Weekly counterfactuals, not a full-season replay; keep tune/test seasons separate."
+      ],
+      "prompt_example": "docs/examples/2026-c-ballroom-voting/redesign-routing-prompt.md",
+      "status": "redesigned_candidate_not_user_approved"
+    },
+    "d-wins-to-value-chain": {
+      "critique": "Five equal business cards and stock icons hid capacity censoring, accounting and the decision state.",
+      "replacement": "Arena capacity and latent-demand overflow dominate; show min(D*,K), price × attendance, additive ledger, baseline valuation and forward decisions.",
+      "scientific_guards": [
+        "Price influences demand, never physical capacity K.",
+        "Revenue sums streams; profit subtracts costs; cash is a separate state.",
+        "Revenue-multiple valuation is the baseline; EBITDA and DCF are checks, not an average.",
+        "Financing updates cash and debt; known state advances to the next segment."
+      ],
+      "prompt_example": "docs/examples/2026-d-wins-to-worth/redesign-routing-prompt.md",
+      "status": "redesigned_candidate_not_user_approved"
+    },
+    "f-cyber-policy-evidence-map": {
+      "critique": "Three equal method panels replaced evidence with repeated icons and hid the comparison actually made.",
+      "replacement": "Country × year ledger, selected clustering columns, document themes, symbolic treated/control contrast and a smaller association branch.",
+      "scientific_guards": [
+        "K-means uses NCSI and Legal Measures only.",
+        "Descriptive clusters are not policy treatment groups; distinguish them by color and labels.",
+        "DID subtracts the control change from the treated change; no invented effects or signs.",
+        "LDA describes topics; MIC/regression associations do not establish causation.",
+        "Source sign interpretations conflict; depict symbolic contrasts, not a claimed empirical benefit."
+      ],
+      "prompt_example": "docs/examples/2025-f-cyber-policy/redesign-routing-prompt.md",
+      "status": "redesigned_candidate_not_user_approved"
+    }
+  }
+}

@@ -19,6 +19,11 @@ Paper content governs every model/edge/result; references guide composition only
 scientific claims or fabricate numerical evidence. A downloaded page is not a viewed illustration.
 Do not claim execution from a prompt or intake JSON alone.
 
+Read returned design_guidance and the skill's scene-grammar reference. Prefer concrete states,
+operands and transformations over repeated equal cards. Bind/check the exact full-design prompt
+per call using modelatlas.prompting; length is necessary for the selected profile, not visual approval.
+Keep source corpus, original style guidance and unapproved generated candidates distinct.
+
 Keep .modelatlas, outputs, existing local SQLite files, PDFs and credentials untouched by cleanup.
 User-requested feature deletion applies to tracked code, not private artifacts. Deleted code remains
 recoverable in Git history. Do not modify adjacent Sivia checkouts.

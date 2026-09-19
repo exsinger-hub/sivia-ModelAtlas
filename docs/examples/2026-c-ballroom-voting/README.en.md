@@ -8,7 +8,7 @@ Source paper：*Behind the Ballroom Scores: Reconstructing Fan Voting and Design
 | :---: | :---: |
 | [![Original](../../assets/reference-overviews/2026-c-2627351-overview.png)](../../assets/reference-overviews/2026-c-2627351-overview.png) | [![ModelAtlas](overview.png)](overview.png) |
 
-Infer hidden fan shares, then audit voting rules and contestant effects in parallel.
+A feasible-share domain, matched weekly rules and an enlarged conditional rank correction replace the repeated panels.
 
 [Full prompt](full-prompt.md) · [Evidence & caption](brief.json) · [File integrity](integrity-audit.json)
 

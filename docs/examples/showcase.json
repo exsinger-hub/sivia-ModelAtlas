@@ -64,7 +64,7 @@
       "brief": "docs/examples/2026-c-ballroom-voting/brief.json",
       "full_prompt": "docs/examples/2026-c-ballroom-voting/full-prompt.md",
       "final_image": "docs/examples/2026-c-ballroom-voting/overview.png",
-      "latest_round": 2,
+      "latest_round": 5,
       "rounds": [
         {
           "number": 1,
@@ -75,8 +75,26 @@
         {
           "number": 2,
           "operation": "edit",
-          "image": "docs/examples/2026-c-ballroom-voting/overview.png",
+          "image": "docs/examples/2026-c-ballroom-voting/overview-v2.png",
           "prompt": "docs/examples/2026-c-ballroom-voting/correction-prompt.md"
+        },
+        {
+          "number": 3,
+          "operation": "edit",
+          "image": "docs/examples/2026-c-ballroom-voting/overview-v3.png",
+          "prompt": "docs/examples/2026-c-ballroom-voting/redesign-prompt.md"
+        },
+        {
+          "number": 4,
+          "operation": "edit",
+          "image": "docs/examples/2026-c-ballroom-voting/overview-v4.png",
+          "prompt": "docs/examples/2026-c-ballroom-voting/redesign-correction-prompt.md"
+        },
+        {
+          "number": 5,
+          "operation": "edit",
+          "image": "docs/examples/2026-c-ballroom-voting/overview.png",
+          "prompt": "docs/examples/2026-c-ballroom-voting/redesign-routing-prompt.md"
         }
       ]
     },
@@ -175,7 +193,7 @@
       "brief": "docs/examples/2025-f-cyber-policy/brief.json",
       "full_prompt": "docs/examples/2025-f-cyber-policy/full-prompt.md",
       "final_image": "docs/examples/2025-f-cyber-policy/overview.png",
-      "latest_round": 2,
+      "latest_round": 5,
       "rounds": [
         {
           "number": 1,
@@ -186,8 +204,26 @@
         {
           "number": 2,
           "operation": "edit",
-          "image": "docs/examples/2025-f-cyber-policy/overview.png",
+          "image": "docs/examples/2025-f-cyber-policy/overview-v2.png",
           "prompt": "docs/examples/2025-f-cyber-policy/correction-prompt.md"
+        },
+        {
+          "number": 3,
+          "operation": "edit",
+          "image": "docs/examples/2025-f-cyber-policy/overview-v3.png",
+          "prompt": "docs/examples/2025-f-cyber-policy/redesign-prompt.md"
+        },
+        {
+          "number": 4,
+          "operation": "edit",
+          "image": "docs/examples/2025-f-cyber-policy/overview-v4.png",
+          "prompt": "docs/examples/2025-f-cyber-policy/redesign-correction-prompt.md"
+        },
+        {
+          "number": 5,
+          "operation": "edit",
+          "image": "docs/examples/2025-f-cyber-policy/overview.png",
+          "prompt": "docs/examples/2025-f-cyber-policy/redesign-routing-prompt.md"
         }
       ]
     },
@@ -214,7 +250,7 @@
       "brief": "docs/examples/2026-d-wins-to-worth/brief.json",
       "full_prompt": "docs/examples/2026-d-wins-to-worth/full-prompt.md",
       "final_image": "docs/examples/2026-d-wins-to-worth/overview.png",
-      "latest_round": 2,
+      "latest_round": 5,
       "rounds": [
         {
           "number": 1,
@@ -225,8 +261,26 @@
         {
           "number": 2,
           "operation": "edit",
-          "image": "docs/examples/2026-d-wins-to-worth/overview.png",
+          "image": "docs/examples/2026-d-wins-to-worth/overview-v2.png",
           "prompt": "docs/examples/2026-d-wins-to-worth/correction-prompt.md"
+        },
+        {
+          "number": 3,
+          "operation": "edit",
+          "image": "docs/examples/2026-d-wins-to-worth/overview-v3.png",
+          "prompt": "docs/examples/2026-d-wins-to-worth/redesign-prompt.md"
+        },
+        {
+          "number": 4,
+          "operation": "edit",
+          "image": "docs/examples/2026-d-wins-to-worth/overview-v4.png",
+          "prompt": "docs/examples/2026-d-wins-to-worth/redesign-correction-prompt.md"
+        },
+        {
+          "number": 5,
+          "operation": "edit",
+          "image": "docs/examples/2026-d-wins-to-worth/overview.png",
+          "prompt": "docs/examples/2026-d-wins-to-worth/redesign-routing-prompt.md"
         }
       ]
     }

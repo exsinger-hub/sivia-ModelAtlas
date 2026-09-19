@@ -2,6 +2,11 @@
 
 ## Unreleased — 2026-09-20
 
+- Recompose 2026 C, 2026 D and 2025 F around actual constraints, quantities and comparisons; keep the bilingual eight-image showcase and all real generation history.
+- Add object-level A–F visual guidance plus paper-specific scientific guards to style search and reference responses. Source counts and award evidence are unchanged.
+- Bind full-overview prompt checks to the inspected Sivia template version/hash (15,356 non-whitespace characters), verify exact per-call text and enforce the current 32,000-character tool limit.
+- Retain source fidelity, visual self-review, physical print proof and user acceptance as distinct checks; revised examples remain candidates pending feedback.
+
 - Organize bilingual README by six papers from 2024–2026: two original/final comparisons and four standalone final figures (eight images total).
 - Add five actual ImageGen examples with full-paper evidence, exact prompts, correction records and file-integrity pairing; keep intermediate outputs off the showcase.
 - Use verified 2026 C Finalist for the second comparison; do not mislabel the discovered 2026 E Honorable Mention as O/F.

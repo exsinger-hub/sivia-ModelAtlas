@@ -4,9 +4,9 @@
 
 Source paper：*Cracking the Cyber-Puzzle: KDMF in Action* · Outstanding Winner · Team 2513705.
 
-[![Country profiles, policy changes and national-context evidence converge on a policy brief.](overview.png)](overview.png)
+[![Country-year records connect to policy themes and a symbolic before/after contrast; profile clusters remain distinct from treatment groups.](overview.png)](overview.png)
 
-Country profiles, policy changes and national-context evidence converge on a policy brief.
+Country-year records connect to policy themes and a symbolic before/after contrast; profile clusters remain distinct from treatment groups.
 
 [Full prompt](full-prompt.md) · [Evidence & caption](brief.json) · [File integrity](integrity-audit.json)
 

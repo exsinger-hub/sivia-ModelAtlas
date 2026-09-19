@@ -15,6 +15,7 @@ import requests
 from pypdf import PdfReader
 
 from .common import digest, write_json
+from .guidance import design_guidance
 
 ROLES = ("overview", "mechanism", "algorithm", "data_plot", "explanation")
 COLLECTIONS = ("award", "research", "all")
@@ -96,7 +97,8 @@ def search_styles(query="", problem=None, role=None, collection="award", limit=5
         matched = sorted(term for term in terms if term in searchable)
         if terms and not matched:
             continue
-        result.append({**case, "paper": paper, "matched_terms": matched, "score": len(matched)})
+        result.append({**case, "paper": paper, "matched_terms": matched, "score": len(matched),
+                       "design_guidance": design_guidance(case, problem or paper.get("problem"))})
     # At equal text relevance, prefer the original contest category, then recent years.
     # Transfer targets remain eligible but do not displace own-category references by ID.
     return sorted(result, key=lambda c: (-c["score"],
@@ -177,6 +179,7 @@ def fetch_reference(case_id, workspace, session=None, render_page=True):
     if len(reader.pages) != paper["pdf_pages"]:
         raise ValueError("Reference PDF page count mismatch")
     result = {"case": case, "paper": paper, "pdf_path": str(pdf), "page_image": None,
+              "design_guidance": design_guidance(case, paper.get("problem")),
               "page_text": reader.pages[case["pdf_page"] - 1].extract_text() or "",
               "status": "source_verified", "current_agent_visual_review": "not_performed"}
     if render_page:

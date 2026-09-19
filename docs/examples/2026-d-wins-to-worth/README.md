@@ -4,9 +4,9 @@
 
 来源论文：*From Wins to Worth: A Quantitative Model of Performance, Attendance, Revenue, and Valuation for Sports Teams* · Finalist · Team 2608869.
 
-[![从比赛表现到上座率、现金流和球队估值的决策链。](overview.png)](overview.png)
+[![用球馆座位解释容量截断，再连接票价×人数、收支账目和滚动决策。](overview.png)](overview.png)
 
-从比赛表现到上座率、现金流和球队估值的决策链。
+用球馆座位解释容量截断，再连接票价×人数、收支账目和滚动决策。
 
 [完整 prompt](full-prompt.md) · [论文依据与图注](brief.json) · [文件校验](integrity-audit.json)
 

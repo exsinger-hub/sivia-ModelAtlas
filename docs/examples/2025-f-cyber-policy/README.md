@@ -4,9 +4,9 @@
 
 来源论文：*Cracking the Cyber-Puzzle: KDMF in Action* · Outstanding Winner · Team 2513705.
 
-[![国家画像、政策变化与社会因素三路证据汇合。](overview.png)](overview.png)
+[![国家—年份记录连接政策主题和前后差分；聚类分组与政策处理组明确区分。](overview.png)](overview.png)
 
-国家画像、政策变化与社会因素三路证据汇合。
+国家—年份记录连接政策主题和前后差分；聚类分组与政策处理组明确区分。
 
 [完整 prompt](full-prompt.md) · [论文依据与图注](brief.json) · [文件校验](integrity-audit.json)
 

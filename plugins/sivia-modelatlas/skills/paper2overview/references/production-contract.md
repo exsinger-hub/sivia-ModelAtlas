@@ -24,6 +24,32 @@ Fill these sections with actual content; never send placeholders to ImageGen.
 9. **Final checks.** Clear main path; all supported dependencies; exact text; no decorative numbers
    or unnecessary duplicated models.
 
+## Detail and source checks before generation
+
+Choose the scientific object before choosing containers. A simplex, spatial field, finite arena,
+food web, ledger or matched before/after records can carry a mechanism; a labeled box alone cannot.
+Write the object's inputs, internal transformation, output and persistent identities. Enumerate
+arrow endpoints. Identify which formulas, quantities or comparisons are symbolic versus empirical.
+Use asymmetric emphasis and no compulsory number of panels. A real matrix or probability boundary
+may need a frame; a method heading does not automatically deserve one.
+
+For full English overview designs, bind the Sivia overview template recorded in
+`src/modelatlas/knowledge/prompt-profiles.json`. Check each exact submitted prompt separately:
+
+```sh
+python -m modelatlas.prompting --prompt path/to/prompt.md
+```
+
+If the installed template is available, add `--template path/to/overview-template.txt` to verify
+its bytes against the frozen SHA-256. The portable profile preserves the already verified count and
+version; it does not claim to reread a missing template. Do not send a prompt longer than the tool
+limit or combine multiple calls to satisfy the floor. Trim redundant instructions, not scientific
+detail. Record the checker report with the generation call; full history is a separate artifact.
+
+Review length and useful detail independently. A long request can still produce wrong arrows or
+generic panels. Inspect the actual result, correct it and record remaining limitations. Do not call
+the result a production reference merely because the file exists or the numeric checks pass.
+
 ## Brief JSON
 
 Replace all example strings; this is a schema example, not a paper.

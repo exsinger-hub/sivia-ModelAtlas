@@ -82,17 +82,17 @@
       "not_borrowed": "Source pixels, layout coordinates, paper-specific numerical results, team/award labels and unsupported causal claims."
     }
   ],
-  "caption": "Overview of the ballroom-voting analysis. Cleaned observations support feasible-set and likelihood estimates of rule-conditional fan shares. These estimates feed parallel weekly rule comparisons and mixed-effects analyses. Their evidence informs the MARS-Soft+Disagreement mechanism, which applies soft protection only under judge-elite/fan-rank disagreement. Evaluation separates earlier-season tuning from later-season testing. All objects are schematic; no empirical performance is reproduced.",
+  "caption": "A mechanism-focused overview of ballroom voting. Observed weekly records constrain relative fan shares through feasible-set and likelihood approaches. The inferred shares support parallel matched-week rule comparisons and trait associations; observed judge outcomes remain separate. The enlarged MARS mechanism shows the elite/disagreement condition and its targeted rank-risk subtraction. All geometry and identities are schematic; no empirical result is reproduced.",
   "placement": "End of Introduction / Our Work, before assumptions. Intended 180mm full-text width; physical print proof pending.",
   "generation": {
     "backend": "built-in image_gen.imagegen",
     "status": "generated",
-    "artifact_id": "exec-de79de9c-1d90-41d5-ac61-b0eced737788.png",
+    "artifact_id": "exec-16c3c5af-625d-4ff2-9f6b-4d7a98acdceb.png",
     "actual_size": [
       1536,
       1024
     ],
-    "image_sha256": "7d1536e95f53007cbdecb14d0cbaa61f1d22b42fa0b3c6bc8ea40a22b1de41b9",
+    "image_sha256": "a2c2f03a89584d1fdf00679d1130b9ff48a837547912e9cf5607d3c2e6b15b93",
     "chain": [
       {
         "operation": "generate",
@@ -105,31 +105,131 @@
         "operation": "edit",
         "prompt": "correction-prompt.md",
         "input": "overview-v1.png",
-        "output": "overview.png",
+        "output": "overview-v2.png",
         "artifact_id": "exec-de79de9c-1d90-41d5-ac61-b0eced737788.png",
         "sha256": "7d1536e95f53007cbdecb14d0cbaa61f1d22b42fa0b3c6bc8ea40a22b1de41b9"
+      },
+      {
+        "operation": "edit",
+        "prompt": "redesign-prompt.md",
+        "input": "overview-v2.png",
+        "output": "overview-v3.png",
+        "artifact_id": "exec-ef7b1831-ad71-4662-b70b-3d7b3990d222.png",
+        "sha256": "6171f66b189f63ec0179ee5e61d4043b858d6f49c4e9ac3f592392a085f73d6c",
+        "prompt_detail": {
+          "profile": "sivia-overview-v1",
+          "binding": {
+            "purpose": "Full English overview designs and substantial redesigns; not an arbitrary universal minimum for small unrelated edits.",
+            "source_repository": "https://github.com/exsinger-hub/Sivia",
+            "source_version": "1.1.0+codex.20260909060506",
+            "template_path": "skills/design-scientific-figure/references/templates/overview-template.txt",
+            "template_sha256": "cd73e60b51a15e005defd61190705846cb3f50a6582a33119be07b2fe78921f9",
+            "minimum_non_whitespace_characters": 15356,
+            "maximum_total_characters": 32000,
+            "metric": "Unicode code points excluding whitespace; count exact submitted prompt, one image call at a time",
+            "count_verified_on": "2026-09-20",
+            "limitation": "Length does not prove useful detail, source fidelity, image quality or user acceptance. Do not pad or concatenate prior calls to pass."
+          },
+          "total_characters": 29773,
+          "non_whitespace_characters": 25148,
+          "submitted_utf8_sha256": "c144cc15ac98114406eb27e98282c56a3a8bc697a903d302cb39cac6a111800d",
+          "length_pass": true,
+          "tool_limit_pass": true,
+          "passed": true,
+          "template_bytes_verified": true,
+          "scope": "Exact prompt-text length only; source/visual review and user approval are separate."
+        }
+      },
+      {
+        "operation": "edit",
+        "prompt": "redesign-correction-prompt.md",
+        "input": "overview-v3.png",
+        "output": "overview-v4.png",
+        "artifact_id": "exec-1f456f0a-d742-4f3a-a341-9e25a9766a5d.png",
+        "sha256": "bea109583614dc2f3a95fb793faf83b6d37d808fe59e0d1948309f0680dafd18",
+        "prompt_detail": {
+          "profile": "sivia-overview-v1",
+          "binding": {
+            "purpose": "Full English overview designs and substantial redesigns; not an arbitrary universal minimum for small unrelated edits.",
+            "source_repository": "https://github.com/exsinger-hub/Sivia",
+            "source_version": "1.1.0+codex.20260909060506",
+            "template_path": "skills/design-scientific-figure/references/templates/overview-template.txt",
+            "template_sha256": "cd73e60b51a15e005defd61190705846cb3f50a6582a33119be07b2fe78921f9",
+            "minimum_non_whitespace_characters": 15356,
+            "maximum_total_characters": 32000,
+            "metric": "Unicode code points excluding whitespace; count exact submitted prompt, one image call at a time",
+            "count_verified_on": "2026-09-20",
+            "limitation": "Length does not prove useful detail, source fidelity, image quality or user acceptance. Do not pad or concatenate prior calls to pass."
+          },
+          "total_characters": 30700,
+          "non_whitespace_characters": 25921,
+          "submitted_utf8_sha256": "1555ad5a0bfe0e5787bb7d3e52b03080bee82581430b7e35ebba11860b174926",
+          "length_pass": true,
+          "tool_limit_pass": true,
+          "passed": true,
+          "template_bytes_verified": true,
+          "scope": "Exact prompt-text length only; source/visual review and user approval are separate."
+        }
+      },
+      {
+        "operation": "edit",
+        "prompt": "redesign-routing-prompt.md",
+        "input": "overview-v4.png",
+        "output": "overview.png",
+        "artifact_id": "exec-16c3c5af-625d-4ff2-9f6b-4d7a98acdceb.png",
+        "sha256": "a2c2f03a89584d1fdf00679d1130b9ff48a837547912e9cf5607d3c2e6b15b93",
+        "prompt_detail": {
+          "profile": "sivia-overview-v1",
+          "binding": {
+            "purpose": "Full English overview designs and substantial redesigns; not an arbitrary universal minimum for small unrelated edits.",
+            "source_repository": "https://github.com/exsinger-hub/Sivia",
+            "source_version": "1.1.0+codex.20260909060506",
+            "template_path": "skills/design-scientific-figure/references/templates/overview-template.txt",
+            "template_sha256": "cd73e60b51a15e005defd61190705846cb3f50a6582a33119be07b2fe78921f9",
+            "minimum_non_whitespace_characters": 15356,
+            "maximum_total_characters": 32000,
+            "metric": "Unicode code points excluding whitespace; count exact submitted prompt, one image call at a time",
+            "count_verified_on": "2026-09-20",
+            "limitation": "Length does not prove useful detail, source fidelity, image quality or user acceptance. Do not pad or concatenate prior calls to pass."
+          },
+          "total_characters": 30508,
+          "non_whitespace_characters": 25756,
+          "submitted_utf8_sha256": "07c15b37e8ff941d6602658e3b7bf90e5721eed6e002ca08ff1f4be62beb6735",
+          "length_pass": true,
+          "tool_limit_pass": true,
+          "passed": true,
+          "template_bytes_verified": true,
+          "scope": "Exact prompt-text length only; source/visual review and user approval are separate."
+        }
       }
     ],
     "exact_prompt_record": "full-prompt.md",
     "empirical_rerun": false,
-    "native_editability": false
+    "native_editability": false,
+    "prompt_detail_profile": "sivia-overview-v1",
+    "failed_attempts": [
+      {
+        "operation": "edit",
+        "status": "rejected_no_artifact",
+        "reason": "An intermediate full correction request was 33103 total characters; image tool rejected it above its 32000 limit. Redundant paragraphs were removed before the recorded successful call."
+      }
+    ]
   },
   "review": {
     "status": "pending",
-    "review_type": "informed visual self-review; not independent acceptance",
-    "execution_test": "completed: full paper read, reference viewed, actual image generated, inspected and corrected where needed",
+    "review_type": "informed visual self-review of actual outputs; not independent acceptance",
+    "execution_test": "Completed full-image inspection of three real redesign/edit outputs; earlier versions retained, final selected for showcase.",
     "checks": [
-      "Observed weekly data enter the whole inference region; feasible-set and likelihood methods remain complementary.",
-      "Corrected the inference output to fork once to each analysis panel, with no rule-audit -> mixed-effects dependency.",
-      "Hidden fan shares explicitly not observed vote totals.",
-      "Rank, Percentage and Judges' Save are parallel choices on the same contestants/week.",
-      "MARS retains the AND-gated protection condition and temporal Tune1–17/Test18–34 separation.",
-      "Final image inspected; white background and high-contrast title; no numeric performance results reproduced."
+      "Replaced repeated colored panels with a feasible-share domain, matched-rule table and dominant conditional rank operation.",
+      "Final review: fan inference has no route to Judge outcome; observed-judge input is locally labeled.",
+      "Feasible-set bounds and complementary likelihood point share the inferred-output junction; no simplex-vertex input to likelihood.",
+      "MARS retains judge-elite AND worse-fan-rank conditions, positive-part gate, targeted subtraction and argmax elimination.",
+      "No empirical vote totals or performance claims; earlier/later season evaluation remains distinct."
     ],
     "issues": [
       {
         "severity": "pending_gate",
-        "detail": "180mm physical-size/grayscale proof and independent review not performed. Small connector labels require checking in the manuscript layout."
+        "detail": "Physical 180mm print/grayscale proof and independent acceptance remain pending. README uses a raster preview; mathematical label readability should be checked in the target manuscript."
       }
     ],
     "publication_gate": "pending",
@@ -139,5 +239,25 @@
     "Physical PDF pages are used; printed main-paper pages are one less.",
     "Fan-share uncertainty is not fully propagated in the source mixed-effects fit. No causal or measurement-error-adjusted interpretation is claimed.",
     "Counterfactuals are weekly comparisons, not full-season replays. This is a known-source redesign, not a blind benchmark."
-  ]
+  ],
+  "style_adaptation": {
+    "source": "Sivia",
+    "version": "1.1.0+codex.20260909060506",
+    "inspected_cases": [
+      "trace",
+      "reasoning-between-words",
+      "eventbridge-rl"
+    ],
+    "borrowed": "Persistent object identity, concrete intermediate representations, selective before/after change and asymmetric mechanism emphasis.",
+    "excluded": "Source-specific science, results, whole panel layouts, generic metric chips and weak connector endpoints.",
+    "public_record": "../../../src/modelatlas/knowledge/visual-guidance.json"
+  },
+  "design_revision": {
+    "date": "2026-09-20",
+    "reason": "User feedback: excessive modularization and insufficient prompt detail.",
+    "status": "candidate_awaiting_user_feedback",
+    "latest_round": 5,
+    "old_image": "overview-v2.png",
+    "new_image": "overview.png"
+  }
 }

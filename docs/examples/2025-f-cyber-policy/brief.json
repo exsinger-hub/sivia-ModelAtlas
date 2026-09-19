@@ -77,17 +77,17 @@
       "not_borrowed": "Source pixels, layout coordinates, paper-specific numerical results, team/award labels and unsupported causal claims."
     }
   ],
-  "caption": "Method overview of KDMF. Country indicators support descriptive clustering; policy texts and demographic covariates support topic-based difference-in-differences analysis; demographic data support MIC and regression-based associations. The three evidence streams converge on policy advice, with perturbation and noise checks shown separately. Cluster marks and comparison cells are schematic; no estimated effect or statistical result is reproduced.",
+  "caption": "Evidence-centered overview of the cybersecurity-policy study. Country-year records support descriptive national profiles, a symbolic treated/control before-after contrast and socioeconomic association analysis. Policy texts supply thematic context; shared covariates support adjustment. Cluster groups are not treatment groups. The figure shows operations and evidence structure, not estimated policy benefits, numerical results or a causal guarantee.",
   "placement": "End of Introduction / Our Work, before assumptions. Intended 180mm full-text width; physical print proof pending.",
   "generation": {
     "backend": "built-in image_gen.imagegen",
     "status": "generated",
-    "artifact_id": "exec-477b9ce6-523e-443a-abc8-8a478b43bce6.png",
+    "artifact_id": "exec-da288e87-d718-4b87-b52a-94063848d3c2.png",
     "actual_size": [
       1536,
       1024
     ],
-    "image_sha256": "65a0104cecb9bed02238b1b2576bde3fc85c90fa79b884c7e45948cb6fc0ddf3",
+    "image_sha256": "4db56745aca0f4c913897584fe6e3b679778e0c30d8fe8905606c57b7a99c46b",
     "chain": [
       {
         "operation": "generate",
@@ -100,32 +100,128 @@
         "operation": "edit",
         "prompt": "correction-prompt.md",
         "input": "overview-v1.png",
-        "output": "overview.png",
+        "output": "overview-v2.png",
         "artifact_id": "exec-477b9ce6-523e-443a-abc8-8a478b43bce6.png",
         "sha256": "65a0104cecb9bed02238b1b2576bde3fc85c90fa79b884c7e45948cb6fc0ddf3"
+      },
+      {
+        "operation": "edit",
+        "prompt": "redesign-prompt.md",
+        "input": "overview-v2.png",
+        "output": "overview-v3.png",
+        "artifact_id": "exec-c320a9bd-74fb-4cc2-85e7-40e79d0a8371.png",
+        "sha256": "fe3a24c994bee20df2552ee380c747a98f189a2147c391f79cd7cafbe4e91afc",
+        "prompt_detail": {
+          "profile": "sivia-overview-v1",
+          "binding": {
+            "purpose": "Full English overview designs and substantial redesigns; not an arbitrary universal minimum for small unrelated edits.",
+            "source_repository": "https://github.com/exsinger-hub/Sivia",
+            "source_version": "1.1.0+codex.20260909060506",
+            "template_path": "skills/design-scientific-figure/references/templates/overview-template.txt",
+            "template_sha256": "cd73e60b51a15e005defd61190705846cb3f50a6582a33119be07b2fe78921f9",
+            "minimum_non_whitespace_characters": 15356,
+            "maximum_total_characters": 32000,
+            "metric": "Unicode code points excluding whitespace; count exact submitted prompt, one image call at a time",
+            "count_verified_on": "2026-09-20",
+            "limitation": "Length does not prove useful detail, source fidelity, image quality or user acceptance. Do not pad or concatenate prior calls to pass."
+          },
+          "total_characters": 28368,
+          "non_whitespace_characters": 24094,
+          "submitted_utf8_sha256": "ff5274a6d3c2d394ac0721ef4ac28cc26f2d794abfbcad76806cbd59a0016728",
+          "length_pass": true,
+          "tool_limit_pass": true,
+          "passed": true,
+          "template_bytes_verified": true,
+          "scope": "Exact prompt-text length only; source/visual review and user approval are separate."
+        }
+      },
+      {
+        "operation": "edit",
+        "prompt": "redesign-correction-prompt.md",
+        "input": "overview-v3.png",
+        "output": "overview-v4.png",
+        "artifact_id": "exec-6326aa2c-4b5f-482e-81a0-bedecfaf2146.png",
+        "sha256": "3838604b6faf0fd91d1c7dbbec01fc97ce7023167d2f1441fe05c36aecd0117d",
+        "prompt_detail": {
+          "profile": "sivia-overview-v1",
+          "binding": {
+            "purpose": "Full English overview designs and substantial redesigns; not an arbitrary universal minimum for small unrelated edits.",
+            "source_repository": "https://github.com/exsinger-hub/Sivia",
+            "source_version": "1.1.0+codex.20260909060506",
+            "template_path": "skills/design-scientific-figure/references/templates/overview-template.txt",
+            "template_sha256": "cd73e60b51a15e005defd61190705846cb3f50a6582a33119be07b2fe78921f9",
+            "minimum_non_whitespace_characters": 15356,
+            "maximum_total_characters": 32000,
+            "metric": "Unicode code points excluding whitespace; count exact submitted prompt, one image call at a time",
+            "count_verified_on": "2026-09-20",
+            "limitation": "Length does not prove useful detail, source fidelity, image quality or user acceptance. Do not pad or concatenate prior calls to pass."
+          },
+          "total_characters": 31447,
+          "non_whitespace_characters": 26697,
+          "submitted_utf8_sha256": "77309d77b2782cd8307df86187e48eca8bfb92886e9a2dad7e52fdfe1ef3bef5",
+          "length_pass": true,
+          "tool_limit_pass": true,
+          "passed": true,
+          "template_bytes_verified": true,
+          "scope": "Exact prompt-text length only; source/visual review and user approval are separate."
+        }
+      },
+      {
+        "operation": "edit",
+        "prompt": "redesign-routing-prompt.md",
+        "input": "overview-v4.png",
+        "output": "overview.png",
+        "artifact_id": "exec-da288e87-d718-4b87-b52a-94063848d3c2.png",
+        "sha256": "4db56745aca0f4c913897584fe6e3b679778e0c30d8fe8905606c57b7a99c46b",
+        "prompt_detail": {
+          "profile": "sivia-overview-v1",
+          "binding": {
+            "purpose": "Full English overview designs and substantial redesigns; not an arbitrary universal minimum for small unrelated edits.",
+            "source_repository": "https://github.com/exsinger-hub/Sivia",
+            "source_version": "1.1.0+codex.20260909060506",
+            "template_path": "skills/design-scientific-figure/references/templates/overview-template.txt",
+            "template_sha256": "cd73e60b51a15e005defd61190705846cb3f50a6582a33119be07b2fe78921f9",
+            "minimum_non_whitespace_characters": 15356,
+            "maximum_total_characters": 32000,
+            "metric": "Unicode code points excluding whitespace; count exact submitted prompt, one image call at a time",
+            "count_verified_on": "2026-09-20",
+            "limitation": "Length does not prove useful detail, source fidelity, image quality or user acceptance. Do not pad or concatenate prior calls to pass."
+          },
+          "total_characters": 31287,
+          "non_whitespace_characters": 26570,
+          "submitted_utf8_sha256": "232587e464bc7b9b688416442c6eb847cbf015730ffbc389e77ebacdbb2bf68a",
+          "length_pass": true,
+          "tool_limit_pass": true,
+          "passed": true,
+          "template_bytes_verified": true,
+          "scope": "Exact prompt-text length only; source/visual review and user approval are separate."
+        }
       }
     ],
     "exact_prompt_record": "full-prompt.md",
     "empirical_rerun": false,
-    "native_editability": false
+    "native_editability": false,
+    "prompt_detail_profile": "sivia-overview-v1"
   },
   "review": {
     "status": "pending",
-    "review_type": "informed visual self-review; not independent acceptance",
-    "execution_test": "completed: full paper read, reference viewed, actual image generated, inspected and corrected where needed",
+    "review_type": "informed visual self-review of actual outputs; not independent acceptance",
+    "execution_test": "Completed full-image inspection of three real redesign/edit outputs; earlier versions retained, final selected for showcase.",
     "checks": [
-      "Clustering input explicitly NCSI + legal measures; three clusters labelled schematic.",
-      "All six source policy themes are present.",
-      "DID matrix has treated/control rows and before/after columns.",
-      "Corrected covariate arrow now enters the DID method, not the final association result.",
-      "MIC and regression remain association methods; no claimed causal effect or efficacy ranking.",
-      "Three streams converge on policy brief; white background and title contrast corrected.",
-      "Final saved image inspected for labels and connector endpoints."
+      "Replaced three equal method cards with a country-year ledger, document themes and a dominant symbolic before/after contrast.",
+      "K-means input explicitly restricted to NCSI and Legal Measures; grayscale profiles distinguished from treated/control colors.",
+      "Four symbolic outcomes and DID = treated change minus control change checked; no effect direction or estimate is reproduced.",
+      "LDA remains descriptive; MIC/factor/regression branch is explicitly associative, not causal.",
+      "Removed misleading outer synthesis routes; local evidence names identify the three interpretation inputs."
     ],
     "issues": [
       {
         "severity": "pending_gate",
-        "detail": "180mm physical-size/grayscale proof and independent review not performed. Small connector labels require checking in the manuscript layout."
+        "detail": "Physical 180mm print/grayscale proof and independent acceptance remain pending. README uses a raster preview; mathematical label readability should be checked in the target manuscript."
+      },
+      {
+        "severity": "minor_visual",
+        "detail": "A redundant short vertical guide remains beside the PC2 axis. It does not encode an additional variable; further cosmetic cleanup may be requested."
       }
     ],
     "publication_gate": "pending",
@@ -134,5 +230,25 @@
   "source_notes": [
     "The source's policy-effect sign interpretations and some coefficient descriptions are internally inconsistent. The overview omits numeric effects, rankings and claims of validated effectiveness.",
     "Shared indicators are shown at the policy-analysis grouping level; the figure does not specify a new regression."
-  ]
+  ],
+  "style_adaptation": {
+    "source": "Sivia",
+    "version": "1.1.0+codex.20260909060506",
+    "inspected_cases": [
+      "trace",
+      "reasoning-between-words",
+      "eventbridge-rl"
+    ],
+    "borrowed": "Persistent object identity, concrete intermediate representations, selective before/after change and asymmetric mechanism emphasis.",
+    "excluded": "Source-specific science, results, whole panel layouts, generic metric chips and weak connector endpoints.",
+    "public_record": "../../../src/modelatlas/knowledge/visual-guidance.json"
+  },
+  "design_revision": {
+    "date": "2026-09-20",
+    "reason": "User feedback: excessive modularization and insufficient prompt detail.",
+    "status": "candidate_awaiting_user_feedback",
+    "latest_round": 5,
+    "old_image": "overview-v2.png",
+    "new_image": "overview.png"
+  }
 }

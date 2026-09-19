@@ -7,21 +7,23 @@
   },
   "visual_review": {
     "status": "pending",
-    "review_type": "informed visual self-review; not independent acceptance",
-    "execution_test": "completed: full paper read, reference viewed, actual image generated, inspected and corrected where needed",
+    "review_type": "informed visual self-review of actual outputs; not independent acceptance",
+    "execution_test": "Completed full-image inspection of three real redesign/edit outputs; earlier versions retained, final selected for showcase.",
     "checks": [
-      "Clustering input explicitly NCSI + legal measures; three clusters labelled schematic.",
-      "All six source policy themes are present.",
-      "DID matrix has treated/control rows and before/after columns.",
-      "Corrected covariate arrow now enters the DID method, not the final association result.",
-      "MIC and regression remain association methods; no claimed causal effect or efficacy ranking.",
-      "Three streams converge on policy brief; white background and title contrast corrected.",
-      "Final saved image inspected for labels and connector endpoints."
+      "Replaced three equal method cards with a country-year ledger, document themes and a dominant symbolic before/after contrast.",
+      "K-means input explicitly restricted to NCSI and Legal Measures; grayscale profiles distinguished from treated/control colors.",
+      "Four symbolic outcomes and DID = treated change minus control change checked; no effect direction or estimate is reproduced.",
+      "LDA remains descriptive; MIC/factor/regression branch is explicitly associative, not causal.",
+      "Removed misleading outer synthesis routes; local evidence names identify the three interpretation inputs."
     ],
     "issues": [
       {
         "severity": "pending_gate",
-        "detail": "180mm physical-size/grayscale proof and independent review not performed. Small connector labels require checking in the manuscript layout."
+        "detail": "Physical 180mm print/grayscale proof and independent acceptance remain pending. README uses a raster preview; mathematical label readability should be checked in the target manuscript."
+      },
+      {
+        "severity": "minor_visual",
+        "detail": "A redundant short vertical guide remains beside the PC2 axis. It does not encode an additional variable; further cosmetic cleanup may be requested."
       }
     ],
     "publication_gate": "pending",
@@ -30,15 +32,15 @@
   "user_approval": "not_recorded",
   "scope": "File integrity only; not source fidelity, image quality or award verification.",
   "hashes": {
-    "overview.png": "65a0104cecb9bed02238b1b2576bde3fc85c90fa79b884c7e45948cb6fc0ddf3",
-    "full-prompt.md": "76e9cb5a17f1977e817d89b6fcbca2d3e4135ab7b72745d7f29b80e0d21b0752",
-    "brief.json": "3aa32ac39a153e704e7203ecc96c6a17d1a6f3246de881fc62382aa21c99b884"
+    "overview.png": "4db56745aca0f4c913897584fe6e3b679778e0c30d8fe8905606c57b7a99c46b",
+    "full-prompt.md": "d14ad1a7b91d91d5b91f7b4b2908006858bf30cfb293bcd7951346be0ab08d11",
+    "brief.json": "53739b75b9646e03267077ae2dcec428b6cd1aa3dece038e29693ea790728983"
+  },
+  "paired_copy_hashes": {
+    "brief.json": "892e4792791826713694948b8c00bea74b1dd18fbf870906f2e10fd57785c8e1",
+    "overview.png": "4db56745aca0f4c913897584fe6e3b679778e0c30d8fe8905606c57b7a99c46b",
+    "prompt.md": "2ccfd1e5241e83becb3bfed64189bfba9bbf8abadd508014b439af9cd07733a2"
   },
   "intake_sha256": "c2ef017c4976b5fcc91a439939c301d9c8bc1dc312e161c205eb7bab7b15900a",
-  "paired_copy_hashes": {
-    "brief.json": "055061d12526ab7079860193958cc2a654e95e58d8627675697ec0406e05d042",
-    "overview.png": "65a0104cecb9bed02238b1b2576bde3fc85c90fa79b884c7e45948cb6fc0ddf3",
-    "prompt.md": "46a8a7ea61c52cf27eb1e2f38008bc6a2770450c75e0211e3663bff357defecd"
-  },
-  "copy_note": "Local pairing preserves text content but may normalize line endings on Windows. hashes refers to published files; paired_copy_hashes refers to the audited local bundle."
+  "copy_note": "Published hashes cover exact repository bytes; paired copies may normalize newlines/JSON formatting. Each set was independently verified."
 }

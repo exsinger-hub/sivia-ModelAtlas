@@ -68,7 +68,7 @@
       <a href="docs/assets/reference-overviews/2026-c-2627351-overview.png"><img src="docs/assets/reference-overviews/2026-c-2627351-overview.png" width="100%" alt="论文原图: 2026 MCM C, Behind the Ballroom Scores"></a>
     </td>
     <td width="50%" align="center" valign="middle">
-      <a href="docs/examples/2026-c-ballroom-voting/overview.png"><img src="docs/examples/2026-c-ballroom-voting/overview.png" width="100%" alt="ModelAtlas 最终成图: 票份额推断、规则比较与混合效应分析"></a>
+      <a href="docs/examples/2026-c-ballroom-voting/overview.png"><img src="docs/examples/2026-c-ballroom-voting/overview.png" width="100%" alt="ModelAtlas 最终成图: 可行票份额、同周规则对照与条件保护"></a>
     </td>
   </tr>
   <tr>
@@ -112,7 +112,7 @@
 
 政策评价 · 来源论文 Outstanding Winner
 
-<a href="docs/examples/2025-f-cyber-policy/overview.png"><img src="docs/examples/2025-f-cyber-policy/overview.png" width="100%" alt="ModelAtlas: 国家画像、政策变化与社会因素三路证据汇合。"></a>
+<a href="docs/examples/2025-f-cyber-policy/overview.png"><img src="docs/examples/2025-f-cyber-policy/overview.png" width="100%" alt="ModelAtlas: 国家—年份记录、政策主题与处理组／对照组的前后差分。"></a>
 
 [论文与图注](docs/examples/2025-f-cyber-policy/README.md) · [完整 prompt](docs/examples/2025-f-cyber-policy/full-prompt.md)
 
@@ -123,7 +123,7 @@
 
 经营与决策 · 来源论文 Finalist
 
-<a href="docs/examples/2026-d-wins-to-worth/overview.png"><img src="docs/examples/2026-d-wins-to-worth/overview.png" width="100%" alt="ModelAtlas: 从比赛表现到上座率、现金流和球队估值的决策链。"></a>
+<a href="docs/examples/2026-d-wins-to-worth/overview.png"><img src="docs/examples/2026-d-wins-to-worth/overview.png" width="100%" alt="ModelAtlas: 球馆容量、票价×人数、收支账目与滚动决策。"></a>
 
 [论文与图注](docs/examples/2026-d-wins-to-worth/README.md) · [完整 prompt](docs/examples/2026-d-wins-to-worth/full-prompt.md)
 
@@ -162,7 +162,8 @@ python3 -m venv .venv
 ```text
 请按 plugins/sivia-modelatlas/skills/paper2overview/SKILL.md 的流程，
 为这篇美赛论文生成一张英文 Overview。
-参考同类题的知识库插图，核对模型关系和箭头。
+参考知识库，用具体对象和模型操作组织画面，避免等宽模块堆叠。
+核对公式和连线；检查实际提交的完整 prompt，再生成并审查图片。
 交付图片、完整 prompt 和图注。
 ```
 
@@ -192,7 +193,7 @@ python3 -m venv .venv
 ## 插图知识库
 
 按 A–F 与年份检索：26 篇 O/F 论文、36 个图例；另有 3 篇科研论文、4 个扩展图例。
-[图例目录](knowledge-base/CATALOG.md) · [来源与年份覆盖](knowledge-base/SOURCES.md) · [检索与入库说明](knowledge-base/README.md)
+[图例目录](knowledge-base/CATALOG.md) · [来源与年份覆盖](knowledge-base/SOURCES.md) · [检索与入库说明](knowledge-base/README.md) · [构图准则](knowledge-base/VISUAL-GRAMMAR.md)
 
 ---
 
