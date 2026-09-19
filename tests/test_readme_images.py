@@ -138,3 +138,20 @@ def test_library_documentation_matches_actual_records_and_year_gaps():
     for year in stats['years']:
         row = f'| {year["year"]} | ' + ' | '.join(str(year['problems'][p] or '—') for p in 'ABCDEF') + ' |'
         assert row in catalog
+
+
+def test_quick_start_documents_optional_editable_ppt_handoff():
+    text, _ = parse_readme()
+    quick = text.split("## Quick Start", 1)[1].split('id="showcase"', 1)[0]
+    assert "转为可编辑 PPT 矢量图（可选）" in quick
+    assert "使用 Sivia" in quick
+    assert "仅安装 ModelAtlas 不包含此能力" in quick
+    assert "Node.js" in quick and "PowerPoint / WPS" in quick
+    assert "overview-editable.pptx" in quick
+    assert "原生可编辑对象" in quick and "保留为位图" in quick
+    assert "docs/USAGE.md#editable-ppt" in quick
+
+    usage = (ROOT / "docs/USAGE.md").read_text(encoding="utf-8")
+    assert "ModelAtlas 不内置 PNG → PPTX 转换器" in usage
+    assert "从该 PPTX 导出的预览图" in usage
+    assert "没有实际生成 PPTX 时，不标记转换完成" in usage

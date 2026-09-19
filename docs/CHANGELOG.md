@@ -3,6 +3,7 @@
 ## Unreleased — 2026-09-20
 
 - Rewrite README with source Quick Start, visible examples and concise library navigation.
+- Document the optional Sivia handoff from an approved Overview to editable PPTX, including dependencies and editability checks.
 - Expand the reviewed corpus to 26 O/F papers / 36 cases, plus 3 research papers / 4 cases.
 - Complete 2025 A–F coverage; add verified 2026 D alongside existing 2026 C. Record remaining 2026 gaps explicitly.
 - Add year filtering to CLI/MCP, year-by-category coverage, and own-category/recent-year tie-breaking.

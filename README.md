@@ -51,6 +51,23 @@ python3 -m venv .venv
 
 **3. 查看成图，提出修改意见。** 例如：“放大核心模型，减少文字，保留目前的阅读顺序。”
 
+**4. 转为可编辑 PPT 矢量图（可选）**
+
+确认图片后，接续 [Sivia](https://github.com/exsinger-hub/Sivia) 的 PPT 复刻流程。
+需另行安装 Sivia，并具备 Node.js 和可用的 PowerPoint / WPS 后端；仅安装 ModelAtlas 不包含此能力。
+附上确认稿，发送：
+
+```text
+使用 Sivia，将这张已确认的 Overview 忠实复刻为可编辑 PPTX。
+目标软件：PowerPoint；新建 overview-editable.pptx，保持原图比例与布局。
+文字、公式、框图和箭头使用原生可编辑对象；复杂插画单独保留为图片，标注分离。
+在后台执行，不改动其他演示文稿。检查对象可编辑性、文字溢出和连线，导出预览核对。
+交付 PPTX 和预览图，并说明保留为位图的部分。
+```
+
+使用 WPS 时，将目标软件改为“WPS 演示”。这里的转换是逐对象重建，不是把整张 PNG 放进 PPT。
+[依赖与交付检查](docs/USAGE.md#editable-ppt)
+
 这条流程由宿主完成生图；单独运行 CLI 只会准备论文与参考资料。[MCP 配置与命令说明](docs/USAGE.md)
 
 <a id="showcase"></a>
