@@ -1,0 +1,7 @@
+Edit only two tiny geometric defects in this existing 1536 x 1024 scientific illustration. Keep all other pixels, typography, equations, colors, objects, maps, and composition as close as possible to the supplied image.
+
+1. Make the second depth projection genuinely vertical. The underwater t_(n+1) hollow position is at approximately (720,683); do not move it. Move its upper hollow projection port from approximately (796,123) to (720,123). Replace the bent dotted guide that runs outside the sea at x=796 with ONE straight fine blue dotted vertical guide at x=720, from the upper port to the underwater point. Erase the old bent guide completely, including its short rightward segment leaving the underwater point. Place the existing t_(n+1) projection label above the relocated upper port, clear of the rescue vessel and the title. The left projection at x=527 stays unchanged. The upper ports are coordinate-transfer labels, not ships or physical surface observations.
+
+2. Inside D4 in the LEFT map there are two overlapping hollow blue prediction circles near (985,347) and (995,347). Retain exactly ONE hollow blue circle at about (994,347), entirely inside D4 just left of the D/E boundary. Delete the extra circle without erasing the orange sweep marks. The existing short blue arrow from the t_n projection label must terminate on the outer rim of this single remaining circle. Do not shift grid lines, hatch masks, the weight field, or the search label. The RIGHT map remains entirely unchanged.
+
+No new curves, dots, panels, legends, equations, or other edits.

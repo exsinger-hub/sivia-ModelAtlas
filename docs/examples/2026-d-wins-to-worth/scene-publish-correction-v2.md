@@ -1,0 +1,5 @@
+This is a surgical cleanup of a small old connector remnant in an otherwise finished scientific image. Preserve the complete 1536 x 1024 figure and every label, formula, object and color.
+
+In the operating ledger near its upper-left corner, REMOVE only the thin BLUE bent line at approximately x=896 from y=386 to y=438, including its little horizontal hook toward the first blue plus sign. This is a leftover cable from above and must not touch or traverse the heading 'Operating ledger (USD millions)'. Restore the underlying pale paper and thin gray notebook rules in that tiny region. Do not erase the ledger's dark outer edge, its heading, the first blue plus sign at approximately (908,438), the second plus sign at approximately (908,461), the teal open circle at (932,447), the teal underline beneath T_ticket, or any ledger term. The ticket subtotal above the ledger and the +T_ticket entry inside it are already linked by their matching teal marks; they require NO connecting line between them.
+
+Do not add any arrows, connectors, marks or labels. Do not move or re-typeset any mathematics. Return the same figure with only that old blue line and hook cleaned away.

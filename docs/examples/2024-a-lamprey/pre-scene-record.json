@@ -1,0 +1,323 @@
+{
+  "brief": {
+    "source": {
+      "paper_id": "mcm-2024-a-2405424",
+      "title": "Lamprey: a Vivid Example of the Doctrine of the Mean",
+      "pdf_url": "https://raw.githubusercontent.com/yangchunwanwusheng/MCM-ICM--2024-/ffea7fd98c1fbf7d25edcba4dbc834631e9adbf2/2024/A/student%20paper/2405424.pdf",
+      "pdf_sha256": "3976866832e31712b42c11a241c413db2f056e48c24a3768ff0c41c1460b44c6",
+      "award": "Outstanding Winner",
+      "award_evidence": {
+        "url": "https://www.contest.comap.com/undergraduate/contests/mcm/contests/2024/results/",
+        "locator": "MCM Outstanding Winners, Problem A, Team 2405424",
+        "verification": "Official COMAP winner section and institution matched; team number checked in the pinned PDF.",
+        "checked_at": "2026-09-19"
+      },
+      "full_manuscript_read": true,
+      "pdf_pages": 25,
+      "intake_format": "PDF",
+      "reread": {
+        "date": "2026-09-20",
+        "text_read": "1–25",
+        "physical_pages_visually_inspected": [
+          11,
+          12,
+          13,
+          14
+        ],
+        "scope": "Model-bearing manuscript; AI-use appendices are not model authority."
+      }
+    },
+    "claim": "Shared-resource competition and host–parasite dynamics are coupled to a resource-dependent male fraction and recruitment feedback. Alternative sex-ratio settings are compared after simulation.",
+    "manuscript_evidence": [
+      {
+        "locator": "pp.7–8, Eqs.1–3",
+        "supports": "Shared resources and interspecific competition"
+      },
+      {
+        "locator": "pp.10–12, Eqs.4–11",
+        "supports": "Sex-ratio recruitment factor and host dependence"
+      },
+      {
+        "locator": "pp.12–14, Eqs.12–13",
+        "supports": "Decreasing male-fraction response and negative population feedback"
+      },
+      {
+        "locator": "pp.18–19, Eqs.14–15",
+        "supports": "Resources and surviving species enter the standardized entropy-weighted ESI"
+      }
+    ],
+    "model_relationships": [
+      {
+        "source": "Resource share s",
+        "target": "Male fraction m(s)",
+        "meaning": "Decreasing response; follow Eq.12, not the conflicting Fig.7 sign",
+        "locator": "pp.12–14"
+      },
+      {
+        "source": "Male fraction and hosts",
+        "target": "Recruitment",
+        "meaning": "Factor k(1-m)^1.25 times a host-dependent term",
+        "locator": "pp.10–12"
+      },
+      {
+        "source": "All consumers",
+        "target": "Resource per individual",
+        "meaning": "Shared denominator N + sum Ni closes population feedback",
+        "locator": "pp.7–14"
+      }
+    ],
+    "references": [
+      {
+        "case_id": "a-typed-ecological-relations",
+        "borrowed": "Paper-specific objects and relations checked against the model-bearing PDF pages. Persistent identities and selective change from previously inspected Sivia examples; source models only from this PDF. No layout copied wholesale.",
+        "not_borrowed": "Source pixels, numerical results, conflicting signs/formulas, awards, or a compulsory panel layout."
+      }
+    ],
+    "caption": "Shared-resource competition and host–parasite dynamics are coupled to a resource-dependent male fraction and recruitment feedback. Alternative sex-ratio settings are compared after simulation.",
+    "placement": "End of Introduction / Our Work, intended width 180 mm",
+    "generation": {
+      "backend": "built-in image_gen.imagegen",
+      "status": "generated",
+      "artifact_id": "exec-cc441a59-81d3-423b-bedd-214656486848.png",
+      "actual_size": [
+        1536,
+        1024
+      ],
+      "image_sha256": "86fc7c262add67ce0469b4c20f03ea2d52e1f562849930272e6120c849266025",
+      "chain": [
+        {
+          "operation": "generate",
+          "prompt": "prompt.md",
+          "output": "overview-v1.png",
+          "artifact_id": "exec-a7393d31-87f2-4b21-85a3-04141c839ad1.png",
+          "sha256": "bf37fcd2754f138c052013ac19a6b1b7b6bc2f63f6b2fdba5d05637dbfd0398d",
+          "status": "superseded_history"
+        },
+        {
+          "operation": "generate",
+          "prompt": "reread-prompt.md",
+          "output": "overview-reread-v1.png",
+          "artifact_id": "exec-97f15db3-0227-4a44-8af2-c6b52bca3d5a.png",
+          "sha256": "e3d57083f2667071e85e3728bbf5f27a28a690fe88491bf7e220df03b7f3d5a8",
+          "series": "pdf-reread-20260920",
+          "prompt_scope": "full_redesign",
+          "prompt_detail": {
+            "profile": "sivia-overview-v1",
+            "binding": {
+              "purpose": "Full English overview designs and substantial redesigns; not an arbitrary universal minimum for small unrelated edits.",
+              "source_repository": "https://github.com/exsinger-hub/Sivia",
+              "source_version": "1.1.0+codex.20260909060506",
+              "template_path": "skills/design-scientific-figure/references/templates/overview-template.txt",
+              "template_sha256": "cd73e60b51a15e005defd61190705846cb3f50a6582a33119be07b2fe78921f9",
+              "minimum_non_whitespace_characters": 15356,
+              "maximum_total_characters": 32000,
+              "metric": "Unicode code points excluding whitespace; count exact submitted prompt, one image call at a time",
+              "count_verified_on": "2026-09-20",
+              "limitation": "Length does not prove useful detail, source fidelity, image quality or user acceptance. Do not pad or concatenate prior calls to pass."
+            },
+            "total_characters": 24840,
+            "non_whitespace_characters": 21112,
+            "submitted_utf8_sha256": "845709e84c523c030ad04726a1e56bb7bfea77b3aefad9f5b8b74f097964a4d4",
+            "length_pass": true,
+            "tool_limit_pass": true,
+            "passed": true,
+            "template_bytes_verified": true,
+            "scope": "Exact prompt-text length only; source/visual review and user approval are separate."
+          }
+        },
+        {
+          "operation": "edit",
+          "prompt": "reread-correction-v2.md",
+          "output": "overview-reread-v2.png",
+          "artifact_id": "exec-4c9b9201-5de5-4e73-a0aa-ced4b24035f6.png",
+          "sha256": "cb56e575c939f5612af4c5fc020626296d583fd383fbd8c82801bb52b347aeb0",
+          "series": "pdf-reread-20260920",
+          "input": "overview-reread-v1.png",
+          "prompt_scope": "localized_correction",
+          "prompt_sha256": "f7d4b5bfe75e7711d44fa3591173e63a0ae5fe2cb9b8b2501130decf955737f7"
+        },
+        {
+          "operation": "edit",
+          "prompt": "reread-correction-v3.md",
+          "output": "overview.png",
+          "artifact_id": "exec-cc441a59-81d3-423b-bedd-214656486848.png",
+          "sha256": "86fc7c262add67ce0469b4c20f03ea2d52e1f562849930272e6120c849266025",
+          "series": "pdf-reread-20260920",
+          "input": "overview-reread-v2.png",
+          "prompt_scope": "localized_correction",
+          "prompt_sha256": "92a2b79e5a8b5fdad27d7afff6a7341d7fc9435ecbeed5de2a90c9567b8a919f"
+        }
+      ],
+      "exact_prompt_record": "full-prompt.md",
+      "empirical_rerun": false,
+      "native_editability": false,
+      "selected_series": "pdf-reread-20260920"
+    },
+    "review": {
+      "status": "passed",
+      "checks": [
+        "Host support arrow runs from fish toward lamprey; parasitism runs from lamprey toward hosts with a negative sign.",
+        "Male fraction decreases from the s0 endpoint toward 0.50; factor uses (1−m)^1.25.",
+        "Negative recruitment relation and population/resource-share return are visible.",
+        "Fixed m=0.67 and adaptive m(s) are alternative systems, not temporal stages."
+      ],
+      "notes": [
+        "Eq.12 is followed instead of Fig.7's conflicting resource-to-male sign.",
+        "The resource-share loop is a population/cohort mechanism, not individual sex change.",
+        "Biological shapes and response display are conceptual; no new simulation or field results."
+      ],
+      "physical_print_proof": "not performed",
+      "independent_review": "not performed",
+      "user_approval": "approved",
+      "review_type": "Actual-image visual self-review with source notes; not independent review or physical print proof.",
+      "approval_evidence": {
+        "status": "approved",
+        "date": "2026-09-20",
+        "user_message": "同意,请推送, 并且为我写抖音和小红书的推送文稿",
+        "scope": "Five selected PDF-reread images, project showcase and case-specific knowledge-base guidance; not independent scientific validation."
+      },
+      "publication_gate": "approved_for_project_showcase",
+      "issues": [
+        {
+          "severity": "remaining_check",
+          "detail": "Physical print proof and independent review not performed; review small labels at final manuscript size."
+        }
+      ]
+    },
+    "source_notes": [
+      "Eq.12 is followed instead of Fig.7's conflicting resource-to-male sign.",
+      "The resource-share loop is a population/cohort mechanism, not individual sex change.",
+      "Biological shapes and response display are conceptual; no new simulation or field results."
+    ],
+    "design_revision": {
+      "date": "2026-09-20",
+      "reason": "PDF-reread redraw approved by the user.",
+      "status": "user_approved_showcase",
+      "latest_round": 4,
+      "old_image": "overview-v1.png",
+      "new_image": "overview.png",
+      "superseded_rounds": [
+        1
+      ]
+    }
+  },
+  "showcase": {
+    "id": "2024-a-lamprey",
+    "paper_id": "mcm-2024-a-2405424",
+    "title": "Lamprey: a Vivid Example of the Doctrine of the Mean",
+    "year": 2024,
+    "contest": "MCM",
+    "problem": "A",
+    "category": {
+      "zh": "生态反馈",
+      "en": "Ecological feedback"
+    },
+    "source_award": "Outstanding Winner",
+    "team": "2405424",
+    "presentation": "standalone",
+    "source_figure": null,
+    "source_case_id": "a-typed-ecological-relations",
+    "notes": {
+      "zh": "docs/examples/2024-a-lamprey/README.md",
+      "en": "docs/examples/2024-a-lamprey/README.en.md"
+    },
+    "brief": "docs/examples/2024-a-lamprey/brief.json",
+    "full_prompt": "docs/examples/2024-a-lamprey/full-prompt.md",
+    "final_image": "docs/examples/2024-a-lamprey/overview.png",
+    "latest_round": 4,
+    "rounds": [
+      {
+        "number": 1,
+        "operation": "generate",
+        "image": "docs/examples/2024-a-lamprey/overview-v1.png",
+        "prompt": "docs/examples/2024-a-lamprey/prompt.md"
+      },
+      {
+        "number": 2,
+        "operation": "generate",
+        "image": "docs/examples/2024-a-lamprey/overview-reread-v1.png",
+        "prompt": "docs/examples/2024-a-lamprey/reread-prompt.md"
+      },
+      {
+        "number": 3,
+        "operation": "edit",
+        "image": "docs/examples/2024-a-lamprey/overview-reread-v2.png",
+        "prompt": "docs/examples/2024-a-lamprey/reread-correction-v2.md"
+      },
+      {
+        "number": 4,
+        "operation": "edit",
+        "image": "docs/examples/2024-a-lamprey/overview.png",
+        "prompt": "docs/examples/2024-a-lamprey/reread-correction-v3.md"
+      }
+    ],
+    "approval": {
+      "status": "approved",
+      "date": "2026-09-20",
+      "user_message": "同意,请推送, 并且为我写抖音和小红书的推送文稿",
+      "scope": "Five selected PDF-reread images, project showcase and case-specific knowledge-base guidance; not independent scientific validation."
+    }
+  },
+  "integrity_audit": {
+    "passed": true,
+    "files": {
+      "brief.json": true,
+      "overview.png": true,
+      "prompt.md": true
+    },
+    "visual_review": {
+      "status": "passed",
+      "checks": [
+        "Host support arrow runs from fish toward lamprey; parasitism runs from lamprey toward hosts with a negative sign.",
+        "Male fraction decreases from the s0 endpoint toward 0.50; factor uses (1−m)^1.25.",
+        "Negative recruitment relation and population/resource-share return are visible.",
+        "Fixed m=0.67 and adaptive m(s) are alternative systems, not temporal stages."
+      ],
+      "notes": [
+        "Eq.12 is followed instead of Fig.7's conflicting resource-to-male sign.",
+        "The resource-share loop is a population/cohort mechanism, not individual sex change.",
+        "Biological shapes and response display are conceptual; no new simulation or field results."
+      ],
+      "physical_print_proof": "not performed",
+      "independent_review": "not performed",
+      "user_approval": "approved",
+      "review_type": "Actual-image visual self-review with source notes; not independent review or physical print proof.",
+      "approval_evidence": {
+        "status": "approved",
+        "date": "2026-09-20",
+        "user_message": "同意,请推送, 并且为我写抖音和小红书的推送文稿",
+        "scope": "Five selected PDF-reread images, project showcase and case-specific knowledge-base guidance; not independent scientific validation."
+      },
+      "publication_gate": "approved_for_project_showcase",
+      "issues": [
+        {
+          "severity": "remaining_check",
+          "detail": "Physical print proof and independent review not performed; review small labels at final manuscript size."
+        }
+      ]
+    },
+    "user_approval": "approved",
+    "scope": "File integrity only; not source fidelity, image quality or award verification.",
+    "approval_evidence": {
+      "status": "approved",
+      "date": "2026-09-20",
+      "user_message": "同意,请推送, 并且为我写抖音和小红书的推送文稿",
+      "scope": "Five selected PDF-reread images, project showcase and case-specific knowledge-base guidance; not independent scientific validation."
+    },
+    "hashes": {
+      "overview.png": "86fc7c262add67ce0469b4c20f03ea2d52e1f562849930272e6120c849266025",
+      "full-prompt.md": "849de94e499a9b1349ccd2842f4267a087afae21b1398b4fd923ca58a00afa97",
+      "brief.json": "3eff9f8690edcead7a9174fa4c3eecaa641cf7751fd455092071981df5505090",
+      "prompt.md": "9413c2695973970287e78ae8dddbfce6da1f0d83485467b6c6f8c057bdd785c8",
+      "reread-prompt.md": "845709e84c523c030ad04726a1e56bb7bfea77b3aefad9f5b8b74f097964a4d4",
+      "reread-correction-v2.md": "f7d4b5bfe75e7711d44fa3591173e63a0ae5fe2cb9b8b2501130decf955737f7",
+      "reread-correction-v3.md": "92a2b79e5a8b5fdad27d7afff6a7341d7fc9435ecbeed5de2a90c9567b8a919f",
+      "overview-v1.png": "bf37fcd2754f138c052013ac19a6b1b7b6bc2f63f6b2fdba5d05637dbfd0398d",
+      "overview-reread-v1.png": "e3d57083f2667071e85e3728bbf5f27a28a690fe88491bf7e220df03b7f3d5a8",
+      "overview-reread-v2.png": "cb56e575c939f5612af4c5fc020626296d583fd383fbd8c82801bb52b347aeb0"
+    },
+    "intake_sha256": "3976866832e31712b42c11a241c413db2f056e48c24a3768ff0c41c1460b44c6",
+    "copy_note": "Repository hashes cover exact public bytes. The private pairing audit passed; public approval is recorded from the explicit user message, not inferred by the pairing API."
+  },
+  "scope": "Historical metadata before replacement; its overview.png is now overview-before-scene.png."
+}

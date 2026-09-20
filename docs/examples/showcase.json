@@ -148,63 +148,6 @@
       }
     },
     {
-      "id": "2024-a-lamprey",
-      "paper_id": "mcm-2024-a-2405424",
-      "title": "Lamprey: a Vivid Example of the Doctrine of the Mean",
-      "year": 2024,
-      "contest": "MCM",
-      "problem": "A",
-      "category": {
-        "zh": "生态反馈",
-        "en": "Ecological feedback"
-      },
-      "source_award": "Outstanding Winner",
-      "team": "2405424",
-      "presentation": "standalone",
-      "source_figure": null,
-      "source_case_id": "a-typed-ecological-relations",
-      "notes": {
-        "zh": "docs/examples/2024-a-lamprey/README.md",
-        "en": "docs/examples/2024-a-lamprey/README.en.md"
-      },
-      "brief": "docs/examples/2024-a-lamprey/brief.json",
-      "full_prompt": "docs/examples/2024-a-lamprey/full-prompt.md",
-      "final_image": "docs/examples/2024-a-lamprey/overview.png",
-      "latest_round": 4,
-      "rounds": [
-        {
-          "number": 1,
-          "operation": "generate",
-          "image": "docs/examples/2024-a-lamprey/overview-v1.png",
-          "prompt": "docs/examples/2024-a-lamprey/prompt.md"
-        },
-        {
-          "number": 2,
-          "operation": "generate",
-          "image": "docs/examples/2024-a-lamprey/overview-reread-v1.png",
-          "prompt": "docs/examples/2024-a-lamprey/reread-prompt.md"
-        },
-        {
-          "number": 3,
-          "operation": "edit",
-          "image": "docs/examples/2024-a-lamprey/overview-reread-v2.png",
-          "prompt": "docs/examples/2024-a-lamprey/reread-correction-v2.md"
-        },
-        {
-          "number": 4,
-          "operation": "edit",
-          "image": "docs/examples/2024-a-lamprey/overview.png",
-          "prompt": "docs/examples/2024-a-lamprey/reread-correction-v3.md"
-        }
-      ],
-      "approval": {
-        "status": "approved",
-        "date": "2026-09-20",
-        "user_message": "同意,请推送, 并且为我写抖音和小红书的推送文稿",
-        "scope": "Five selected PDF-reread images, project showcase and case-specific knowledge-base guidance; not independent scientific validation."
-      }
-    },
-    {
       "id": "2024-b-deep-sea-rescue",
       "paper_id": "mcm-2024-b-2407038",
       "title": "Unlocking the Abyss",
@@ -227,7 +170,7 @@
       "brief": "docs/examples/2024-b-deep-sea-rescue/brief.json",
       "full_prompt": "docs/examples/2024-b-deep-sea-rescue/full-prompt.md",
       "final_image": "docs/examples/2024-b-deep-sea-rescue/overview.png",
-      "latest_round": 4,
+      "latest_round": 9,
       "rounds": [
         {
           "number": 1,
@@ -250,91 +193,131 @@
         {
           "number": 4,
           "operation": "edit",
-          "image": "docs/examples/2024-b-deep-sea-rescue/overview.png",
+          "image": "docs/examples/2024-b-deep-sea-rescue/overview-before-scene.png",
           "prompt": "docs/examples/2024-b-deep-sea-rescue/reread-correction-v2.md"
-        }
-      ],
-      "approval": {
-        "status": "approved",
-        "date": "2026-09-20",
-        "user_message": "同意,请推送, 并且为我写抖音和小红书的推送文稿",
-        "scope": "Five selected PDF-reread images, project showcase and case-specific knowledge-base guidance; not independent scientific validation."
-      }
-    },
-    {
-      "id": "2025-f-cyber-policy",
-      "paper_id": "icm-2025-f-2513705",
-      "title": "Cracking the Cyber-Puzzle: KDMF in Action",
-      "year": 2025,
-      "contest": "ICM",
-      "problem": "F",
-      "category": {
-        "zh": "政策评价",
-        "en": "Policy evaluation"
-      },
-      "source_award": "Outstanding Winner",
-      "team": "2513705",
-      "presentation": "standalone",
-      "source_figure": null,
-      "source_case_id": "f-cyber-policy-evidence-map",
-      "notes": {
-        "zh": "docs/examples/2025-f-cyber-policy/README.md",
-        "en": "docs/examples/2025-f-cyber-policy/README.en.md"
-      },
-      "brief": "docs/examples/2025-f-cyber-policy/brief.json",
-      "full_prompt": "docs/examples/2025-f-cyber-policy/full-prompt.md",
-      "final_image": "docs/examples/2025-f-cyber-policy/overview.png",
-      "latest_round": 7,
-      "rounds": [
-        {
-          "number": 1,
-          "operation": "generate",
-          "image": "docs/examples/2025-f-cyber-policy/overview-v1.png",
-          "prompt": "docs/examples/2025-f-cyber-policy/prompt.md"
-        },
-        {
-          "number": 2,
-          "operation": "edit",
-          "image": "docs/examples/2025-f-cyber-policy/overview-v2.png",
-          "prompt": "docs/examples/2025-f-cyber-policy/correction-prompt.md"
-        },
-        {
-          "number": 3,
-          "operation": "edit",
-          "image": "docs/examples/2025-f-cyber-policy/overview-v3.png",
-          "prompt": "docs/examples/2025-f-cyber-policy/redesign-prompt.md"
-        },
-        {
-          "number": 4,
-          "operation": "edit",
-          "image": "docs/examples/2025-f-cyber-policy/overview-v4.png",
-          "prompt": "docs/examples/2025-f-cyber-policy/redesign-correction-prompt.md"
         },
         {
           "number": 5,
-          "operation": "edit",
-          "image": "docs/examples/2025-f-cyber-policy/overview-v5.png",
-          "prompt": "docs/examples/2025-f-cyber-policy/redesign-routing-prompt.md"
+          "operation": "generate",
+          "image": "docs/examples/2024-b-deep-sea-rescue/overview-scene-v1.png",
+          "prompt": "docs/examples/2024-b-deep-sea-rescue/scene-prompt.md"
         },
         {
           "number": 6,
-          "operation": "generate",
-          "image": "docs/examples/2025-f-cyber-policy/overview-reread-v1.png",
-          "prompt": "docs/examples/2025-f-cyber-policy/reread-prompt.md"
+          "operation": "edit",
+          "image": "docs/examples/2024-b-deep-sea-rescue/overview-scene-v2.png",
+          "prompt": "docs/examples/2024-b-deep-sea-rescue/scene-correction-v2.md"
         },
         {
           "number": 7,
           "operation": "edit",
-          "image": "docs/examples/2025-f-cyber-policy/overview.png",
-          "prompt": "docs/examples/2025-f-cyber-policy/reread-correction-v2.md"
+          "image": "docs/examples/2024-b-deep-sea-rescue/overview-scene-v3.png",
+          "prompt": "docs/examples/2024-b-deep-sea-rescue/scene-publish-correction-v1.md"
+        },
+        {
+          "number": 8,
+          "operation": "edit",
+          "image": "docs/examples/2024-b-deep-sea-rescue/overview-scene-v4.png",
+          "prompt": "docs/examples/2024-b-deep-sea-rescue/scene-publish-correction-v2.md"
+        },
+        {
+          "number": 9,
+          "operation": "edit",
+          "image": "docs/examples/2024-b-deep-sea-rescue/overview.png",
+          "prompt": "docs/examples/2024-b-deep-sea-rescue/scene-publish-correction-v3.md"
         }
       ],
       "approval": {
         "status": "approved",
-        "date": "2026-09-20",
-        "user_message": "同意,请推送, 并且为我写抖音和小红书的推送文稿",
-        "scope": "Five selected PDF-reread images, project showcase and case-specific knowledge-base guidance; not independent scientific validation."
-      }
+        "date": "2026-09-21",
+        "user_message": "1234修好后推送",
+        "scope": "Selected figures 01–04 with requested local corrections and bilingual showcase only; not knowledge-base admission or independent scientific validation."
+      },
+      "review_status": "passed",
+      "selection_number": 1
+    },
+    {
+      "id": "2024-a-lamprey",
+      "paper_id": "mcm-2024-a-2405424",
+      "title": "Lamprey: a Vivid Example of the Doctrine of the Mean",
+      "year": 2024,
+      "contest": "MCM",
+      "problem": "A",
+      "category": {
+        "zh": "生态反馈",
+        "en": "Ecological feedback"
+      },
+      "source_award": "Outstanding Winner",
+      "team": "2405424",
+      "presentation": "standalone",
+      "source_figure": null,
+      "source_case_id": "a-typed-ecological-relations",
+      "notes": {
+        "zh": "docs/examples/2024-a-lamprey/README.md",
+        "en": "docs/examples/2024-a-lamprey/README.en.md"
+      },
+      "brief": "docs/examples/2024-a-lamprey/brief.json",
+      "full_prompt": "docs/examples/2024-a-lamprey/full-prompt.md",
+      "final_image": "docs/examples/2024-a-lamprey/overview.png",
+      "latest_round": 8,
+      "rounds": [
+        {
+          "number": 1,
+          "operation": "generate",
+          "image": "docs/examples/2024-a-lamprey/overview-v1.png",
+          "prompt": "docs/examples/2024-a-lamprey/prompt.md"
+        },
+        {
+          "number": 2,
+          "operation": "generate",
+          "image": "docs/examples/2024-a-lamprey/overview-reread-v1.png",
+          "prompt": "docs/examples/2024-a-lamprey/reread-prompt.md"
+        },
+        {
+          "number": 3,
+          "operation": "edit",
+          "image": "docs/examples/2024-a-lamprey/overview-reread-v2.png",
+          "prompt": "docs/examples/2024-a-lamprey/reread-correction-v2.md"
+        },
+        {
+          "number": 4,
+          "operation": "edit",
+          "image": "docs/examples/2024-a-lamprey/overview-before-scene.png",
+          "prompt": "docs/examples/2024-a-lamprey/reread-correction-v3.md"
+        },
+        {
+          "number": 5,
+          "operation": "generate",
+          "image": "docs/examples/2024-a-lamprey/overview-scene-v1.png",
+          "prompt": "docs/examples/2024-a-lamprey/scene-prompt.md"
+        },
+        {
+          "number": 6,
+          "operation": "edit",
+          "image": "docs/examples/2024-a-lamprey/overview-scene-v2.png",
+          "prompt": "docs/examples/2024-a-lamprey/scene-correction-v2.md"
+        },
+        {
+          "number": 7,
+          "operation": "edit",
+          "image": "docs/examples/2024-a-lamprey/overview-scene-v3.png",
+          "prompt": "docs/examples/2024-a-lamprey/scene-correction-v3.md"
+        },
+        {
+          "number": 8,
+          "operation": "edit",
+          "image": "docs/examples/2024-a-lamprey/overview.png",
+          "prompt": "docs/examples/2024-a-lamprey/scene-publish-correction-v1.md"
+        }
+      ],
+      "approval": {
+        "status": "approved",
+        "date": "2026-09-21",
+        "user_message": "1234修好后推送",
+        "scope": "Selected figures 01–04 with requested local corrections and bilingual showcase only; not knowledge-base admission or independent scientific validation."
+      },
+      "review_status": "passed",
+      "selection_number": 2
     },
     {
       "id": "2026-d-wins-to-worth",
@@ -359,7 +342,7 @@
       "brief": "docs/examples/2026-d-wins-to-worth/brief.json",
       "full_prompt": "docs/examples/2026-d-wins-to-worth/full-prompt.md",
       "final_image": "docs/examples/2026-d-wins-to-worth/overview.png",
-      "latest_round": 8,
+      "latest_round": 13,
       "rounds": [
         {
           "number": 1,
@@ -406,16 +389,149 @@
         {
           "number": 8,
           "operation": "edit",
-          "image": "docs/examples/2026-d-wins-to-worth/overview.png",
+          "image": "docs/examples/2026-d-wins-to-worth/overview-before-scene.png",
           "prompt": "docs/examples/2026-d-wins-to-worth/reread-correction-v3.md"
+        },
+        {
+          "number": 9,
+          "operation": "generate",
+          "image": "docs/examples/2026-d-wins-to-worth/overview-scene-v1.png",
+          "prompt": "docs/examples/2026-d-wins-to-worth/scene-prompt.md"
+        },
+        {
+          "number": 10,
+          "operation": "edit",
+          "image": "docs/examples/2026-d-wins-to-worth/overview-scene-v2.png",
+          "prompt": "docs/examples/2026-d-wins-to-worth/scene-correction-v2.md"
+        },
+        {
+          "number": 11,
+          "operation": "edit",
+          "image": "docs/examples/2026-d-wins-to-worth/overview-scene-v3.png",
+          "prompt": "docs/examples/2026-d-wins-to-worth/scene-correction-v3.md"
+        },
+        {
+          "number": 12,
+          "operation": "edit",
+          "image": "docs/examples/2026-d-wins-to-worth/overview-scene-v4.png",
+          "prompt": "docs/examples/2026-d-wins-to-worth/scene-publish-correction-v1.md"
+        },
+        {
+          "number": 13,
+          "operation": "edit",
+          "image": "docs/examples/2026-d-wins-to-worth/overview.png",
+          "prompt": "docs/examples/2026-d-wins-to-worth/scene-publish-correction-v2.md"
         }
       ],
       "approval": {
         "status": "approved",
-        "date": "2026-09-20",
-        "user_message": "同意,请推送, 并且为我写抖音和小红书的推送文稿",
-        "scope": "Five selected PDF-reread images, project showcase and case-specific knowledge-base guidance; not independent scientific validation."
-      }
+        "date": "2026-09-21",
+        "user_message": "1234修好后推送",
+        "scope": "Selected figures 01–04 with requested local corrections and bilingual showcase only; not knowledge-base admission or independent scientific validation."
+      },
+      "review_status": "passed",
+      "selection_number": 3
+    },
+    {
+      "id": "2025-f-cyber-policy",
+      "paper_id": "icm-2025-f-2513705",
+      "title": "Cracking the Cyber-Puzzle: KDMF in Action",
+      "year": 2025,
+      "contest": "ICM",
+      "problem": "F",
+      "category": {
+        "zh": "政策评价",
+        "en": "Policy evaluation"
+      },
+      "source_award": "Outstanding Winner",
+      "team": "2513705",
+      "presentation": "standalone",
+      "source_figure": null,
+      "source_case_id": "f-cyber-policy-evidence-map",
+      "notes": {
+        "zh": "docs/examples/2025-f-cyber-policy/README.md",
+        "en": "docs/examples/2025-f-cyber-policy/README.en.md"
+      },
+      "brief": "docs/examples/2025-f-cyber-policy/brief.json",
+      "full_prompt": "docs/examples/2025-f-cyber-policy/full-prompt.md",
+      "final_image": "docs/examples/2025-f-cyber-policy/overview.png",
+      "latest_round": 11,
+      "rounds": [
+        {
+          "number": 1,
+          "operation": "generate",
+          "image": "docs/examples/2025-f-cyber-policy/overview-v1.png",
+          "prompt": "docs/examples/2025-f-cyber-policy/prompt.md"
+        },
+        {
+          "number": 2,
+          "operation": "edit",
+          "image": "docs/examples/2025-f-cyber-policy/overview-v2.png",
+          "prompt": "docs/examples/2025-f-cyber-policy/correction-prompt.md"
+        },
+        {
+          "number": 3,
+          "operation": "edit",
+          "image": "docs/examples/2025-f-cyber-policy/overview-v3.png",
+          "prompt": "docs/examples/2025-f-cyber-policy/redesign-prompt.md"
+        },
+        {
+          "number": 4,
+          "operation": "edit",
+          "image": "docs/examples/2025-f-cyber-policy/overview-v4.png",
+          "prompt": "docs/examples/2025-f-cyber-policy/redesign-correction-prompt.md"
+        },
+        {
+          "number": 5,
+          "operation": "edit",
+          "image": "docs/examples/2025-f-cyber-policy/overview-v5.png",
+          "prompt": "docs/examples/2025-f-cyber-policy/redesign-routing-prompt.md"
+        },
+        {
+          "number": 6,
+          "operation": "generate",
+          "image": "docs/examples/2025-f-cyber-policy/overview-reread-v1.png",
+          "prompt": "docs/examples/2025-f-cyber-policy/reread-prompt.md"
+        },
+        {
+          "number": 7,
+          "operation": "edit",
+          "image": "docs/examples/2025-f-cyber-policy/overview-before-scene.png",
+          "prompt": "docs/examples/2025-f-cyber-policy/reread-correction-v2.md"
+        },
+        {
+          "number": 8,
+          "operation": "generate",
+          "image": "docs/examples/2025-f-cyber-policy/overview-scene-v1.png",
+          "prompt": "docs/examples/2025-f-cyber-policy/scene-prompt.md"
+        },
+        {
+          "number": 9,
+          "operation": "edit",
+          "image": "docs/examples/2025-f-cyber-policy/overview-scene-v2.png",
+          "prompt": "docs/examples/2025-f-cyber-policy/scene-correction-v2.md"
+        },
+        {
+          "number": 10,
+          "operation": "edit",
+          "image": "docs/examples/2025-f-cyber-policy/overview-scene-v3.png",
+          "prompt": "docs/examples/2025-f-cyber-policy/scene-correction-v3.md"
+        },
+        {
+          "number": 11,
+          "operation": "edit",
+          "image": "docs/examples/2025-f-cyber-policy/overview.png",
+          "prompt": "docs/examples/2025-f-cyber-policy/scene-publish-correction-v1.md"
+        }
+      ],
+      "approval": {
+        "status": "approved",
+        "date": "2026-09-21",
+        "user_message": "1234修好后推送",
+        "scope": "Selected figures 01–04 with requested local corrections and bilingual showcase only; not knowledge-base admission or independent scientific validation."
+      },
+      "review_status": "passed",
+      "selection_number": 4
     }
   ]
 }

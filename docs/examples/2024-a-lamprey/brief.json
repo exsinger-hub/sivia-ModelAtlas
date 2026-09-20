@@ -15,15 +15,27 @@
     "pdf_pages": 25,
     "intake_format": "PDF",
     "reread": {
-      "date": "2026-09-20",
-      "text_read": "1–25",
+      "date": "2026-09-21",
+      "text_read": "All physical PDF pages 1–25; AI-use appendices, if present, are provenance rather than model authority.",
       "physical_pages_visually_inspected": [
-        11,
+        4,
         12,
         13,
         14
       ],
-      "scope": "Model-bearing manuscript; AI-use appendices are not model authority."
+      "reader": "Main agent",
+      "stage": "Source reading completed for the scene trial before this local-correction and publication pass.",
+      "scope_record": {
+        "date": "2026-09-21",
+        "text_read": "All physical PDF pages 1-25, including references and no-AI declaration",
+        "physical_pages_visually_inspected": [
+          4,
+          12,
+          13,
+          14
+        ],
+        "reader": "main agent"
+      }
     }
   },
   "claim": "Shared-resource competition and host–parasite dynamics are coupled to a resource-dependent male fraction and recruitment feedback. Alternative sex-ratio settings are compared after simulation.",
@@ -77,12 +89,12 @@
   "generation": {
     "backend": "built-in image_gen.imagegen",
     "status": "generated",
-    "artifact_id": "exec-cc441a59-81d3-423b-bedd-214656486848.png",
+    "artifact_id": "exec-0dd71e9e-bf1f-4c95-b2dd-e3b521c8a74a.png",
     "actual_size": [
       1536,
       1024
     ],
-    "image_sha256": "86fc7c262add67ce0469b4c20f03ea2d52e1f562849930272e6120c849266025",
+    "image_sha256": "8c62ecc607e44d25086ad419a597349ed4d76319c40adb04abc5f514d66067a6",
     "chain": [
       {
         "operation": "generate",
@@ -122,7 +134,8 @@
           "passed": true,
           "template_bytes_verified": true,
           "scope": "Exact prompt-text length only; source/visual review and user approval are separate."
-        }
+        },
+        "status": "superseded_history"
       },
       {
         "operation": "edit",
@@ -133,55 +146,123 @@
         "series": "pdf-reread-20260920",
         "input": "overview-reread-v1.png",
         "prompt_scope": "localized_correction",
-        "prompt_sha256": "f7d4b5bfe75e7711d44fa3591173e63a0ae5fe2cb9b8b2501130decf955737f7"
+        "prompt_sha256": "f7d4b5bfe75e7711d44fa3591173e63a0ae5fe2cb9b8b2501130decf955737f7",
+        "status": "superseded_history"
       },
       {
         "operation": "edit",
         "prompt": "reread-correction-v3.md",
-        "output": "overview.png",
+        "output": "overview-before-scene.png",
         "artifact_id": "exec-cc441a59-81d3-423b-bedd-214656486848.png",
         "sha256": "86fc7c262add67ce0469b4c20f03ea2d52e1f562849930272e6120c849266025",
         "series": "pdf-reread-20260920",
         "input": "overview-reread-v2.png",
         "prompt_scope": "localized_correction",
-        "prompt_sha256": "92a2b79e5a8b5fdad27d7afff6a7341d7fc9435ecbeed5de2a90c9567b8a919f"
+        "prompt_sha256": "92a2b79e5a8b5fdad27d7afff6a7341d7fc9435ecbeed5de2a90c9567b8a919f",
+        "status": "superseded_history"
+      },
+      {
+        "operation": "generate",
+        "prompt": "scene-prompt.md",
+        "output": "overview-scene-v1.png",
+        "artifact_id": "exec-e68d1ddf-4cd6-468f-b2e3-3619f71f1f0c.png",
+        "sha256": "0507b9a9b834872cb7976c06525c6ca2f291a4f4fbf7ddfa700a913535ce0b0d",
+        "prompt_sha256": "2823ba95e650a45e257ed29bc4518de05717d29d370871505af53329fd287c9d",
+        "series": "object-scene-20260921",
+        "prompt_scope": "full_redesign",
+        "status": "superseded_history",
+        "prompt_detail": {
+          "profile": "sivia-overview-v1",
+          "binding": {
+            "purpose": "Full English overview designs and substantial redesigns; not an arbitrary universal minimum for small unrelated edits.",
+            "source_repository": "https://github.com/exsinger-hub/Sivia",
+            "source_version": "1.1.0+codex.20260909060506",
+            "template_path": "skills/design-scientific-figure/references/templates/overview-template.txt",
+            "template_sha256": "cd73e60b51a15e005defd61190705846cb3f50a6582a33119be07b2fe78921f9",
+            "minimum_non_whitespace_characters": 15356,
+            "maximum_total_characters": 32000,
+            "metric": "Unicode code points excluding whitespace; count exact submitted prompt, one image call at a time",
+            "count_verified_on": "2026-09-20",
+            "limitation": "Length does not prove useful detail, source fidelity, image quality or user acceptance. Do not pad or concatenate prior calls to pass."
+          },
+          "total_characters": 30758,
+          "non_whitespace_characters": 26161,
+          "submitted_utf8_sha256": "2823ba95e650a45e257ed29bc4518de05717d29d370871505af53329fd287c9d",
+          "length_pass": true,
+          "tool_limit_pass": true,
+          "passed": true,
+          "template_bytes_verified": true,
+          "scope": "Exact prompt-text length only; source/visual review and user approval are separate."
+        }
+      },
+      {
+        "operation": "edit",
+        "prompt": "scene-correction-v2.md",
+        "output": "overview-scene-v2.png",
+        "artifact_id": "exec-3a05d6fa-3944-427e-a925-a95e783ad460.png",
+        "sha256": "e97d2bb80655b2319631d37e2ee58a11a95d415177990968a7f3c7588477028a",
+        "prompt_sha256": "7bf46b7ea183953573cff002246616ab856a054b822e838413dcdd6aaf4fbc6b",
+        "series": "object-scene-20260921",
+        "prompt_scope": "localized_correction",
+        "status": "superseded_history",
+        "input": "overview-scene-v1.png"
+      },
+      {
+        "operation": "edit",
+        "prompt": "scene-correction-v3.md",
+        "output": "overview-scene-v3.png",
+        "artifact_id": "exec-2a974128-d281-45e6-ab20-fb33bca6c293.png",
+        "sha256": "22a96028b43d0ec27a02c193d984bd1495a22983df8f2e988148c34784d59d18",
+        "prompt_sha256": "444298924edc367fe063ecad4fe91fcb4e9706840f9ca79942c79d62ab07bb11",
+        "series": "object-scene-20260921",
+        "prompt_scope": "localized_correction",
+        "status": "superseded_history",
+        "input": "overview-scene-v2.png"
+      },
+      {
+        "operation": "edit",
+        "prompt": "scene-publish-correction-v1.md",
+        "output": "overview.png",
+        "artifact_id": "exec-0dd71e9e-bf1f-4c95-b2dd-e3b521c8a74a.png",
+        "sha256": "8c62ecc607e44d25086ad419a597349ed4d76319c40adb04abc5f514d66067a6",
+        "prompt_sha256": "9846bdfcc74a80b6115dc2f7d7b6a55349b8f953fedb5791ee2b27a449efee6b",
+        "series": "object-scene-20260921",
+        "prompt_scope": "localized_correction",
+        "status": "selected_showcase",
+        "input": "overview-scene-v3.png"
       }
     ],
     "exact_prompt_record": "full-prompt.md",
     "empirical_rerun": false,
     "native_editability": false,
-    "selected_series": "pdf-reread-20260920"
+    "selected_series": "object-scene-20260921"
   },
   "review": {
     "status": "passed",
+    "review_type": "Actual final-raster visual self-review against the scene-trial source evidence; not an independent review.",
     "checks": [
-      "Host support arrow runs from fish toward lamprey; parasitism runs from lamprey toward hosts with a negative sign.",
-      "Male fraction decreases from the s0 endpoint toward 0.50; factor uses (1−m)^1.25.",
-      "Negative recruitment relation and population/resource-share return are visible.",
-      "Fixed m=0.67 and adaptive m(s) are alternative systems, not temporal stages."
+      "Shared resources feed hosts, lampreys and non-host consumers; host support and harmful parasitism have different directions.",
+      "The response curve starts at s0 on the vertical axis, near 5/6, and decreases toward 1/2 within the stated s≥s0 domain.",
+      "Recruitment retains a host-dependent term; population feedback is not represented as individual sex change.",
+      "Only standardized resources and surviving-species count enter the ESI bracket."
     ],
     "notes": [
-      "Eq.12 is followed instead of Fig.7's conflicting resource-to-male sign.",
-      "The resource-share loop is a population/cohort mechanism, not individual sex change.",
-      "Biological shapes and response display are conceptual; no new simulation or field results."
+      "Conceptual scene, not a rerun of the paper’s empirical results.",
+      "Source inconsistencies remain in source_notes; no silent numeric reconstruction.",
+      "Publication-size typography and physical print proof remain author checks."
     ],
     "physical_print_proof": "not performed",
     "independent_review": "not performed",
     "user_approval": "approved",
-    "review_type": "Actual-image visual self-review with source notes; not independent review or physical print proof.",
     "approval_evidence": {
       "status": "approved",
-      "date": "2026-09-20",
-      "user_message": "同意,请推送, 并且为我写抖音和小红书的推送文稿",
-      "scope": "Five selected PDF-reread images, project showcase and case-specific knowledge-base guidance; not independent scientific validation."
+      "date": "2026-09-21",
+      "user_message": "1234修好后推送",
+      "scope": "Selected figures 01–04 with requested local corrections and bilingual showcase only; not knowledge-base admission or independent scientific validation."
     },
     "publication_gate": "approved_for_project_showcase",
-    "issues": [
-      {
-        "severity": "remaining_check",
-        "detail": "Physical print proof and independent review not performed; review small labels at final manuscript size."
-      }
-    ]
+    "scientific_publication_gate": "publication_size_review_required",
+    "knowledge_base_admission": false
   },
   "source_notes": [
     "Eq.12 is followed instead of Fig.7's conflicting resource-to-male sign.",
@@ -189,14 +270,17 @@
     "Biological shapes and response display are conceptual; no new simulation or field results."
   ],
   "design_revision": {
-    "date": "2026-09-20",
-    "reason": "PDF-reread redraw approved by the user.",
+    "date": "2026-09-21",
     "status": "user_approved_showcase",
-    "latest_round": 4,
-    "old_image": "overview-v1.png",
-    "new_image": "overview.png",
-    "superseded_rounds": [
-      1
-    ]
+    "correction_status": "selected_scene_corrected",
+    "selection_number": 2,
+    "latest_round": 8,
+    "summary": "Shared resources, hosts and lampreys form the main scene; resource, sex-ratio and recruitment feedback unfolds below.",
+    "previous_record": "pre-scene-record.json"
+  },
+  "relationship_representation": "Semantic model relations; not every relation is a continuous arrow. Repeated labels, equations and shared table alignment also encode correspondence.",
+  "style_adaptation": {
+    "approach": "Concrete scientific objects with integrated transformations; selective shared rules instead of repeated equal cards.",
+    "auxiliary": "Previously inspected Sivia visual grammar and the accepted 2025 E scene inform composition only. Scientific claims come solely from the pinned source manuscript."
   }
 }

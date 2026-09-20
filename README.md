@@ -85,21 +85,10 @@
 
 ### 更多成图
 
-<a id="category-a"></a>
-<a id="2024-a-lamprey"></a>
-
-#### 2024 MCM A · Lamprey
-
-生态反馈 · 来源论文 Outstanding Winner
-
-<a href="docs/examples/2024-a-lamprey/overview.png"><img src="docs/examples/2024-a-lamprey/overview.png" width="100%" alt="ModelAtlas: 共享资源、宿主与七鳃鳗的作用关系，以及性别比例与繁殖的负反馈。"></a>
-
-[论文与图注](docs/examples/2024-a-lamprey/README.md) · [完整 prompt](docs/examples/2024-a-lamprey/full-prompt.md)
-
 <a id="category-b"></a>
 <a id="2024-b-deep-sea-rescue"></a>
 
-#### 2024 MCM B · Unlocking the Abyss
+#### 01 · 2024 MCM B · Unlocking the Abyss
 
 定位与搜救 · 来源论文 Outstanding Winner
 
@@ -107,21 +96,21 @@
 
 [论文与图注](docs/examples/2024-b-deep-sea-rescue/README.md) · [完整 prompt](docs/examples/2024-b-deep-sea-rescue/full-prompt.md)
 
-<a id="category-f"></a>
-<a id="2025-f-cyber-policy"></a>
+<a id="category-a"></a>
+<a id="2024-a-lamprey"></a>
 
-#### 2025 ICM F · Cracking the Cyber-Puzzle
+#### 02 · 2024 MCM A · Lamprey
 
-政策评价 · 来源论文 Outstanding Winner
+生态反馈 · 来源论文 Outstanding Winner
 
-<a href="docs/examples/2025-f-cyber-policy/overview.png"><img src="docs/examples/2025-f-cyber-policy/overview.png" width="100%" alt="ModelAtlas: 国家—年份记录、政策主题与处理组／对照组的前后差分。"></a>
+<a href="docs/examples/2024-a-lamprey/overview.png"><img src="docs/examples/2024-a-lamprey/overview.png" width="100%" alt="ModelAtlas: 共享资源、宿主与七鳃鳗的作用关系，以及性别比例与繁殖的负反馈。"></a>
 
-[论文与图注](docs/examples/2025-f-cyber-policy/README.md) · [完整 prompt](docs/examples/2025-f-cyber-policy/full-prompt.md)
+[论文与图注](docs/examples/2024-a-lamprey/README.md) · [完整 prompt](docs/examples/2024-a-lamprey/full-prompt.md)
 
 <a id="category-d"></a>
 <a id="2026-d-wins-to-worth"></a>
 
-#### 2026 ICM D · From Wins to Worth
+#### 03 · 2026 ICM D · From Wins to Worth
 
 经营与决策 · 来源论文 Finalist
 
@@ -129,7 +118,20 @@
 
 [论文与图注](docs/examples/2026-d-wins-to-worth/README.md) · [完整 prompt](docs/examples/2026-d-wins-to-worth/full-prompt.md)
 
+<a id="category-f"></a>
+<a id="2025-f-cyber-policy"></a>
+
+#### 04 · 2025 ICM F · Cracking the Cyber-Puzzle
+
+政策评价 · 来源论文 Outstanding Winner
+
+<a href="docs/examples/2025-f-cyber-policy/overview.png"><img src="docs/examples/2025-f-cyber-policy/overview.png" width="100%" alt="ModelAtlas: 国家—年份记录、政策主题与处理组／对照组的前后差分。"></a>
+
+[论文与图注](docs/examples/2025-f-cyber-policy/README.md) · [完整 prompt](docs/examples/2025-f-cyber-policy/full-prompt.md)
+
 奖项属于来源论文。新成图展示论文方法，不代表重新验证了数值结果。[原图署名与许可](docs/assets/reference-overviews/README.md)。
+
+---
 
 <a id="quick-start"></a>
 <a id="setup"></a>

@@ -1,61 +1,57 @@
 {
   "passed": true,
+  "scope": "File integrity only; visual review and user approval are separate fields in brief.json.",
   "files": {
+    "README.en.md": true,
+    "README.md": true,
     "brief.json": true,
+    "correction-prompt.md": true,
+    "full-prompt.md": true,
+    "overview-before-scene.png": true,
+    "overview-reread-v1.png": true,
+    "overview-scene-v1.png": true,
+    "overview-scene-v2.png": true,
+    "overview-scene-v3.png": true,
+    "overview-scene-v4.png": true,
+    "overview-v1.png": true,
+    "overview-v2.png": true,
     "overview.png": true,
-    "prompt.md": true
-  },
-  "visual_review": {
-    "status": "passed",
-    "checks": [
-      "Both maps use a 7×7 frame and retain the old four-cell exclusion region.",
-      "Cell r remains at row4/column5: searched before, hatched after.",
-      "Next cell s is unsearched, at row6/column5; predicted position moves from row4/column4 to row5/column4.",
-      "No numeric rescue probabilities or empirical uncertainty bounds are fabricated."
-    ],
-    "notes": [
-      "The source assumes searched cells are empty and neglects re-entry; that note is in the figure.",
-      "Eq.18 force-component duplication and Eqs.30/35 probability normalization conflicts are not silently repaired.",
-      "The top-view projection is schematic; it is not an operational rescue tool."
-    ],
-    "physical_print_proof": "not performed",
-    "independent_review": "not performed",
-    "user_approval": "approved",
-    "review_type": "Actual-image visual self-review with source notes; not independent review or physical print proof.",
-    "approval_evidence": {
-      "status": "approved",
-      "date": "2026-09-20",
-      "user_message": "同意,请推送, 并且为我写抖音和小红书的推送文稿",
-      "scope": "Five selected PDF-reread images, project showcase and case-specific knowledge-base guidance; not independent scientific validation."
-    },
-    "publication_gate": "approved_for_project_showcase",
-    "issues": [
-      {
-        "severity": "remaining_check",
-        "detail": "Physical print proof and independent review not performed; review small labels at final manuscript size."
-      }
-    ]
-  },
-  "user_approval": "approved",
-  "scope": "File integrity only; not source fidelity, image quality or award verification.",
-  "approval_evidence": {
-    "status": "approved",
-    "date": "2026-09-20",
-    "user_message": "同意,请推送, 并且为我写抖音和小红书的推送文稿",
-    "scope": "Five selected PDF-reread images, project showcase and case-specific knowledge-base guidance; not independent scientific validation."
+    "pre-scene-record.json": true,
+    "prompt.md": true,
+    "reread-correction-v2.md": true,
+    "reread-prompt.md": true,
+    "scene-correction-v2.md": true,
+    "scene-prompt-records.json": true,
+    "scene-prompt.md": true,
+    "scene-publish-correction-v1.md": true,
+    "scene-publish-correction-v2.md": true,
+    "scene-publish-correction-v3.md": true
   },
   "hashes": {
-    "overview.png": "4d5badcd694b9585d2fa3736063ab20eca8b29bdfd74f97b457be924009b3beb",
-    "full-prompt.md": "62a3081080cbd883f5ff676633010170014620d3dae678610e269bd27f54c996",
-    "brief.json": "3c117ad1b1a3325c97d9b52f06d39039f495cb5b958d9ef3880f42b96dff7206",
-    "prompt.md": "a2a75b4dec8449ead4e3a57ebc1dcfaa609a5e1298c7f3b8e64460690fe014a0",
+    "README.en.md": "9861df376c117d0ae8d2c2f4a471afc6759b3f252a7bc8d3c25635893c8c5fc0",
+    "README.md": "9dfe2508cace0a8e112126560bbc97db156e757e1df01efc5650aa327539cddf",
+    "brief.json": "34b7013b90b3ecc6434a526f9ca1e5f477632d1e61582e8b579552008f8b0918",
     "correction-prompt.md": "aa259c194d07e614a9dc7c50292a319668e97bc630808e0d7397bdb8cb577186",
-    "reread-prompt.md": "d0e126d2f8a8378ab9f7688edb418f385292a72a1f90532caec25ab8ef03e2c7",
-    "reread-correction-v2.md": "0d283c088c65e53661d2c1f0dd69bd3de23bac3178acb5a5a66160f9d844f3d1",
+    "full-prompt.md": "dfa40726f9a482ba24490897a9fa11220d5290dc82c8bd20361628aa2ef6a1b5",
+    "overview-before-scene.png": "4d5badcd694b9585d2fa3736063ab20eca8b29bdfd74f97b457be924009b3beb",
+    "overview-reread-v1.png": "4aa7baf34ab01639bdd1eec07dc376945b6e0246805941819d5f7c88ab503832",
+    "overview-scene-v1.png": "7334af5c5d9f25fd35c85d4038a2cdb734cd6016ef66b3c922a4497ada0bd23a",
+    "overview-scene-v2.png": "70281afddfe25768d5b7285457e2feb6df565b59de413bdcb62c30f9b0d22320",
+    "overview-scene-v3.png": "206ddbba50c2d5aaee62f88495048e0c4c928448c266cd43581b32807ec53da0",
+    "overview-scene-v4.png": "5582bebdfd2d0fbb7bba3ae09ba970504b08b4fe8a9a4916348907302518c82f",
     "overview-v1.png": "116281d0f64cd4d6a0fc35151f5c839e0bd3fa2cd98f0fb97174f073a7fd844e",
     "overview-v2.png": "5bdec93b3d4238b62231244af2c604369569341471f8a7ef91beb1a6387d5002",
-    "overview-reread-v1.png": "4aa7baf34ab01639bdd1eec07dc376945b6e0246805941819d5f7c88ab503832"
+    "overview.png": "a628d06b3f9af0a11bc1fc5ed58b61036a7d47a9d50acedaefbd7ad22aa169fc",
+    "pre-scene-record.json": "d7778ad99ba805a7d27d11eeff35b461ac4ea4e9e0f1e0597ab2a4e00a44fe27",
+    "prompt.md": "a2a75b4dec8449ead4e3a57ebc1dcfaa609a5e1298c7f3b8e64460690fe014a0",
+    "reread-correction-v2.md": "0d283c088c65e53661d2c1f0dd69bd3de23bac3178acb5a5a66160f9d844f3d1",
+    "reread-prompt.md": "d0e126d2f8a8378ab9f7688edb418f385292a72a1f90532caec25ab8ef03e2c7",
+    "scene-correction-v2.md": "06cdc8317a36e53b8216c68e5c388101834fbc43a4ee40104b697e5b1c263cf6",
+    "scene-prompt-records.json": "1adf56777d2c47d176d7c4d9b874c8fccd962bdc72636264ebd6becd20ba87bc",
+    "scene-prompt.md": "442bedbee620563851016de5791fd725b1e4446a6455620c64e5f283c59096b1",
+    "scene-publish-correction-v1.md": "3f99da5210883c1c5573063a1d5804c3f28c6bff89d35562a8360f8dcf937f06",
+    "scene-publish-correction-v2.md": "dc23cb491a71402b8166e9185dadba6dbf4c76c1c631ccd9cd57ee9154497663",
+    "scene-publish-correction-v3.md": "ecb674b9b7ce74d55380d72b81a5be2a7939e7742ab01ae46c3fa94a2da19ab2"
   },
-  "intake_sha256": "3532e6cb77e04f698b6b54ca76045961bfce18ff9dc4539e2a2af195c43eaa84",
-  "copy_note": "Repository hashes cover exact public bytes. The private pairing audit passed; public approval is recorded from the explicit user message, not inferred by the pairing API."
+  "intake_sha256": "3532e6cb77e04f698b6b54ca76045961bfce18ff9dc4539e2a2af195c43eaa84"
 }

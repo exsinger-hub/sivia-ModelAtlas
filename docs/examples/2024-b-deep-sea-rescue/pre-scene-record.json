@@ -1,0 +1,321 @@
+{
+  "brief": {
+    "source": {
+      "paper_id": "mcm-2024-b-2407038",
+      "title": "Unlocking the Abyss: A Dynamical Model for Deep-Sea Adventure Safety and Rescue Strategies",
+      "pdf_url": "https://raw.githubusercontent.com/yangchunwanwusheng/MCM-ICM--2024-/ffea7fd98c1fbf7d25edcba4dbc834631e9adbf2/2024/B/student%20paper/2407038.pdf",
+      "pdf_sha256": "3532e6cb77e04f698b6b54ca76045961bfce18ff9dc4539e2a2af195c43eaa84",
+      "award": "Outstanding Winner",
+      "award_evidence": {
+        "url": "https://www.contest.comap.com/undergraduate/contests/mcm/contests/2024/results/",
+        "locator": "MCM Outstanding Winners, Problem B, Team 2407038",
+        "verification": "Official COMAP winner section and institution matched; team number checked in the pinned PDF.",
+        "checked_at": "2026-09-19"
+      },
+      "full_manuscript_read": true,
+      "pdf_pages": 25,
+      "intake_format": "PDF",
+      "reread": {
+        "date": "2026-09-20",
+        "text_read": "1–25",
+        "physical_pages_visually_inspected": [
+          11,
+          18,
+          19
+        ],
+        "scope": "Model-bearing manuscript; AI-use appendices are not model authority."
+      }
+    },
+    "claim": "Environmental fields constrain a drifting-position forecast. A grid search conditions the assumed location prior on no detection, excludes searched cells and redeploys available resources for the next interval.",
+    "manuscript_evidence": [
+      {
+        "locator": "pp.7–11, §§5.1–5.3",
+        "supports": "ARIMA, ridge fields, forces and seafloor constraint"
+      },
+      {
+        "locator": "pp.13–16, §6",
+        "supports": "Equipment objectives: cost, availability, readiness"
+      },
+      {
+        "locator": "pp.17–19, Eqs.25–35 / Fig.9",
+        "supports": "Manhattan shells, chosen cell, exclusion and probability update"
+      },
+      {
+        "locator": "pp.20–22, §§8–9",
+        "supports": "Other-sea / multiple-target extension and interval sensitivity"
+      }
+    ],
+    "model_relationships": [
+      {
+        "source": "Environmental fields",
+        "target": "Drifting position",
+        "meaning": "Newtonian drift with current and seafloor constraints",
+        "locator": "pp.7–11"
+      },
+      {
+        "source": "Assumed location prior and no detection",
+        "target": "Updated search grid",
+        "meaning": "Exclude searched cells and renormalize under perfect detection/no re-entry",
+        "locator": "pp.17–19"
+      },
+      {
+        "source": "Available equipment",
+        "target": "Next eligible search cell",
+        "meaning": "Constrained redeployment as predicted location advances",
+        "locator": "pp.13–19"
+      }
+    ],
+    "references": [
+      {
+        "case_id": "b-rescue-multiscale-overview",
+        "borrowed": "Paper-specific objects and relations checked against the model-bearing PDF pages. Persistent identities and selective change from previously inspected Sivia examples; source models only from this PDF. No layout copied wholesale.",
+        "not_borrowed": "Source pixels, numerical results, conflicting signs/formulas, awards, or a compulsory panel layout."
+      }
+    ],
+    "caption": "Environmental fields constrain a drifting-position forecast. A grid search conditions the assumed location prior on no detection, excludes searched cells and redeploys available resources for the next interval.",
+    "placement": "End of Introduction / Our Work, intended width 180 mm",
+    "generation": {
+      "backend": "built-in image_gen.imagegen",
+      "status": "generated",
+      "artifact_id": "exec-7c2e779a-6760-4762-b3e2-7e62ecd06291.png",
+      "actual_size": [
+        1536,
+        1024
+      ],
+      "image_sha256": "4d5badcd694b9585d2fa3736063ab20eca8b29bdfd74f97b457be924009b3beb",
+      "chain": [
+        {
+          "operation": "generate",
+          "prompt": "prompt.md",
+          "output": "overview-v1.png",
+          "artifact_id": "exec-a5a48898-6c3a-40ea-a4ac-b822eb854c7e.png",
+          "sha256": "116281d0f64cd4d6a0fc35151f5c839e0bd3fa2cd98f0fb97174f073a7fd844e",
+          "status": "superseded_history"
+        },
+        {
+          "operation": "edit",
+          "prompt": "correction-prompt.md",
+          "input": "overview-v1.png",
+          "output": "overview-v2.png",
+          "artifact_id": "exec-8e193d2c-a800-4df8-b66a-6bb583147888.png",
+          "sha256": "5bdec93b3d4238b62231244af2c604369569341471f8a7ef91beb1a6387d5002",
+          "status": "superseded_history"
+        },
+        {
+          "operation": "generate",
+          "prompt": "reread-prompt.md",
+          "output": "overview-reread-v1.png",
+          "artifact_id": "exec-6ce7862c-6f04-4a79-be14-935a168ac231.png",
+          "sha256": "4aa7baf34ab01639bdd1eec07dc376945b6e0246805941819d5f7c88ab503832",
+          "series": "pdf-reread-20260920",
+          "prompt_scope": "full_redesign",
+          "prompt_detail": {
+            "profile": "sivia-overview-v1",
+            "binding": {
+              "purpose": "Full English overview designs and substantial redesigns; not an arbitrary universal minimum for small unrelated edits.",
+              "source_repository": "https://github.com/exsinger-hub/Sivia",
+              "source_version": "1.1.0+codex.20260909060506",
+              "template_path": "skills/design-scientific-figure/references/templates/overview-template.txt",
+              "template_sha256": "cd73e60b51a15e005defd61190705846cb3f50a6582a33119be07b2fe78921f9",
+              "minimum_non_whitespace_characters": 15356,
+              "maximum_total_characters": 32000,
+              "metric": "Unicode code points excluding whitespace; count exact submitted prompt, one image call at a time",
+              "count_verified_on": "2026-09-20",
+              "limitation": "Length does not prove useful detail, source fidelity, image quality or user acceptance. Do not pad or concatenate prior calls to pass."
+            },
+            "total_characters": 26322,
+            "non_whitespace_characters": 22322,
+            "submitted_utf8_sha256": "d0e126d2f8a8378ab9f7688edb418f385292a72a1f90532caec25ab8ef03e2c7",
+            "length_pass": true,
+            "tool_limit_pass": true,
+            "passed": true,
+            "template_bytes_verified": true,
+            "scope": "Exact prompt-text length only; source/visual review and user approval are separate."
+          }
+        },
+        {
+          "operation": "edit",
+          "prompt": "reread-correction-v2.md",
+          "output": "overview.png",
+          "artifact_id": "exec-7c2e779a-6760-4762-b3e2-7e62ecd06291.png",
+          "sha256": "4d5badcd694b9585d2fa3736063ab20eca8b29bdfd74f97b457be924009b3beb",
+          "series": "pdf-reread-20260920",
+          "input": "overview-reread-v1.png",
+          "prompt_scope": "localized_correction",
+          "prompt_sha256": "0d283c088c65e53661d2c1f0dd69bd3de23bac3178acb5a5a66160f9d844f3d1"
+        }
+      ],
+      "exact_prompt_record": "full-prompt.md",
+      "empirical_rerun": false,
+      "native_editability": false,
+      "selected_series": "pdf-reread-20260920"
+    },
+    "review": {
+      "status": "passed",
+      "checks": [
+        "Both maps use a 7×7 frame and retain the old four-cell exclusion region.",
+        "Cell r remains at row4/column5: searched before, hatched after.",
+        "Next cell s is unsearched, at row6/column5; predicted position moves from row4/column4 to row5/column4.",
+        "No numeric rescue probabilities or empirical uncertainty bounds are fabricated."
+      ],
+      "notes": [
+        "The source assumes searched cells are empty and neglects re-entry; that note is in the figure.",
+        "Eq.18 force-component duplication and Eqs.30/35 probability normalization conflicts are not silently repaired.",
+        "The top-view projection is schematic; it is not an operational rescue tool."
+      ],
+      "physical_print_proof": "not performed",
+      "independent_review": "not performed",
+      "user_approval": "approved",
+      "review_type": "Actual-image visual self-review with source notes; not independent review or physical print proof.",
+      "approval_evidence": {
+        "status": "approved",
+        "date": "2026-09-20",
+        "user_message": "同意,请推送, 并且为我写抖音和小红书的推送文稿",
+        "scope": "Five selected PDF-reread images, project showcase and case-specific knowledge-base guidance; not independent scientific validation."
+      },
+      "publication_gate": "approved_for_project_showcase",
+      "issues": [
+        {
+          "severity": "remaining_check",
+          "detail": "Physical print proof and independent review not performed; review small labels at final manuscript size."
+        }
+      ]
+    },
+    "source_notes": [
+      "The source assumes searched cells are empty and neglects re-entry; that note is in the figure.",
+      "Eq.18 force-component duplication and Eqs.30/35 probability normalization conflicts are not silently repaired.",
+      "The top-view projection is schematic; it is not an operational rescue tool."
+    ],
+    "design_revision": {
+      "date": "2026-09-20",
+      "reason": "PDF-reread redraw approved by the user.",
+      "status": "user_approved_showcase",
+      "latest_round": 4,
+      "old_image": "overview-v2.png",
+      "new_image": "overview.png",
+      "superseded_rounds": [
+        1,
+        2
+      ]
+    }
+  },
+  "showcase": {
+    "id": "2024-b-deep-sea-rescue",
+    "paper_id": "mcm-2024-b-2407038",
+    "title": "Unlocking the Abyss",
+    "year": 2024,
+    "contest": "MCM",
+    "problem": "B",
+    "category": {
+      "zh": "定位与搜救",
+      "en": "Localization & rescue"
+    },
+    "source_award": "Outstanding Winner",
+    "team": "2407038",
+    "presentation": "standalone",
+    "source_figure": null,
+    "source_case_id": "b-rescue-multiscale-overview",
+    "notes": {
+      "zh": "docs/examples/2024-b-deep-sea-rescue/README.md",
+      "en": "docs/examples/2024-b-deep-sea-rescue/README.en.md"
+    },
+    "brief": "docs/examples/2024-b-deep-sea-rescue/brief.json",
+    "full_prompt": "docs/examples/2024-b-deep-sea-rescue/full-prompt.md",
+    "final_image": "docs/examples/2024-b-deep-sea-rescue/overview.png",
+    "latest_round": 4,
+    "rounds": [
+      {
+        "number": 1,
+        "operation": "generate",
+        "image": "docs/examples/2024-b-deep-sea-rescue/overview-v1.png",
+        "prompt": "docs/examples/2024-b-deep-sea-rescue/prompt.md"
+      },
+      {
+        "number": 2,
+        "operation": "edit",
+        "image": "docs/examples/2024-b-deep-sea-rescue/overview-v2.png",
+        "prompt": "docs/examples/2024-b-deep-sea-rescue/correction-prompt.md"
+      },
+      {
+        "number": 3,
+        "operation": "generate",
+        "image": "docs/examples/2024-b-deep-sea-rescue/overview-reread-v1.png",
+        "prompt": "docs/examples/2024-b-deep-sea-rescue/reread-prompt.md"
+      },
+      {
+        "number": 4,
+        "operation": "edit",
+        "image": "docs/examples/2024-b-deep-sea-rescue/overview.png",
+        "prompt": "docs/examples/2024-b-deep-sea-rescue/reread-correction-v2.md"
+      }
+    ],
+    "approval": {
+      "status": "approved",
+      "date": "2026-09-20",
+      "user_message": "同意,请推送, 并且为我写抖音和小红书的推送文稿",
+      "scope": "Five selected PDF-reread images, project showcase and case-specific knowledge-base guidance; not independent scientific validation."
+    }
+  },
+  "integrity_audit": {
+    "passed": true,
+    "files": {
+      "brief.json": true,
+      "overview.png": true,
+      "prompt.md": true
+    },
+    "visual_review": {
+      "status": "passed",
+      "checks": [
+        "Both maps use a 7×7 frame and retain the old four-cell exclusion region.",
+        "Cell r remains at row4/column5: searched before, hatched after.",
+        "Next cell s is unsearched, at row6/column5; predicted position moves from row4/column4 to row5/column4.",
+        "No numeric rescue probabilities or empirical uncertainty bounds are fabricated."
+      ],
+      "notes": [
+        "The source assumes searched cells are empty and neglects re-entry; that note is in the figure.",
+        "Eq.18 force-component duplication and Eqs.30/35 probability normalization conflicts are not silently repaired.",
+        "The top-view projection is schematic; it is not an operational rescue tool."
+      ],
+      "physical_print_proof": "not performed",
+      "independent_review": "not performed",
+      "user_approval": "approved",
+      "review_type": "Actual-image visual self-review with source notes; not independent review or physical print proof.",
+      "approval_evidence": {
+        "status": "approved",
+        "date": "2026-09-20",
+        "user_message": "同意,请推送, 并且为我写抖音和小红书的推送文稿",
+        "scope": "Five selected PDF-reread images, project showcase and case-specific knowledge-base guidance; not independent scientific validation."
+      },
+      "publication_gate": "approved_for_project_showcase",
+      "issues": [
+        {
+          "severity": "remaining_check",
+          "detail": "Physical print proof and independent review not performed; review small labels at final manuscript size."
+        }
+      ]
+    },
+    "user_approval": "approved",
+    "scope": "File integrity only; not source fidelity, image quality or award verification.",
+    "approval_evidence": {
+      "status": "approved",
+      "date": "2026-09-20",
+      "user_message": "同意,请推送, 并且为我写抖音和小红书的推送文稿",
+      "scope": "Five selected PDF-reread images, project showcase and case-specific knowledge-base guidance; not independent scientific validation."
+    },
+    "hashes": {
+      "overview.png": "4d5badcd694b9585d2fa3736063ab20eca8b29bdfd74f97b457be924009b3beb",
+      "full-prompt.md": "62a3081080cbd883f5ff676633010170014620d3dae678610e269bd27f54c996",
+      "brief.json": "3c117ad1b1a3325c97d9b52f06d39039f495cb5b958d9ef3880f42b96dff7206",
+      "prompt.md": "a2a75b4dec8449ead4e3a57ebc1dcfaa609a5e1298c7f3b8e64460690fe014a0",
+      "correction-prompt.md": "aa259c194d07e614a9dc7c50292a319668e97bc630808e0d7397bdb8cb577186",
+      "reread-prompt.md": "d0e126d2f8a8378ab9f7688edb418f385292a72a1f90532caec25ab8ef03e2c7",
+      "reread-correction-v2.md": "0d283c088c65e53661d2c1f0dd69bd3de23bac3178acb5a5a66160f9d844f3d1",
+      "overview-v1.png": "116281d0f64cd4d6a0fc35151f5c839e0bd3fa2cd98f0fb97174f073a7fd844e",
+      "overview-v2.png": "5bdec93b3d4238b62231244af2c604369569341471f8a7ef91beb1a6387d5002",
+      "overview-reread-v1.png": "4aa7baf34ab01639bdd1eec07dc376945b6e0246805941819d5f7c88ab503832"
+    },
+    "intake_sha256": "3532e6cb77e04f698b6b54ca76045961bfce18ff9dc4539e2a2af195c43eaa84",
+    "copy_note": "Repository hashes cover exact public bytes. The private pairing audit passed; public approval is recorded from the explicit user message, not inferred by the pairing API."
+  },
+  "scope": "Historical metadata before replacement; its overview.png is now overview-before-scene.png."
+}

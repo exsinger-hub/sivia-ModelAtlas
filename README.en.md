@@ -85,21 +85,10 @@ Latent-variable inference · Source paper Finalist · Team 2627351
 
 ### More generated figures
 
-<a id="category-a"></a>
-<a id="2024-a-lamprey"></a>
-
-#### 2024 MCM A · Lamprey
-
-Ecological feedback · Source paper Outstanding Winner
-
-<a href="docs/examples/2024-a-lamprey/overview.png"><img src="docs/examples/2024-a-lamprey/overview.png" width="100%" alt="ModelAtlas: Shared resources and host–parasite relations feed a resource–sex-ratio–recruitment loop."></a>
-
-[Paper & caption](docs/examples/2024-a-lamprey/README.en.md) · [Full prompt](docs/examples/2024-a-lamprey/full-prompt.md)
-
 <a id="category-b"></a>
 <a id="2024-b-deep-sea-rescue"></a>
 
-#### 2024 MCM B · Unlocking the Abyss
+#### 01 · 2024 MCM B · Unlocking the Abyss
 
 Localization & rescue · Source paper Outstanding Winner
 
@@ -107,21 +96,21 @@ Localization & rescue · Source paper Outstanding Winner
 
 [Paper & caption](docs/examples/2024-b-deep-sea-rescue/README.en.md) · [Full prompt](docs/examples/2024-b-deep-sea-rescue/full-prompt.md)
 
-<a id="category-f"></a>
-<a id="2025-f-cyber-policy"></a>
+<a id="category-a"></a>
+<a id="2024-a-lamprey"></a>
 
-#### 2025 ICM F · Cracking the Cyber-Puzzle
+#### 02 · 2024 MCM A · Lamprey
 
-Policy evaluation · Source paper Outstanding Winner
+Ecological feedback · Source paper Outstanding Winner
 
-<a href="docs/examples/2025-f-cyber-policy/overview.png"><img src="docs/examples/2025-f-cyber-policy/overview.png" width="100%" alt="ModelAtlas: Country-year records, policy themes and symbolic treated/control changes."></a>
+<a href="docs/examples/2024-a-lamprey/overview.png"><img src="docs/examples/2024-a-lamprey/overview.png" width="100%" alt="ModelAtlas: Shared resources and host–parasite relations feed a resource–sex-ratio–recruitment loop."></a>
 
-[Paper & caption](docs/examples/2025-f-cyber-policy/README.en.md) · [Full prompt](docs/examples/2025-f-cyber-policy/full-prompt.md)
+[Paper & caption](docs/examples/2024-a-lamprey/README.en.md) · [Full prompt](docs/examples/2024-a-lamprey/full-prompt.md)
 
 <a id="category-d"></a>
 <a id="2026-d-wins-to-worth"></a>
 
-#### 2026 ICM D · From Wins to Worth
+#### 03 · 2026 ICM D · From Wins to Worth
 
 Operations & decisions · Source paper Finalist
 
@@ -129,7 +118,20 @@ Operations & decisions · Source paper Finalist
 
 [Paper & caption](docs/examples/2026-d-wins-to-worth/README.en.md) · [Full prompt](docs/examples/2026-d-wins-to-worth/full-prompt.md)
 
+<a id="category-f"></a>
+<a id="2025-f-cyber-policy"></a>
+
+#### 04 · 2025 ICM F · Cracking the Cyber-Puzzle
+
+Policy evaluation · Source paper Outstanding Winner
+
+<a href="docs/examples/2025-f-cyber-policy/overview.png"><img src="docs/examples/2025-f-cyber-policy/overview.png" width="100%" alt="ModelAtlas: Country-year records, policy themes and symbolic treated/control changes."></a>
+
+[Paper & caption](docs/examples/2025-f-cyber-policy/README.en.md) · [Full prompt](docs/examples/2025-f-cyber-policy/full-prompt.md)
+
 Awards belong to the source papers. Generated figures are method illustrations, not rerun results. [Original-image credits & licenses](docs/assets/reference-overviews/README.md).
+
+---
 
 <a id="quick-start"></a>
 <a id="setup"></a>

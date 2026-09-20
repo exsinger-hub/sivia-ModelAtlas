@@ -1,10 +1,49 @@
-# Exact prompts and generation history
+# Complete actual generation history
 
-The selected PDF-reread series was approved by the user on 2026-09-20. Each call below preserves its exact prompt separately. Length checks apply to each complete design call, never to this concatenated history.
+Each section is a separate submitted prompt, not one concatenated generation request. Only the latest image is shown in the project README.
 
-## Selected series
+## Round 1 · generate · overview-v1.png
 
-### Call 3 · generate · reread-prompt.md
+Use case: scientific-educational
+Asset type: an English method overview for an MCM paper, landscape 3:2, white background.
+
+Purpose and authority
+Create a precise, visually engaging scientific plate titled "Locate, equip and search" based on "Unlocking the Abyss: A Dynamical Model for Deep-Sea Adventure Safety and Rescue Strategies", Team 2407038, 2024 MCM B. The figure explains how ocean dynamics predicts a lost submersible's position, how equipment is selected, and how searched cells update the next deployment. Use the paper's Sections 4–9 only. Intended at 180 mm text width. Depict a method schematic, not operational rescue advice or claimed empirical predictions. No invented coordinates, probabilities, Pareto scatter points, fitted curves or performance numbers.
+
+Composition
+Use an ocean cross-section as the main upper-left and center scene (roughly 55% of the canvas), a compact preparation branch in the upper-right (35%), and a broad time-updated search strip below. Keep white gutters and a quiet thin blue waterline; the ocean is an isolated illustration, not a dark full-page background. Rescue vessel above the water, small powerless submersible below, a pale seabed, two or three short current arrows, all crisp and legible. Use a distinct navy/sea-teal palette with restrained amber for uncertainty and search selection. No generic grid of rounded cards.
+
+Region A: "Locate"
+Beside the cross-section, three small data labels: "Currents", "Density", "Seafloor". Currents connects to "ARIMA + Monte Carlo"; currents and density connect to "Ridge regression". Both feed "Motion model" near the submersible. Seafloor connects directly to the motion model as a boundary constraint. A compact annotation under the vehicle reads "Gravity · buoyancy · drag". A short dotted conceptual path ending at a hollow locator symbol illustrates "Predicted position"; label the path "Schematic trajectory" so it cannot be confused with a computed result. Do not connect that path to the top vessel as a cable. Keep all data-processing arrows outside the illustrative water scene's small labels.
+
+Region B: "Prepare"
+Show five minimal instrument silhouettes in a tidy horizontal cluster, captioned collectively "Sonar · pinger · magnetometer · camera"; no fake brand names. Below them, three short objective labels stacked with good breathing room: "Cost ↓", "Availability ↑", "Readiness time ↓". These feed "Genetic algorithm" and then "Equipment allocation", illustrated by one larger host ship and two smaller rescue-boat silhouettes. This is a multi-objective selection branch; no ranking or numerical optimization result is drawn. A downward arrow from allocation joins the search strip at "Deploy".
+
+Region C: "Search and update"
+In the bottom strip, use a left-to-right sequence of four visually meaningful objects rather than four identical boxes: a small unnumbered cell grid labeled "Poisson grid prior"; a boat inspecting a selected amber cell labeled "Deploy"; a checked-off cell grid labeled "Search evidence"; and a redistributed grid labeled "Bayesian update". The grids are monochrome schematic partitions, NOT numerical heatmaps: use outline / hatch / highlight distinctions, no continuous color scale and no values. The "Predicted position" above feeds the first grid, not the equipment branch. Connect prior -> deploy -> evidence -> update with clear dark arrows. One curved return arrow from update back to deploy, routed along the strip's lower edge, is labeled "Next interval". A tiny note under searched cells: "Searched cells excluded in this model". This is the paper's search assumption, not a universal statement about real search and rescue. Label the region footer "Conceptual search cycle".
+
+Evaluation and extension
+Across the bottom margin, a separate light outlined band labeled "Checks and extensions" contains three short entries: "Search-interval sensitivity", "Other sea regions", "Multiple submersibles". Link the search strip to this band with one plain thin connector. No claims of perfect detection outside the explicitly modeled assumption and no new algorithms such as neural networks, RRT or Kalman filtering.
+
+Visual grammar and typography
+Strong hierarchy, fine consistent outlines, subdued seawater blue, generous white space. The submersible and equipment provide semantic imagery; keep icons restrained and distinct. Exact quoted labels only, no paragraphs. Dark readable sans-serif type, semibold region headings. Keep the title below 6% canvas height and scientific labels large enough for reduction. Data-flow connectors have arrowheads; illustrative current arrows are thin teal and confined underwater; feedback is dashed amber. Avoid connector crossings, especially between the preparation branch and localization inputs.
+
+Reference adaptation and final checks
+The inspected source overview (Figure 1, physical PDF p4) suggests separate locate/prepare/search tasks and a search-feedback loop. Preserve that narrative, not its screenshot, numerical example plots, tiny labels or dense ornamental outline boxes. No logos, watermarks, award badges, team numbers or source-author claims. Output only the finished complete overview. Check the two upstream branches merge only at search, feedback returns to deployment, and all charts remain explicitly schematic.
+
+## Round 2 · edit · overview-v2.png
+
+Use case: precise-object-edit
+Asset: final manuscript overview, landscape 1536 x 1024.
+Input image: edit target, the existing deep-sea rescue overview. Preserve the scientific panels, ocean scene, equipment, text typography, colors and legible grid cycle.
+
+Make two narrowly scoped corrections:
+1. Remove the two subtitle lines below "Locate, equip and search": remove the long paper title AND "Team 2407038 | 2024 MCM B". Leave just the main title with calm white space. No author, team, contest, award, branding or watermark anywhere.
+2. The small extra orange "Deploy" box at the upper right of the Search and update region is disconnected from the real deployment and must disappear. Remove that duplicate box and the vertical equipment-to-box arrow. The actual boat step titled "Deploy" in the center-left of the search row is the ONLY deployment. Indicate the equipment allocation dependency via a small readable secondary label immediately below its existing "Deploy" heading: "Uses allocated equipment". Do not add a new long connecting arrow, new duplicate deployment or new boat. Keep the actual cycle: Poisson grid prior -> Deploy -> Search evidence -> Bayesian update, with dashed amber Next interval feedback from Bayesian update to the actual Deploy boat.
+
+Invariants: currents -> ARIMA + Monte Carlo and ridge regression; density -> ridge regression; motion model bounded by seafloor; qualitative trajectory; three GA objectives cost down, availability up, readiness time down; equipment allocation; Poisson prior derived from predicted position; searched cells excluded in this model; Bayesian next-interval feedback. Keep conceptual search cycle label and checks/extensions strip. No new quantitative results. No other scientific edits, no flattening into a generic diagram. Read all labels before finishing.
+
+## Round 3 · generate · overview-reread-v1.png
 
 Create one original publication-ready scientific overview illustration, not a poster, slide, dashboard, product interface, or collection of method cards. This is a manuscript-to-figure task. The manuscript-specific scientific specification below is the authority. Generate a completely new composition; nothing about an earlier generated layout has to survive. Output a single high-resolution landscape raster image on pure white, approximately 3:2. The intended placement is the end of the Introduction at 180 mm print width. The language of every visible label is English. Do not show a title banner, team number, contest award, institutional logo, model branding, filename, source-page thumbnail, or watermark. Use the short panel labels specified below, with the dominant scientific operation taking most of the area.
 
@@ -96,7 +135,7 @@ Essential connections: environmental fields and initial conditions→drift; seaf
 
 Final inspection priorities: identical map frames; q persists as excluded; r changes from searching to excluded; s becomes the next chosen eligible cell; the predicted cross moves consistently; all hatched cells remain unfilled; each search path fits in one cell; compass orientation does not reverse; Manhattan shells are not circular confidence ellipses; the data/model boundary is explicit; source assumptions remain readable. The finished plate should explain the operation before the viewer reads any algorithm name.
 
-### Call 4 · edit · reread-correction-v2.md
+## Round 4 · edit · overview-before-scene.png
 
 Edit the supplied rescue-search figure, preserving the composition, typography, left drift inset and equipment strip. The two maps currently violate persistent cell identity. Repair only the map states and their local labels.
 Both maps must be the SAME 7 columns by 7 rows, numbered here only for instructions: rows top-to-bottom 1..7, columns left-to-right 1..7. Do NOT print row/column numbers.
@@ -109,47 +148,179 @@ Schematic blue belief fills are centered broadly around the relevant predicted p
 Keep the update text "No detection", "Exclude searched cells", "Renormalize", p⁺=0 on searched cells, p⁺∝p⁻ on unsearched cells. Keep the source assumption note.
 Finally add one modest connector from the left inset's predicted-position cross to the BEFORE map's prior input, labelled "Project to grid", through the white space above or below the inset/map boundary. It must not touch text or run across the maps. Retain the current map grid lines, compass orientation and legend. Do not alter any other scientific equations.
 
-## Superseded history — not current scientific guidance
+## Round 5 · generate · overview-scene-v1.png
 
-These earlier prompts are preserved verbatim for traceability. They can contain assumptions or source interpretations corrected by the selected series; do not reuse them as current guidance.
+Create one polished, source-grounded conceptual scientific overview for the paper "Unlocking the Abyss: A Dynamical Model for Deep-Sea Adventure Safety and Rescue Strategies". The short visible figure title is "From deep-sea drift to adaptive search". This is one coherent illustration for the end of an introduction, intended to remain readable at about 180 mm wide. Use a 3:2 landscape canvas, a clean white background, English labels, precise restrained linework, and carefully shaded physical objects. The scientific claim is that current and density information plus bathymetry support a three-dimensional prediction of a disabled submersible, whose horizontal location seeds an assumed spatial probability field; unsuccessful surface search changes the retained search support and the next deployment. The largest useful objects must expose that relationship directly. The sea is a scientific cross-section, and the maps are two states of the same search domain.
 
-### Call 1 · generate · prompt.md
+AUTHORITATIVE SCOPE AND EVIDENCE
 
-Use case: scientific-educational
-Asset type: an English method overview for an MCM paper, landscape 3:2, white background.
+The sole scientific authority is the supplied 25-page paper, team 2407038, 2024 problem B. Physical PDF pages 5-11 establish the assumptions, data, current forecasting, density regression, mechanics, and bathymetric restriction. Physical PDF pages 16-19 establish surface search, the grid, the Manhattan-distance Poisson construction, interval-based deployment, and permanent exclusion after an unsuccessful search. Physical PDF pages 11-12 discuss observation equipment and reporting. Treat this image as a conceptual account of those stated mechanisms, not a new simulation, validated rescue protocol, or quantitative reconstruction. Do not draw measured results, invented performance values, a cumulative success curve, numerical heatmap values, estimated coordinates, calibrated uncertainty bands, or a claimed recovered target.
 
-Purpose and authority
-Create a precise, visually engaging scientific plate titled "Locate, equip and search" based on "Unlocking the Abyss: A Dynamical Model for Deep-Sea Adventure Safety and Rescue Strategies", Team 2407038, 2024 MCM B. The figure explains how ocean dynamics predicts a lost submersible's position, how equipment is selected, and how searched cells update the next deployment. Use the paper's Sections 4–9 only. Intended at 180 mm text width. Depict a method schematic, not operational rescue advice or claimed empirical predictions. No invented coordinates, probabilities, Pareto scatter points, fitted curves or performance numbers.
+Concentrate on one missing submersible and one search transition. Equipment optimization, Caribbean transfer, multiple-target sums, Monte Carlo error experiments, and sensitivity experiments are outside this figure. Repeated position markers and vessel drawings represent the same entities across time or representation, not extra targets or a fleet count.
 
-Composition
-Use an ocean cross-section as the main upper-left and center scene (roughly 55% of the canvas), a compact preparation branch in the upper-right (35%), and a broad time-updated search strip below. Keep white gutters and a quiet thin blue waterline; the ocean is an isolated illustration, not a dark full-page background. Rescue vessel above the water, small powerless submersible below, a pale seabed, two or three short current arrows, all crisp and legible. Use a distinct navy/sea-teal palette with restrained amber for uncertainty and search selection. No generic grid of rounded cards.
+CANVAS, HIERARCHY, AND READING PATH
 
-Region A: "Locate"
-Beside the cross-section, three small data labels: "Currents", "Density", "Seafloor". Currents connects to "ARIMA + Monte Carlo"; currents and density connect to "Ridge regression". Both feed "Motion model" near the submersible. Seafloor connects directly to the motion model as a boundary constraint. A compact annotation under the vehicle reads "Gravity · buoyancy · drag". A short dotted conceptual path ending at a hollow locator symbol illustrates "Predicted position"; label the path "Schematic trajectory" so it cannot be confused with a computed result. Do not connect that path to the top vessel as a cable. Keep all data-processing arrows outside the illustrative water scene's small labels.
+Use an asymmetric composition with a large physical sea/depth scene on the left and two coordinate-matched search maps on the right. The ocean scene occupies roughly the left 47% of the width from 18% to 89% of the height. The two maps sit side by side in the right half, with their upper and lower edges aligned; allocate about 22% of the full canvas width to each square map. Their square shape means their height is about 33% of the full canvas height. Put the map pair approximately between 22% and 55% of canvas height. Leave a narrow, deliberately reserved event connector lane between them, rather than touching their grid lines or coloring a background panel behind them. Below the maps, use the lower right area for an enlarged view of one searched cell and a compact open grouping of the actual exclusion and scheduling assumptions. This lower detail should help read the main maps, not create a third generic stage.
 
-Region B: "Prepare"
-Show five minimal instrument silhouettes in a tidy horizontal cluster, captioned collectively "Sonar · pinger · magnetometer · camera"; no fake brand names. Below them, three short objective labels stacked with good breathing room: "Cost ↓", "Availability ↑", "Readiness time ↓". These feed "Genetic algorithm" and then "Equipment allocation", illustrated by one larger host ship and two smaller rescue-boat silhouettes. This is a multi-objective selection branch; no ranking or numerical optimization result is drawn. A downward arrow from allocation joins the search strip at "Deploy".
+The title sits near the upper left with modest size. A small "Conceptual schematic" note sits near the upper right. Two compact regional labels, "3D drift" over the cross-section and "2D search update" above the matched maps, establish the change of representation. They are labels over scientific objects, not headers inside colored cards. The main reading path starts at a last reported underwater state, follows a drift curve constrained above the seabed, rises through a horizontal-location projection, enters the first map, crosses the no-detection event, and reaches the updated second map. A separate thin prediction input enters the second map from the later predicted position. It is essential that both information sources visibly reach the updated map.
 
-Region C: "Search and update"
-In the bottom strip, use a left-to-right sequence of four visually meaningful objects rather than four identical boxes: a small unnumbered cell grid labeled "Poisson grid prior"; a boat inspecting a selected amber cell labeled "Deploy"; a checked-off cell grid labeled "Search evidence"; and a redistributed grid labeled "Bayesian update". The grids are monochrome schematic partitions, NOT numerical heatmaps: use outline / hatch / highlight distinctions, no continuous color scale and no values. The "Predicted position" above feeds the first grid, not the equipment branch. Connect prior -> deploy -> evidence -> update with clear dark arrows. One curved return arrow from update back to deploy, routed along the strip's lower edge, is labeled "Next interval". A tiny note under searched cells: "Searched cells excluded in this model". This is the paper's search assumption, not a universal statement about real search and rescue. Label the region footer "Conceptual search cycle".
+Objects and operations supply visual density. Do not add ocean animals, coral, bubbles, divers, helicopters, a shipwreck vignette, sunset lighting, text balloons, or repeated equipment icons.
 
-Evaluation and extension
-Across the bottom margin, a separate light outlined band labeled "Checks and extensions" contains three short entries: "Search-interval sensitivity", "Other sea regions", "Multiple submersibles". Link the search strip to this band with one plain thin connector. No claims of perfect detection outside the explicitly modeled assumption and no new algorithms such as neural networks, RRT or Kalman filtering.
+PHYSICAL OCEAN SCENE: DOMAIN AND OBJECTS
 
-Visual grammar and typography
-Strong hierarchy, fine consistent outlines, subdued seawater blue, generous white space. The submersible and equipment provide semantic imagery; keep icons restrained and distinct. Exact quoted labels only, no paragraphs. Dark readable sans-serif type, semibold region headings. Keep the title below 6% canvas height and scientific labels large enough for reduction. Data-flow connectors have arrowheads; illustrative current arrows are thin teal and confined underwater; feedback is dashed amber. Avoid connector crossings, especially between the preparation branch and localization inputs.
+Draw a shallow-oblique water cutaway, mostly white with pale blue depth layers, an irregular seabed, and a lightly indicated surface. A receding edge and small x/y/z triad establish three dimensions without making a glossy cube. Use rightward x, receding y, and upward positive z, with no numerical ticks. Place "Depth" alongside the vertical extent without equating increasing depth with positive z.
 
-Reference adaptation and final checks
-The inspected source overview (Figure 1, physical PDF p4) suggests separate locate/prepare/search tasks and a search-feedback loop. Preserve that narrative, not its screenshot, numerical example plots, tiny labels or dense ornamental outline boxes. No logos, watermarks, award badges, team numbers or source-author claims. Output only the finished complete overview. Check the two upstream branches merge only at search, feedback returns to deployment, and all charts remain explicitly schematic.
+Give the seabed one broad rise, a shallow saddle, and a lower basin. Its muted stone-gray cut edge has sparse stratification and a few faint surface contours. Emphasize the boundary that constrains the trajectory. "Bathymetry" points to terrain; "Stay above seabed" sits at closest approach. Show no penetration, collision, rebound, avoidance controller, or invented contact dynamics.
 
-### Call 2 · edit · correction-prompt.md
+At the surface, draw a modest "Host ship" with a hull, bridge, aft handling arrangement, and acoustic transducer. It received the last report. Farther right draw a smaller "Rescue vessel" with an amber hull marking and a transducer. Reuse its silhouette and amber marking in the local plan-view sweep. Omit branding, flags, vessel names, and ornate masts.
 
-Use case: precise-object-edit
-Asset: final manuscript overview, landscape 1536 x 1024.
-Input image: edit target, the existing deep-sea rescue overview. Preserve the scientific panels, ocean scene, equipment, text typography, colors and legible grid cycle.
+Draw one steel-blue submersible with a rounded pressure hull, windows, small fairing, and skids, without a commercial logo. This substantial object is the last-known, initially stationary, neutrally buoyant state. Label it "Last report", "v = 0; fixed mass and volume", and "Propulsion lost". Show neither active propulsion nor changing ballast volume.
 
-Make two narrowly scoped corrections:
-1. Remove the two subtitle lines below "Locate, equip and search": remove the long paper title AND "Team 2407038 | 2024 MCM B". Leave just the main title with calm white space. No author, team, contest, award, branding or watermark anywhere.
-2. The small extra orange "Deploy" box at the upper right of the Search and update region is disconnected from the real deployment and must disappear. Remove that duplicate box and the vertical equipment-to-box arrow. The actual boat step titled "Deploy" in the center-left of the search row is the ONLY deployment. Indicate the equipment allocation dependency via a small readable secondary label immediately below its existing "Deploy" heading: "Uses allocated equipment". Do not add a new long connecting arrow, new duplicate deployment or new boat. Keep the actual cycle: Poisson grid prior -> Deploy -> Search evidence -> Bayesian update, with dashed amber Next interval feedback from Bayesian update to the actual Deploy boat.
+OBSERVATIONS, CURRENT FORECAST, AND LOCAL FIELDS
 
-Invariants: currents -> ARIMA + Monte Carlo and ridge regression; density -> ridge regression; motion model bounded by seafloor; qualitative trajectory; three GA objectives cost down, availability up, readiness time down; equipment allocation; Poisson prior derived from predicted position; searched cells excluded in this model; Bayesian next-interval feedback. Keep conceptual search cycle label and checks/extensions strip. No new quantitative results. No other scientific edits, no flattening into a generic diagram. Read all labels before finishing.
+Above or left of the hull, draw a short depth-sampling staff with horizontal vectors and an adjacent sequence of sample marks along an unnumbered time guide. Label this abstract observation carrier "Current records". Its "ARIMA" forecast feeds "Ridge regression", positioned where sampled currents become the continuous field around the trajectory. This is temporal forecasting followed by spatial fitting, without an empirical chart or database icon.
+
+Draw sparse teal current arrows changing gently across depth and location, mainly horizontal with small vertical components. Their illustrative lengths have no numerical scale. Place endpoints in the water, not on the hull as extra forces. Label the field "Current" and "u(x,y,z,t)" once, distinct from submersible velocity v.
+
+Density sample dots and pale blue-gray water bands denote a position-dependent field, labeled "Density" and "rho(x,y,z)" using Greek rho. Branch the spatial-fitting association to this field, then connect density to buoyancy. No second method box, measured profile, or fabricated isopycnal value is needed.
+
+Attach compact "ADCP", "CTD", and "INS" annotations to a small profiler head, sensor probe, and orientation triad near the last-reported state. Associate them with currents, water conditions/depth, and motion, respectively. A dashed last-report link ends at the host ship and reads "Before contact loss". Do not depict continued telemetry after loss or satellite communications underwater.
+
+FORCES AND PREDICTED TRAJECTORY
+
+Attach upward "Buoyancy", downward "Gravity", and lateral "Resistance" arrows to the hull. Resistance opposes a small illustrative relative-motion cue; equal vertical arrows can show the initial neutral state. Keep environmental current vectors separate. The source accounts for current through a velocity relation: do not add an invented fourth force or double-count current. Print no component equations.
+
+Draw one medium-weight blue-teal conceptual prediction curve from the last-known state, moving horizontally and deeper above terrain, with two hollow forecast markers. It is not digitized or computed. Avoid steering loops, particles, confidence tubes, or alternative-track swarms: the current-error experiment does not calibrate a trajectory ensemble for the search prior.
+
+Label the curve "Predicted trajectory" and its hollow markers t_n and t_(n+1). These are hypothetical positions of one missing target, not observed locations. Use no recovery sling, success badge, or opaque duplicate submersibles.
+
+Raise a fine dotted vertical projection from each forecast position to the surface plane, preserving its horizontal position. The upper endpoints are two small hollow dots. A short association label "Horizontal location" explains these guides. These are coordinate projections, not ascending motion, a sonar measurement, or a data return from the disabled craft. They therefore have no arrowheads in the water column. From the first surface dot, a solid technical connector travels through the clear upper gutter to the prediction marker of the first map. From the later dot, a separate, thinner connector travels in an adjacent reserved lane to the prediction marker of the second map. Keep the lanes identifiable all the way to the exact destination; neither may terminate on the title "2D search update".
+
+THE REPRESENTATION BOUNDARY
+
+The maps represent latitude/longitude search cells on the sea surface. They do not have depth axes, three-dimensional blocks, underwater occupancy voxels, or volume probabilities. Use a small "3D position to 2D cell" label beside the first projection-to-map connector. This representation change follows the paper's detection assumption that the vessel can detect a target at the same horizontal coordinates regardless of depth. The overview must distinguish that assumption from a physical capability measurement. A slim, very pale vertical detection column beneath the rescue vessel may make the assumption visible, but it carries no calibrated sonar range, beam angle, or sensitivity gradient.
+
+An optional detection column uses two faint dashed guides below the rescue vessel, with no target inside, no calibrated beam angle, and no dramatic sonar fan. It denotes a coverage assumption. Omit it if it would imply successful detection in this unsuccessful-search example.
+
+MATCHED MAP PAIR: FIXED GEOMETRY
+
+Draw two equally sized square 7-by-7 grids as the two states of one spatial domain. This necessary matching does not authorize a row of equal model cards. Each grid has a thin slate outer boundary, fine internal cell lines, and flat discrete cell fills. Use no rounded enclosing panel behind either map. Keep their orientation, extent, cell size, row order, terrain context, and coordinate labels exactly the same. Columns are A through G from left to right. Rows are 1 through 7 from bottom to top. These are illustrative cell addresses, not coordinates extracted from the source or numerical model outputs. The first map's center cell is D4, and the next map's highlighted center is E4. Verify the count of seven columns and seven rows before rendering finer details.
+
+Place the visible state labels "At t_n" and "At t_(n+1)" directly above the respective maps. A modest common label "Same coordinates" below the pair reinforces persistence. Put small "Longitude" and "Latitude" orientation labels once next to the pair, without degree ticks, fake coastlines, north arrows that disagree between maps, or different crop extents. If faint bathymetric contours are included behind the cell fills, use exactly the same contours at exactly the same positions in both maps. Keep these contours extremely light: they are background geographic identity cues, not an inferred seabed map or a reason to occlude the selected cells. The grids remain flat plan views even though the ocean scene is oblique.
+
+Use a hollow teal dot as the predicted horizontal position. In the first map place it inside D4, close to D4's eastern boundary: about 85% of the cell width from its left edge and halfway up that row. In the second map place it inside E4, close to E4's western boundary: about 15% of its width from its left edge, at the same row height. The pair shows a modest physical displacement crossing a cell boundary. Do not put the two dots at the centers of D4 and E4 and then claim that their center-to-center spacing measures the submersible displacement. A small open mark at the previous predicted position in the second map may be used as a positional ghost, but it must be subordinate and explicitly different from the current hollow dot.
+
+Cell-address changes do not imply a full cell-width displacement. Keep D4/E4 readable from the axes. Never rotate, shift, or recrop the second map, and never move the excluded set with the forecast.
+
+ASSUMED SPATIAL WEIGHT AND ITS CARRIER
+
+The first map contains a conceptual discrete search-weight field organized around the predicted central cell. Render it in a restrained pale-cream-to-muted-amber sequence. Draw visible diamond-shaped step contours on a few Manhattan-distance shells: the shell structure follows sums of horizontal and vertical cell steps, not circular Euclidean rings. A short label "Assumed Poisson shells" sits close to the maps, with "Manhattan distance" underneath or beside one stepped shell. Do not draw a smooth Gaussian blob, an ellipse from trajectory covariance, a Kalman-filter uncertainty ellipse, a particle-density estimate, or a learned attention map. Those are different inference mechanisms from the stated one.
+
+Use qualitative tones without probability values or percent ticks. A tiny optional key reads "Relative search weight". Central prominence illustrates an early ordering, not universal monotonicity for every Poisson intensity. The 7-by-7 extent is a readable crop, not a claim that all probability lies in 49 cells; display no total or truncation rule.
+
+Within a given Manhattan shell, use matching fill tones for available cells unless an exclusion mask changes eligibility. The intended shell logic distributes a shell's mass over cells at that distance; a shell's total mass is not the probability of each constituent cell. This distinction is conveyed by the stepped groups and common fill, without printing the inconsistent source probability equations. The source's current model supplies the predicted center, while the Poisson shell form is an additional assumption. Make their different roles visible: the incoming coordinate line lands on the center marker, and the short shell label belongs to the spatial field. Never write "Monte Carlo posterior", "learned probability", "validated confidence", or "sensor posterior" on the field.
+
+The second map uses the same discrete field grammar, now referenced to E4 and the later time. Allow a modestly wider pale peripheral weighting to suggest the paper's time-dependent spread, while keeping the explicit excluded cells unchanged. Treat these tones as a schematic change rather than evaluated probabilities. A thin incoming later-time prediction line ends at the E4 hollow dot. The field shift and the exclusion update are two separate changes acting on the same domain. Do not recolor every cell arbitrarily or make the second field a near-duplicate that merely changes its title. The map must visibly exhibit both the moved prediction and the additional excluded D4 cell.
+
+SEARCHED SET AND CURRENT ACTION: EXACT CELL IDENTITIES
+
+Before the illustrated interval begins, mark three already searched cells B2, C2, and B3 as excluded. They must occur at exactly these addresses in both maps. Use light warm-gray fill with sparse diagonal hatching and a darker thin outline; the hatch is an eligibility marker, not a low nonzero probability color. Keep all three out of the amber field and out of the selected route. This old excluded shape is deliberately asymmetric, so a reviewer can verify that the second map truly preserves spatial identity. It forms a small L shape in the lower-left portion of each map. Do not turn it into a large rectangular mask, relocate it, or delete it in the updated map.
+
+In the first map, select D4 with an amber perimeter and a miniature parallel sweep symbol inside the cell. D4 is currently being searched, so it is not yet gray-hatched. The first hollow prediction dot remains visible near its eastern edge; offset the tiny sweep strokes enough to avoid erasing that dot. The amber selection frame means a vessel assignment for this interval. It is not a detected target, a predicted coordinate, a confidence contour, or a permanently excluded region. Distinguish all these meanings by shape and line treatment, not color alone. A compact label "Search D4" next to the first map is sufficient.
+
+After a completed unsuccessful sweep, the second map adds D4 to the excluded set. D4 becomes the same gray-hatched visual type as B2, C2, and B3, and its first-map amber selection frame disappears. Retain the older three excluded cells exactly. The new amber action frame now surrounds E4, with the next small sweep symbol. Place the later hollow prediction dot in E4 close to the left boundary as specified. A small "Search E4" label sits next to the new frame. Do not leave D4 orange as if it were still an available action, do not choose an excluded cell again, and do not make a red target cross stand for an exclusion that was never searched.
+
+The addresses are illustrative teaching geometry, not a digitized sequence from Figure 9. The source permits multiple vessels in distinct cells; expand only one vessel and one interval here.
+
+EVENT ROUTE AND UPDATE SEMANTICS
+
+A clean event connector goes from the searched D4 cell or its sweep association to the updated D4 cell on the second map. Label the event "No detection". Below or on the short connector lane, place the operational phrase "Exclude; update weights". Keep it clear that this edge carries search evidence, not physical movement of the target. A separate short amber route within the second-map action annotation indicates selection of E4 from the available updated field. The next deployment is chosen from the updated spatial state; the result of the failed search is not an arrow to the vessel silhouette floating in an unrelated part of the ocean.
+
+Use no global decorative loop. Failed-search evidence and later prediction enter the second field on separate ports. Neither feeds ARIMA, density, the last report, or terrain. Search failure does not change the current. Use junction dots only for real merges.
+
+"Exclude; update weights" describes the intended conditional update qualitatively. Do not print a repaired normalization formula or certify the source's Bayesian implementation. Its denominator prose and shell-mass formulas conflict; retain elimination as a stated assumption without numerical claims.
+
+LOCAL CELL ENLARGEMENT: WHAT COMPLETING A SEARCH MEANS
+
+Below the first map and extending slightly toward the gap, draw a larger square plan view of D4. Its boundary, orientation, and amber selection outline match the D4 cell in the first map. Use two thin dotted magnification guides, without arrowheads, from that cell to the enlarged boundary; these are correspondence lines, not information-flow arrows. Label the enlargement "Inside D4". The enlargement should be large enough to show four or five long straight parallel sweep tracks connected by compact alternating end turns. Draw tiny route direction arrows on those tracks so their sequence is clear. The tracks represent an illustrative parallel-grid search, not an optimized shortest path between high-probability cells.
+
+Place the small rescue vessel on one of the straight tracks, using the same amber accent and hull style as the vessel in the surface scene. Add a narrow pale strip around each track to indicate coverage swath. Adjacent strips overlap slightly; the boundary between a line and its coverage should remain visible. A short bracket labeled "Overlap" spans the shared strip between two tracks. Another small transverse bracket labeled "Swath" spans one strip. The brackets are qualitative and have no fabricated measurements. An open arrow at the final track's end leads to the phrase "No detection" only after the entire square has been covered.
+
+Put "Parallel sweep" beside the enlarged route. A small line below the square reads "Paper example: ~300 m cell; 30 min". These two dimensions are manuscript example assumptions from pages 17-18, not a universal sensor capability, a verified recommended setting, or a calculation performed for this illustration. Do not add the paper's vessel speed, commercial equipment models, target dimensions, overlap percentage, or plotted path length. The local square already explains how swath and movement produce an interval-sized search unit. Keeping only the cell and interval example makes the correspondence useful at print size without turning it into a specification table.
+
+The enlargement is D4's operation, not a third probability map. It contains no submarine or heatmap. Its coverage strips span the schematic interior before the no-detection event. Use a small empty observation mark, not a red destruction cross.
+
+ASSUMPTIONS AS LOCAL SCIENTIFIC BOUNDARIES
+
+Use the open lower-right area beside the sweep enlargement for a short bracketed grouping headed "Search assumptions". It contains three compact lines: "Perfect detection in searched cells", "No re-entry into excluded cells", and "Redeploy only between intervals". These phrases are essential visible content. They define the interpretation of the crossed-out support and must not be omitted to make the scene prettier. A small final line "Transit time neglected" may sit directly beneath the interval line. Use no warning triangle, caution tape, compliance badge, or alarm color. These are model assumptions, stated with the same calm technical typography as the rest of the figure.
+
+Permanent zero support is the paper's approximation. Small movement relative to a cell does not prove no re-entry. Keep the gray mask under the moving field and state the assumption, without refill, revisits, or a new missed-detection parameter.
+
+A short t_n to t_(n+1) interval guide may associate the sweep with an interval and selection with its boundary. It has no data ticks. Do not add continuous retasking, shortest-path optimization, speed optimization, or obstacle avoidance.
+
+CONNECTION INVENTORY AND VISUAL ROUTING
+
+Inside the sea, keep dependencies local: current records to ARIMA to ridge fitting to current field; density samples to fitted density to buoyancy; bathymetry to lower trajectory restriction; last report to initial state; environmental fields and mechanical terms to the predicted curve.
+
+Map endpoints are exact: forecast t_n to D4's dot; forecast t_(n+1) to E4's dot; first available field to D4 assignment; D4 to sweep detail by magnification guides; no-detection event to updated D4 eligibility; updated available field to E4 assignment. Old excluded cells persist by correspondence without three extra arrows.
+
+Use solid slate connectors for model/data dependence, teal arrows for the physical current field, amber route arrows for search movement or assignment, and fine dotted gray leaders without arrowheads for projection and magnification. Hull forces use dark blue arrows attached to the body. An event connector may be dark slate with the text "No detection"; it should not share the amber path color, because evidence and physical vessel motion are different relations. Keep arrowheads outside text and clear of cell borders. No connector should travel through the middle of a label or be hidden by a filled water band. White clearance around the endpoint is more useful than unnecessary global margin.
+
+EXACT VISIBLE WORDS AND SYMBOLS
+
+The principal text is limited to the title, "Conceptual schematic", "3D drift", "2D search update", "Host ship", "Rescue vessel", "Last report", "Before contact loss", "Propulsion lost", "v = 0; fixed mass and volume", "Current records", "ARIMA", "Ridge regression", "Current", "Density", "ADCP", "CTD", "INS", "Buoyancy", "Gravity", "Resistance", "Bathymetry", "Stay above seabed", "Predicted trajectory", "Horizontal location", "3D position to 2D cell", "At t_n", "At t_(n+1)", "Same coordinates", "Longitude", "Latitude", "Assumed Poisson shells", "Manhattan distance", "Search D4", "Search E4", "No detection", "Exclude; update weights", "Inside D4", "Parallel sweep", "Swath", "Overlap", "Paper example: ~300 m cell; 30 min", and the stated search-assumption lines. Use the cell letters A-G, row numbers 1-7, x/y/z, and the two field symbols only where specified. The optional small relative-weight key is the only extra legend text.
+
+Use clean time subscripts and Greek rho. Do not swap current u and submersible velocity v. Print no source page numbers, filenames, production instructions, prompt headings, team identifiers, citation tokens, or generation status.
+
+TYPOGRAPHY, SHADING, AND PRINT READABILITY
+
+Use a neutral sans-serif typeface with a restrained bold weight for the title and the two region names. Main labels should read at approximately 8-10 pt equivalent at 180 mm publication width. Short mathematical symbols and cell-axis labels may be smaller, but not microscopic. Keep title text around one line with no subtitle paragraph. Route compact leader lines from labels to real objects when direct placement would cover the mechanics. The force labels must stay outside the hull, not on dark windows; the prior label must not sit on a stepped shell; and the assumption group must have clear line spacing. If two labels collide, move or shorten their placement rather than reducing the whole image's font size.
+
+Use a restrained palette: deep slate for text and domain outlines, blue-teal for the water/current/prediction family, pale amber for relative search weighting, a stronger amber outline for active search, and warm gray hatching for exclusion. The seabed is pale stone gray with a very slight brown undertone. The water stays nearly white; no full-canvas blue gradient, dark navy ocean, noisy underwater caustics, luminous glow, or overly saturated red/green cells. Map lines and shading are flat and precise. Physical hulls and terrain can have modest soft shading to make them tangible, but they must not become photorealistic pasted cutouts with a different lighting style from the diagram.
+
+Borrow only concrete object detail, a meaningful cutaway, and integrated operations from the user's ecological composition reference. Import no ecology. Borrow dynamics/search distinction from the source overview, not its repeated model bands, tiny charts, equipment collage, or duplicated headings. No Sivia auxiliary research mechanisms are used.
+
+SOURCE INCONSISTENCIES AND FINAL SCIENTIFIC CHECK
+
+Do not typeset or silently correct the paper's repeated horizontal force component in Equation 18, the grid-center expression in Equation 26, or the conflicting per-shell/per-cell and denominator expressions in Equations 30, 34, and 35. Do not make a numeric heatmap to imply those issues have been resolved. Do not connect a Monte Carlo error score to the spatial field as if it calibrated the assumed Poisson prior. The figure communicates source-stated objects, qualitative mechanisms, and explicit assumptions; the accompanying brief records the conflicts. This production prompt does not authorize new numerical analysis, unseen data, extra literature claims, or inferred results.
+
+Check seven rows and columns, fixed orientation, persistent B2/C2/B3, newly excluded D4, newly selected E4, and the small forecast crossing at their common boundary. Both update inputs must reach the second field. D4's enlargement must match orientation and show coverage. The hypothetical trajectory stays above seabed.
+
+The physical-to-spatial mechanism must remain recognizable with headings hidden. Keep persistent map identities inspectable at print size, and keep the sea functional. Render one conceptual raster with no numerical results or implied approval.
+
+## Round 6 · edit · overview-scene-v2.png
+
+Edit this scientific illustration only in the three places specified. Preserve the title, white background, all physical objects, the sea cutaway, seven-by-seven grid boundaries and labels, vessels, source-assumption labels, lower sweep, and remaining typography.
+
+1. Remove the upper prediction connectors that stop above the time titles. Keep exactly two distinct coordinate-transfer routes. Route the projected surface point near (527,123) to the hollow predicted-position dot in D4 of the LEFT grid near (995,347). Route the projected surface point near (720,123) to the hollow dot in E4 of the RIGHT grid near (1398,347). Use thin blue lines with clear bends, staying in whitespace above the maps and then entering the proper cell through a clear thin lane. Arrow tips must reach the outer edge of the correct dot, never the time title. These connectors convey coordinates, not physical target movement. Preserve the vertical projection guides down to the actual underwater t_n and t_(n+1) positions.
+
+2. In the RIGHT map only, move the diamond-stepped Manhattan search-weight shells one cell right, so their symmetry center is E4 (column E, row4), not D4. Keep every grid line and all geography fixed. B2,C2,B3 and now D4 remain gray hatched excluded cells at their existing exact addresses; do not refill them orange. E4 remains the amber-selected next search cell with its hollow prediction dot. The LEFT map's weight field stays centered on D4. Never shift the grid or excluded-cell mask.
+
+3. The teal arrow on the curved underwater trajectory immediately right of the submersible points backwards. Remove that arrowhead. Place two small forward arrowheads on the same curved trajectory, directed from the original submersible toward t_n, then onward toward t_(n+1). Keep the curve and hollow predicted markers in place. Current arrows and hull force arrows are unchanged.
+
+Return the same 3:2 composition. Change no other scientific relation or wording.
+
+## Round 7 · edit · overview-scene-v3.png
+
+Use case: precise-object-edit. Edit only the coordinate-transfer connectors at the top of this existing scientific image; keep the ocean cutaway, vessels, all current/force/trajectory arrows, bathymetry, both seven-by-seven maps, every cell color and hatch, all grid dots and labels, the enlarged sweep, title and assumptions unchanged. Preserve the clean white 3:2 scientific style.
+
+The long wires over the headings are ambiguous. Replace those top long horizontal/bent transfer wires with matched LOCAL coordinate ports, not another global cable. Keep BOTH vertical dotted projections from the two hollow underwater predicted positions to their own sea-surface projected points. The first projection ends at the surface above the t_n underwater marker, the second above the t_(n+1) underwater marker. Each surface point is a hollow blue circle.
+Directly beside the FIRST surface point write the small label 't_n projection'; beside the SECOND write 't_(n+1) projection', using true subscripts. Delete the old long horizontal routes to the maps and the old generic 'Horizontal location' and '3D position to 2D cell' labels, freeing the entire title gutter.
+
+Inside the LEFT map add one short thin blue arrow entering the EXISTING hollow prediction dot inside D4, not its cell corner or search-path symbol. Start this short arrow in clear space just above/right of D4 and put the exact local label 't_n projection' beside its tail, on a tiny white text clearance if needed. The arrowhead touches the hollow dot's rim. In the RIGHT map do the same at the EXISTING hollow dot inside E4, with the local label 't_(n+1) projection'. Thus the same named projection appears on its surface port and its map port; do not connect the two different times together. Put a single small note under the regional '2D search update' heading saying 'Matched projection labels'. No new large box, diagram panel, coordinates, measurement or dot is allowed.
+
+Preserve the RIGHT map weight field centered on E4 and the fixed B2/C2/B3/D4 exclusions. The LEFT map remains centered on D4, with B2/C2/B3 excluded and D4 actively searched. Do not shift any grid, move either prediction dot, change the drift curve, or alter the no-detection connector. This is only a local coordinate-label/routing repair; the scientific model and layout remain exactly the selected design.
+
+## Round 8 · edit · overview-scene-v4.png
+
+Edit only two tiny geometric defects in this existing 1536 x 1024 scientific illustration. Keep all other pixels, typography, equations, colors, objects, maps, and composition as close as possible to the supplied image.
+
+1. Make the second depth projection genuinely vertical. The underwater t_(n+1) hollow position is at approximately (720,683); do not move it. Move its upper hollow projection port from approximately (796,123) to (720,123). Replace the bent dotted guide that runs outside the sea at x=796 with ONE straight fine blue dotted vertical guide at x=720, from the upper port to the underwater point. Erase the old bent guide completely, including its short rightward segment leaving the underwater point. Place the existing t_(n+1) projection label above the relocated upper port, clear of the rescue vessel and the title. The left projection at x=527 stays unchanged. The upper ports are coordinate-transfer labels, not ships or physical surface observations.
+
+2. Inside D4 in the LEFT map there are two overlapping hollow blue prediction circles near (985,347) and (995,347). Retain exactly ONE hollow blue circle at about (994,347), entirely inside D4 just left of the D/E boundary. Delete the extra circle without erasing the orange sweep marks. The existing short blue arrow from the t_n projection label must terminate on the outer rim of this single remaining circle. Do not shift grid lines, hatch masks, the weight field, or the search label. The RIGHT map remains entirely unchanged.
+
+No new curves, dots, panels, legends, equations, or other edits.
+
+## Round 9 · edit · overview.png
+
+Make ONE tiny edit only to this finished diagram. In the LEFT search map, inside the orange selected D4 cell, two blue hollow circles overlap near the endpoint of the short arrow from the t_n projection label. Erase BOTH of those hollow circle outlines completely. In their place draw ONE small solid blue disk, approximately 10 pixels in diameter, near the right edge of D4, just left of the D/E grid boundary. The short projection arrow should end at this single filled disk. The selected cell must contain exactly ONE blue location marker, never two overlapping rings. Keep the orange sweep marks around it. Preserve the entire rest of the image: the right map, all grid lines, hatching, labels, ships, sea, bathymetry, force arrows, and both now-straight vertical projection guides. Do not move any other object and do not add any other line.

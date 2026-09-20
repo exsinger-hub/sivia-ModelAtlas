@@ -1,0 +1,9 @@
+Edit this scientific illustration only in the three places specified. Preserve the title, white background, all physical objects, the sea cutaway, seven-by-seven grid boundaries and labels, vessels, source-assumption labels, lower sweep, and remaining typography.
+
+1. Remove the upper prediction connectors that stop above the time titles. Keep exactly two distinct coordinate-transfer routes. Route the projected surface point near (527,123) to the hollow predicted-position dot in D4 of the LEFT grid near (995,347). Route the projected surface point near (720,123) to the hollow dot in E4 of the RIGHT grid near (1398,347). Use thin blue lines with clear bends, staying in whitespace above the maps and then entering the proper cell through a clear thin lane. Arrow tips must reach the outer edge of the correct dot, never the time title. These connectors convey coordinates, not physical target movement. Preserve the vertical projection guides down to the actual underwater t_n and t_(n+1) positions.
+
+2. In the RIGHT map only, move the diamond-stepped Manhattan search-weight shells one cell right, so their symmetry center is E4 (column E, row4), not D4. Keep every grid line and all geography fixed. B2,C2,B3 and now D4 remain gray hatched excluded cells at their existing exact addresses; do not refill them orange. E4 remains the amber-selected next search cell with its hollow prediction dot. The LEFT map's weight field stays centered on D4. Never shift the grid or excluded-cell mask.
+
+3. The teal arrow on the curved underwater trajectory immediately right of the submersible points backwards. Remove that arrowhead. Place two small forward arrowheads on the same curved trajectory, directed from the original submersible toward t_n, then onward toward t_(n+1). Keep the curve and hollow predicted markers in place. Current arrows and hull force arrows are unchanged.
+
+Return the same 3:2 composition. Change no other scientific relation or wording.

@@ -1,67 +1,65 @@
 {
   "passed": true,
+  "scope": "File integrity only; visual review and user approval are separate fields in brief.json.",
   "files": {
+    "README.en.md": true,
+    "README.md": true,
     "brief.json": true,
+    "correction-prompt.md": true,
+    "full-prompt.md": true,
+    "overview-before-scene.png": true,
+    "overview-reread-v1.png": true,
+    "overview-scene-v1.png": true,
+    "overview-scene-v2.png": true,
+    "overview-scene-v3.png": true,
+    "overview-v1.png": true,
+    "overview-v2.png": true,
+    "overview-v3.png": true,
+    "overview-v4.png": true,
+    "overview-v5.png": true,
     "overview.png": true,
-    "prompt.md": true
-  },
-  "visual_review": {
-    "status": "passed",
-    "checks": [
-      "Only NCSI and Legal Measures are marked clustering inputs; no cluster-to-treatment arrow remains.",
-      "T/C identities persist before and after; displayed contrast is ΔT−ΔC.",
-      "Policy themes are neutral, not color-coded efficacy rankings.",
-      "MIC no longer feeds factor analysis serially; selected factors precede regression."
-    ],
-    "notes": [
-      "The source's case-count coefficient signs and efficacy interpretations conflict; results are omitted, not corrected.",
-      "Country dots and MIC points are explicitly schematic, not reproduced data.",
-      "Factor analysis and DID are design summaries, not claims of verified causality."
-    ],
-    "physical_print_proof": "not performed",
-    "independent_review": "not performed",
-    "user_approval": "approved",
-    "review_type": "Actual-image visual self-review with source notes; not independent review or physical print proof.",
-    "approval_evidence": {
-      "status": "approved",
-      "date": "2026-09-20",
-      "user_message": "同意,请推送, 并且为我写抖音和小红书的推送文稿",
-      "scope": "Five selected PDF-reread images, project showcase and case-specific knowledge-base guidance; not independent scientific validation."
-    },
-    "publication_gate": "approved_for_project_showcase",
-    "issues": [
-      {
-        "severity": "remaining_check",
-        "detail": "Physical print proof and independent review not performed; review small labels at final manuscript size."
-      }
-    ]
-  },
-  "user_approval": "approved",
-  "scope": "File integrity only; not source fidelity, image quality or award verification.",
-  "approval_evidence": {
-    "status": "approved",
-    "date": "2026-09-20",
-    "user_message": "同意,请推送, 并且为我写抖音和小红书的推送文稿",
-    "scope": "Five selected PDF-reread images, project showcase and case-specific knowledge-base guidance; not independent scientific validation."
+    "pre-scene-record.json": true,
+    "prompt.md": true,
+    "redesign-correction-prompt.md": true,
+    "redesign-prompt.md": true,
+    "redesign-routing-prompt.md": true,
+    "reread-correction-v2.md": true,
+    "reread-prompt.md": true,
+    "scene-correction-v2.md": true,
+    "scene-correction-v3.md": true,
+    "scene-prompt-records.json": true,
+    "scene-prompt.md": true,
+    "scene-publish-correction-v1.md": true
   },
   "hashes": {
-    "overview.png": "5fd6afc42576971f6f05afb7230fcad53e7b7ea270e6666d213707cfe26f5c24",
-    "full-prompt.md": "0f883d9e12fc21540208f58a3b7cfa5c4e1170a28ac56f494f0b39c81c5dcc19",
-    "brief.json": "5e6fddcd486c71bb18b5749c7ea941c812de2ee2afacd20d112a028e0c1c7464",
-    "prompt.md": "e15bf881caa55476bc84ec40057465ed3183fca6478b4c54be46060be54394e1",
+    "README.en.md": "181eea5dda699db6ad4f15b6eac6590c308d169ccee9662839cd70f27e56f0d2",
+    "README.md": "5a24c1e724b9b25e901dd0a7cfb06259d76767bbbc86c9238807da127f2430be",
+    "brief.json": "95c7af26cd354c6d1cb4221a6395e6b270a31087cd0de01116afe9f033b8bb3f",
     "correction-prompt.md": "29194f75000e09de6e6c6a068dd5103155e2a630a4c6f6dc9bfb8309c27ba095",
-    "redesign-prompt.md": "ff5274a6d3c2d394ac0721ef4ac28cc26f2d794abfbcad76806cbd59a0016728",
-    "redesign-correction-prompt.md": "77309d77b2782cd8307df86187e48eca8bfb92886e9a2dad7e52fdfe1ef3bef5",
-    "redesign-routing-prompt.md": "232587e464bc7b9b688416442c6eb847cbf015730ffbc389e77ebacdbb2bf68a",
-    "reread-prompt.md": "2e87561c07e5264ace7a0c15eb318efe9ee974ae349bbb77e317f8e9a14af728",
-    "reread-correction-v2.md": "9726821efeedc4ebf580409d8b6c1ed9333493e1bda8e7498ffd9b62f680432c",
+    "full-prompt.md": "4f3b6213eff9101bd25b25b65f7da8fee627296ada54168d852184c8671e534f",
+    "overview-before-scene.png": "5fd6afc42576971f6f05afb7230fcad53e7b7ea270e6666d213707cfe26f5c24",
+    "overview-reread-v1.png": "78a8881174c03968ebda3908ab5c76aeca83a7507bd059b0543854bc437fe7f2",
+    "overview-scene-v1.png": "a0ca3050b6ac5023cb8905c950736c1b8d2c20ff86b4174cf8bc8ccdb1ac18aa",
+    "overview-scene-v2.png": "9553a85a8e2e9324ef15732fb98e34796ef9508d2a381eb803630cfa3e4d34be",
+    "overview-scene-v3.png": "d657fe775a5bc7dbbb80837de057556f88e121c24b7ec207c0c7150a242f525c",
     "overview-v1.png": "43d6b8f0df3465c6b686dcd0b1ab82c1f9ffe3e3da7ac4229b68781131e34d39",
     "overview-v2.png": "65a0104cecb9bed02238b1b2576bde3fc85c90fa79b884c7e45948cb6fc0ddf3",
     "overview-v3.png": "fe3a24c994bee20df2552ee380c747a98f189a2147c391f79cd7cafbe4e91afc",
     "overview-v4.png": "3838604b6faf0fd91d1c7dbbec01fc97ce7023167d2f1441fe05c36aecd0117d",
     "overview-v5.png": "4db56745aca0f4c913897584fe6e3b679778e0c30d8fe8905606c57b7a99c46b",
-    "overview-reread-v1.png": "78a8881174c03968ebda3908ab5c76aeca83a7507bd059b0543854bc437fe7f2"
+    "overview.png": "0e9874169cfacb8b0bd09859bf2103921bc912c8b47df766ef782a49c55c5178",
+    "pre-scene-record.json": "8a8f27f52e7a2b2925564d97e05aeb59dd2818f41617e68a5b95e1fe0103cb8e",
+    "prompt.md": "e15bf881caa55476bc84ec40057465ed3183fca6478b4c54be46060be54394e1",
+    "redesign-correction-prompt.md": "77309d77b2782cd8307df86187e48eca8bfb92886e9a2dad7e52fdfe1ef3bef5",
+    "redesign-prompt.md": "ff5274a6d3c2d394ac0721ef4ac28cc26f2d794abfbcad76806cbd59a0016728",
+    "redesign-routing-prompt.md": "232587e464bc7b9b688416442c6eb847cbf015730ffbc389e77ebacdbb2bf68a",
+    "reread-correction-v2.md": "9726821efeedc4ebf580409d8b6c1ed9333493e1bda8e7498ffd9b62f680432c",
+    "reread-prompt.md": "2e87561c07e5264ace7a0c15eb318efe9ee974ae349bbb77e317f8e9a14af728",
+    "scene-correction-v2.md": "a6652dce424e875616eed91cc4621fb222bebfb2aac4d422d8de6906c5e536b9",
+    "scene-correction-v3.md": "d9ab853ab78b6933296953fa5606f8c83de81f7816f65c6ac73b9cf5235e3302",
+    "scene-prompt-records.json": "bc7689f0d8c8097259f70cc617887e326866bafc935fb1b32cffc06adf71e41c",
+    "scene-prompt.md": "7f263df5619e6ddb2404b7df41a9d6d2c7cd4933936d9d2c0680821e8a8c8a63",
+    "scene-publish-correction-v1.md": "b80769b87f9bd7b55ad98250f18e9cefcd3555d653f71e273de49433b54aa3e6"
   },
-  "intake_sha256": "c2ef017c4976b5fcc91a439939c301d9c8bc1dc312e161c205eb7bab7b15900a",
-  "copy_note": "Repository hashes cover exact public bytes. The private pairing audit passed; public approval is recorded from the explicit user message, not inferred by the pairing API."
+  "intake_sha256": "c2ef017c4976b5fcc91a439939c301d9c8bc1dc312e161c205eb7bab7b15900a"
 }

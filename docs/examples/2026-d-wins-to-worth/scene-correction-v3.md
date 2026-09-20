@@ -1,0 +1,11 @@
+Perform connector cleanup only in this white arena/ledger figure. Preserve arena, seat insets, capacity curves and correctly aligned orange atom, cash/debt formulas, valuation leaves, roster states, and all title/labels.
+
+A. In the ledger interest area, DELETE the small separate 'Debt D' and 'Rate r' boxes and ALL their connector arrows, including the extra multiplication cross below the formula. Retain the single readable inline identity I_D = D × r exactly. This equation is sufficient: debt and rate are independent operands. Preserve the separate ledger row −I_D below it and π=EBI−I_D.
+
+B. Near upper-right valuation, DELETE the external standalone r outside the leaves, its '(also used for interest)' note, and ALL dashed cables associated with this standalone r: the up/down route between DCF and r, the route stopping at ledger title, and the right-side guide entering the basis-dependent V readout from this r region. Preserve the rate symbol INSIDE every valuation formula and the DCF denominators. Keep the three valuation leaves, their common brace and 'Aggregation unspecified', and 'V: basis-dependent' as comparison annotations. There is no need for an external rate-input network; formulas specify the dependence.
+
+C. At the arena-to-ledger interface, DELETE the long blue bent path near x830 from the ticket subtotal area toward the small receipt strip and then down to the ledger title. DELETE the short hook from the ledger heading to the T_ticket entry. Keep the subtotal formula T_ticket=10⁻⁶Σ_home Â_t p̄_t in place. Add JUST ONE short thin solid arrow starting at that subtotal formula's lower edge, bending once in the white gutter to the left of the ledger, and ending directly on the first ledger row '+ T_ticket'. No arrowhead at the ledger border or heading, no branch to a price or receipt object.
+
+D. Restore the omitted demand-distribution label in the open space above the lower-left support inset, reading 'ln D_t ~ N(μ_t, σ²)' with 'μ_t = x_tᵀβ' underneath. Keep it clear of the density, Censor-aware fit, and attendance labels. Use the normal distribution symbol and actual superscript 2.
+
+These are local corrections; do not introduce any additional arrow, amounts, results or panel redesign.

@@ -1,0 +1,493 @@
+{
+  "brief": {
+    "source": {
+      "paper_id": "icm-2026-d-2608869",
+      "title": "From Wins to Worth: A Quantitative Model of Performance, Attendance, Revenue, and Valuation for Sports Teams",
+      "pdf_url": "https://raw.githubusercontent.com/WeiLai-OpsFin/comap-icm-2026-d-finalist-wnba-team-valuation-model/3efa32aa320bbab0569f89a5e080cee2b60b5ea2/docs/2608869.pdf",
+      "pdf_sha256": "af57e494a2cb0713b881c64ebd02b16686f9df0992b33562a7919cd1981fd161",
+      "award": "Finalist",
+      "award_evidence": {
+        "url": "https://www.contest.comap.com/undergraduate/contests/mcm/contests/2026/results/2026_ICM_Problem_D_Results.pdf",
+        "locator": "PDF physical page 3, first row: Team 2608869, Problem D, Finalist",
+        "verification": "Official COMAP result row visually inspected and matched to author PDF summary sheet; institution retained as printed.",
+        "sha256": "0c911fca8f6bb00ed12f5d577b495cad638ebc56193fdd3b1fd1a7f3ad2b2965",
+        "checked_at": "2026-09-20"
+      },
+      "full_manuscript_read": true,
+      "pdf_pages": 32,
+      "intake_format": "extracted text; source PDF has malformed glyphs",
+      "reread": {
+        "date": "2026-09-20",
+        "text_read": "Main pp.1–25, including preceding-turn equation inspection",
+        "physical_pages_visually_inspected": [
+          13,
+          14,
+          16,
+          19,
+          20,
+          24
+        ],
+        "scope": "Model-bearing manuscript; AI-use appendices are not model authority."
+      }
+    },
+    "claim": "Action-dependent strength, popularity and salary connect to capacity-censored attendance, assumed pricing response and financial identities. Joint roster/leverage choices are evaluated subject to cash and debt limits, with a rolling next-state interpretation.",
+    "manuscript_evidence": [
+      {
+        "locator": "pp.9–12, §§5–6",
+        "supports": "Elo, right-censored lognormal demand and pricing assumptions"
+      },
+      {
+        "locator": "pp.13–15, Eqs.22–29",
+        "supports": "Revenue, profit, simplified cash book, valuation methods and leverage"
+      },
+      {
+        "locator": "pp.15–18, Eqs.30–35",
+        "supports": "Four-component state, action increments, optimization and rolling updates"
+      },
+      {
+        "locator": "pp.19–24, §§9–11",
+        "supports": "Other-revenue market scaling and conflicting valuation/injury descriptions"
+      }
+    ],
+    "model_relationships": [
+      {
+        "source": "Strength, popularity and game context",
+        "target": "Expected attendance",
+        "meaning": "Elo-informed covariates; E[min(d,K)|x] under censored demand",
+        "locator": "pp.9–12"
+      },
+      {
+        "source": "Assumed price response and attendance",
+        "target": "Revenue",
+        "meaning": "Ticket revenue plus other revenue; market scenario scales the latter",
+        "locator": "pp.11–15; pp.19–24"
+      },
+      {
+        "source": "Revenue, salary, operations and interest",
+        "target": "Profit",
+        "meaning": "Subtract costs; keep borrowing and repayment outside profit",
+        "locator": "pp.13–15"
+      },
+      {
+        "source": "Roster and leverage decisions",
+        "target": "Next strength, popularity, cash and debt",
+        "meaning": "Action increments and the source simplified cash/debt book under feasibility limits",
+        "locator": "pp.15–18"
+      }
+    ],
+    "references": [
+      {
+        "case_id": "d-wins-to-value-chain",
+        "borrowed": "Paper-specific objects and relations checked against the model-bearing PDF pages. Persistent identities and selective change from previously inspected Sivia examples; source models only from this PDF. No layout copied wholesale.",
+        "not_borrowed": "Source pixels, numerical results, conflicting signs/formulas, awards, or a compulsory panel layout."
+      }
+    ],
+    "caption": "Action-dependent strength, popularity and salary connect to capacity-censored attendance, assumed pricing response and financial identities. Joint roster/leverage choices are evaluated subject to cash and debt limits, with a rolling next-state interpretation.",
+    "placement": "End of Introduction / Our Work, intended width 180 mm",
+    "generation": {
+      "backend": "built-in image_gen.imagegen",
+      "status": "generated",
+      "artifact_id": "exec-b83c7821-0cc1-4db7-b9b8-4f5bb1f45c8c.png",
+      "actual_size": [
+        1536,
+        1024
+      ],
+      "image_sha256": "74676a584d037bdaf35053d738d5bbf1ca8bdbde986c7405f8d019b20a2b7602",
+      "chain": [
+        {
+          "operation": "generate",
+          "prompt": "prompt.md",
+          "output": "overview-v1.png",
+          "artifact_id": "exec-7f808b0f-8b69-437e-9d6b-e4bdd00cc5bb.png",
+          "sha256": "0545afa7fd83eecc082caa56b403f405edc5ceecee7f1b1c4a0021e78d2a6261",
+          "status": "superseded_history"
+        },
+        {
+          "operation": "edit",
+          "prompt": "correction-prompt.md",
+          "input": "overview-v1.png",
+          "output": "overview-v2.png",
+          "artifact_id": "exec-d6a1eae9-d4a5-4481-b119-79b8a2b859b7.png",
+          "sha256": "d47578483dd6755145d79cd8614ca76297e9b0e4febc0d22d2bcc976a556fe5e",
+          "status": "superseded_history"
+        },
+        {
+          "operation": "edit",
+          "prompt": "redesign-prompt.md",
+          "input": "overview-v2.png",
+          "output": "overview-v3.png",
+          "artifact_id": "exec-d3e6a40a-aa89-4798-bedf-780bedaa6443.png",
+          "sha256": "e20332f898f9e24bbc1528676e0236078d5d3087fa168e2192bf8b49851972ab",
+          "prompt_detail": {
+            "profile": "sivia-overview-v1",
+            "binding": {
+              "purpose": "Full English overview designs and substantial redesigns; not an arbitrary universal minimum for small unrelated edits.",
+              "source_repository": "https://github.com/exsinger-hub/Sivia",
+              "source_version": "1.1.0+codex.20260909060506",
+              "template_path": "skills/design-scientific-figure/references/templates/overview-template.txt",
+              "template_sha256": "cd73e60b51a15e005defd61190705846cb3f50a6582a33119be07b2fe78921f9",
+              "minimum_non_whitespace_characters": 15356,
+              "maximum_total_characters": 32000,
+              "metric": "Unicode code points excluding whitespace; count exact submitted prompt, one image call at a time",
+              "count_verified_on": "2026-09-20",
+              "limitation": "Length does not prove useful detail, source fidelity, image quality or user acceptance. Do not pad or concatenate prior calls to pass."
+            },
+            "total_characters": 28070,
+            "non_whitespace_characters": 23792,
+            "submitted_utf8_sha256": "50588b8ebee76546459d3b5a462160baac38ea06a85c27d1953b17a86917c8fb",
+            "length_pass": true,
+            "tool_limit_pass": true,
+            "passed": true,
+            "template_bytes_verified": true,
+            "scope": "Exact prompt-text length only; source/visual review and user approval are separate."
+          },
+          "status": "superseded_history"
+        },
+        {
+          "operation": "edit",
+          "prompt": "redesign-correction-prompt.md",
+          "input": "overview-v3.png",
+          "output": "overview-v4.png",
+          "artifact_id": "exec-5e68f115-f6da-4f99-b697-c07df9cd435d.png",
+          "sha256": "b82a5765d93f1e3f995c90c3438124600b6f8dfc0615f192c137df22e02225ca",
+          "prompt_detail": {
+            "profile": "sivia-overview-v1",
+            "binding": {
+              "purpose": "Full English overview designs and substantial redesigns; not an arbitrary universal minimum for small unrelated edits.",
+              "source_repository": "https://github.com/exsinger-hub/Sivia",
+              "source_version": "1.1.0+codex.20260909060506",
+              "template_path": "skills/design-scientific-figure/references/templates/overview-template.txt",
+              "template_sha256": "cd73e60b51a15e005defd61190705846cb3f50a6582a33119be07b2fe78921f9",
+              "minimum_non_whitespace_characters": 15356,
+              "maximum_total_characters": 32000,
+              "metric": "Unicode code points excluding whitespace; count exact submitted prompt, one image call at a time",
+              "count_verified_on": "2026-09-20",
+              "limitation": "Length does not prove useful detail, source fidelity, image quality or user acceptance. Do not pad or concatenate prior calls to pass."
+            },
+            "total_characters": 31106,
+            "non_whitespace_characters": 26342,
+            "submitted_utf8_sha256": "a84bc58978022ee7bbee5f9c25f5ebb0829d7926ee2a0a3e7b68130231a42308",
+            "length_pass": true,
+            "tool_limit_pass": true,
+            "passed": true,
+            "template_bytes_verified": true,
+            "scope": "Exact prompt-text length only; source/visual review and user approval are separate."
+          },
+          "status": "superseded_history"
+        },
+        {
+          "operation": "edit",
+          "prompt": "redesign-routing-prompt.md",
+          "input": "overview-v4.png",
+          "output": "overview-v5.png",
+          "artifact_id": "exec-15f1dc94-182a-4b08-b5b7-b87d28dadd34.png",
+          "sha256": "46973b9a6fa3348ce0bc367a2ddea8dbe608c3a92d5905679441d9bebe833253",
+          "prompt_detail": {
+            "profile": "sivia-overview-v1",
+            "binding": {
+              "purpose": "Full English overview designs and substantial redesigns; not an arbitrary universal minimum for small unrelated edits.",
+              "source_repository": "https://github.com/exsinger-hub/Sivia",
+              "source_version": "1.1.0+codex.20260909060506",
+              "template_path": "skills/design-scientific-figure/references/templates/overview-template.txt",
+              "template_sha256": "cd73e60b51a15e005defd61190705846cb3f50a6582a33119be07b2fe78921f9",
+              "minimum_non_whitespace_characters": 15356,
+              "maximum_total_characters": 32000,
+              "metric": "Unicode code points excluding whitespace; count exact submitted prompt, one image call at a time",
+              "count_verified_on": "2026-09-20",
+              "limitation": "Length does not prove useful detail, source fidelity, image quality or user acceptance. Do not pad or concatenate prior calls to pass."
+            },
+            "total_characters": 30683,
+            "non_whitespace_characters": 26011,
+            "submitted_utf8_sha256": "8c9ddc67e505add86ed71b8e6bf8cd89aa24e4348dcd4be3c43115912766ae00",
+            "length_pass": true,
+            "tool_limit_pass": true,
+            "passed": true,
+            "template_bytes_verified": true,
+            "scope": "Exact prompt-text length only; source/visual review and user approval are separate."
+          },
+          "status": "superseded_history"
+        },
+        {
+          "operation": "generate",
+          "prompt": "reread-prompt.md",
+          "output": "overview-reread-v1.png",
+          "artifact_id": "exec-d5a2c3f6-850d-4554-98d2-f88479a1a647.png",
+          "sha256": "26b50c87fb39f6928d0e72fb1c446c5293959bc591272b91f6f6b8f63cf720ea",
+          "series": "pdf-reread-20260920",
+          "prompt_scope": "full_redesign",
+          "prompt_detail": {
+            "profile": "sivia-overview-v1",
+            "binding": {
+              "purpose": "Full English overview designs and substantial redesigns; not an arbitrary universal minimum for small unrelated edits.",
+              "source_repository": "https://github.com/exsinger-hub/Sivia",
+              "source_version": "1.1.0+codex.20260909060506",
+              "template_path": "skills/design-scientific-figure/references/templates/overview-template.txt",
+              "template_sha256": "cd73e60b51a15e005defd61190705846cb3f50a6582a33119be07b2fe78921f9",
+              "minimum_non_whitespace_characters": 15356,
+              "maximum_total_characters": 32000,
+              "metric": "Unicode code points excluding whitespace; count exact submitted prompt, one image call at a time",
+              "count_verified_on": "2026-09-20",
+              "limitation": "Length does not prove useful detail, source fidelity, image quality or user acceptance. Do not pad or concatenate prior calls to pass."
+            },
+            "total_characters": 24419,
+            "non_whitespace_characters": 20728,
+            "submitted_utf8_sha256": "5aa527825c8e1e2365e0a7f5e83cae101883e8eba0e6c71288cedf6f270fb574",
+            "length_pass": true,
+            "tool_limit_pass": true,
+            "passed": true,
+            "template_bytes_verified": true,
+            "scope": "Exact prompt-text length only; source/visual review and user approval are separate."
+          }
+        },
+        {
+          "operation": "edit",
+          "prompt": "reread-correction-v2.md",
+          "output": "overview-reread-v2.png",
+          "artifact_id": "exec-109847c0-223e-4e79-a779-64bb17f85d31.png",
+          "sha256": "1c8bce36baee66ce32659125ade5fb599f0896113856ace5310cf11c8ed65979",
+          "series": "pdf-reread-20260920",
+          "input": "overview-reread-v1.png",
+          "prompt_scope": "localized_correction",
+          "prompt_sha256": "58a3a4674ea93797a6a48f4934c14421807b08c7e5a09771ebf4c4ffad5050b1"
+        },
+        {
+          "operation": "edit",
+          "prompt": "reread-correction-v3.md",
+          "output": "overview.png",
+          "artifact_id": "exec-b83c7821-0cc1-4db7-b9b8-4f5bb1f45c8c.png",
+          "sha256": "74676a584d037bdaf35053d738d5bbf1ca8bdbde986c7405f8d019b20a2b7602",
+          "series": "pdf-reread-20260920",
+          "input": "overview-reread-v2.png",
+          "prompt_scope": "localized_correction",
+          "prompt_sha256": "27f413d22553aa1b0db87129b7abaf9c66c9172cc9e8dced153d8d732a2c71d2"
+        }
+      ],
+      "exact_prompt_record": "full-prompt.md",
+      "empirical_rerun": false,
+      "native_editability": false,
+      "prompt_detail_profile": "sivia-overview-v1",
+      "selected_series": "pdf-reread-20260920"
+    },
+    "review": {
+      "status": "passed",
+      "checks": [
+        "Stadium removed; the distribution/capacity relation and state equations are primary.",
+        "Attendance remains expectation of min(d,K), not min(E[d],K).",
+        "Price response is explicitly assumed; no estimated elasticity is claimed.",
+        "Revenue adds ticket and other revenue; borrowing/valuation arrows into profit were removed.",
+        "Profit, interest and cash/debt stock identities are visible and source-grounded.",
+        "ΔE/ΔP and leverage use named ports; a leftward next-iteration arrow replaces the erroneous two-ended return."
+      ],
+      "notes": [
+        "§7.2 states weighted aggregation, while later scenarios use revenue multiples. This contradiction is explicitly retained in the figure; no weights invented.",
+        "Profit is used in the source's simplified cash book, not relabelled as a fully specified cash-flow model.",
+        "Some connections are communicated by repeated variable names / ports, not continuous cables. This is a conceptual overview, not an executable wiring specification.",
+        "Typographic/density refinement can be judged by the user; no production-quality or user-acceptance seal is claimed."
+      ],
+      "physical_print_proof": "not performed",
+      "independent_review": "not performed",
+      "user_approval": "approved",
+      "review_type": "Actual-image visual self-review with source notes; not independent review or physical print proof.",
+      "approval_evidence": {
+        "status": "approved",
+        "date": "2026-09-20",
+        "user_message": "同意,请推送, 并且为我写抖音和小红书的推送文稿",
+        "scope": "Five selected PDF-reread images, project showcase and case-specific knowledge-base guidance; not independent scientific validation."
+      },
+      "publication_gate": "approved_for_project_showcase",
+      "issues": [
+        {
+          "severity": "remaining_check",
+          "detail": "Physical print proof and independent review not performed; review small labels at final manuscript size."
+        }
+      ]
+    },
+    "source_notes": [
+      "§7.2 states weighted aggregation, while later scenarios use revenue multiples. This contradiction is explicitly retained in the figure; no weights invented.",
+      "Profit is used in the source's simplified cash book, not relabelled as a fully specified cash-flow model.",
+      "Some connections are communicated by repeated variable names / ports, not continuous cables. This is a conceptual overview, not an executable wiring specification.",
+      "Typographic/density refinement can be judged by the user; no production-quality or user-acceptance seal is claimed."
+    ],
+    "style_adaptation": {
+      "source": "Sivia",
+      "version": "1.1.0+codex.20260909060506",
+      "inspected_cases": [
+        "trace",
+        "reasoning-between-words",
+        "eventbridge-rl"
+      ],
+      "borrowed": "Persistent object identity, concrete intermediate representations, selective before/after change and asymmetric mechanism emphasis.",
+      "excluded": "Source-specific science, results, whole panel layouts, generic metric chips and weak connector endpoints.",
+      "public_record": "../../../src/modelatlas/knowledge/visual-guidance.json"
+    },
+    "design_revision": {
+      "date": "2026-09-20",
+      "reason": "PDF-reread redraw approved by the user.",
+      "status": "user_approved_showcase",
+      "latest_round": 8,
+      "old_image": "overview-v5.png",
+      "new_image": "overview.png",
+      "superseded_rounds": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    }
+  },
+  "showcase": {
+    "id": "2026-d-wins-to-worth",
+    "paper_id": "icm-2026-d-2608869",
+    "title": "From Wins to Worth",
+    "year": 2026,
+    "contest": "ICM",
+    "problem": "D",
+    "category": {
+      "zh": "经营与决策",
+      "en": "Operations & decisions"
+    },
+    "source_award": "Finalist",
+    "team": "2608869",
+    "presentation": "standalone",
+    "source_figure": null,
+    "source_case_id": "d-wins-to-value-chain",
+    "notes": {
+      "zh": "docs/examples/2026-d-wins-to-worth/README.md",
+      "en": "docs/examples/2026-d-wins-to-worth/README.en.md"
+    },
+    "brief": "docs/examples/2026-d-wins-to-worth/brief.json",
+    "full_prompt": "docs/examples/2026-d-wins-to-worth/full-prompt.md",
+    "final_image": "docs/examples/2026-d-wins-to-worth/overview.png",
+    "latest_round": 8,
+    "rounds": [
+      {
+        "number": 1,
+        "operation": "generate",
+        "image": "docs/examples/2026-d-wins-to-worth/overview-v1.png",
+        "prompt": "docs/examples/2026-d-wins-to-worth/prompt.md"
+      },
+      {
+        "number": 2,
+        "operation": "edit",
+        "image": "docs/examples/2026-d-wins-to-worth/overview-v2.png",
+        "prompt": "docs/examples/2026-d-wins-to-worth/correction-prompt.md"
+      },
+      {
+        "number": 3,
+        "operation": "edit",
+        "image": "docs/examples/2026-d-wins-to-worth/overview-v3.png",
+        "prompt": "docs/examples/2026-d-wins-to-worth/redesign-prompt.md"
+      },
+      {
+        "number": 4,
+        "operation": "edit",
+        "image": "docs/examples/2026-d-wins-to-worth/overview-v4.png",
+        "prompt": "docs/examples/2026-d-wins-to-worth/redesign-correction-prompt.md"
+      },
+      {
+        "number": 5,
+        "operation": "edit",
+        "image": "docs/examples/2026-d-wins-to-worth/overview-v5.png",
+        "prompt": "docs/examples/2026-d-wins-to-worth/redesign-routing-prompt.md"
+      },
+      {
+        "number": 6,
+        "operation": "generate",
+        "image": "docs/examples/2026-d-wins-to-worth/overview-reread-v1.png",
+        "prompt": "docs/examples/2026-d-wins-to-worth/reread-prompt.md"
+      },
+      {
+        "number": 7,
+        "operation": "edit",
+        "image": "docs/examples/2026-d-wins-to-worth/overview-reread-v2.png",
+        "prompt": "docs/examples/2026-d-wins-to-worth/reread-correction-v2.md"
+      },
+      {
+        "number": 8,
+        "operation": "edit",
+        "image": "docs/examples/2026-d-wins-to-worth/overview.png",
+        "prompt": "docs/examples/2026-d-wins-to-worth/reread-correction-v3.md"
+      }
+    ],
+    "approval": {
+      "status": "approved",
+      "date": "2026-09-20",
+      "user_message": "同意,请推送, 并且为我写抖音和小红书的推送文稿",
+      "scope": "Five selected PDF-reread images, project showcase and case-specific knowledge-base guidance; not independent scientific validation."
+    }
+  },
+  "integrity_audit": {
+    "passed": true,
+    "files": {
+      "brief.json": true,
+      "overview.png": true,
+      "prompt.md": true
+    },
+    "visual_review": {
+      "status": "passed",
+      "checks": [
+        "Stadium removed; the distribution/capacity relation and state equations are primary.",
+        "Attendance remains expectation of min(d,K), not min(E[d],K).",
+        "Price response is explicitly assumed; no estimated elasticity is claimed.",
+        "Revenue adds ticket and other revenue; borrowing/valuation arrows into profit were removed.",
+        "Profit, interest and cash/debt stock identities are visible and source-grounded.",
+        "ΔE/ΔP and leverage use named ports; a leftward next-iteration arrow replaces the erroneous two-ended return."
+      ],
+      "notes": [
+        "§7.2 states weighted aggregation, while later scenarios use revenue multiples. This contradiction is explicitly retained in the figure; no weights invented.",
+        "Profit is used in the source's simplified cash book, not relabelled as a fully specified cash-flow model.",
+        "Some connections are communicated by repeated variable names / ports, not continuous cables. This is a conceptual overview, not an executable wiring specification.",
+        "Typographic/density refinement can be judged by the user; no production-quality or user-acceptance seal is claimed."
+      ],
+      "physical_print_proof": "not performed",
+      "independent_review": "not performed",
+      "user_approval": "approved",
+      "review_type": "Actual-image visual self-review with source notes; not independent review or physical print proof.",
+      "approval_evidence": {
+        "status": "approved",
+        "date": "2026-09-20",
+        "user_message": "同意,请推送, 并且为我写抖音和小红书的推送文稿",
+        "scope": "Five selected PDF-reread images, project showcase and case-specific knowledge-base guidance; not independent scientific validation."
+      },
+      "publication_gate": "approved_for_project_showcase",
+      "issues": [
+        {
+          "severity": "remaining_check",
+          "detail": "Physical print proof and independent review not performed; review small labels at final manuscript size."
+        }
+      ]
+    },
+    "user_approval": "approved",
+    "scope": "File integrity only; not source fidelity, image quality or award verification.",
+    "approval_evidence": {
+      "status": "approved",
+      "date": "2026-09-20",
+      "user_message": "同意,请推送, 并且为我写抖音和小红书的推送文稿",
+      "scope": "Five selected PDF-reread images, project showcase and case-specific knowledge-base guidance; not independent scientific validation."
+    },
+    "hashes": {
+      "overview.png": "74676a584d037bdaf35053d738d5bbf1ca8bdbde986c7405f8d019b20a2b7602",
+      "full-prompt.md": "dbb700ce0459e8d3d0ab3a22791222ff278862163aef0784846a6077b5dcaca1",
+      "brief.json": "56670f2568c1e00cfc97891e80da3b2e325ca4da7e07fe822fa1a5ac7fdfd0f7",
+      "prompt.md": "d4547c72e0d0e18c74482d9b87c5a7010b32bdd20127d473153ec3863fd7c91a",
+      "correction-prompt.md": "9d9835b7092771f2489f02d4cf7fa624ddaa0918f03979c443ba00e95d10dec6",
+      "redesign-prompt.md": "50588b8ebee76546459d3b5a462160baac38ea06a85c27d1953b17a86917c8fb",
+      "redesign-correction-prompt.md": "a84bc58978022ee7bbee5f9c25f5ebb0829d7926ee2a0a3e7b68130231a42308",
+      "redesign-routing-prompt.md": "8c9ddc67e505add86ed71b8e6bf8cd89aa24e4348dcd4be3c43115912766ae00",
+      "reread-prompt.md": "5aa527825c8e1e2365e0a7f5e83cae101883e8eba0e6c71288cedf6f270fb574",
+      "reread-correction-v2.md": "58a3a4674ea93797a6a48f4934c14421807b08c7e5a09771ebf4c4ffad5050b1",
+      "reread-correction-v3.md": "27f413d22553aa1b0db87129b7abaf9c66c9172cc9e8dced153d8d732a2c71d2",
+      "overview-v1.png": "0545afa7fd83eecc082caa56b403f405edc5ceecee7f1b1c4a0021e78d2a6261",
+      "overview-v2.png": "d47578483dd6755145d79cd8614ca76297e9b0e4febc0d22d2bcc976a556fe5e",
+      "overview-v3.png": "e20332f898f9e24bbc1528676e0236078d5d3087fa168e2192bf8b49851972ab",
+      "overview-v4.png": "b82a5765d93f1e3f995c90c3438124600b6f8dfc0615f192c137df22e02225ca",
+      "overview-v5.png": "46973b9a6fa3348ce0bc367a2ddea8dbe608c3a92d5905679441d9bebe833253",
+      "overview-reread-v1.png": "26b50c87fb39f6928d0e72fb1c446c5293959bc591272b91f6f6b8f63cf720ea",
+      "overview-reread-v2.png": "1c8bce36baee66ce32659125ade5fb599f0896113856ace5310cf11c8ed65979"
+    },
+    "intake_sha256": "73646259b2dd433de1b194fafd7233c29b33ce08a8138defab21381f903a6522",
+    "copy_note": "Repository hashes cover exact public bytes. The private pairing audit passed; public approval is recorded from the explicit user message, not inferred by the pairing API."
+  },
+  "scope": "Historical metadata before replacement; its overview.png is now overview-before-scene.png."
+}

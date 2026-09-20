@@ -15,73 +15,235 @@
     "pdf_pages": 25,
     "intake_format": "PDF",
     "reread": {
-      "date": "2026-09-20",
-      "text_read": "1–25",
+      "date": "2026-09-21",
+      "text_read": "All physical PDF pages 1–25; AI-use appendices, if present, are provenance rather than model authority.",
       "physical_pages_visually_inspected": [
+        4,
+        5,
+        10,
         11,
+        17,
         18,
         19
       ],
-      "scope": "Model-bearing manuscript; AI-use appendices are not model authority."
+      "reader": "Authorized source-reading agent; main agent cross-checked selected model pages",
+      "stage": "Source reading completed for the scene trial before this local-correction and publication pass.",
+      "scope_record": {
+        "all_25_physical_pages_read": true,
+        "untruncated_read_chunks": [
+          [
+            1,
+            6
+          ],
+          [
+            7,
+            12
+          ],
+          [
+            13,
+            19
+          ],
+          [
+            20,
+            25
+          ]
+        ],
+        "scope": "Summary, contents, introduction and literature review, assumptions, notation, preparation/data, all three models, equipment tables, grid probability/search rules, results, Caribbean and multiple-target extensions, sensitivity, government memo, and references.",
+        "extraction": "Fresh prepare_paper intake with pypdf, no empty extracted pages. Original equation/diagram pages additionally rendered with Poppler and viewed.",
+        "truncation_recovery": "An initial combined tool response was display-truncated; affected source coverage was re-read in bounded page chunks. The four recorded ranges provide complete source coverage.",
+        "existing_case_brief_used_as_source": false,
+        "existing_reread_prompt_adapted": false,
+        "new_prompt_written_after_fresh_read": true
+      }
     }
   },
-  "claim": "Environmental fields constrain a drifting-position forecast. A grid search conditions the assumed location prior on no detection, excludes searched cells and redeploys available resources for the next interval.",
+  "claim": "A bathymetry-constrained 3D drift prediction supplies the horizontal center of an assumed 2D search field; a completed unsuccessful search excludes the same cell while a later predicted position and the retained exclusion set determine the next interval's action.",
   "manuscript_evidence": [
     {
-      "locator": "pp.7–11, §§5.1–5.3",
-      "supports": "ARIMA, ridge fields, forces and seafloor constraint"
+      "locator": "PDF p5, Section 2, assumptions 2-5",
+      "supports": "One disabled craft, fixed mass/volume, initial rest, neutral buoyancy or seabed alternative, and perfect horizontal-coordinate detection assumption."
     },
     {
-      "locator": "pp.13–16, §6",
-      "supports": "Equipment objectives: cost, availability, readiness"
+      "locator": "PDF p6, Sections 4.1-4.3 and Table 2",
+      "supports": "Current, density, and bathymetry inputs; spatial/time samples; conversion of geographic coordinates to distances for mechanics."
     },
     {
-      "locator": "pp.17–19, Eqs.25–35 / Fig.9",
-      "supports": "Manhattan shells, chosen cell, exclusion and probability update"
+      "locator": "PDF p7, Section 5.1, Equations 2-6; PDF p9, Section 5.2",
+      "supports": "ARIMA current forecasting and ridge regression to continuous coordinate-dependent current components and density."
     },
     {
-      "locator": "pp.20–22, §§8–9",
-      "supports": "Other-sea / multiple-target extension and interval sensitivity"
+      "locator": "PDF p8, Section 5.1, Equations 7-11",
+      "supports": "Monte Carlo discussion evaluates current prediction error; it does not calibrate the later Poisson cell prior. Error metrics and ensemble imagery excluded."
+    },
+    {
+      "locator": "PDF pp10-11, Section 5.3, Figures 5-6, Equations 14-18",
+      "supports": "Gravity, buoyancy, resistance, current velocity relation, 3D trajectory, and prohibition on positions below the seabed."
+    },
+    {
+      "locator": "PDF pp11-12, Section 5.4",
+      "supports": "ADCP, CTD, INS, acoustic communication and logging roles; satellite use only during surface activities. Figure uses last report before contact loss, not live underwater satellite telemetry."
+    },
+    {
+      "locator": "PDF pp16-17, Section 7.1 and Figure 8",
+      "supports": "Surface/2D treatment, parallel grid search, rasterization, and example approximately 300 m cell in 30 min."
+    },
+    {
+      "locator": "PDF pp17-18, Section 7.2, Equations 28-31",
+      "supports": "Manhattan-distance-based assumed Poisson shell weights around a predicted cell, shared shell mass, and time-dependent intensity."
+    },
+    {
+      "locator": "PDF p18, Section 7.3, Equation 32 and following prose",
+      "supports": "Highest-probability available cell at interval start; no mid-interval reassignment; simultaneous vessels in different cells; inter-cell transit time neglected."
+    },
+    {
+      "locator": "PDF p19, Section 7.3 and Figure 9",
+      "supports": "Prediction may change central cell; searched cells assigned zero and never revisited; no-detection evidence updates search field."
+    },
+    {
+      "locator": "PDF pp20-22, Sections 7.4-9",
+      "supports": "Results and extensions read but intentionally excluded from focused conceptual figure; no invented quantitative success claim."
     }
   ],
   "model_relationships": [
     {
-      "source": "Environmental fields",
-      "target": "Drifting position",
-      "meaning": "Newtonian drift with current and seafloor constraints",
-      "locator": "pp.7–11"
+      "id": "e1",
+      "source": "Current record samples",
+      "target": "ARIMA forecast",
+      "meaning": "Temporal current prediction",
+      "kind": "model/data",
+      "locator": "PDF pp6-7, Sections 4.3 and 5.1"
     },
     {
-      "source": "Assumed location prior and no detection",
-      "target": "Updated search grid",
-      "meaning": "Exclude searched cells and renormalize under perfect detection/no re-entry",
-      "locator": "pp.17–19"
+      "id": "e2",
+      "source": "Forecast current samples",
+      "target": "Spatial ridge fitting and local current field",
+      "meaning": "Continuous coordinate-dependent components",
+      "kind": "model/data",
+      "locator": "PDF p9, Section 5.2"
     },
     {
-      "source": "Available equipment",
-      "target": "Next eligible search cell",
-      "meaning": "Constrained redeployment as predicted location advances",
-      "locator": "pp.13–19"
+      "id": "e3",
+      "source": "Density samples",
+      "target": "Fitted density field and buoyancy",
+      "meaning": "Position-dependent water density supplies local buoyancy",
+      "kind": "model/data",
+      "locator": "PDF pp9-10, Section 5.2 and Equation 15"
+    },
+    {
+      "id": "e4",
+      "source": "Last report",
+      "target": "Initial submersible state",
+      "meaning": "Known starting information before communication loss",
+      "kind": "initialization",
+      "locator": "PDF pp5,11-12,16, Sections 2, 5.3-5.4, 7.1"
+    },
+    {
+      "id": "e5",
+      "source": "Current field, gravity, buoyancy, resistance",
+      "target": "Conceptual 3D predicted trajectory",
+      "meaning": "Passive motion model",
+      "kind": "mechanism",
+      "locator": "PDF pp10-11, Section 5.3"
+    },
+    {
+      "id": "e6",
+      "source": "Bathymetry",
+      "target": "Allowable trajectory domain",
+      "meaning": "Do not place the submersible below seabed",
+      "kind": "constraint",
+      "locator": "PDF p11, Section 5.3"
+    },
+    {
+      "id": "e7",
+      "source": "Predicted 3D position at t_n",
+      "target": "Horizontal position in illustrative D4",
+      "meaning": "Coordinate projection into 2D search field",
+      "kind": "representation",
+      "locator": "PDF pp16-18, Sections 7.1-7.2"
+    },
+    {
+      "id": "e8",
+      "source": "Predicted 3D position at t_(n+1)",
+      "target": "Horizontal position in illustrative E4",
+      "meaning": "Later prediction supplies the new central cell independently of negative search evidence",
+      "kind": "representation",
+      "locator": "PDF p19, Figure 9 and accompanying text"
+    },
+    {
+      "id": "e9",
+      "source": "Predicted central cell and elapsed time",
+      "target": "Assumed Manhattan Poisson-shell field",
+      "meaning": "Center and time condition qualitative search weights; not calibrated from Monte Carlo",
+      "kind": "assumed model",
+      "locator": "PDF pp17-18, Section 7.2"
+    },
+    {
+      "id": "e10",
+      "source": "Available weighted cells",
+      "target": "D4 assignment",
+      "meaning": "Select a highest-probability available cell at interval start",
+      "kind": "decision",
+      "locator": "PDF p18, Section 7.3"
+    },
+    {
+      "id": "e11",
+      "source": "D4 grid cell",
+      "target": "Enlarged D4 parallel sweep",
+      "meaning": "Same object at a larger display scale",
+      "kind": "magnification, no causal arrowhead",
+      "locator": "PDF pp16-17, Section 7.1/Figure 8"
+    },
+    {
+      "id": "e12",
+      "source": "Completed D4 search with no detection",
+      "target": "D4 eligibility in updated grid",
+      "meaning": "Add D4 to excluded set and update remaining weights under source assumptions",
+      "kind": "observation update",
+      "locator": "PDF p19, Section 7.3/Figure 9"
+    },
+    {
+      "id": "e13",
+      "source": "Old excluded set B2/C2/B3",
+      "target": "Same B2/C2/B3 in updated grid",
+      "meaning": "Persistent no-revisit support; conveyed by correspondence, no three extra arrows",
+      "kind": "state persistence",
+      "locator": "PDF p19, Section 7.3"
+    },
+    {
+      "id": "e14",
+      "source": "Updated available field",
+      "target": "E4 next assignment",
+      "meaning": "Next action at next interval boundary",
+      "kind": "decision",
+      "locator": "PDF pp18-19, Section 7.3"
     }
   ],
   "references": [
     {
       "case_id": "b-rescue-multiscale-overview",
-      "borrowed": "Paper-specific objects and relations checked against the model-bearing PDF pages. Persistent identities and selective change from previously inspected Sivia examples; source models only from this PDF. No layout copied wholesale.",
-      "not_borrowed": "Source pixels, numerical results, conflicting signs/formulas, awards, or a compulsory panel layout."
+      "type": "Corpus reference from the current source paper",
+      "paper_id": "mcm-2024-b-2407038",
+      "pdf_page": 4,
+      "figure": "Figure 1",
+      "retrieval": "modelatlas.corpus.search_styles(problem='B', role='overview', limit=20), then fetch_reference('b-rescue-multiscale-overview', assigned_directory)",
+      "source_pdf_verified_by_fetch_reference": true,
+      "actual_image_viewed_this_turn": true,
+      "design_guidance_read_in_full": true,
+      "borrowed": "Concrete currents/hull forces, grid as a true spatial carrier, different representations for physical prediction and search, exact update endpoints.",
+      "not_borrowed": "Chapter strip, repeated model bands, equipment collage, small result plots, copied numeric outputs, or ambiguous normalization formulas."
     }
   ],
-  "caption": "Environmental fields constrain a drifting-position forecast. A grid search conditions the assumed location prior on no detection, excludes searched cells and redeploys available resources for the next interval.",
-  "placement": "End of Introduction / Our Work, intended width 180 mm",
+  "caption": "Conceptual drift-to-search overview. Current forecasting and spatial regression of currents and density support a three-dimensional passive-motion prediction constrained above the seabed. Its horizontal location centers an assumed Manhattan-distance Poisson-shell search field. Two maps preserve the same coordinates: an unsuccessful parallel sweep adds D4 to the excluded set, while a later predicted position supplies the adjacent center and the next search assignment. Permanent exclusion depends on the paper's perfect-detection and no-reentry approximations; assignments change only between intervals and inter-cell transit is neglected. Cells and shading illustrate the mechanism rather than computed probabilities; the approximately 300 m cell and 30 min interval are the paper's example assumptions.",
+  "placement": "End of Introduction, before model definitions; focused overview of the drift-to-search mechanism rather than an inventory of all three paper models.",
   "generation": {
     "backend": "built-in image_gen.imagegen",
     "status": "generated",
-    "artifact_id": "exec-7c2e779a-6760-4762-b3e2-7e62ecd06291.png",
+    "artifact_id": "exec-1caab99c-47f8-4eed-9edd-35e4aba55d52.png",
     "actual_size": [
       1536,
       1024
     ],
-    "image_sha256": "4d5badcd694b9585d2fa3736063ab20eca8b29bdfd74f97b457be924009b3beb",
+    "image_sha256": "a628d06b3f9af0a11bc1fc5ed58b61036a7d47a9d50acedaefbd7ad22aa169fc",
     "chain": [
       {
         "operation": "generate",
@@ -130,71 +292,211 @@
           "passed": true,
           "template_bytes_verified": true,
           "scope": "Exact prompt-text length only; source/visual review and user approval are separate."
-        }
+        },
+        "status": "superseded_history"
       },
       {
         "operation": "edit",
         "prompt": "reread-correction-v2.md",
-        "output": "overview.png",
+        "output": "overview-before-scene.png",
         "artifact_id": "exec-7c2e779a-6760-4762-b3e2-7e62ecd06291.png",
         "sha256": "4d5badcd694b9585d2fa3736063ab20eca8b29bdfd74f97b457be924009b3beb",
         "series": "pdf-reread-20260920",
         "input": "overview-reread-v1.png",
         "prompt_scope": "localized_correction",
-        "prompt_sha256": "0d283c088c65e53661d2c1f0dd69bd3de23bac3178acb5a5a66160f9d844f3d1"
+        "prompt_sha256": "0d283c088c65e53661d2c1f0dd69bd3de23bac3178acb5a5a66160f9d844f3d1",
+        "status": "superseded_history"
+      },
+      {
+        "operation": "generate",
+        "prompt": "scene-prompt.md",
+        "output": "overview-scene-v1.png",
+        "artifact_id": "exec-3484453c-8c88-48b2-a361-6b383035f396.png",
+        "sha256": "7334af5c5d9f25fd35c85d4038a2cdb734cd6016ef66b3c922a4497ada0bd23a",
+        "prompt_sha256": "442bedbee620563851016de5791fd725b1e4446a6455620c64e5f283c59096b1",
+        "series": "object-scene-20260921",
+        "prompt_scope": "full_redesign",
+        "status": "superseded_history",
+        "prompt_detail": {
+          "profile": "sivia-overview-v1",
+          "binding": {
+            "purpose": "Full English overview designs and substantial redesigns; not an arbitrary universal minimum for small unrelated edits.",
+            "source_repository": "https://github.com/exsinger-hub/Sivia",
+            "source_version": "1.1.0+codex.20260909060506",
+            "template_path": "skills/design-scientific-figure/references/templates/overview-template.txt",
+            "template_sha256": "cd73e60b51a15e005defd61190705846cb3f50a6582a33119be07b2fe78921f9",
+            "minimum_non_whitespace_characters": 15356,
+            "maximum_total_characters": 32000,
+            "metric": "Unicode code points excluding whitespace; count exact submitted prompt, one image call at a time",
+            "count_verified_on": "2026-09-20",
+            "limitation": "Length does not prove useful detail, source fidelity, image quality or user acceptance. Do not pad or concatenate prior calls to pass."
+          },
+          "total_characters": 27780,
+          "non_whitespace_characters": 23505,
+          "submitted_utf8_sha256": "442bedbee620563851016de5791fd725b1e4446a6455620c64e5f283c59096b1",
+          "length_pass": true,
+          "tool_limit_pass": true,
+          "passed": true,
+          "template_bytes_verified": true,
+          "scope": "Exact prompt-text length only; source/visual review and user approval are separate."
+        }
+      },
+      {
+        "operation": "edit",
+        "prompt": "scene-correction-v2.md",
+        "output": "overview-scene-v2.png",
+        "artifact_id": null,
+        "sha256": "70281afddfe25768d5b7285457e2feb6df565b59de413bdcb62c30f9b0d22320",
+        "prompt_sha256": "06cdc8317a36e53b8216c68e5c388101834fbc43a4ee40104b697e5b1c263cf6",
+        "series": "object-scene-20260921",
+        "prompt_scope": "localized_correction",
+        "status": "superseded_history",
+        "input": "overview-scene-v1.png",
+        "artifact_provenance": "Original PNG data URL returned by built-in ImageGen; no artifact id/output path returned. Decoded losslessly to local PNG."
+      },
+      {
+        "operation": "edit",
+        "prompt": "scene-publish-correction-v1.md",
+        "output": "overview-scene-v3.png",
+        "artifact_id": "exec-e004f93a-a779-4cb7-a589-b85c0a790ab9.png",
+        "sha256": "206ddbba50c2d5aaee62f88495048e0c4c928448c266cd43581b32807ec53da0",
+        "prompt_sha256": "3f99da5210883c1c5573063a1d5804c3f28c6bff89d35562a8360f8dcf937f06",
+        "series": "object-scene-20260921",
+        "prompt_scope": "localized_correction",
+        "status": "superseded_history",
+        "input": "overview-scene-v2.png"
+      },
+      {
+        "operation": "edit",
+        "prompt": "scene-publish-correction-v2.md",
+        "output": "overview-scene-v4.png",
+        "artifact_id": "exec-75f21ba3-888b-4648-83f4-cfa7db57d919.png",
+        "sha256": "5582bebdfd2d0fbb7bba3ae09ba970504b08b4fe8a9a4916348907302518c82f",
+        "prompt_sha256": "dc23cb491a71402b8166e9185dadba6dbf4c76c1c631ccd9cd57ee9154497663",
+        "series": "object-scene-20260921",
+        "prompt_scope": "localized_correction",
+        "status": "superseded_history",
+        "input": "overview-scene-v3.png"
+      },
+      {
+        "operation": "edit",
+        "prompt": "scene-publish-correction-v3.md",
+        "output": "overview.png",
+        "artifact_id": "exec-1caab99c-47f8-4eed-9edd-35e4aba55d52.png",
+        "sha256": "a628d06b3f9af0a11bc1fc5ed58b61036a7d47a9d50acedaefbd7ad22aa169fc",
+        "prompt_sha256": "ecb674b9b7ce74d55380d72b81a5be2a7939e7742ab01ae46c3fa94a2da19ab2",
+        "series": "object-scene-20260921",
+        "prompt_scope": "localized_correction",
+        "status": "selected_showcase",
+        "input": "overview-scene-v4.png"
       }
     ],
     "exact_prompt_record": "full-prompt.md",
     "empirical_rerun": false,
     "native_editability": false,
-    "selected_series": "pdf-reread-20260920"
+    "selected_series": "object-scene-20260921"
   },
   "review": {
     "status": "passed",
+    "review_type": "Actual final-raster visual self-review against the scene-trial source evidence; not an independent review.",
     "checks": [
-      "Both maps use a 7×7 frame and retain the old four-cell exclusion region.",
-      "Cell r remains at row4/column5: searched before, hatched after.",
-      "Next cell s is unsearched, at row6/column5; predicted position moves from row4/column4 to row5/column4.",
-      "No numeric rescue probabilities or empirical uncertainty bounds are fabricated."
+      "Sea cross-section and matched 7×7 search grids preserve different physical and spatial representations.",
+      "Two time-labelled depth projections are vertical; matched map labels terminate at the correct predicted locations.",
+      "B2/C2/B3 remain excluded; D4 is searched then excluded, and E4 is selected next. The right field is centered on E4.",
+      "Permanent exclusion is explicitly conditional on perfect detection and no re-entry; no numeric probability map is claimed."
     ],
     "notes": [
-      "The source assumes searched cells are empty and neglects re-entry; that note is in the figure.",
-      "Eq.18 force-component duplication and Eqs.30/35 probability normalization conflicts are not silently repaired.",
-      "The top-view projection is schematic; it is not an operational rescue tool."
+      "Conceptual scene, not a rerun of the paper’s empirical results.",
+      "Source inconsistencies remain in source_notes; no silent numeric reconstruction.",
+      "Publication-size typography and physical print proof remain author checks."
     ],
     "physical_print_proof": "not performed",
     "independent_review": "not performed",
     "user_approval": "approved",
-    "review_type": "Actual-image visual self-review with source notes; not independent review or physical print proof.",
     "approval_evidence": {
       "status": "approved",
-      "date": "2026-09-20",
-      "user_message": "同意,请推送, 并且为我写抖音和小红书的推送文稿",
-      "scope": "Five selected PDF-reread images, project showcase and case-specific knowledge-base guidance; not independent scientific validation."
+      "date": "2026-09-21",
+      "user_message": "1234修好后推送",
+      "scope": "Selected figures 01–04 with requested local corrections and bilingual showcase only; not knowledge-base admission or independent scientific validation."
     },
     "publication_gate": "approved_for_project_showcase",
-    "issues": [
-      {
-        "severity": "remaining_check",
-        "detail": "Physical print proof and independent review not performed; review small labels at final manuscript size."
-      }
-    ]
+    "scientific_publication_gate": "publication_size_review_required",
+    "knowledge_base_admission": false
   },
   "source_notes": [
-    "The source assumes searched cells are empty and neglects re-entry; that note is in the figure.",
-    "Eq.18 force-component duplication and Eqs.30/35 probability normalization conflicts are not silently repaired.",
-    "The top-view projection is schematic; it is not an operational rescue tool."
+    {
+      "id": "dynamics-components",
+      "locator": "PDF p11, Equation 18; original page visually inspected",
+      "issue": "x and y acceleration equations both contain -F_R cos(phi) cos(theta), although the text introduces the azimuth angle for horizontal decomposition.",
+      "handling": "Record as source inconsistency. Print neither copied nor silently repaired component equations; use qualitative hull forces and a conceptual trajectory."
+    },
+    {
+      "id": "grid-center-units",
+      "locator": "PDF p17, Equation 26; original page visually inspected",
+      "issue": "y_G is printed as INT(N/M) + G_s/2, without the grid-size multiplier present in the x-center expression.",
+      "handling": "Do not reproduce or certify the formula. Use explicit editorial cell identities A-G and 1-7 in matched conceptual grids."
+    },
+    {
+      "id": "shell-versus-cell-mass",
+      "locator": "PDF p18 Equation 30 versus PDF p19 Equations 34-35; both original pages visually inspected",
+      "issue": "Equation 30 divides Poisson shell mass by N_4 for an individual cell; Equations 34-35 subsequently use a shell Poisson mass for a cell without that factor.",
+      "handling": "State assumed shell organization and per-shell sharing qualitatively. No numerical probability array, per-cell formula, or calculated posterior is produced."
+    },
+    {
+      "id": "conditioning-denominator",
+      "locator": "PDF p19, Section 7.3 and Equation 35; original page visually inspected",
+      "issue": "Event B is described as the target outside searched regions; the final denominator prose calls p(B) the total prior probability of all searched grids and says it decreases as search expands.",
+      "handling": "Show intended no-detection elimination and qualitative weight update only. Explicitly avoid silently normalizing/correcting the source or claiming implementation validation."
+    },
+    {
+      "id": "small-motion-versus-no-reentry",
+      "locator": "PDF p19, rationale preceding Equation 33",
+      "issue": "Small movement relative to cell width is used to justify permanent zero probability after search; it does not logically preclude boundary crossing or later re-entry.",
+      "handling": "Visible no-re-entry assumption. Forecast dots straddle one common cell boundary by a small distance; excluded cells remain fixed. No claim that no-reentry follows as a physical theorem."
+    },
+    {
+      "id": "poisson-central-ranking",
+      "locator": "PDF pp17-18, Section 7.2 and Equations 28-31",
+      "issue": "The prose asserts the center is most probable and probability decreases with distance, while a Poisson law with changing intensity does not by itself ensure universal shell-mass monotonicity.",
+      "handling": "Schematic early ordering and qualitative tones only. No universal monotonicity claim, numeric legend, or computed distribution."
+    },
+    {
+      "id": "ridge-coefficient",
+      "locator": "PDF p9, Equation 12 and adjacent prose; text read",
+      "issue": "The displayed ridge objective omits a regularization coefficient, while the prose introduces alpha and the software discussion uses lambda.",
+      "handling": "Method name only; no objective formula in the figure."
+    },
+    {
+      "id": "equipment-variable",
+      "locator": "PDF p14 Equation 22 prose versus PDF p15 Equation 24 prose; text read",
+      "issue": "x_i is described first as whether to purchase and then as equipment quantity.",
+      "handling": "Equipment optimization is intentionally outside this one-mechanism overview."
+    },
+    {
+      "id": "equipment-summary",
+      "locator": "PDF p1 summary versus PDF pp15-16 Section 6.4/Table 8; text read",
+      "issue": "Summary says three optimal results and lists availability among minimization objectives; body selects four schemes in three categories and maximizes availability.",
+      "handling": "No equipment-objective/result claims imported into this focused scene."
+    },
+    {
+      "id": "readiness-interface",
+      "locator": "PDF p16 equipment schemes versus PDF p18 Equation 31 prose; text read",
+      "issue": "Equipment schemes have differing readiness values, while the search section assumes the same preparation/arrival time t0. A quantitative equipment-to-t0 interface is not specified.",
+      "handling": "Do not connect equipment allocation to a derived search arrival-time value. Use only interval rules stated within Section 7."
+    }
   ],
   "design_revision": {
-    "date": "2026-09-20",
-    "reason": "PDF-reread redraw approved by the user.",
+    "date": "2026-09-21",
     "status": "user_approved_showcase",
-    "latest_round": 4,
-    "old_image": "overview-v2.png",
-    "new_image": "overview.png",
-    "superseded_rounds": [
-      1,
-      2
-    ]
+    "correction_status": "selected_scene_corrected",
+    "selection_number": 1,
+    "latest_round": 9,
+    "summary": "A sea cross-section connects drift prediction to matched search grids: search D4, record no detection, then select E4.",
+    "previous_record": "pre-scene-record.json"
+  },
+  "relationship_representation": "Semantic model relations; not every relation is a continuous arrow. Repeated labels, equations and shared table alignment also encode correspondence.",
+  "style_adaptation": {
+    "approach": "Concrete scientific objects with integrated transformations; selective shared rules instead of repeated equal cards.",
+    "auxiliary": "Previously inspected Sivia visual grammar and the accepted 2025 E scene inform composition only. Scientific claims come solely from the pinned source manuscript."
   }
 }

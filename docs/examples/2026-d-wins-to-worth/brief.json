@@ -16,82 +16,285 @@
     "pdf_pages": 32,
     "intake_format": "extracted text; source PDF has malformed glyphs",
     "reread": {
-      "date": "2026-09-20",
-      "text_read": "Main pp.1–25, including preceding-turn equation inspection",
+      "date": "2026-09-21",
+      "text_read": "All physical PDF pages 1–32; AI-use appendices, if present, are provenance rather than model authority.",
       "physical_pages_visually_inspected": [
+        4,
+        9,
+        11,
+        12,
         13,
         14,
+        15,
         16,
+        17,
+        18,
         19,
-        20,
+        21,
+        23,
         24
       ],
-      "scope": "Model-bearing manuscript; AI-use appendices are not model authority."
+      "reader": "Authorized source-reading agent; main agent cross-checked selected model pages",
+      "stage": "Source reading completed for the scene trial before this local-correction and publication pass.",
+      "scope_record": {
+        "physical_pages": "1-32 inclusive",
+        "untruncated_read_chunks": [
+          [
+            1,
+            5
+          ],
+          [
+            6,
+            10
+          ],
+          [
+            11,
+            15
+          ],
+          [
+            16,
+            20
+          ],
+          [
+            21,
+            25
+          ],
+          [
+            26,
+            32
+          ]
+        ],
+        "includes": [
+          "Summary sheet",
+          "Contents",
+          "Introduction and original overview",
+          "Assumptions and notation",
+          "Data preprocessing",
+          "Elo",
+          "Attendance and pricing",
+          "Accounting and valuation",
+          "Decision optimization",
+          "Scenario analysis",
+          "Monte Carlo and sensitivity",
+          "Model evaluation and conclusion",
+          "References",
+          "Owner letter",
+          "Entire AI-use appendix"
+        ],
+        "intake_function": "modelatlas.papers.prepare_paper(path, workspace=assigned_directory, problem='D')",
+        "intake_issue": "Unmodified intake initially failed on an unpaired U+D835 surrogate from pypdf extraction. A script inside the assigned directory performed a runtime-only UTF-16 surrogate normalization, then invoked the same prepare_paper function. No repository code was edited. Valid pairs were restored; isolated units became replacement characters. Mathematical evidence was checked on rendered original pages.",
+        "scope_limit": "All extracted manuscript text was read. Not every source page was visually inspected. Source-linked external literature and auxiliary research PDFs were not opened; no claims of having read them are made.",
+        "appendix_treatment": "AI-use report read as provenance, not as source authority for scientific edges. Its debt-to-equity suggestion is not adopted over the main paper's debt/valuation definition."
+      }
     }
   },
-  "claim": "Action-dependent strength, popularity and salary connect to capacity-censored attendance, assumed pricing response and financial identities. Joint roster/leverage choices are evaluated subject to cash and debt limits, with a rolling next-state interpretation.",
+  "claim": "Capacity-censored attendance forecasts and a distinct pricing layer turn game demand into ticket receipts; explicit operating arithmetic and separate cash/debt stocks constrain roster and leverage choices as available information changes through the season.",
   "manuscript_evidence": [
     {
-      "locator": "pp.9–12, §§5–6",
-      "supports": "Elo, right-censored lognormal demand and pricing assumptions"
+      "locator": "Physical pp. 6-8, sections 4.1-4.3, equations 1-8",
+      "supports": "Game-level alignment of observations/capacity/features and operational near-full censor flag at occupancy >=0.97; no capacity estimate or threshold value is drawn."
     },
     {
-      "locator": "pp.13–15, Eqs.22–29",
-      "supports": "Revenue, profit, simplified cash book, valuation methods and leverage"
+      "locator": "Physical pp. 9-10, sections 5.1-5.2, equations 9-12",
+      "supports": "Pre-game Elo comparison, expected wins, observed-result updates, and an exogenous negative strength displacement for injury."
     },
     {
-      "locator": "pp.15–18, Eqs.30–35",
-      "supports": "Four-component state, action increments, optimization and rolling updates"
+      "locator": "Physical p. 11, section 6.1, equations 13-16",
+      "supports": "Latent demand versus observed min(demand,capacity), feature-conditioned lognormal distribution, tail likelihood for censored observations, expected capped attendance."
     },
     {
-      "locator": "pp.19–24, §§9–11",
-      "supports": "Other-revenue market scaling and conflicting valuation/injury descriptions"
+      "locator": "Physical p. 12, equation 17",
+      "supports": "Expected capped attendance decomposes into below-capacity demand contribution plus capacity times tail mass; the visual decomposition is algebraic, not a new numerical analysis."
+    },
+    {
+      "locator": "Physical pp. 12-13, section 6.2, equations 18-21",
+      "supports": "Occupancy-based pricing rule and separate assumed-elasticity prose; ticket receipts multiply forecast attendance by suggested unit price and sum over home games."
+    },
+    {
+      "locator": "Physical p. 13, section 7.1, equations 22-25",
+      "supports": "T=T_ticket+T_other; EBI=T-S^p-eta*T; I_D=D*r; profit pi=EBI-I_D. Ticket price is USD/ticket; ledger is USD millions."
+    },
+    {
+      "locator": "Physical pp. 14-15, sections 7.1 and 7.3, equations 28-29",
+      "supports": "Cash_end=Cash_begin+profit+borrowing-repayment; matched debt postings; L=D/V, D*=L*V; repayment constrained by surplus cash."
+    },
+    {
+      "locator": "Physical p. 14, section 7.2, equations 26-27; pp. 19,21,23-24",
+      "supports": "Distinct revenue multiple, operating-earnings multiple and DCF lenses, unresolved aggregation, rate effects on valuation, and separate future FCF operand."
+    },
+    {
+      "locator": "Physical pp. 15-18, section 8, equations 30-36",
+      "supports": "Known strength/popularity/cash/debt state, alternative roster actions, strength/popularity/salary increments, constrained action/leverage choice, four rolling segments and updated next state."
+    },
+    {
+      "locator": "Physical pp. 20-22, sections 9.3 and 10",
+      "supports": "Injury as an exogenous strength shock, risk in the decision framework, and cost-insensitivity of revenue-multiple value at fixed revenue/rate. No generated numerical risk distribution is included."
     }
   ],
   "model_relationships": [
     {
-      "source": "Strength, popularity and game context",
-      "target": "Expected attendance",
-      "meaning": "Elo-informed covariates; E[min(d,K)|x] under censored demand",
-      "locator": "pp.9–12"
+      "source": "Pre-game Elo, schedule, popularity",
+      "target": "x_t and conditional latent-demand distribution",
+      "meaning": "Available features condition mu_t=x_t^T beta",
+      "locator": "pp. 9-12, equations 9-17",
+      "style": "solid data relation"
     },
     {
-      "source": "Assumed price response and attendance",
-      "target": "Revenue",
-      "meaning": "Ticket revenue plus other revenue; market scenario scales the latter",
-      "locator": "pp.11–15; pp.19–24"
+      "source": "Venue seats C_t",
+      "target": "A_t=min(D_t,C_t) and capped-expectation boundary",
+      "meaning": "Physical observation/forecast capacity; does not create latent demand",
+      "locator": "p. 11, equations 13 and 16",
+      "style": "local dotted correspondence"
     },
     {
-      "source": "Revenue, salary, operations and interest",
-      "target": "Profit",
-      "meaning": "Subtract costs; keep borrowing and repayment outside profit",
-      "locator": "pp.13–15"
+      "source": "E[D_t 1(D_t<C_t)|x_t] and C_t P(D_t>=C_t|x_t)",
+      "target": "A-hat_t",
+      "meaning": "Add the continuous and tail-at-cap contributions",
+      "locator": "pp. 11-12, equations 16-17",
+      "style": "plus junction; symbolic mathematical decomposition"
     },
     {
-      "source": "Roster and leverage decisions",
-      "target": "Next strength, popularity, cash and debt",
-      "meaning": "Action increments and the source simplified cash/debt book under feasibility limits",
-      "locator": "pp.15–18"
+      "source": "A-hat_t and C_t",
+      "target": "Forecast occupancy and occupancy-based pricing",
+      "meaning": "Quantity/capacity drives displayed pricing rule",
+      "locator": "p. 12, equations 18-20",
+      "style": "solid"
+    },
+    {
+      "source": "Assumed elasticity scenarios",
+      "target": "Pricing specification",
+      "meaning": "Alternative source prose, not fitted-demand feedback or simultaneous execution",
+      "locator": "p. 12, section 6.2",
+      "style": "dashed association"
+    },
+    {
+      "source": "A-hat_t and p-bar_t",
+      "target": "Game receipts then T_ticket",
+      "meaning": "Multiply quantity by USD/ticket, sum home games and convert to USD millions",
+      "locator": "p. 13, equations 21-22",
+      "style": "multiplication then summation"
+    },
+    {
+      "source": "T_ticket and T_other",
+      "target": "Total revenue T",
+      "meaning": "Add revenue streams",
+      "locator": "p. 13, equation 22",
+      "style": "plus ledger entries"
+    },
+    {
+      "source": "T, S^p, eta*T",
+      "target": "Operating proxy EBI",
+      "meaning": "Subtract salaries and revenue-proportional operating costs once",
+      "locator": "p. 13, equation 23",
+      "style": "signed ledger rows"
+    },
+    {
+      "source": "Debt D and financing rate r",
+      "target": "I_D, then profit pi",
+      "meaning": "Multiply D*r, then subtract interest from EBI",
+      "locator": "p. 13, equations 24-25",
+      "style": "multiply then subtract"
+    },
+    {
+      "source": "T / EBI / separately specified future FCF",
+      "target": "V_rev / V_ebi / V_DCF respectively",
+      "meaning": "Distinct valuation operands; no pi=FCF assumption",
+      "locator": "p. 14, equations 26-27",
+      "style": "separate read guides"
+    },
+    {
+      "source": "Rate r",
+      "target": "Valuation discounting",
+      "meaning": "Rate condition separately from interest cost",
+      "locator": "pp. 14,19, equations 26-27 and 40",
+      "style": "dashed condition"
+    },
+    {
+      "source": "Valuation comparisons",
+      "target": "V: basis-dependent",
+      "meaning": "Comparison association only; aggregation unspecified",
+      "locator": "pp. 14,19,21,23-24",
+      "style": "dotted brace with no arithmetic merge"
+    },
+    {
+      "source": "V and target L*",
+      "target": "D*=L*V",
+      "meaning": "Target debt, not guaranteed achieved debt",
+      "locator": "p. 15, equation 28",
+      "style": "product"
+    },
+    {
+      "source": "D compared with D* and cash surplus",
+      "target": "Borrow b or repay q",
+      "meaning": "Conditional target adjustment constrained by cash floor and debt bound",
+      "locator": "p. 15, equation 29",
+      "style": "conditional branch and constraint stop"
+    },
+    {
+      "source": "pi, b, q and beginning stocks",
+      "target": "Cash_end and D_end",
+      "meaning": "Cash_begin+pi+b-q; D+b-q. Profit is not posted directly to debt",
+      "locator": "pp. 14-15",
+      "style": "two matched signed ledger rows"
+    },
+    {
+      "source": "D_end and V",
+      "target": "L_end=D_end/V",
+      "meaning": "Achieved leverage distinct from target",
+      "locator": "pp. 15-16",
+      "style": "ratio readout"
+    },
+    {
+      "source": "Known state, candidate projections and constraints",
+      "target": "Choose (a*,L*)",
+      "meaning": "Joint roster/leverage choice using value, profit, risk, cash/debt/salary/roster feasibility",
+      "locator": "pp. 15-18, equations 30-36",
+      "style": "named local ports into feasible choice sheet"
+    },
+    {
+      "source": "Selected action increments Delta E, Delta P, Delta S",
+      "target": "Strength, popularity, salary respectively",
+      "meaning": "Persistent identities and exact changed operands, reusing demand/accounting mechanism",
+      "locator": "pp. 15-18",
+      "style": "local operation tags"
+    },
+    {
+      "source": "Ending cash/debt, updated strength/popularity and newly observed segment records",
+      "target": "s_(k+1)",
+      "meaning": "Only available data enter next-state update and re-evaluation",
+      "locator": "pp. 16-17, equation 35",
+      "style": "forward time transition and next-round association"
+    },
+    {
+      "source": "Injury scenario",
+      "target": "Effective strength",
+      "meaning": "Exogenous negative displacement only",
+      "locator": "pp. 10,19-20",
+      "style": "local downward shift guide"
     }
   ],
   "references": [
     {
       "case_id": "d-wins-to-value-chain",
-      "borrowed": "Paper-specific objects and relations checked against the model-bearing PDF pages. Persistent identities and selective change from previously inspected Sivia examples; source models only from this PDF. No layout copied wholesale.",
-      "not_borrowed": "Source pixels, numerical results, conflicting signs/formulas, awards, or a compulsory panel layout."
+      "paper_id": "icm-2026-d-2608869",
+      "locator": "Physical PDF page 4, unnumbered Our works diagram",
+      "retrieval": "modelatlas.corpus.search_styles(problem='D',role='overview',limit=1), followed by fetch_reference into the assigned directory using the already pinned local PDF",
+      "design_guidance_read": "Entire returned design_guidance read without truncation; state/capacity/accounting/decision carrier guidance and source-specific scientific guards used",
+      "borrowed": "One transmission chain and distinctions between operations and intermediate quantities",
+      "not_borrowed": "Equal method boxes, round result cards, disconnected risk sidebar, crowded lower labels and dashboard delivery strip"
     }
   ],
-  "caption": "Action-dependent strength, popularity and salary connect to capacity-censored attendance, assumed pricing response and financial identities. Joint roster/leverage choices are evaluated subject to cash and debt limits, with a rolling next-state interpretation.",
-  "placement": "End of Introduction / Our Work, intended width 180 mm",
+  "caption": "Conceptual overview of the paper's sports-franchise decision mechanism. A finite seat capacity censors observed attendance, so expected admissions are computed as E[min(demand, capacity) | features] before being combined with a distinct ticket-pricing layer. Ticket and other revenues enter an explicit operating ledger; profit, borrowing and repayment update separate cash and debt stocks. Distinct valuation lenses inform basis-dependent franchise value and leverage, while roster increments and feasibility constraints are re-evaluated with newly available segment information. All scene geometry is schematic. Pricing, valuation aggregation and injury-process ambiguities in the manuscript remain unresolved rather than being converted into numerical claims.",
+  "placement": "End of Introduction, before model definitions",
   "generation": {
     "backend": "built-in image_gen.imagegen",
     "status": "generated",
-    "artifact_id": "exec-b83c7821-0cc1-4db7-b9b8-4f5bb1f45c8c.png",
+    "artifact_id": "exec-95f4789b-3a1c-46b9-a027-075a2ad1e350.png",
     "actual_size": [
       1536,
       1024
     ],
-    "image_sha256": "74676a584d037bdaf35053d738d5bbf1ca8bdbde986c7405f8d019b20a2b7602",
+    "image_sha256": "8717f064e5ac3fe483ef8b5dbcd774891db7eb010fde074b65ef37819629a79f",
     "chain": [
       {
         "operation": "generate",
@@ -236,7 +439,8 @@
           "passed": true,
           "template_bytes_verified": true,
           "scope": "Exact prompt-text length only; source/visual review and user approval are separate."
-        }
+        },
+        "status": "superseded_history"
       },
       {
         "operation": "edit",
@@ -247,91 +451,268 @@
         "series": "pdf-reread-20260920",
         "input": "overview-reread-v1.png",
         "prompt_scope": "localized_correction",
-        "prompt_sha256": "58a3a4674ea93797a6a48f4934c14421807b08c7e5a09771ebf4c4ffad5050b1"
+        "prompt_sha256": "58a3a4674ea93797a6a48f4934c14421807b08c7e5a09771ebf4c4ffad5050b1",
+        "status": "superseded_history"
       },
       {
         "operation": "edit",
         "prompt": "reread-correction-v3.md",
-        "output": "overview.png",
+        "output": "overview-before-scene.png",
         "artifact_id": "exec-b83c7821-0cc1-4db7-b9b8-4f5bb1f45c8c.png",
         "sha256": "74676a584d037bdaf35053d738d5bbf1ca8bdbde986c7405f8d019b20a2b7602",
         "series": "pdf-reread-20260920",
         "input": "overview-reread-v2.png",
         "prompt_scope": "localized_correction",
-        "prompt_sha256": "27f413d22553aa1b0db87129b7abaf9c66c9172cc9e8dced153d8d732a2c71d2"
+        "prompt_sha256": "27f413d22553aa1b0db87129b7abaf9c66c9172cc9e8dced153d8d732a2c71d2",
+        "status": "superseded_history"
+      },
+      {
+        "operation": "generate",
+        "prompt": "scene-prompt.md",
+        "output": "overview-scene-v1.png",
+        "artifact_id": null,
+        "sha256": "09ed097da0375e0c465a893d2879c80cedda12ec6e501b03bb8a4fc2d23631cf",
+        "prompt_sha256": "3e78016f75b0f527898e59c453bcbf4224fbc58d0e67082f876973893510cf33",
+        "series": "object-scene-20260921",
+        "prompt_scope": "full_redesign",
+        "status": "superseded_history",
+        "artifact_provenance": "Built-in ImageGen returned original PNG data URL only; default file was empty, original bytes decoded losslessly.",
+        "prompt_detail": {
+          "profile": "sivia-overview-v1",
+          "binding": {
+            "purpose": "Full English overview designs and substantial redesigns; not an arbitrary universal minimum for small unrelated edits.",
+            "source_repository": "https://github.com/exsinger-hub/Sivia",
+            "source_version": "1.1.0+codex.20260909060506",
+            "template_path": "skills/design-scientific-figure/references/templates/overview-template.txt",
+            "template_sha256": "cd73e60b51a15e005defd61190705846cb3f50a6582a33119be07b2fe78921f9",
+            "minimum_non_whitespace_characters": 15356,
+            "maximum_total_characters": 32000,
+            "metric": "Unicode code points excluding whitespace; count exact submitted prompt, one image call at a time",
+            "count_verified_on": "2026-09-20",
+            "limitation": "Length does not prove useful detail, source fidelity, image quality or user acceptance. Do not pad or concatenate prior calls to pass."
+          },
+          "total_characters": 27989,
+          "non_whitespace_characters": 23647,
+          "submitted_utf8_sha256": "3e78016f75b0f527898e59c453bcbf4224fbc58d0e67082f876973893510cf33",
+          "length_pass": true,
+          "tool_limit_pass": true,
+          "passed": true,
+          "template_bytes_verified": true,
+          "scope": "Exact prompt-text length only; source/visual review and user approval are separate."
+        }
+      },
+      {
+        "operation": "edit",
+        "prompt": "scene-correction-v2.md",
+        "output": "overview-scene-v2.png",
+        "artifact_id": null,
+        "sha256": "2ebe7b049d88e7363ee7495be21654de286c6cbcdcac71dc0b5850bf541ec75d",
+        "prompt_sha256": "863f349f318cf5d1d505ce563e1b80f66582fc6925cc3170d98548a9d38c8366",
+        "series": "object-scene-20260921",
+        "prompt_scope": "localized_correction",
+        "status": "superseded_history",
+        "input": "overview-scene-v1.png",
+        "artifact_provenance": "Original PNG data URL returned by built-in ImageGen, decoded losslessly."
+      },
+      {
+        "operation": "edit",
+        "prompt": "scene-correction-v3.md",
+        "output": "overview-scene-v3.png",
+        "artifact_id": null,
+        "sha256": "036a729b7c66f0ade0adfbf50c7c4eab46afd2d1752847230ed77ef2770f17e5",
+        "prompt_sha256": "2976b8b43358e89a8daa073392aa751c1c70bab8ead6c5f97ecbfd1bcf476213",
+        "series": "object-scene-20260921",
+        "prompt_scope": "localized_correction",
+        "status": "superseded_history",
+        "input": "overview-scene-v2.png",
+        "artifact_provenance": "Original PNG data URL returned by built-in ImageGen, decoded losslessly."
+      },
+      {
+        "operation": "edit",
+        "prompt": "scene-publish-correction-v1.md",
+        "output": "overview-scene-v4.png",
+        "artifact_id": "exec-f5cad3e4-6221-46cd-87a9-3d8f05403521.png",
+        "sha256": "3e919118a3bb299f59b8142a85d5f2fe83ad5cda6dfdfd02b8c89cd1aa4cc25f",
+        "prompt_sha256": "feb22f04c44b08bb256098c194ac00314c70b265cf935a022ff5937cc2c2e651",
+        "series": "object-scene-20260921",
+        "prompt_scope": "localized_correction",
+        "status": "superseded_history",
+        "input": "overview-scene-v3.png"
+      },
+      {
+        "operation": "edit",
+        "prompt": "scene-publish-correction-v2.md",
+        "output": "overview.png",
+        "artifact_id": "exec-95f4789b-3a1c-46b9-a027-075a2ad1e350.png",
+        "sha256": "8717f064e5ac3fe483ef8b5dbcd774891db7eb010fde074b65ef37819629a79f",
+        "prompt_sha256": "8afaf8bc74095b5ac699009aba0fc1773e43ae8905b75f40759136d0bcfa2742",
+        "series": "object-scene-20260921",
+        "prompt_scope": "localized_correction",
+        "status": "selected_showcase",
+        "input": "overview-scene-v4.png"
       }
     ],
     "exact_prompt_record": "full-prompt.md",
     "empirical_rerun": false,
     "native_editability": false,
     "prompt_detail_profile": "sivia-overview-v1",
-    "selected_series": "pdf-reread-20260920"
+    "selected_series": "object-scene-20260921"
   },
   "review": {
     "status": "passed",
+    "review_type": "Actual final-raster visual self-review against the scene-trial source evidence; not an independent review.",
     "checks": [
-      "Stadium removed; the distribution/capacity relation and state equations are primary.",
-      "Attendance remains expectation of min(d,K), not min(E[d],K).",
-      "Price response is explicitly assumed; no estimated elasticity is claimed.",
-      "Revenue adds ticket and other revenue; borrowing/valuation arrows into profit were removed.",
-      "Profit, interest and cash/debt stock identities are visible and source-grounded.",
-      "ΔE/ΔP and leverage use named ports; a leftward next-iteration arrow replaces the erroneous two-ended return."
+      "The stadium makes capacity censoring concrete; expected attendance remains E[min(Dt,Ct)|xt].",
+      "Ticket subtotal and its ledger entry share teal port marks; the obsolete cable through the ledger heading has been removed.",
+      "Ticket plus other revenue enters operating profit. Borrowing and repayment update cash/debt, not revenue or expenses.",
+      "Three valuation lenses remain distinct with aggregation unspecified; cash and debt constraints bound the leverage target.",
+      "Roster increments, no-move zeros and new observations remain on the forward decision timeline."
     ],
     "notes": [
-      "§7.2 states weighted aggregation, while later scenarios use revenue multiples. This contradiction is explicitly retained in the figure; no weights invented.",
-      "Profit is used in the source's simplified cash book, not relabelled as a fully specified cash-flow model.",
-      "Some connections are communicated by repeated variable names / ports, not continuous cables. This is a conceptual overview, not an executable wiring specification.",
-      "Typographic/density refinement can be judged by the user; no production-quality or user-acceptance seal is claimed."
+      "Conceptual scene, not a rerun of the paper’s empirical results.",
+      "Source inconsistencies remain in source_notes; no silent numeric reconstruction.",
+      "Publication-size typography and physical print proof remain author checks."
     ],
     "physical_print_proof": "not performed",
     "independent_review": "not performed",
     "user_approval": "approved",
-    "review_type": "Actual-image visual self-review with source notes; not independent review or physical print proof.",
     "approval_evidence": {
       "status": "approved",
-      "date": "2026-09-20",
-      "user_message": "同意,请推送, 并且为我写抖音和小红书的推送文稿",
-      "scope": "Five selected PDF-reread images, project showcase and case-specific knowledge-base guidance; not independent scientific validation."
+      "date": "2026-09-21",
+      "user_message": "1234修好后推送",
+      "scope": "Selected figures 01–04 with requested local corrections and bilingual showcase only; not knowledge-base admission or independent scientific validation."
     },
     "publication_gate": "approved_for_project_showcase",
-    "issues": [
-      {
-        "severity": "remaining_check",
-        "detail": "Physical print proof and independent review not performed; review small labels at final manuscript size."
-      }
-    ]
+    "scientific_publication_gate": "publication_size_review_required",
+    "knowledge_base_admission": false
   },
   "source_notes": [
-    "§7.2 states weighted aggregation, while later scenarios use revenue multiples. This contradiction is explicitly retained in the figure; no weights invented.",
-    "Profit is used in the source's simplified cash book, not relabelled as a fully specified cash-flow model.",
-    "Some connections are communicated by repeated variable names / ports, not continuous cables. This is a conceptual overview, not an executable wiring specification.",
-    "Typographic/density refinement can be judged by the user; no production-quality or user-acceptance seal is claimed."
+    {
+      "topic": "Valuation aggregation and implementation status",
+      "locators": [
+        "p. 1 summary",
+        "p. 14 section 7.2",
+        "p. 19 equation 40",
+        "p. 21 equation 44",
+        "pp. 23-24 section 11.2"
+      ],
+      "finding": "Weighted aggregation of revenue multiple, EBITDA and DCF is claimed without weights; later operative equations use revenue multiples, while the limitations defer EBITDA/DCF calibration.",
+      "design_resolution": "Show separate lenses and a symbolic V marked basis-dependent with Aggregation unspecified. Do not invent weights, claim a fully calibrated blend, or assert that aggregation is forbidden."
+    },
+    {
+      "topic": "Pricing rule versus elasticity optimization",
+      "locators": [
+        "p. 12 equations 19-20 and intervening prose",
+        "p. 23 section 11.2"
+      ],
+      "finding": "The page displays an occupancy multiplier while adjacent prose says optimal price is calculated under elasticity scenarios rather than fixed multipliers. Historical price-sales data are missing, and later limitations say price is not fully incorporated.",
+      "design_resolution": "Show the displayed occupancy rule and an assumed-elasticity alternative association. No fitted price-to-demand feedback and no single optimized-price claim."
+    },
+    {
+      "topic": "Injury model status",
+      "locators": [
+        "p. 10 equation 12",
+        "p. 17 section 8.4",
+        "pp. 19-20 equations/scenario",
+        "p. 24 section 11.2"
+      ],
+      "finding": "A fixed strength displacement is used in scenarios; section 8.4 claims a probabilistic injury process, while limitations call this future work.",
+      "design_resolution": "Only an exogenous effective-strength decrement is illustrated."
+    },
+    {
+      "topic": "EBI, EBIT and EBITDA nomenclature",
+      "locators": [
+        "p. 5 notation",
+        "pp. 13-14 equations 23-27",
+        "p. 22 feasibility prose"
+      ],
+      "finding": "The ledger's EBI=T-S^p-eta*T is variously described as operating profit, EBIT and EBITDA; a full accounting reconciliation is absent.",
+      "design_resolution": "Label EBI Operating proxy, with EBITDA proxy on its valuation lens. Interest is subtracted after EBI; no tax/depreciation/amortization invented."
+    },
+    {
+      "topic": "Cash-limited debt target versus equality constraint",
+      "locators": [
+        "p. 15 equation 29 and target/achieved values",
+        "p. 16 equation 34"
+      ],
+      "finding": "Repayment limited by the cash floor need not attain target debt, yet later optimization writes achieved leverage equal to the chosen target. Reported target and achieved leverage also differ.",
+      "design_resolution": "Separate Target L* from L_end=D_end/V; never print universal D_end=D*."
+    },
+    {
+      "topic": "Repayment formula domain",
+      "locators": [
+        "p. 15 equation 29"
+      ],
+      "finding": "The printed minimum uses Cash_begin+pi-Cash_min without explicitly clamping this cash-surplus term to nonnegative values; it could be negative outside a feasible cash domain.",
+      "design_resolution": "Show semantic cash-limited nonnegative borrowing/repayment postings and feasibility stops. Do not reproduce the under-specified full formula as a universally valid executable rule or silently claim a repaired model."
+    },
+    {
+      "topic": "Action notation and numerical units",
+      "locators": [
+        "p. 15 equation 30",
+        "pp. 17-18 section 8.4 and Table 3"
+      ],
+      "finding": "Salary increment is Delta C in one section and Delta S later. Text beneath Table 3 gives Delta S in wins and Delta E in millions, duplicates an increment label, and disagrees with table salary increments.",
+      "design_resolution": "Use symbolic Delta E, Delta P and Delta S for strength, popularity and salary; copy no player-action numbers. C_t is reserved for arena capacity."
+    },
+    {
+      "topic": "Risk objective definition",
+      "locators": [
+        "p. 16 equations 31-32",
+        "pp. 21-23 quantile discussion and Table 4"
+      ],
+      "finding": "Profit risk is Q50-Q10, but the displayed value-risk term is Q50(V) rather than a corresponding downside spread; later prose uses downside-span language.",
+      "design_resolution": "Summarize selection as Value + profit - risk without silently repairing the detailed formula or showing fabricated risk quantiles."
+    },
+    {
+      "topic": "Elo initialization convention",
+      "locators": [
+        "p. 9 section 5.1",
+        "p. 10 section 5.2"
+      ],
+      "finding": "Historical seasons are described as resetting to 1500, whereas schedule prediction uses the previous season's final Elo. The boundary between the two workflows is not fully formalized.",
+      "design_resolution": "Use generic available pre-game Elo, not a specific initialization trajectory."
+    },
+    {
+      "topic": "Capacity flag versus exact cap",
+      "locators": [
+        "p. 8 equation 6",
+        "p. 11 equations 13-15"
+      ],
+      "finding": "Near-full occupancy >=0.97 is the operational censor flag, while the mathematical observation model clips at exact capacity. Near-full records need not literally equal C_t.",
+      "design_resolution": "Distinguish the conceptual exact-cap geometry from the small historical near-capacity fitting cue. No 97% marker is printed as though it were a physical seat limit."
+    },
+    {
+      "topic": "Heavy-action reported valuation",
+      "locators": [
+        "p. 14 section 7.2",
+        "p. 18 Table 3"
+      ],
+      "finding": "The aggressive transaction discussion reports a revenue-based value near 338.46m, while Table 3's named TRADE_SUPERSTAR value is 368.95m, without a clear reconciliation of action identities.",
+      "design_resolution": "Omit numerical action rankings and the baseline value from the conceptual figure."
+    },
+    {
+      "topic": "Document length and AI appendix",
+      "locators": [
+        "Physical pp. 1-25 running headers",
+        "Physical pp. 26-32 AI Using Report"
+      ],
+      "finding": "The PDF has 32 physical pages despite a main-paper header of 25. Appendix dialogue suggests debt/equity, whereas the main model defines debt/valuation.",
+      "design_resolution": "Cite physical pages and follow the main paper's L=D/V. Appendix dialogue supplies no figure claims."
+    }
   ],
-  "style_adaptation": {
-    "source": "Sivia",
-    "version": "1.1.0+codex.20260909060506",
-    "inspected_cases": [
-      "trace",
-      "reasoning-between-words",
-      "eventbridge-rl"
-    ],
-    "borrowed": "Persistent object identity, concrete intermediate representations, selective before/after change and asymmetric mechanism emphasis.",
-    "excluded": "Source-specific science, results, whole panel layouts, generic metric chips and weak connector endpoints.",
-    "public_record": "../../../src/modelatlas/knowledge/visual-guidance.json"
-  },
   "design_revision": {
-    "date": "2026-09-20",
-    "reason": "PDF-reread redraw approved by the user.",
+    "date": "2026-09-21",
     "status": "user_approved_showcase",
-    "latest_round": 8,
-    "old_image": "overview-v5.png",
-    "new_image": "overview.png",
-    "superseded_rounds": [
-      1,
-      2,
-      3,
-      4,
-      5
-    ]
+    "correction_status": "selected_scene_corrected",
+    "selection_number": 3,
+    "latest_round": 13,
+    "summary": "Stadium capacity explains censoring; tickets and a ledger connect revenue, profit, cash and debt above a rolling decision timeline.",
+    "previous_record": "pre-scene-record.json"
+  },
+  "relationship_representation": "Semantic model relations; not every relation is a continuous arrow. Repeated labels, equations and shared table alignment also encode correspondence.",
+  "style_adaptation": {
+    "approach": "Concrete scientific objects with integrated transformations; selective shared rules instead of repeated equal cards.",
+    "auxiliary": "Previously inspected Sivia visual grammar and the accepted 2025 E scene inform composition only. Scientific claims come solely from the pinned source manuscript."
   }
 }

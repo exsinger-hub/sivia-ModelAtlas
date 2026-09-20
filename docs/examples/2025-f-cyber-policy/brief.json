@@ -15,75 +15,199 @@
     "pdf_pages": 33,
     "intake_format": "PDF",
     "reread": {
-      "date": "2026-09-20",
-      "text_read": "1–25; AI appendix excluded",
+      "date": "2026-09-21",
+      "text_read": "All physical PDF pages 1–33; AI-use appendices, if present, are provenance rather than model authority.",
       "physical_pages_visually_inspected": [
+        4,
         10,
+        14,
         15,
         16,
+        17,
         18,
-        19
+        19,
+        21
       ],
-      "scope": "Model-bearing manuscript; AI-use appendices are not model authority."
+      "reader": "Authorized source-reading agent; main agent cross-checked selected model pages",
+      "stage": "Source reading completed for the scene trial before this local-correction and publication pass.",
+      "scope_record": {
+        "entire_extracted_manuscript_read": true,
+        "physical_pdf_pages": "1-33 inclusive",
+        "untruncated_read_chunks": [
+          "1-6",
+          "7-12",
+          "13-18",
+          "19-25",
+          "26-29",
+          "30-33"
+        ],
+        "main_manuscript": "1-25 including summary, contents, assumptions, all model sections, limitations, references, and memorandum",
+        "appendix": "26-33, Report on Use of AI, read completely but excluded as authority for implemented scientific methods",
+        "rendering_reason": "Extracted text omitted rasterized equations; original pages 15, 18, and 19 were rendered and viewed to recover them. Figures/tables and source contradictions were also visually inspected.",
+        "prior_prompt_reused": false,
+        "method": "New composition and full English prompt authored after fresh paper reading. Existing brief was a guide only."
+      }
     }
   },
-  "claim": "Descriptive country profiles, a symbolic policy-adoption contrast and demographic association analysis are shown as distinct evidence structures. No policy-effect estimates are reproduced.",
+  "claim": "A selected policy topic determines the paper's country comparison; persistent country-year records expose treated and control before/after changes, and DID subtracts the control change from the treated change.",
   "manuscript_evidence": [
     {
-      "locator": "pp.6–12, §4",
-      "supports": "Four descriptive indicators; K-means uses NCSI and Legal Measures only"
+      "locator": "Physical p.13, section 5.1.1; p.14 Figure 8",
+      "supports": "LDA after text cleaning; six policy themes; criminal-legislation keywords cybercrime/warrant/penalty. Other displayed keyword families are source-listed."
     },
     {
-      "locator": "pp.13–17, §5",
-      "supports": "Six LDA themes, adoption timing, comparison groups and DID"
+      "locator": "Physical p.14, section 5.1.2 Data Preparation",
+      "supports": "Each theme uses 1-2 treated countries and an equal number of controls with similar internet penetration; no explicit one-to-one matching procedure."
     },
     {
-      "locator": "pp.18–20, §6",
-      "supports": "MIC and factor/regression association analysis"
+      "locator": "Physical p.15, section 5.2 item 1 and Table 2",
+      "supports": "Criminal-legislation treated group Australia/Ireland and control group UK/New Zealand; before/after summaries and difference-in-differences structure."
     },
     {
-      "locator": "pp.21–23, §§7,9",
-      "supports": "Sensitivity, underreporting and comparability limitations"
+      "locator": "Physical p.5 Table 1 and p.14 Variable Definition",
+      "supports": "Country i, year t, outcome Y_it as number of cybercrimes. Prompt uses recorded cases to respect source coverage."
+    },
+    {
+      "locator": "Physical pp.14-15, Variable Definition and Model Specification",
+      "supports": "GDP, internet penetration, mobile broadband, tertiary education, legal measures, capacity development, cooperation; min-max normalized controls and adjusted DID formula."
+    },
+    {
+      "locator": "Physical pp.22-23, sections 9.2-9.3",
+      "supports": "Publicly disclosed VCDB breaches may undercount; comparison groups may differ on unobserved factors; comparability remains a limitation."
+    },
+    {
+      "locator": "Physical pp.9-12, 18-20",
+      "supports": "Clustering and demographic association methods are distinct analyses; they do not provide treatment assignment for the selected contrast."
     }
   ],
   "model_relationships": [
     {
-      "source": "NCSI and Legal Measures",
-      "target": "Descriptive clusters",
-      "meaning": "Only these two indicators enter K-means; not DID treatment assignment",
-      "locator": "pp.6–12"
+      "id": "E01",
+      "source": "Highlighted cybercrime/warrant/penalty spans",
+      "target": "Enlarged keyword strip",
+      "meaning": "Same-content magnification",
+      "locator": "p.13 section 5.1.1; visual treatment conceptual"
     },
     {
-      "source": "Adoption timing and comparable countries",
-      "target": "DID contrast",
-      "meaning": "Treated change minus control change; no disputed effect estimates reproduced",
-      "locator": "pp.13–17"
+      "id": "E02",
+      "source": "Prepared policy keyword evidence",
+      "target": "Criminal-legislation theme",
+      "meaning": "LDA topic organization, not efficacy",
+      "locator": "pp.13-14 section 5.1.1"
     },
     {
-      "source": "Socioeconomic variables",
-      "target": "MIC and factor/regression analyses",
-      "meaning": "Parallel association analyses; factor subset excludes GDP",
-      "locator": "pp.18–20"
+      "id": "E03",
+      "source": "Selected criminal-legislation theme",
+      "target": "Study groups: AU/Ireland and UK/NZ",
+      "meaning": "Choose the source-reported comparison for this theme",
+      "locator": "p.15 section 5.2 item 1"
+    },
+    {
+      "id": "E04",
+      "source": "Country record before",
+      "target": "Same country record after",
+      "meaning": "Identity continuity across relative time, not causal effect",
+      "locator": "p.14 Y_it definition and p.15 before/after comparison"
+    },
+    {
+      "id": "E05",
+      "source": "Australia and Ireland before Y",
+      "target": "Treated-before group operand",
+      "meaning": "Conceptual group aggregation",
+      "locator": "p.15 Table 2 group comparison; no empirical averaging rerun"
+    },
+    {
+      "id": "E06",
+      "source": "Australia and Ireland after Y",
+      "target": "Treated-after group operand",
+      "meaning": "Conceptual group aggregation",
+      "locator": "p.15 Table 2"
+    },
+    {
+      "id": "E07",
+      "source": "UK and New Zealand before Y",
+      "target": "Control-before group operand",
+      "meaning": "Conceptual group aggregation",
+      "locator": "p.15 Table 2"
+    },
+    {
+      "id": "E08",
+      "source": "UK and New Zealand after Y",
+      "target": "Control-after group operand",
+      "meaning": "Conceptual group aggregation",
+      "locator": "p.15 Table 2"
+    },
+    {
+      "id": "E09",
+      "source": "Treated post and pre operands",
+      "target": "Delta T",
+      "meaning": "Post minus pre",
+      "locator": "pp.14-15 DID model and Table 2"
+    },
+    {
+      "id": "E10",
+      "source": "Control post and pre operands",
+      "target": "Delta C",
+      "meaning": "Post minus pre",
+      "locator": "pp.14-15 DID model and Table 2"
+    },
+    {
+      "id": "E11",
+      "source": "Delta T",
+      "target": "First operand of final DID contrast",
+      "meaning": "Treated change",
+      "locator": "p.15 DID model and Table 2"
+    },
+    {
+      "id": "E12",
+      "source": "Delta C",
+      "target": "Subtracted operand of final DID contrast",
+      "meaning": "Control change is subtracted from treated change",
+      "locator": "p.15 DID model and Table 2"
+    },
+    {
+      "id": "E13",
+      "source": "Internet-access field",
+      "target": "Group-level comparability bracket",
+      "meaning": "Reported selection criterion, not exact balance proof",
+      "locator": "p.14 Data Preparation"
+    },
+    {
+      "id": "E14",
+      "source": "Seven listed control fields",
+      "target": "Covariate-adjustment annotation",
+      "meaning": "Adjusted-model context, not an extra additive term in the symbolic contrast",
+      "locator": "pp.14-15 controls and min-max normalization"
+    },
+    {
+      "id": "E15",
+      "source": "Policy timing marker",
+      "target": "Treated-group temporal boundary",
+      "meaning": "Relative adoption reference; controls share a comparison split without adoption badge",
+      "locator": "pp.13-15 policy-adoption timing discussion"
     }
   ],
   "references": [
     {
       "case_id": "f-cyber-policy-evidence-map",
-      "borrowed": "Paper-specific objects and relations checked against the model-bearing PDF pages. Persistent identities and selective change from previously inspected Sivia examples; source models only from this PDF. No layout copied wholesale.",
-      "not_borrowed": "Source pixels, numerical results, conflicting signs/formulas, awards, or a compulsory panel layout."
+      "type": "source-paper overview",
+      "source": "Physical PDF page 4, unnumbered Our Work diagram",
+      "actual_image_viewed_this_turn": true,
+      "borrowed": "Recognition of separate policy-text and country-evidence streams; the new mechanism is rebuilt around actual records and comparison operands.",
+      "not_borrowed": "Ring feedback appearance, central shield, padlock, three-task medallion, empirical results, tiny labels and generic method inventory."
     }
   ],
-  "caption": "Descriptive country profiles, a symbolic policy-adoption contrast and demographic association analysis are shown as distinct evidence structures. No policy-effect estimates are reproduced.",
-  "placement": "End of Introduction / Our Work, intended width 180 mm",
+  "caption": "Conceptual policy-evaluation mechanism for cybercrime criminal legislation. Paper-listed policy keywords identify a theme whose reported treated group (Australia and Ireland) and control group (UK and New Zealand) are followed before and after a relative adoption boundary. The register exposes the symbolic difference of within-group changes, with internet-penetration comparability and covariate adjustment shown as supporting study context. Records are schematic; no effect estimate or policy-efficacy conclusion is reproduced.",
+  "placement": "Focused overview of the policy-evaluation mechanism, suitable before section 5 model details; not an exhaustive summary of all KDMF components.",
   "generation": {
     "backend": "built-in image_gen.imagegen",
     "status": "generated",
-    "artifact_id": "exec-a2a57d60-fff0-4343-a3dd-19782ad85ebd.png",
+    "artifact_id": "exec-c323a461-029c-4015-b2b8-16f5e80f680d.png",
     "actual_size": [
       1536,
       1024
     ],
-    "image_sha256": "5fd6afc42576971f6f05afb7230fcad53e7b7ea270e6666d213707cfe26f5c24",
+    "image_sha256": "0e9874169cfacb8b0bd09859bf2103921bc912c8b47df766ef782a49c55c5178",
     "chain": [
       {
         "operation": "generate",
@@ -228,87 +352,196 @@
           "passed": true,
           "template_bytes_verified": true,
           "scope": "Exact prompt-text length only; source/visual review and user approval are separate."
-        }
+        },
+        "status": "superseded_history"
       },
       {
         "operation": "edit",
         "prompt": "reread-correction-v2.md",
-        "output": "overview.png",
+        "output": "overview-before-scene.png",
         "artifact_id": "exec-a2a57d60-fff0-4343-a3dd-19782ad85ebd.png",
         "sha256": "5fd6afc42576971f6f05afb7230fcad53e7b7ea270e6666d213707cfe26f5c24",
         "series": "pdf-reread-20260920",
         "input": "overview-reread-v1.png",
         "prompt_scope": "localized_correction",
-        "prompt_sha256": "9726821efeedc4ebf580409d8b6c1ed9333493e1bda8e7498ffd9b62f680432c"
+        "prompt_sha256": "9726821efeedc4ebf580409d8b6c1ed9333493e1bda8e7498ffd9b62f680432c",
+        "status": "superseded_history"
+      },
+      {
+        "operation": "generate",
+        "prompt": "scene-prompt.md",
+        "output": "overview-scene-v1.png",
+        "artifact_id": "exec-1658bcb5-6431-4164-a516-b5d0f77d107b.png",
+        "sha256": "a0ca3050b6ac5023cb8905c950736c1b8d2c20ff86b4174cf8bc8ccdb1ac18aa",
+        "prompt_sha256": "7f263df5619e6ddb2404b7df41a9d6d2c7cd4933936d9d2c0680821e8a8c8a63",
+        "series": "object-scene-20260921",
+        "prompt_scope": "full_redesign",
+        "status": "superseded_history",
+        "prompt_detail": {
+          "profile": "sivia-overview-v1",
+          "binding": {
+            "purpose": "Full English overview designs and substantial redesigns; not an arbitrary universal minimum for small unrelated edits.",
+            "source_repository": "https://github.com/exsinger-hub/Sivia",
+            "source_version": "1.1.0+codex.20260909060506",
+            "template_path": "skills/design-scientific-figure/references/templates/overview-template.txt",
+            "template_sha256": "cd73e60b51a15e005defd61190705846cb3f50a6582a33119be07b2fe78921f9",
+            "minimum_non_whitespace_characters": 15356,
+            "maximum_total_characters": 32000,
+            "metric": "Unicode code points excluding whitespace; count exact submitted prompt, one image call at a time",
+            "count_verified_on": "2026-09-20",
+            "limitation": "Length does not prove useful detail, source fidelity, image quality or user acceptance. Do not pad or concatenate prior calls to pass."
+          },
+          "total_characters": 27756,
+          "non_whitespace_characters": 23549,
+          "submitted_utf8_sha256": "7f263df5619e6ddb2404b7df41a9d6d2c7cd4933936d9d2c0680821e8a8c8a63",
+          "length_pass": true,
+          "tool_limit_pass": true,
+          "passed": true,
+          "template_bytes_verified": true,
+          "scope": "Exact prompt-text length only; source/visual review and user approval are separate."
+        }
+      },
+      {
+        "operation": "edit",
+        "prompt": "scene-correction-v2.md",
+        "output": "overview-scene-v2.png",
+        "artifact_id": null,
+        "sha256": "9553a85a8e2e9324ef15732fb98e34796ef9508d2a381eb803630cfa3e4d34be",
+        "prompt_sha256": "a6652dce424e875616eed91cc4621fb222bebfb2aac4d422d8de6906c5e536b9",
+        "series": "object-scene-20260921",
+        "prompt_scope": "localized_correction",
+        "status": "superseded_history",
+        "input": "overview-scene-v1.png",
+        "artifact_provenance": "Original PNG data URL returned by built-in ImageGen; no artifact id/output path returned. Decoded losslessly to local PNG."
+      },
+      {
+        "operation": "edit",
+        "prompt": "scene-correction-v3.md",
+        "output": "overview-scene-v3.png",
+        "artifact_id": null,
+        "sha256": "d657fe775a5bc7dbbb80837de057556f88e121c24b7ec207c0c7150a242f525c",
+        "prompt_sha256": "d9ab853ab78b6933296953fa5606f8c83de81f7816f65c6ac73b9cf5235e3302",
+        "series": "object-scene-20260921",
+        "prompt_scope": "localized_correction",
+        "status": "superseded_history",
+        "input": "overview-scene-v2.png",
+        "artifact_provenance": "Original PNG data URL returned by built-in ImageGen, decoded losslessly."
+      },
+      {
+        "operation": "edit",
+        "prompt": "scene-publish-correction-v1.md",
+        "output": "overview.png",
+        "artifact_id": "exec-c323a461-029c-4015-b2b8-16f5e80f680d.png",
+        "sha256": "0e9874169cfacb8b0bd09859bf2103921bc912c8b47df766ef782a49c55c5178",
+        "prompt_sha256": "b80769b87f9bd7b55ad98250f18e9cefcd3555d653f71e273de49433b54aa3e6",
+        "series": "object-scene-20260921",
+        "prompt_scope": "localized_correction",
+        "status": "selected_showcase",
+        "input": "overview-scene-v3.png"
       }
     ],
     "exact_prompt_record": "full-prompt.md",
     "empirical_rerun": false,
     "native_editability": false,
     "prompt_detail_profile": "sivia-overview-v1",
-    "selected_series": "pdf-reread-20260920"
+    "selected_series": "object-scene-20260921"
   },
   "review": {
     "status": "passed",
+    "review_type": "Actual final-raster visual self-review against the scene-trial source evidence; not an independent review.",
     "checks": [
-      "Only NCSI and Legal Measures are marked clustering inputs; no cluster-to-treatment arrow remains.",
-      "T/C identities persist before and after; displayed contrast is ΔT−ΔC.",
-      "Policy themes are neutral, not color-coded efficacy rankings.",
-      "MIC no longer feeds factor analysis serially; selected factors precede regression."
+      "Eight country-year records use shared table rules rather than separate floating cards.",
+      "Australia/Ireland and UK/New Zealand explicitly identify the treated and control group means.",
+      "Each within-group change is post minus pre, and DID is treated change minus control change.",
+      "Covariates share one folio and one supporting leader; similar internet penetration remains a selection criterion.",
+      "The scene reports the paper’s study groups and symbolic records, not current national law or an estimated effect."
     ],
     "notes": [
-      "The source's case-count coefficient signs and efficacy interpretations conflict; results are omitted, not corrected.",
-      "Country dots and MIC points are explicitly schematic, not reproduced data.",
-      "Factor analysis and DID are design summaries, not claims of verified causality."
+      "Conceptual scene, not a rerun of the paper’s empirical results.",
+      "Source inconsistencies remain in source_notes; no silent numeric reconstruction.",
+      "Publication-size typography and physical print proof remain author checks."
     ],
     "physical_print_proof": "not performed",
     "independent_review": "not performed",
     "user_approval": "approved",
-    "review_type": "Actual-image visual self-review with source notes; not independent review or physical print proof.",
     "approval_evidence": {
       "status": "approved",
-      "date": "2026-09-20",
-      "user_message": "同意,请推送, 并且为我写抖音和小红书的推送文稿",
-      "scope": "Five selected PDF-reread images, project showcase and case-specific knowledge-base guidance; not independent scientific validation."
+      "date": "2026-09-21",
+      "user_message": "1234修好后推送",
+      "scope": "Selected figures 01–04 with requested local corrections and bilingual showcase only; not knowledge-base admission or independent scientific validation."
     },
     "publication_gate": "approved_for_project_showcase",
-    "issues": [
-      {
-        "severity": "remaining_check",
-        "detail": "Physical print proof and independent review not performed; review small labels at final manuscript size."
-      }
-    ]
+    "scientific_publication_gate": "publication_size_review_required",
+    "knowledge_base_admission": false
   },
   "source_notes": [
-    "The source's case-count coefficient signs and efficacy interpretations conflict; results are omitted, not corrected.",
-    "Country dots and MIC points are explicitly schematic, not reproduced data.",
-    "Factor analysis and DID are design summaries, not claims of verified causality."
+    {
+      "id": "C01",
+      "locator": "pp.5, 14-17",
+      "issue": "Y is defined as number of cybercrimes; surrounding descriptions repeatedly call the outcome a rate, and result tables call it normalized number of cases.",
+      "handling": "Use Recorded cases and symbolic operands; no rate denominator or empirical scale."
+    },
+    {
+      "id": "C02",
+      "locator": "p.16 Tables 3-4; p.17 summary",
+      "issue": "Positive treated*time coefficients on normalized case counts are interpreted as reducing cybercrime; the source supplies no outcome recoding that resolves that interpretation.",
+      "handling": "Omit effects, directions, benefit colors and policy efficacy rankings; do not silently correct the signs."
+    },
+    {
+      "id": "C03",
+      "locator": "p.17 cross-border prose and Table 5",
+      "issue": "Narrative interaction p=0.047 conflicts with table p=0.01. Table 5 repeats most Table 4 values; treated coefficient differs while its t and interval are reused.",
+      "handling": "Record conflict, omit the numerical result and related efficacy claim."
+    },
+    {
+      "id": "C04",
+      "locator": "p.21 sensitivity text versus pp.16-17 policy themes",
+      "issue": "Fourth group is named Network Operators but baseline beta=0.286 corresponds to Critical Infrastructure; Network Operators earlier uses 0.310. Reported sensitivity p near 0.229 is also inconsistent with the operator table.",
+      "handling": "Do not use sensitivity to claim stable identification or scientific approval."
+    },
+    {
+      "id": "C05",
+      "locator": "p.9 K-selection prose and p.10 Figure 6",
+      "issue": "Prose says K=2 has highest silhouette score; Figure 6 shows 0.41 at K=2, 0.42 at K=3, and 0.43 at K=4. Source nevertheless chooses K=3.",
+      "handling": "Clustering omitted from focused mechanism; no silhouette justification or cluster-to-treatment edge."
+    },
+    {
+      "id": "C06",
+      "locator": "p.14 variable definition and p.15 displayed DID equation",
+      "issue": "treated_it is described as implementation status in a country-year, while time_it denotes post period and the model includes their interaction; distinction between fixed group membership and time-varying exposure is ambiguous.",
+      "handling": "Use source-reported Treated in study/Control in study identities plus Before/After and symbolic contrast. No binary design matrix or claim to reproduce fitted coding."
+    },
+    {
+      "id": "C07",
+      "locator": "p.7 CEI definition and interpretation",
+      "issue": "CEI is transformed using (1-original CEI)*100 so higher is lower exposure, but the prose later describes effective strategies resulting in low CEI scores.",
+      "handling": "CEI is outside the selected policy scene; no CEI values or directional interpretation drawn."
+    },
+    {
+      "id": "C08",
+      "locator": "p.1 summary, p.22 section 9.1, p.25 memo",
+      "issue": "Summary and memo describe three submodels, while strengths describe four submodels.",
+      "handling": "Do not force an exhaustive numbered model count or equal modules."
+    },
+    {
+      "id": "C09",
+      "locator": "p.19 versus p.6",
+      "issue": "NSCI is used for number of cybercrime incidents on p.19, close to NCSI used for preparedness; labels risk conflation.",
+      "handling": "Use unambiguous Y and Recorded cases; the separate factor-regression branch is omitted."
+    }
   ],
-  "style_adaptation": {
-    "source": "Sivia",
-    "version": "1.1.0+codex.20260909060506",
-    "inspected_cases": [
-      "trace",
-      "reasoning-between-words",
-      "eventbridge-rl"
-    ],
-    "borrowed": "Persistent object identity, concrete intermediate representations, selective before/after change and asymmetric mechanism emphasis.",
-    "excluded": "Source-specific science, results, whole panel layouts, generic metric chips and weak connector endpoints.",
-    "public_record": "../../../src/modelatlas/knowledge/visual-guidance.json"
-  },
   "design_revision": {
-    "date": "2026-09-20",
-    "reason": "PDF-reread redraw approved by the user.",
+    "date": "2026-09-21",
     "status": "user_approved_showcase",
-    "latest_round": 7,
-    "old_image": "overview-v5.png",
-    "new_image": "overview.png",
-    "superseded_rounds": [
-      1,
-      2,
-      3,
-      4,
-      5
-    ]
+    "correction_status": "selected_scene_corrected",
+    "selection_number": 4,
+    "latest_round": 11,
+    "summary": "Policy text leads to country-year records and the treated/control changes that form a difference-in-differences contrast.",
+    "previous_record": "pre-scene-record.json"
+  },
+  "relationship_representation": "Semantic model relations; not every relation is a continuous arrow. Repeated labels, equations and shared table alignment also encode correspondence.",
+  "style_adaptation": {
+    "approach": "Concrete scientific objects with integrated transformations; selective shared rules instead of repeated equal cards.",
+    "auxiliary": "Previously inspected Sivia visual grammar and the accepted 2025 E scene inform composition only. Scientific claims come solely from the pinned source manuscript."
   }
 }
