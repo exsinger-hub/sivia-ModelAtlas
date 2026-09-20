@@ -1,47 +1,70 @@
 {
   "passed": true,
   "files": {
+    "brief-before-scene.json": true,
     "brief.json": true,
+    "correction-prompt.md": true,
+    "full-prompt.md": true,
+    "overview-scene-v1.png": true,
+    "overview-scene-v2.png": true,
+    "overview-v1.png": true,
+    "overview-v2.png": true,
     "overview.png": true,
-    "prompt.md": true
+    "prompt.md": true,
+    "scene-correction-v2.md": true,
+    "scene-correction-v3.md": true,
+    "scene-prompt-check.json": true,
+    "scene-prompt-records.json": true,
+    "scene-prompt.md": true
+  },
+  "hashes": {
+    "brief-before-scene.json": "2a595c7dd2274610d039039a4ceb879f27fed686059014fe828176b855894684",
+    "brief.json": "8a57a4d9dca32ce6cb16bb7d3b7b9be869e2a92db0e4fc1b6b318ef6d9de562b",
+    "correction-prompt.md": "bf4bbe3e76b419f925bb61de725255e5cc11b2f629819b08985aa9983ffff449",
+    "full-prompt.md": "1bd077fff1b34673bf7d4f0d258e70485f288e1feb5127a77f6e184d1915c0c9",
+    "overview-scene-v1.png": "53f7288adb4e116473b7915bddfe44dcc84a92082727db51a1a71ae6b8e5ec4b",
+    "overview-scene-v2.png": "fd2bbf42136452a06d038212f4059617eed1a806e391017f78f2670e834070b5",
+    "overview-v1.png": "4c938767ad169d0faa2d66ee7085410eb56d2893cf38c9f924c09497c90ef49d",
+    "overview-v2.png": "f04628654320c5b584cf54581f00c41aa23134c6ac680afa8456f909d0c5bc57",
+    "overview.png": "5719c0af8dc5ba5b5fcb17f6fa053aa1e65d37a15fceebef10f37089ea12fa5f",
+    "prompt.md": "c57302572963acf6b7ade0f9c56e746800d406b72810ce3f3d4a643a4f5631a8",
+    "scene-correction-v2.md": "8fb48395233d372812567f3981db914af05fe427d96b5c7c115b183e205c230e",
+    "scene-correction-v3.md": "57db9aa5b6ca19f971fac1b558857f757704963daee2989fce83ba43b65d3dfb",
+    "scene-prompt-check.json": "0e99a1e367b30964988f4acf1f89ce5b7da0045bfee39091cc5112dc7a6c0f0c",
+    "scene-prompt-records.json": "af93a3205a7377583085c9e6d101a828f73cb27bb00579d2a68f4a1113d1a6a4",
+    "scene-prompt.md": "5328192b6da4a4928a4eb3878bb774ce91c8415033767e8cedee818506ae468e"
   },
   "visual_review": {
-    "status": "pending",
-    "review_type": "informed self_review; no independent reviewer",
-    "execution_test": "completed: real paper read, real image generated, corrected, inspected and paired",
-    "content_checks": "passed at overview scope by visual self-review",
+    "status": "needs_revision",
+    "method": "Author self-review of all three actual native raster outputs, compared with the read manuscript and rendered source pages; not an independent review.",
     "checks": [
-      "Opened final saved overview.png at native1536x1024; no obvious clipped labels or crossings through unrelated text.",
-      "FENCM, AENCM and AE-FW-NCM spellings correct and expansion order visible.",
-      "Forest loop: inorganic N->producers->consumers, producer/consumer returns->organic N, decomposition->inorganic N.",
-      "Agriculture: sowing enters crops, fertilizer enters soil, corrected harvest arrow originates at crop canopy rather than weeds.",
-      "Food web: crops->pests; weeds->pests; pests->predatory insects/bats/birds; predatory insects->bats/birds; bats/birds->snakes:9/9 visible.",
-      "Crops/weeds competition uses blunt-ended link, not a trophic arrow.",
-      "Main flow now a->b->c->d->e->f; scenarios are alternatives, not sequential steps.",
-      "Bat pollination appears in scenario group only; no spurious baseline pollination edge.",
-      "N turnover remains labelled stability proxy; no fabricated quantitative results.",
-      "Rhizobia/legumes and straw reuse are enclosed as literature-supported extensions."
+      "Main scientific objects replace repeated equal cards; central plants, roots, soil pools and organisms occupy the dominant region.",
+      "No fabricated numeric results, plot traces or claimed empirical rerun.",
+      "Main soil decomposition, mortality and mineralization directions corrected in the first edit.",
+      "Discussion-only options are disconnected from the Euler integration input.",
+      "No-chemical case retains living organisms; chemical mortality terms are turned off.",
+      "Main root uptake and top-level model progression inspected; labels are legible at native display size."
     ],
     "issues": [
-      {
-        "severity": "moderate",
-        "location": "small annotation typography and full-width print",
-        "detail": "Raster output has no verifiable native font metadata; label sizes vary. The180mm print-width and8pt minimum have not been demonstrated. Do not claim publication-ready approval."
-      },
-      {
-        "severity": "pending_gate",
-        "location": "independent and grayscale review",
-        "detail": "No independent unprimed title/L3-hidden grayscale reading or physical print proof performed; self-review is not independent acceptance."
-      }
+      "The long 5-to-7 feeding link is labeled but still runs behind/near the bird. The separate 6-to-7 link is not visually unambiguous. Nine intended matrix edges must not be reported as all visually verified.",
+      "Fertilizer has a disconnected small brace rather than sharing the clear crops-present gate with both pesticide rows. Replace with explicit row-level condition labels before publication.",
+      "Forest inset uses a teal decomposition link and a partly recolored uptake curve; local color semantics should be unified before publication.",
+      "Illustrative grass at the soil surface is scenery rather than an additional state. A publication revision may remove it to reduce biological ambiguity.",
+      "Actual print-size proof and independent scientific review were not performed. The image is a style trial, not an accepted publication figure."
     ],
-    "initial_findings_corrected": [
-      "Harvest adjacency ambiguity",
-      "Detached analysis input arrow",
-      "Overly detailed upper forest decoration and smaller labels"
-    ],
-    "publication_gate": "pending",
-    "user_approval": "not_recorded"
+    "user_approval": "approved",
+    "knowledge_base_admission": false,
+    "approval_evidence": {
+      "status": "approved",
+      "date": "2026-09-21",
+      "user_message": "这个很不错,可以推送",
+      "scope": "This scene-based image and bilingual project showcase; not scientific validation or source-library admission."
+    },
+    "publication_gate": "approved_for_project_showcase",
+    "scientific_publication_gate": "needs_revision",
+    "physical_print_proof": "not performed",
+    "independent_review": "not performed"
   },
-  "user_approval": "not_recorded",
-  "scope": "File integrity only; not source fidelity, image quality or award verification."
+  "user_approval": "approved",
+  "scope": "File integrity only; not source fidelity, image quality or scientific publication readiness."
 }

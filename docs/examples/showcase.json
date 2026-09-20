@@ -23,7 +23,7 @@
       },
       "brief": "docs/examples/2025-e-paper2overview/brief.json",
       "full_prompt": "docs/examples/2025-e-paper2overview/full-prompt.md",
-      "latest_round": 2,
+      "latest_round": 5,
       "rounds": [
         {
           "number": 1,
@@ -34,12 +34,37 @@
         {
           "number": 2,
           "operation": "edit",
-          "image": "docs/examples/2025-e-paper2overview/overview.png",
+          "image": "docs/examples/2025-e-paper2overview/overview-v2.png",
           "prompt": "docs/examples/2025-e-paper2overview/correction-prompt.md"
+        },
+        {
+          "number": 3,
+          "operation": "generate",
+          "image": "docs/examples/2025-e-paper2overview/overview-scene-v1.png",
+          "prompt": "docs/examples/2025-e-paper2overview/scene-prompt.md"
+        },
+        {
+          "number": 4,
+          "operation": "edit",
+          "image": "docs/examples/2025-e-paper2overview/overview-scene-v2.png",
+          "prompt": "docs/examples/2025-e-paper2overview/scene-correction-v2.md"
+        },
+        {
+          "number": 5,
+          "operation": "edit",
+          "image": "docs/examples/2025-e-paper2overview/overview.png",
+          "prompt": "docs/examples/2025-e-paper2overview/scene-correction-v3.md"
         }
       ],
       "presentation": "comparison",
-      "final_image": "docs/examples/2025-e-paper2overview/overview.png"
+      "final_image": "docs/examples/2025-e-paper2overview/overview.png",
+      "approval": {
+        "status": "approved",
+        "date": "2026-09-21",
+        "user_message": "这个很不错,可以推送",
+        "scope": "This scene-based image and bilingual project showcase; not scientific validation or source-library admission."
+      },
+      "review_status": "needs_revision"
     },
     {
       "id": "2026-c-ballroom-voting",

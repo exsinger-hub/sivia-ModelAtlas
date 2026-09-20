@@ -1,0 +1,23 @@
+{
+  "profile": "sivia-overview-v1",
+  "binding": {
+    "purpose": "Full English overview designs and substantial redesigns; not an arbitrary universal minimum for small unrelated edits.",
+    "source_repository": "https://github.com/exsinger-hub/Sivia",
+    "source_version": "1.1.0+codex.20260909060506",
+    "template_path": "skills/design-scientific-figure/references/templates/overview-template.txt",
+    "template_sha256": "cd73e60b51a15e005defd61190705846cb3f50a6582a33119be07b2fe78921f9",
+    "minimum_non_whitespace_characters": 15356,
+    "maximum_total_characters": 32000,
+    "metric": "Unicode code points excluding whitespace; count exact submitted prompt, one image call at a time",
+    "count_verified_on": "2026-09-20",
+    "limitation": "Length does not prove useful detail, source fidelity, image quality or user acceptance. Do not pad or concatenate prior calls to pass."
+  },
+  "total_characters": 31816,
+  "non_whitespace_characters": 27004,
+  "submitted_utf8_sha256": "5328192b6da4a4928a4eb3878bb774ce91c8415033767e8cedee818506ae468e",
+  "length_pass": true,
+  "tool_limit_pass": true,
+  "passed": true,
+  "template_bytes_verified": true,
+  "scope": "Exact prompt-text length only; source/visual review and user approval are separate."
+}

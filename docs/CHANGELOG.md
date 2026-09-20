@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-09-21
+
+- Publish the user-approved scene-based 2025 E overview in both README comparisons; preserve the earlier images and all five actual generation calls.
+- Keep showcase approval separate from scientific review: remaining food-web routing, crop-presence labeling and color-consistency issues are documented. No new source-library admission or claim of publication readiness.
+
 ## Unreleased — 2026-09-20
 
 - Publish the user-approved PDF-reread redraws of 2024 A/B, 2025 F and 2026 C/D; retain 2025 E and the final-only bilingual showcase.

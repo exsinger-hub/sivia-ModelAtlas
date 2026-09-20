@@ -1,151 +1,313 @@
 {
-  "claim": "A conserved forest nitrogen-cycle model is progressively extended with seasonal farm management and a multispecies food web, enabling management-scenario comparison before formulating sustainable-agriculture recommendations.",
+  "claim": "Show how a closed forest nitrogen model becomes a managed crop-weed ecosystem and a seven-group food web, with scenario evaluation distinct from discussion-only management options.",
+  "source": {
+    "paper_id": "icm-2025-e-2515324",
+    "title": "From Forest to Farm: Modeling Nitrogen Dynamics for Sustainable Agriculture",
+    "competition": "2025 ICM E",
+    "sha256": "2c566c95c1d4a1b4292176805253ad4f09ccfe9154e8809beb86f399347a8cdc",
+    "full_text_pages_read": "1-25",
+    "rendered_pages_visually_inspected": [
+      4,
+      6,
+      7,
+      13,
+      16,
+      17,
+      18,
+      21,
+      23
+    ],
+    "numerical_experiments_rerun": false,
+    "pdf_sha256": "2c566c95c1d4a1b4292176805253ad4f09ccfe9154e8809beb86f399347a8cdc",
+    "full_manuscript_read": true,
+    "pdf_pages": 25,
+    "intake_format": "PDF",
+    "award": "Finalist",
+    "pdf_url": "https://github.com/LUKEQ420/MCM-ICM-2025-E-Nitrogen-Cycling-Model/blob/fb579acd7107706e055c8a10f921f9f56498a06a/paper/2515324.pdf",
+    "reread": {
+      "date": "2026-09-20",
+      "text_read": "1-25",
+      "physical_pages_visually_inspected": [
+        4,
+        6,
+        7,
+        13,
+        16,
+        17,
+        18,
+        21,
+        23
+      ]
+    }
+  },
   "manuscript_evidence": [
     {
-      "locator": "PDF pp4-8, Sections2 and4, Eq2-5",
-      "supports": "Forest total N conservation assumption; producer/consumer nitrogen, organic pool, inorganic soil pool, decomposition. Scene a is an aggregated mechanism."
+      "locator": "PDF pp4-8; Figures 2-3 and equations 1-5",
+      "supports": "Forest baseline and nitrogen compartments; source assumptions of a closed budget and negligible atmospheric exchange."
     },
     {
-      "locator": "PDF pp9-15, Sections5.1-5.4, Eq6-14",
-      "supports": "Crop-weed competition, seasonal rates, sowing/harvest pulses, herbicide/insecticide application conditional on crops being present, and fertilizer input to soil."
+      "locator": "PDF pp9-15; agricultural-model equations and management definitions",
+      "supports": "Crop-weed competition, seasonal rates, sowing input, crop harvest export, fertilizer entering inorganic nitrogen, and crop-presence gating of fertilizer/herbicide/insecticide."
     },
     {
-      "locator": "PDF p16, Figure9 and Eq15; pp17-18 Eq16-20",
-      "supports": "Seven nodes and nine directed prey-to-predator relations. AENCM extends into AE-FW-NCM, retaining soil/decomposition and management."
+      "locator": "PDF pp16-18; food-web matrices and equation 20",
+      "supports": "Seven species groups and exactly nine prey-to-predator edges; retained soil nitrogen pools and Euler integration."
     },
     {
-      "locator": "PDF p18, Section6.1.3 Eq21-22 and Section6.1.4",
-      "supports": "Nitrogen transformation indicator is the authors' stability proxy; H/I is input-output efficiency; Euler numerical simulation."
+      "locator": "PDF pp19-21; scenario comparison and equation 23",
+      "supports": "Chemical and no-herbicide/insecticide cases and a bat-growth extension; not a universal pollination claim."
     },
     {
-      "locator": "PDF pp19-21, Sections6.2 and6.3.1, Figures10-12, Eq23",
-      "supports": "Chemical-management, no-herbicide/insecticide and bat-pollination comparison. The bat term is a separate crop-growth extension, not an added baseline trophic edge."
+      "locator": "PDF pp21-23; discussion and sensitivity analysis",
+      "supports": "Lacewings, rhizobia/legumes and straw reuse are discussion options, not extra simulated scenarios. Competition sensitivity is symbolic here."
     },
     {
-      "locator": "PDF pp21-22, Sections6.3.2 and7",
-      "supports": "Chrysoperla biocontrol, rhizobia/legume nitrogen fixation and straw utilization are discussion/literature-supported extensions, not separately validated simulated treatments."
+      "locator": "PDF pp23-25; limitations and farm letter",
+      "supports": "Avoid claims of empirical validation or newly rerun numerical benefits."
     },
     {
-      "locator": "PDF pp22-23, Section8, Figures13-14",
-      "supports": "Sensitivity to crop-weed competition coefficients; no new calibration or external validation is claimed."
+      "locator": "PDF pp9-15; cumulative input and harvest definitions",
+      "supports": "H/I is symbolic nitrogen input-output efficiency, not financial profit; cumulative inputs include sowing, not fertilizer alone."
     }
   ],
   "model_relationships": [
     {
       "source": "FENCM",
       "target": "AENCM",
-      "meaning": "Add differentiated crops/weeds, seasons and human management; conserved baseline becomes an open N budget",
-      "locator": "Sections4-5 pp5-15"
+      "meaning": "Add agricultural populations, seasonality and management",
+      "locator": "PDF pp9-15"
     },
     {
       "source": "AENCM",
       "target": "AE-FW-NCM",
-      "meaning": "Extend food chain into seven-node food web while retaining soil/decomposition and management",
-      "locator": "Section6.1 pp16-18"
+      "meaning": "Expand the trophic community while retaining nitrogen cycling",
+      "locator": "PDF pp16-18"
     },
     {
-      "source": "AE-FW-NCM",
-      "target": "Compare scenarios",
-      "meaning": "Numerical Euler solutions under alternative management assumptions",
-      "locator": "Sections6.1.4-6.3.1 pp18-21"
+      "source": "Crops 1 / Weeds 2",
+      "target": "Herbivorous insects 3",
+      "meaning": "Two prey-to-predator links",
+      "locator": "PDF p17 P matrix"
     },
     {
-      "source": "Compare scenarios",
-      "target": "Evaluate + stress-test",
-      "meaning": "Derive two nitrogen metrics and examine crop-weed sensitivity",
-      "locator": "Sections6.1.3 and8 pp18,22-23"
+      "source": "Herbivorous insects 3",
+      "target": "Predatory insects 4 / Bats 5 / Birds 6",
+      "meaning": "Three prey-to-predator links",
+      "locator": "PDF p17 P matrix"
     },
     {
-      "source": "Evaluate + stress-test",
-      "target": "Sustainable farming",
-      "meaning": "Model-informed guidance; explicitly separate additional literature-supported options",
-      "locator": "Sections6.3-7 pp20-22; farmer letter p25"
+      "source": "Predatory insects 4",
+      "target": "Bats 5 / Birds 6",
+      "meaning": "Two prey-to-predator links",
+      "locator": "PDF p17 P matrix"
+    },
+    {
+      "source": "Bats 5 / Birds 6",
+      "target": "Snakes 7",
+      "meaning": "Two separate prey-to-predator links; final raster routing still ambiguous",
+      "locator": "PDF p17 P matrix"
+    },
+    {
+      "source": "Organic N",
+      "target": "Decomposers",
+      "meaning": "Decomposition/assimilation",
+      "locator": "PDF pp6-8"
+    },
+    {
+      "source": "Decomposers",
+      "target": "Organic N / Inorganic N",
+      "meaning": "Distinct mortality return and mineralization paths",
+      "locator": "PDF pp6-8"
+    },
+    {
+      "source": "Inorganic N",
+      "target": "Crops / Weeds",
+      "meaning": "Root uptake",
+      "locator": "PDF pp9-15"
+    },
+    {
+      "source": "Coupled N model",
+      "target": "Euler integration",
+      "meaning": "Numerical integration of the modeled states",
+      "locator": "PDF p18"
+    },
+    {
+      "source": "Scenario trajectories",
+      "target": "Efficiency, nitrogen-turnover proxy, competition sensitivity",
+      "meaning": "Conceptual evaluation path, no new numerical results",
+      "locator": "PDF pp19-23"
     }
+  ],
+  "source_ambiguities": [
+    "PDF p8 Eq5 prints an uptake term involving N_org, conflicting with the described inorganic-N uptake and agricultural equations. The drawing follows the stated compartment mechanism; it does not silently claim a corrected numerical rerun.",
+    "Source discussion of cumulative input is not perfectly consistent; retain H/I as symbolic input-output efficiency without renaming all inputs fertilizer.",
+    "Do not infer the chemical background of the bat-growth extension from the scenario name alone."
   ],
   "references": [
     {
       "case_id": "e-model-inheritance-overview",
-      "borrowed": "Explicit progressive inheritance of three models; visually inspected original overview. Same-paper redesign, not a blinded generalization test.",
-      "not_borrowed": "Original panel coordinates, boxed typography, source artwork pixels and misspellings. Scientific relations independently read from full paper."
+      "borrowed": "Source-specific progression from baseline through two extensions; keep discussion separate",
+      "not_borrowed": "Repeated framed regions, the old generated six-card layout, or award badges"
     },
     {
       "case_id": "e-nitrogen-cycle",
-      "borrowed": "Distinction between nitrogen pools and decomposition process; visually inspected physical PDF page6.",
-      "not_borrowed": "Original layout, animal sequence, chemical-species icons or full species topology. Baseline loop is explicitly aggregate."
+      "borrowed": "Nitrogen pools and distinct uptake/return paths",
+      "not_borrowed": "Uncritical reproduction of inconsistent equation typography"
     }
   ],
-  "caption": "Overview of the nitrogen-based modeling framework. (a) The forest baseline couples trophic nitrogen transfer with decomposition under a conserved total nitrogen assumption. (b) Agricultural management introduces crop-weed competition, seasonality and external nitrogen inputs and harvest outputs. (c) A seven-node food web extends the model while retaining soil cycling and management. (d) Alternative management scenarios are simulated and (e) compared using nitrogen input-output efficiency, the study's nitrogen-turnover stability proxy and crop-weed sensitivity. (f) Model-informed farming guidance is distinguished from literature-supported extensions involving rhizobia/legumes and straw utilization. Diagrams are schematic; no measured or rerun simulation results are shown.",
-  "placement": "Section1.3 Our Work, before assumptions/model definitions. Intended full-text width180mm, not single-column. Raster design candidate; physical-size proof still required.",
+  "auxiliary_framework": {
+    "source": "Installed Sivia 1.1.3",
+    "references": [
+      "DiffDock",
+      "Neuralangelo"
+    ],
+    "use": "Object-rich dominant scene, concrete local transformations, persistent visual identity and source-supported detail. Images inspected again this turn; paired full prompts read during preceding library work.",
+    "limits": "Generated style references only, not scientific evidence. Their underlying research PDFs were not read for this auxiliary inspection. No molecular, diffusion, SDF or neural-reconstruction science imported.",
+    "excluded": "GraphCast multimesh recipe was retrieved but is not applicable to this manuscript.",
+    "research_support": [
+      {
+        "title": "MeshGraphNets",
+        "borrowed": "Only persistent object identity in local management illustrations; source reviewed in the preceding library-expansion work",
+        "not_borrowed": "Graph neural networks, mesh encoders, decoders, learned acceleration or training pipelines"
+      }
+    ]
+  },
+  "caption": "Conceptual overview of the manuscript's forest-to-agroecosystem nitrogen models. Crop and weed competition, trophic transfer and soil nitrogen cycling form the main scene; management changes inputs and mortality terms. Euler-integrated scenarios are assessed through input-output efficiency, a nitrogen-turnover stability proxy and competition sensitivity. Lacewings, rhizobia/legumes and straw reuse are discussion-only options. Drawings are qualitative and not new numerical results.",
+  "placement": "Candidate introduction/model-overview figure, before model definitions; publication use requires the remaining routing and condition-label repairs.",
   "generation": {
     "backend": "built-in image_gen.imagegen",
     "status": "generated",
-    "artifact_id": "exec-a244d8a1-0ec1-4aec-ab74-7206fd23903c.png",
+    "artifact_id": "exec-58f30684-d4a9-4da7-97e8-404a146a485e.png",
     "actual_size": [
       1536,
       1024
     ],
-    "image_sha256": "f04628654320c5b584cf54581f00c41aa23134c6ac680afa8456f909d0c5bc57",
+    "image_sha256": "5719c0af8dc5ba5b5fcb17f6fa053aa1e65d37a15fceebef10f37089ea12fa5f",
     "chain": [
       {
         "operation": "generate",
         "prompt": "prompt.md",
         "output": "overview-v1.png",
         "artifact_id": "exec-a30f3dd8-ff0c-458c-8753-ec040450667a.png",
-        "sha256": "4c938767ad169d0faa2d66ee7085410eb56d2893cf38c9f924c09497c90ef49d"
+        "sha256": "4c938767ad169d0faa2d66ee7085410eb56d2893cf38c9f924c09497c90ef49d",
+        "status": "superseded_history"
       },
       {
         "operation": "edit",
         "prompt": "correction-prompt.md",
         "input": "overview-v1.png",
+        "output": "overview-v2.png",
+        "artifact_id": "exec-a244d8a1-0ec1-4aec-ab74-7206fd23903c.png",
+        "status": "superseded_history",
+        "sha256": "f04628654320c5b584cf54581f00c41aa23134c6ac680afa8456f909d0c5bc57"
+      },
+      {
+        "operation": "generate",
+        "series": "object-scene-20260920",
+        "prompt": "scene-prompt.md",
+        "output": "overview-scene-v1.png",
+        "artifact_id": "exec-776c7571-2539-4098-8ef4-396407f157c0.png",
+        "sha256": "53f7288adb4e116473b7915bddfe44dcc84a92082727db51a1a71ae6b8e5ec4b",
+        "prompt_sha256": "5328192b6da4a4928a4eb3878bb774ce91c8415033767e8cedee818506ae468e",
+        "prompt_scope": "full_redesign",
+        "status": "superseded_history",
+        "prompt_detail": {
+          "profile": "sivia-overview-v1",
+          "binding": {
+            "purpose": "Full English overview designs and substantial redesigns; not an arbitrary universal minimum for small unrelated edits.",
+            "source_repository": "https://github.com/exsinger-hub/Sivia",
+            "source_version": "1.1.0+codex.20260909060506",
+            "template_path": "skills/design-scientific-figure/references/templates/overview-template.txt",
+            "template_sha256": "cd73e60b51a15e005defd61190705846cb3f50a6582a33119be07b2fe78921f9",
+            "minimum_non_whitespace_characters": 15356,
+            "maximum_total_characters": 32000,
+            "metric": "Unicode code points excluding whitespace; count exact submitted prompt, one image call at a time",
+            "count_verified_on": "2026-09-20",
+            "limitation": "Length does not prove useful detail, source fidelity, image quality or user acceptance. Do not pad or concatenate prior calls to pass."
+          },
+          "total_characters": 31816,
+          "non_whitespace_characters": 27004,
+          "submitted_utf8_sha256": "5328192b6da4a4928a4eb3878bb774ce91c8415033767e8cedee818506ae468e",
+          "length_pass": true,
+          "tool_limit_pass": true,
+          "passed": true,
+          "template_bytes_verified": true,
+          "scope": "Exact prompt-text length only; source/visual review and user approval are separate."
+        }
+      },
+      {
+        "operation": "edit",
+        "series": "object-scene-20260920",
+        "prompt": "scene-correction-v2.md",
+        "output": "overview-scene-v2.png",
+        "artifact_id": "exec-585d6834-637c-4de8-b89f-1a8201d6a154.png",
+        "sha256": "fd2bbf42136452a06d038212f4059617eed1a806e391017f78f2670e834070b5",
+        "prompt_sha256": "8fb48395233d372812567f3981db914af05fe427d96b5c7c115b183e205c230e",
+        "prompt_scope": "localized_correction",
+        "status": "superseded_history",
+        "input": "overview-scene-v1.png"
+      },
+      {
+        "operation": "edit",
+        "series": "object-scene-20260920",
+        "prompt": "scene-correction-v3.md",
         "output": "overview.png",
-        "artifact_id": "exec-a244d8a1-0ec1-4aec-ab74-7206fd23903c.png"
+        "artifact_id": "exec-58f30684-d4a9-4da7-97e8-404a146a485e.png",
+        "sha256": "5719c0af8dc5ba5b5fcb17f6fa053aa1e65d37a15fceebef10f37089ea12fa5f",
+        "prompt_sha256": "57db9aa5b6ca19f971fac1b558857f757704963daee2989fce83ba43b65d3dfb",
+        "prompt_scope": "localized_correction",
+        "status": "selected_showcase",
+        "input": "overview-scene-v2.png"
       }
     ],
     "exact_prompt_record": "full-prompt.md",
+    "scene_exact_submitted_text": "scene-prompt-records.json",
     "empirical_rerun": false,
     "native_editability": false
   },
   "review": {
-    "status": "pending",
-    "review_type": "informed self_review; no independent reviewer",
-    "execution_test": "completed: real paper read, real image generated, corrected, inspected and paired",
-    "content_checks": "passed at overview scope by visual self-review",
+    "status": "needs_revision",
+    "method": "Author self-review of all three actual native raster outputs, compared with the read manuscript and rendered source pages; not an independent review.",
     "checks": [
-      "Opened final saved overview.png at native1536x1024; no obvious clipped labels or crossings through unrelated text.",
-      "FENCM, AENCM and AE-FW-NCM spellings correct and expansion order visible.",
-      "Forest loop: inorganic N->producers->consumers, producer/consumer returns->organic N, decomposition->inorganic N.",
-      "Agriculture: sowing enters crops, fertilizer enters soil, corrected harvest arrow originates at crop canopy rather than weeds.",
-      "Food web: crops->pests; weeds->pests; pests->predatory insects/bats/birds; predatory insects->bats/birds; bats/birds->snakes:9/9 visible.",
-      "Crops/weeds competition uses blunt-ended link, not a trophic arrow.",
-      "Main flow now a->b->c->d->e->f; scenarios are alternatives, not sequential steps.",
-      "Bat pollination appears in scenario group only; no spurious baseline pollination edge.",
-      "N turnover remains labelled stability proxy; no fabricated quantitative results.",
-      "Rhizobia/legumes and straw reuse are enclosed as literature-supported extensions."
+      "Main scientific objects replace repeated equal cards; central plants, roots, soil pools and organisms occupy the dominant region.",
+      "No fabricated numeric results, plot traces or claimed empirical rerun.",
+      "Main soil decomposition, mortality and mineralization directions corrected in the first edit.",
+      "Discussion-only options are disconnected from the Euler integration input.",
+      "No-chemical case retains living organisms; chemical mortality terms are turned off.",
+      "Main root uptake and top-level model progression inspected; labels are legible at native display size."
     ],
     "issues": [
-      {
-        "severity": "moderate",
-        "location": "small annotation typography and full-width print",
-        "detail": "Raster output has no verifiable native font metadata; label sizes vary. The180mm print-width and8pt minimum have not been demonstrated. Do not claim publication-ready approval."
-      },
-      {
-        "severity": "pending_gate",
-        "location": "independent and grayscale review",
-        "detail": "No independent unprimed title/L3-hidden grayscale reading or physical print proof performed; self-review is not independent acceptance."
-      }
+      "The long 5-to-7 feeding link is labeled but still runs behind/near the bird. The separate 6-to-7 link is not visually unambiguous. Nine intended matrix edges must not be reported as all visually verified.",
+      "Fertilizer has a disconnected small brace rather than sharing the clear crops-present gate with both pesticide rows. Replace with explicit row-level condition labels before publication.",
+      "Forest inset uses a teal decomposition link and a partly recolored uptake curve; local color semantics should be unified before publication.",
+      "Illustrative grass at the soil surface is scenery rather than an additional state. A publication revision may remove it to reduce biological ambiguity.",
+      "Actual print-size proof and independent scientific review were not performed. The image is a style trial, not an accepted publication figure."
     ],
-    "initial_findings_corrected": [
-      "Harvest adjacency ambiguity",
-      "Detached analysis input arrow",
-      "Overly detailed upper forest decoration and smaller labels"
-    ],
-    "publication_gate": "pending",
-    "user_approval": "not_recorded"
+    "user_approval": "approved",
+    "knowledge_base_admission": false,
+    "approval_evidence": {
+      "status": "approved",
+      "date": "2026-09-21",
+      "user_message": "这个很不错,可以推送",
+      "scope": "This scene-based image and bilingual project showcase; not scientific validation or source-library admission."
+    },
+    "publication_gate": "approved_for_project_showcase",
+    "scientific_publication_gate": "needs_revision",
+    "physical_print_proof": "not performed",
+    "independent_review": "not performed"
   },
-  "source_notes": [
-    "This is a source-grounded redesign of a known reference-library paper, not a blind held-out benchmark.",
-    "Paper Eq5 prints Norg in the uptake term despite surrounding text/Eq2 using Ninorg. Figure follows stated compartment mechanism; no equation correction or numerical validation is claimed.",
-    "Species glyphs are schematic categories, not verified taxonomic identities.",
-    "The authors' ecological assumptions and proxy metrics are not endorsed as generally validated findings."
-  ]
+  "design_revision": {
+    "date": "2026-09-21",
+    "status": "user_approved_showcase",
+    "reason": "User approved the object-rich ecological scene for GitHub display.",
+    "latest_round": 5,
+    "old_image": "overview-v2.png",
+    "new_image": "overview.png",
+    "superseded_rounds": [
+      1,
+      2,
+      3,
+      4
+    ]
+  }
 }

@@ -1,0 +1,12 @@
+Use case: precise-object-edit.
+Input image 1 is the sole edit target: the current English From Forest to Farm scientific overview. Preserve every organism, soil texture, heading, equation, label, panel position, aspect ratio, and all correctly drawn relationships. Make ONLY the four local corrections below. This is a local correction, not a redesign.
+
+1. The upper long teal feeding curve from Bats 5 currently travels through the bird and is therefore ambiguous. Remove ONLY this long curve, not any of the insect-to-bat, insect-to-bird or bird-to-snake arrows. Redraw one clearly isolated Bats 5 -> Snakes 7 feeding edge: start at the tip of the bat's right wing, arc through the narrow open white band ABOVE the bird's raised wing, continue down to the RIGHT of the bird silhouette without touching the bird or its label, end with one arrowhead at the snake's head. Leave a clear white gap around the bird. Place a tiny readable '5 → 7' next to this long curve to make its endpoints unambiguous. The existing short Birds 6 -> Snakes 7 edge remains separate. Never draw a bat-to-bird edge. Do not alter any other feeding arrows: Crops 1 -> Herbivorous insects 3; Weeds 2 -> 3; 3 -> Predatory insects 4; 3 -> Bats 5; 3 -> Birds 6; 4 -> 5; 4 -> 6; 6 -> 7.
+
+2. In the left agricultural operations list, extend the right-hand brace labeled 'while crops are present' UPWARD so it spans ALL THREE rows Fertilizer, Herbicide, Insecticide. The brace must start beside the top of the Fertilizer row and end below Insecticide. Sowing and Harvest remain OUTSIDE the brace. Keep all icons and row text unchanged.
+
+3. In the upper-left forest inset, recolor ONLY the curved Inorganic N -> tree/root uptake arrow to teal, matching the central Root uptake arrows. Do not change its path, direction, nodes, or the other brown cycling arrows.
+
+4. In the bottom legend, replace the brown-arrow caption 'organic returns' with 'N transfers'. This covers organic returns, mineralization and external N inputs in this image. Keep the brown arrow and all other legend entries unchanged.
+
+Do not add new panels or text. Do not modify the corrected lower soil cycle: Organic N -> Decomposers is Decomposition; Decomposers -> Organic N is Mortality; Decomposers -> Inorganic N is Mineralization. Discussion options remain disconnected from Euler integration. Preserve scientific illustration detail and the existing restrained white background.

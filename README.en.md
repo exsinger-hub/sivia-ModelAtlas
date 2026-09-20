@@ -33,23 +33,25 @@ Ecology & environment · Source paper Finalist · Team 2515324
 <table>
   <tr>
     <th width="50%">Authors’ original</th>
-    <th width="50%">ModelAtlas · final image</th>
+    <th width="50%">ModelAtlas · scene-based overview</th>
   </tr>
   <tr>
     <td width="50%" align="center" valign="middle">
       <a href="docs/assets/reference-overviews/2025-e-2515324-overview.jpg"><img src="docs/assets/reference-overviews/2025-e-2515324-overview.jpg" width="100%" alt="Original: 2025 ICM E, From Forest to Farm"></a>
     </td>
     <td width="50%" align="center" valign="middle">
-      <a href="docs/examples/2025-e-paper2overview/overview.png"><img src="docs/examples/2025-e-paper2overview/overview.png" width="100%" alt="ModelAtlas final: forest, farm and food-web model progression"></a>
+      <a href="docs/examples/2025-e-paper2overview/overview.png"><img src="docs/examples/2025-e-paper2overview/overview.png" width="100%" alt="ModelAtlas: a farm, seven-group food web and soil nitrogen-cycle cross-section"></a>
     </td>
   </tr>
   <tr>
     <td align="center"><sub>Figure 2 · PDF p4</sub></td>
-    <td align="center"><sub>Redesigned from the full paper</sub></td>
+    <td align="center"><sub>Redesigned from the full paper · farm, food web and soil section</sub></td>
   </tr>
 </table>
 
 [Paper & caption](docs/examples/2025-e-paper2overview/README.en.md) · [Full prompt](docs/examples/2025-e-paper2overview/full-prompt.md)
+
+<sub>User-approved for display; remaining connector and condition-label issues are listed in the case notes.</sub>
 
 <a id="category-c"></a>
 <a id="2026-c-ballroom-voting"></a>

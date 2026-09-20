@@ -2,53 +2,40 @@
 
 [中文](README.md) · [All examples](../../../README.en.md#showcase)
 
-Source paper: *From Forest to Farm: Modeling Nitrogen Dynamics for Sustainable Agriculture*.
-Team **2515324**, **Finalist**. The award belongs to the paper, not to the generated figures.
+Forest nitrogen cycling → agricultural management → a seven-group food web. Crops, roots and soil pools form the main scene; model scenarios and discussion-only options remain separate.
 
-## Original and final redesign
+## Original and current redesign
 
-| Authors’ original · Figure 2, PDF p4 | ModelAtlas · final image |
+| Authors’ original · Figure 2, PDF p4 | ModelAtlas · scene-based overview |
 | :---: | :---: |
 | [![Original overview](../../assets/reference-overviews/2025-e-2515324-overview.jpg)](../../assets/reference-overviews/2025-e-2515324-overview.jpg) | [![Current redesign](overview.png)](overview.png) |
 
-[Full prompt history](full-prompt.md) · [Evidence & caption](brief.json) · [Initial design](design-spec.json)
+[Full prompt history](full-prompt.md) · [Evidence & caption](brief.json) · [File integrity](integrity-audit.json)
 
-## Source
+## Source and design
 
-- [Author repository](https://github.com/LUKEQ420/MCM-ICM-2025-E-Nitrogen-Cycling-Model).
-- [Pinned paper](https://github.com/LUKEQ420/MCM-ICM-2025-E-Nitrogen-Cycling-Model/blob/fb579acd7107706e055c8a10f921f9f56498a06a/paper/2515324.pdf), 25 pages.
-- [COMAP award results](https://www.contest.comap.com/undergraduate/contests/mcm/contests/2025/results/2025_ICM_Problem_E_Results.pdf), physical page 6: Team 2515324, E, Finalist.
-- PDF SHA-256: `2c566c95c1d4a1b4292176805253ad4f09ccfe9154e8809beb86f399347a8cdc`.
-- Original figure: [source and MIT attribution](../../assets/reference-overviews/README.md).
+*From Forest to Farm: Modeling Nitrogen Dynamics for Sustainable Agriculture*. 2025 ICM E, Team 2515324, Finalist.
 
-The complete paper was read, including equations, results and the letter to farmers. The original
-overview, nitrogen-cycle diagram and seven-node food web were inspected. Source PDFs remain local.
-This is a redesign of a known reference paper, not a held-out benchmark or an empirical simulation rerun.
+[Author repository](https://github.com/LUKEQ420/MCM-ICM-2025-E-Nitrogen-Cycling-Model) · [Pinned paper](https://github.com/LUKEQ420/MCM-ICM-2025-E-Nitrogen-Cycling-Model/blob/fb579acd7107706e055c8a10f921f9f56498a06a/paper/2515324.pdf) · [COMAP results](https://www.contest.comap.com/undergraduate/contests/mcm/contests/2025/results/2025_ICM_Problem_E_Results.pdf), physical page 6.
 
-## Paper-to-figure mapping
+All 25 pages were reread; rendered pages 4, 6, 7, 13, 16, 17, 18, 21 and 23 were inspected. Sivia informed object detail and local operations, not the scientific mechanisms. The full design prompt contains 31,816 characters, followed by two local edits.
 
-| Figure content | Paper evidence |
-| --- | --- |
-| Conserved forest nitrogen cycle | pp4–8, §§2 and 4, Eqs2–5 |
-| Crops, weeds, seasons and farm management | pp9–15, §5, Eqs6–14 |
-| Seven-node food web, nine trophic edges | pp16–18, Figure 9, Eqs15–20 |
-| Euler simulation, scenarios and nitrogen metrics | pp18–21, §§6.1.3–6.3.1 |
-| Crop–weed sensitivity | pp22–23, §8 |
-| Rhizobia, legumes and straw reuse | pp21–22, §7; literature-supported recommendations |
+This is a known-paper redesign, not a held-out benchmark or simulation rerun. Rhizobia, lacewings and straw reuse remain discussion options. Source notation conflicts and page-level evidence are recorded in the brief. Source PDFs and page renders are not published.
 
-No numerical results were generated. Nitrogen turnover remains the authors’ stability proxy;
-recommendations supported by literature are separated from simulated scenarios. The uptake-term
-notation in Eq5 conflicts with nearby text/Eq2; the figure follows the stated compartment mechanism
-without claiming to correct the equation or validate the numerical results.
+## Display approval and remaining issues
 
-## Review and delivery
+On **2026-09-21**, the user approved the image and GitHub publication: “这个很不错,可以推送”. This is project-showcase approval, not scientific validation. Visual review remains `needs_revision`; the image is not admitted to the source reference library.
 
-Both actual outputs are **1536 × 1024 PNGs**, generated and edited with the host ImageGen tool.
-The source relationships and nine food-web edges were checked in a visual self-review. The current
-image, full prompt and evidence are paired; [file integrity checks](integrity-audit.json) passed.
+- The bat-to-snake route passes close to the bird; the independent bird-to-snake edge is ambiguous.
+- The fertilizer crop-presence brace is disconnected from the pesticide rows.
+- Local color semantics in the forest inset need unifying. Grass glyphs are scenery, not extra states.
 
-Print-size proof, independent review and user approval remain pending. The PNG is not natively editable.
-Suggested placement: §1.3 Our Work, at full text width (180 mm, pending print-size verification).
-The English caption and detailed review record are in [brief.json](brief.json).
+The actual output is a **1536 × 1024 PNG**, not native editable vectors. Independent review and print-size proof were not performed. This is not labeled publication-ready; file integrity does not establish scientific or visual validity.
 
-Scientific content belongs to the source authors. These workflow examples do not imply their endorsement.
+## Records
+
+Only the current image appears in the showcase. Historical outputs remain as [initial](overview-v1.png), [previous](overview-v2.png), [scene draft](overview-scene-v1.png) and [first scene edit](overview-scene-v2.png).
+
+The [complete history](full-prompt.md) preserves all five calls. [Exact submitted text](scene-prompt-records.json) and [template check](scene-prompt-check.json) cover the new three-call series. The [historical brief](brief-before-scene.json) preserves the old record; see [brief.json](brief.json) for the current caption and review.
+
+Awards and scientific claims belong to the paper’s authors; this example does not imply their endorsement. [Original-image credits & MIT license](../../assets/reference-overviews/README.md).

@@ -33,23 +33,25 @@
 <table>
   <tr>
     <th width="50%">获奖论文原图</th>
-    <th width="50%">ModelAtlas · 最终成图</th>
+    <th width="50%">ModelAtlas · 场景式总览</th>
   </tr>
   <tr>
     <td width="50%" align="center" valign="middle">
       <a href="docs/assets/reference-overviews/2025-e-2515324-overview.jpg"><img src="docs/assets/reference-overviews/2025-e-2515324-overview.jpg" width="100%" alt="论文原图: 2025 ICM E, From Forest to Farm"></a>
     </td>
     <td width="50%" align="center" valign="middle">
-      <a href="docs/examples/2025-e-paper2overview/overview.png"><img src="docs/examples/2025-e-paper2overview/overview.png" width="100%" alt="ModelAtlas 最终成图: 森林、农田与食物网的模型递进"></a>
+      <a href="docs/examples/2025-e-paper2overview/overview.png"><img src="docs/examples/2025-e-paper2overview/overview.png" width="100%" alt="ModelAtlas: 农田、七类生物食物网和土壤氮循环剖面的场景式总览"></a>
     </td>
   </tr>
   <tr>
     <td align="center"><sub>Figure 2 · PDF p4</sub></td>
-    <td align="center"><sub>阅读全文后重新设计</sub></td>
+    <td align="center"><sub>阅读全文后重新设计 · 农田、食物网与土壤剖面</sub></td>
   </tr>
 </table>
 
 [论文与图注](docs/examples/2025-e-paper2overview/README.md) · [完整 prompt](docs/examples/2025-e-paper2overview/full-prompt.md)
+
+<sub>用户已确认展示；连线与条件标注的待修项见案例说明。</sub>
 
 <a id="category-c"></a>
 <a id="2026-c-ballroom-voting"></a>

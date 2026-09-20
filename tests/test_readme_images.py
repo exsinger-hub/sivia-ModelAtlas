@@ -265,7 +265,11 @@ def test_every_final_has_actual_generation_history_evidence_and_hashes():
             if "sha256" in call:
                 assert digest(directory / call["output"]) == call["sha256"]
         if "approval" in case:
-            assert brief["review"]["status"] == "passed"
+            assert brief["review"]["status"] == case.get("review_status", "passed")
+            if brief["review"]["status"] == "needs_revision":
+                assert brief["review"]["issues"]
+                assert brief["review"]["scientific_publication_gate"] == "needs_revision"
+                assert brief["review"]["knowledge_base_admission"] is False
             assert brief["review"]["user_approval"] == "approved"
             assert brief["review"]["publication_gate"] == "approved_for_project_showcase"
             assert brief["review"]["approval_evidence"] == case["approval"]
