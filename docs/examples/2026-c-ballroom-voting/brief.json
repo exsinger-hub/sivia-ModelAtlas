@@ -14,92 +14,90 @@
     },
     "full_manuscript_read": true,
     "pdf_pages": 34,
-    "intake_format": "PDF"
+    "intake_format": "PDF",
+    "reread": {
+      "date": "2026-09-20",
+      "text_read": "1–26; AI appendix excluded",
+      "physical_pages_visually_inspected": [
+        5,
+        8,
+        11,
+        19
+      ],
+      "scope": "Model-bearing manuscript; AI-use appendices are not model authority."
+    }
   },
-  "claim": "Rule-conditional fan-share inference supports parallel voting-rule audits and mixed-effects analysis, informing a targeted weekly rank-based protection rule.",
+  "claim": "Complementary fan-share reconstructions feed fixed-week rule comparisons. The proposed rank correction reduces elimination risk only for judge-elite, fan-disfavored contestants; otherwise the baseline is retained.",
   "manuscript_evidence": [
     {
-      "locator": "PDF pp4–6, §§1–3",
-      "supports": "Cleaning observed judge scores, eliminations and contestant metadata; latent fan support is a relative share, not observed vote totals."
+      "locator": "pp.7–10, Eqs.1–5",
+      "supports": "Feasible shares, likelihood point estimates and rule dependence"
     },
     {
-      "locator": "PDF pp7–10, §4",
-      "supports": "Complementary feasible-set intervals and Plackett–Luce point inference with consistency and uncertainty diagnostics."
+      "locator": "pp.11–14, §5",
+      "supports": "Same-week comparison; Rank / Percentage / Judges' Save"
     },
     {
-      "locator": "PDF pp11–14, §5",
-      "supports": "Same-week contestant-set counterfactuals for Rank, Percentage and Judges' Save, with cross-inference checks."
+      "locator": "pp.14–18, Eqs.6–8",
+      "supports": "Two-outcome mixed-effects model; point-input limitation"
     },
     {
-      "locator": "PDF pp14–18, §6",
-      "supports": "Mixed-effects models compare judge and inferred-fan outcomes with trait/season effects and pro/celebrity intercepts."
-    },
-    {
-      "locator": "PDF pp18–20, §7",
-      "supports": "MARS-Soft+Disagreement modifies rank-sum risk only for judge-elite contestants with weaker fan rank; earlier/later season tuning/test split."
-    },
-    {
-      "locator": "PDF pp21–22, §8",
-      "supports": "Inference sensitivity and season-blocked trait-model validation."
+      "locator": "pp.19–20, Eqs.9–12",
+      "supports": "AND gate, soft correction, argmax elimination, season split"
     }
   ],
   "model_relationships": [
     {
-      "source": "Clean weekly observations",
-      "target": "Feasible set and likelihood",
-      "meaning": "Shared input to complementary estimators",
-      "locator": "§4"
+      "source": "Observed judges and exits",
+      "target": "Feasible and likelihood estimates",
+      "meaning": "Complementary inference of relative fan shares",
+      "locator": "pp.7–10"
     },
     {
-      "source": "Rule-conditional fan shares",
-      "target": "Rule audit",
-      "meaning": "Same information for alternative weekly rules",
-      "locator": "§5"
+      "source": "Rule-conditional shares",
+      "target": "Same-week rule comparison",
+      "meaning": "Hold active contestants and judges fixed",
+      "locator": "pp.11–14"
     },
     {
-      "source": "Rule-conditional fan shares",
-      "target": "Mixed-effects analysis",
-      "meaning": "Inferred fan signal joins traits and scores; point inputs",
-      "locator": "§6"
+      "source": "Judge elite AND worse fan rank",
+      "target": "Adjusted risk",
+      "meaning": "Subtract lambda*g*d; otherwise retain S0; eliminate argmax S",
+      "locator": "pp.19–20"
     },
     {
-      "source": "Rule audit and trait analysis",
-      "target": "MARS design",
-      "meaning": "Evidence informs selective mechanism design",
-      "locator": "§7"
-    },
-    {
-      "source": "Rank-sum baseline",
-      "target": "Targeted protection",
-      "meaning": "Judge-elite AND weaker fan rank; otherwise no bonus",
-      "locator": "§7.2"
+      "source": "Traits and group structure",
+      "target": "Judge and inferred-fan outcomes",
+      "meaning": "Both use fixed plus random effects; share uncertainty is not propagated",
+      "locator": "pp.14–18"
     }
   ],
   "references": [
     {
       "case_id": "c-infer-compare-redesign",
-      "borrowed": "Source Figure1 on PDFphysicalp5 was visually inspected. Preserve shared inference -> two analysis branches -> revised rule, removing the source's ambiguous lateral branch.",
-      "not_borrowed": "Source pixels, layout coordinates, paper-specific numerical results, team/award labels and unsupported causal claims."
+      "borrowed": "Paper-specific objects and relations checked against the model-bearing PDF pages. Persistent identities and selective change from previously inspected Sivia examples; source models only from this PDF. No layout copied wholesale.",
+      "not_borrowed": "Source pixels, numerical results, conflicting signs/formulas, awards, or a compulsory panel layout."
     }
   ],
-  "caption": "A mechanism-focused overview of ballroom voting. Observed weekly records constrain relative fan shares through feasible-set and likelihood approaches. The inferred shares support parallel matched-week rule comparisons and trait associations; observed judge outcomes remain separate. The enlarged MARS mechanism shows the elite/disagreement condition and its targeted rank-risk subtraction. All geometry and identities are schematic; no empirical result is reproduced.",
-  "placement": "End of Introduction / Our Work, before assumptions. Intended 180mm full-text width; physical print proof pending.",
+  "caption": "Complementary fan-share reconstructions feed fixed-week rule comparisons. The proposed rank correction reduces elimination risk only for judge-elite, fan-disfavored contestants; otherwise the baseline is retained.",
+  "placement": "End of Introduction / Our Work, intended width 180 mm",
   "generation": {
     "backend": "built-in image_gen.imagegen",
     "status": "generated",
-    "artifact_id": "exec-16c3c5af-625d-4ff2-9f6b-4d7a98acdceb.png",
+    "artifact_id": "exec-bfe70832-77a5-47b0-8686-fad035c67eda.png",
     "actual_size": [
       1536,
       1024
     ],
-    "image_sha256": "a2c2f03a89584d1fdf00679d1130b9ff48a837547912e9cf5607d3c2e6b15b93",
+    "image_sha256": "a11a263f688803b1a34ca0605bbb3ae3ade91fb30d4f9b6de44ef36ce16269eb",
     "chain": [
       {
         "operation": "generate",
         "prompt": "prompt.md",
         "output": "overview-v1.png",
         "artifact_id": "exec-1868dfcd-e20a-4848-adb5-4e3def5f43d1.png",
-        "sha256": "00b1a3a644c0663a126e09ee1323b11575203fc31f14792d9c8f27372c790c43"
+        "sha256": "00b1a3a644c0663a126e09ee1323b11575203fc31f14792d9c8f27372c790c43",
+        "status": "superseded_history"
       },
       {
         "operation": "edit",
@@ -107,7 +105,8 @@
         "input": "overview-v1.png",
         "output": "overview-v2.png",
         "artifact_id": "exec-de79de9c-1d90-41d5-ac61-b0eced737788.png",
-        "sha256": "7d1536e95f53007cbdecb14d0cbaa61f1d22b42fa0b3c6bc8ea40a22b1de41b9"
+        "sha256": "7d1536e95f53007cbdecb14d0cbaa61f1d22b42fa0b3c6bc8ea40a22b1de41b9",
+        "status": "superseded_history"
       },
       {
         "operation": "edit",
@@ -138,7 +137,8 @@
           "passed": true,
           "template_bytes_verified": true,
           "scope": "Exact prompt-text length only; source/visual review and user approval are separate."
-        }
+        },
+        "status": "superseded_history"
       },
       {
         "operation": "edit",
@@ -169,13 +169,14 @@
           "passed": true,
           "template_bytes_verified": true,
           "scope": "Exact prompt-text length only; source/visual review and user approval are separate."
-        }
+        },
+        "status": "superseded_history"
       },
       {
         "operation": "edit",
         "prompt": "redesign-routing-prompt.md",
         "input": "overview-v4.png",
-        "output": "overview.png",
+        "output": "overview-v5.png",
         "artifact_id": "exec-16c3c5af-625d-4ff2-9f6b-4d7a98acdceb.png",
         "sha256": "a2c2f03a89584d1fdf00679d1130b9ff48a837547912e9cf5607d3c2e6b15b93",
         "prompt_detail": {
@@ -200,7 +201,62 @@
           "passed": true,
           "template_bytes_verified": true,
           "scope": "Exact prompt-text length only; source/visual review and user approval are separate."
+        },
+        "status": "superseded_history"
+      },
+      {
+        "operation": "generate",
+        "prompt": "reread-prompt.md",
+        "output": "overview-reread-v1.png",
+        "artifact_id": "exec-babc119a-218b-4500-a52c-5055c9e1d067.png",
+        "sha256": "362a256e43861f6b5ce2bc36f62c7e672725854be07efcd6645923475b948529",
+        "series": "pdf-reread-20260920",
+        "prompt_scope": "full_redesign",
+        "prompt_detail": {
+          "profile": "sivia-overview-v1",
+          "binding": {
+            "purpose": "Full English overview designs and substantial redesigns; not an arbitrary universal minimum for small unrelated edits.",
+            "source_repository": "https://github.com/exsinger-hub/Sivia",
+            "source_version": "1.1.0+codex.20260909060506",
+            "template_path": "skills/design-scientific-figure/references/templates/overview-template.txt",
+            "template_sha256": "cd73e60b51a15e005defd61190705846cb3f50a6582a33119be07b2fe78921f9",
+            "minimum_non_whitespace_characters": 15356,
+            "maximum_total_characters": 32000,
+            "metric": "Unicode code points excluding whitespace; count exact submitted prompt, one image call at a time",
+            "count_verified_on": "2026-09-20",
+            "limitation": "Length does not prove useful detail, source fidelity, image quality or user acceptance. Do not pad or concatenate prior calls to pass."
+          },
+          "total_characters": 24626,
+          "non_whitespace_characters": 20849,
+          "submitted_utf8_sha256": "7cb5972cd910930342d586a75f60467d2a46cdd14f5d36161e124c32423bd501",
+          "length_pass": true,
+          "tool_limit_pass": true,
+          "passed": true,
+          "template_bytes_verified": true,
+          "scope": "Exact prompt-text length only; source/visual review and user approval are separate."
         }
+      },
+      {
+        "operation": "edit",
+        "prompt": "reread-correction-v2.md",
+        "output": "overview-reread-v2.png",
+        "artifact_id": "exec-a385fd1b-8c3e-455c-87ca-2c245c06e88c.png",
+        "sha256": "465a49c6819e88ff62d9ecee5b62eeb14922f284ed5e2094138d49c14e2b734f",
+        "series": "pdf-reread-20260920",
+        "input": "overview-reread-v1.png",
+        "prompt_scope": "localized_correction",
+        "prompt_sha256": "791332a7a3d9528df2158dada127e9c5ecf36c6017667131af20275a7eef93b5"
+      },
+      {
+        "operation": "edit",
+        "prompt": "reread-correction-v3.md",
+        "output": "overview.png",
+        "artifact_id": "exec-bfe70832-77a5-47b0-8686-fad035c67eda.png",
+        "sha256": "a11a263f688803b1a34ca0605bbb3ae3ade91fb30d4f9b6de44ef36ce16269eb",
+        "series": "pdf-reread-20260920",
+        "input": "overview-reread-v2.png",
+        "prompt_scope": "localized_correction",
+        "prompt_sha256": "1707c1523fd87cfa621cf474b3dd240001545da9f10d20a238d8d90df2bf57ab"
       }
     ],
     "exact_prompt_record": "full-prompt.md",
@@ -213,32 +269,47 @@
         "status": "rejected_no_artifact",
         "reason": "An intermediate full correction request was 33103 total characters; image tool rejected it above its 32000 limit. Redundant paragraphs were removed before the recorded successful call."
       }
-    ]
+    ],
+    "selected_series": "pdf-reread-20260920"
   },
   "review": {
-    "status": "pending",
-    "review_type": "informed visual self-review of actual outputs; not independent acceptance",
-    "execution_test": "Completed full-image inspection of three real redesign/edit outputs; earlier versions retained, final selected for showcase.",
+    "status": "passed",
     "checks": [
-      "Replaced repeated colored panels with a feasible-share domain, matched-rule table and dominant conditional rank operation.",
-      "Final review: fan inference has no route to Judge outcome; observed-judge input is locally labeled.",
-      "Feasible-set bounds and complementary likelihood point share the inferred-output junction; no simplex-vertex input to likelihood.",
-      "MARS retains judge-elite AND worse-fan-rank conditions, positive-part gate, targeted subtraction and argmax elimination.",
-      "No empirical vote totals or performance claims; earlier/later season evaluation remains distinct."
+      "Feasible/likelihood branches share observed inputs rather than form a serial pipeline.",
+      "Rule-conditional shares feed both audit and correction.",
+      "Gate uses q<α AND RF>RJ; g=(1−q/α)_+^p has no spurious prime symbols.",
+      "Active correction moves risk left; largest adjusted risk is eliminated.",
+      "Both outcomes use a fixed-plus-random effects specification; the erroneous one-component-per-outcome arrows were removed."
     ],
+    "notes": [
+      "The source's Fig.4 argmin rank-sum error is not copied; §7.2's larger-risk/argmax convention is used.",
+      "Simplex and risk markers are symbolic, not real contestant outcomes.",
+      "Inference uncertainty is not claimed to be fully propagated into the mixed-effects fit.",
+      "Fine baseline/adjusted marker alignment is illustrative; physical print proof remains pending."
+    ],
+    "physical_print_proof": "not performed",
+    "independent_review": "not performed",
+    "user_approval": "approved",
+    "review_type": "Actual-image visual self-review with source notes; not independent review or physical print proof.",
+    "approval_evidence": {
+      "status": "approved",
+      "date": "2026-09-20",
+      "user_message": "同意,请推送, 并且为我写抖音和小红书的推送文稿",
+      "scope": "Five selected PDF-reread images, project showcase and case-specific knowledge-base guidance; not independent scientific validation."
+    },
+    "publication_gate": "approved_for_project_showcase",
     "issues": [
       {
-        "severity": "pending_gate",
-        "detail": "Physical 180mm print/grayscale proof and independent acceptance remain pending. README uses a raster preview; mathematical label readability should be checked in the target manuscript."
+        "severity": "remaining_check",
+        "detail": "Physical print proof and independent review not performed; review small labels at final manuscript size."
       }
-    ],
-    "publication_gate": "pending",
-    "user_approval": "not_recorded"
+    ]
   },
   "source_notes": [
-    "Physical PDF pages are used; printed main-paper pages are one less.",
-    "Fan-share uncertainty is not fully propagated in the source mixed-effects fit. No causal or measurement-error-adjusted interpretation is claimed.",
-    "Counterfactuals are weekly comparisons, not full-season replays. This is a known-source redesign, not a blind benchmark."
+    "The source's Fig.4 argmin rank-sum error is not copied; §7.2's larger-risk/argmax convention is used.",
+    "Simplex and risk markers are symbolic, not real contestant outcomes.",
+    "Inference uncertainty is not claimed to be fully propagated into the mixed-effects fit.",
+    "Fine baseline/adjusted marker alignment is illustrative; physical print proof remains pending."
   ],
   "style_adaptation": {
     "source": "Sivia",
@@ -254,10 +325,17 @@
   },
   "design_revision": {
     "date": "2026-09-20",
-    "reason": "User feedback: excessive modularization and insufficient prompt detail.",
-    "status": "candidate_awaiting_user_feedback",
-    "latest_round": 5,
-    "old_image": "overview-v2.png",
-    "new_image": "overview.png"
+    "reason": "PDF-reread redraw approved by the user.",
+    "status": "user_approved_showcase",
+    "latest_round": 8,
+    "old_image": "overview-v5.png",
+    "new_image": "overview.png",
+    "superseded_rounds": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
   }
 }

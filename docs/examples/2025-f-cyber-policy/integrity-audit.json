@@ -6,41 +6,62 @@
     "prompt.md": true
   },
   "visual_review": {
-    "status": "pending",
-    "review_type": "informed visual self-review of actual outputs; not independent acceptance",
-    "execution_test": "Completed full-image inspection of three real redesign/edit outputs; earlier versions retained, final selected for showcase.",
+    "status": "passed",
     "checks": [
-      "Replaced three equal method cards with a country-year ledger, document themes and a dominant symbolic before/after contrast.",
-      "K-means input explicitly restricted to NCSI and Legal Measures; grayscale profiles distinguished from treated/control colors.",
-      "Four symbolic outcomes and DID = treated change minus control change checked; no effect direction or estimate is reproduced.",
-      "LDA remains descriptive; MIC/factor/regression branch is explicitly associative, not causal.",
-      "Removed misleading outer synthesis routes; local evidence names identify the three interpretation inputs."
+      "Only NCSI and Legal Measures are marked clustering inputs; no cluster-to-treatment arrow remains.",
+      "T/C identities persist before and after; displayed contrast is ΔT−ΔC.",
+      "Policy themes are neutral, not color-coded efficacy rankings.",
+      "MIC no longer feeds factor analysis serially; selected factors precede regression."
     ],
+    "notes": [
+      "The source's case-count coefficient signs and efficacy interpretations conflict; results are omitted, not corrected.",
+      "Country dots and MIC points are explicitly schematic, not reproduced data.",
+      "Factor analysis and DID are design summaries, not claims of verified causality."
+    ],
+    "physical_print_proof": "not performed",
+    "independent_review": "not performed",
+    "user_approval": "approved",
+    "review_type": "Actual-image visual self-review with source notes; not independent review or physical print proof.",
+    "approval_evidence": {
+      "status": "approved",
+      "date": "2026-09-20",
+      "user_message": "同意,请推送, 并且为我写抖音和小红书的推送文稿",
+      "scope": "Five selected PDF-reread images, project showcase and case-specific knowledge-base guidance; not independent scientific validation."
+    },
+    "publication_gate": "approved_for_project_showcase",
     "issues": [
       {
-        "severity": "pending_gate",
-        "detail": "Physical 180mm print/grayscale proof and independent acceptance remain pending. README uses a raster preview; mathematical label readability should be checked in the target manuscript."
-      },
-      {
-        "severity": "minor_visual",
-        "detail": "A redundant short vertical guide remains beside the PC2 axis. It does not encode an additional variable; further cosmetic cleanup may be requested."
+        "severity": "remaining_check",
+        "detail": "Physical print proof and independent review not performed; review small labels at final manuscript size."
       }
-    ],
-    "publication_gate": "pending",
-    "user_approval": "not_recorded"
+    ]
   },
-  "user_approval": "not_recorded",
+  "user_approval": "approved",
   "scope": "File integrity only; not source fidelity, image quality or award verification.",
-  "hashes": {
-    "overview.png": "4db56745aca0f4c913897584fe6e3b679778e0c30d8fe8905606c57b7a99c46b",
-    "full-prompt.md": "d14ad1a7b91d91d5b91f7b4b2908006858bf30cfb293bcd7951346be0ab08d11",
-    "brief.json": "53739b75b9646e03267077ae2dcec428b6cd1aa3dece038e29693ea790728983"
+  "approval_evidence": {
+    "status": "approved",
+    "date": "2026-09-20",
+    "user_message": "同意,请推送, 并且为我写抖音和小红书的推送文稿",
+    "scope": "Five selected PDF-reread images, project showcase and case-specific knowledge-base guidance; not independent scientific validation."
   },
-  "paired_copy_hashes": {
-    "brief.json": "892e4792791826713694948b8c00bea74b1dd18fbf870906f2e10fd57785c8e1",
-    "overview.png": "4db56745aca0f4c913897584fe6e3b679778e0c30d8fe8905606c57b7a99c46b",
-    "prompt.md": "2ccfd1e5241e83becb3bfed64189bfba9bbf8abadd508014b439af9cd07733a2"
+  "hashes": {
+    "overview.png": "5fd6afc42576971f6f05afb7230fcad53e7b7ea270e6666d213707cfe26f5c24",
+    "full-prompt.md": "0f883d9e12fc21540208f58a3b7cfa5c4e1170a28ac56f494f0b39c81c5dcc19",
+    "brief.json": "5e6fddcd486c71bb18b5749c7ea941c812de2ee2afacd20d112a028e0c1c7464",
+    "prompt.md": "e15bf881caa55476bc84ec40057465ed3183fca6478b4c54be46060be54394e1",
+    "correction-prompt.md": "29194f75000e09de6e6c6a068dd5103155e2a630a4c6f6dc9bfb8309c27ba095",
+    "redesign-prompt.md": "ff5274a6d3c2d394ac0721ef4ac28cc26f2d794abfbcad76806cbd59a0016728",
+    "redesign-correction-prompt.md": "77309d77b2782cd8307df86187e48eca8bfb92886e9a2dad7e52fdfe1ef3bef5",
+    "redesign-routing-prompt.md": "232587e464bc7b9b688416442c6eb847cbf015730ffbc389e77ebacdbb2bf68a",
+    "reread-prompt.md": "2e87561c07e5264ace7a0c15eb318efe9ee974ae349bbb77e317f8e9a14af728",
+    "reread-correction-v2.md": "9726821efeedc4ebf580409d8b6c1ed9333493e1bda8e7498ffd9b62f680432c",
+    "overview-v1.png": "43d6b8f0df3465c6b686dcd0b1ab82c1f9ffe3e3da7ac4229b68781131e34d39",
+    "overview-v2.png": "65a0104cecb9bed02238b1b2576bde3fc85c90fa79b884c7e45948cb6fc0ddf3",
+    "overview-v3.png": "fe3a24c994bee20df2552ee380c747a98f189a2147c391f79cd7cafbe4e91afc",
+    "overview-v4.png": "3838604b6faf0fd91d1c7dbbec01fc97ce7023167d2f1441fe05c36aecd0117d",
+    "overview-v5.png": "4db56745aca0f4c913897584fe6e3b679778e0c30d8fe8905606c57b7a99c46b",
+    "overview-reread-v1.png": "78a8881174c03968ebda3908ab5c76aeca83a7507bd059b0543854bc437fe7f2"
   },
   "intake_sha256": "c2ef017c4976b5fcc91a439939c301d9c8bc1dc312e161c205eb7bab7b15900a",
-  "copy_note": "Published hashes cover exact repository bytes; paired copies may normalize newlines/JSON formatting. Each set was independently verified."
+  "copy_note": "Repository hashes cover exact public bytes. The private pairing audit passed; public approval is recorded from the explicit user message, not inferred by the pairing API."
 }

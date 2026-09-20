@@ -22,7 +22,9 @@ def test_guidance_does_not_inflate_award_or_research_collections():
         assert case_id in cases
         assert (ROOT / notes["prompt_example"]).is_file()
         assert notes["scientific_guards"]
-        assert notes["status"] == "redesigned_candidate_not_user_approved"
+        assert notes["status"] == "user_approved_showcase"
+        assert notes["approved_on"] == "2026-09-20"
+        assert (ROOT / notes["evidence"]).is_file()
 
 
 def test_retrieval_returns_different_objects_and_actual_paper_guards():
@@ -48,3 +50,15 @@ def test_guidance_is_fresh_and_cannot_be_mutated_through_a_previous_result():
     first = design_guidance(case)
     first["profile"]["carriers"].clear()
     assert design_guidance(case)["profile"]["carriers"]
+
+
+def test_pdf_reread_guidance_keeps_source_conflicts_and_model_boundaries():
+    notes = load_guidance()["case_notes"]
+    assert len(notes) == 5
+    guards = {key: " ".join(value["scientific_guards"]) for key, value in notes.items()}
+    assert "Eq.12" in guards["a-typed-ecological-relations"]
+    assert "no re-entry" in guards["b-rescue-multiscale-overview"]
+    assert "argmax" in guards["c-infer-compare-redesign"]
+    assert "E[min(d,K)|x]" in guards["d-wins-to-value-chain"]
+    assert "weighted" in guards["d-wins-to-value-chain"]
+    assert "excludes GDP" in guards["f-cyber-policy-evidence-map"]

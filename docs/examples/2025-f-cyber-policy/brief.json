@@ -13,88 +13,85 @@
     },
     "full_manuscript_read": true,
     "pdf_pages": 33,
-    "intake_format": "PDF"
+    "intake_format": "PDF",
+    "reread": {
+      "date": "2026-09-20",
+      "text_read": "1–25; AI appendix excluded",
+      "physical_pages_visually_inspected": [
+        10,
+        15,
+        16,
+        18,
+        19
+      ],
+      "scope": "Model-bearing manuscript; AI-use appendices are not model authority."
+    }
   },
-  "claim": "Descriptive country profiles, policy-text/DID analysis and demographic associations form three complementary evidence streams for cybersecurity policy advice.",
+  "claim": "Descriptive country profiles, a symbolic policy-adoption contrast and demographic association analysis are shown as distinct evidence structures. No policy-effect estimates are reproduced.",
   "manuscript_evidence": [
     {
-      "locator": "PDF pp6–12, §4",
-      "supports": "Four country indicators are introduced; K-means clustering specifically uses NCSI and Legal Measures, with elbow/silhouette and PCA analysis."
+      "locator": "pp.6–12, §4",
+      "supports": "Four descriptive indicators; K-means uses NCSI and Legal Measures only"
     },
     {
-      "locator": "PDF pp13–17, §5",
-      "supports": "LDA describes six policy topics; before/after treated/control differences are analyzed with covariates."
+      "locator": "pp.13–17, §5",
+      "supports": "Six LDA themes, adoption timing, comparison groups and DID"
     },
     {
-      "locator": "PDF pp17–20, §6",
-      "supports": "MIC, factor analysis and regression characterize demographic and socioeconomic associations."
+      "locator": "pp.18–20, §6",
+      "supports": "MIC and factor/regression association analysis"
     },
     {
-      "locator": "PDF p21, §7",
-      "supports": "DID-coefficient perturbation and MIC input-noise sensitivity."
-    },
-    {
-      "locator": "PDF pp22–23, §9; p25 memo",
-      "supports": "Advice integrates the streams; reporting bias and imperfect controls limit interpretation."
+      "locator": "pp.21–23, §§7,9",
+      "supports": "Sensitivity, underreporting and comparability limitations"
     }
   ],
   "model_relationships": [
     {
-      "source": "NCSI + legal measures",
-      "target": "K-means",
-      "meaning": "Descriptive clustering input; other indicators are not added to the clustering pair",
-      "locator": "§4"
+      "source": "NCSI and Legal Measures",
+      "target": "Descriptive clusters",
+      "meaning": "Only these two indicators enter K-means; not DID treatment assignment",
+      "locator": "pp.6–12"
     },
     {
-      "source": "Policy texts",
-      "target": "LDA themes",
-      "meaning": "Topic extraction",
-      "locator": "§5"
+      "source": "Adoption timing and comparable countries",
+      "target": "DID contrast",
+      "meaning": "Treated change minus control change; no disputed effect estimates reproduced",
+      "locator": "pp.13–17"
     },
     {
-      "source": "Policy changes and covariates",
-      "target": "Difference-in-differences",
-      "meaning": "Treated/control before/after analysis",
-      "locator": "§5"
-    },
-    {
-      "source": "Demographics",
-      "target": "MIC and factor analysis/regression",
-      "meaning": "Association analysis, not causal proof",
-      "locator": "§6"
-    },
-    {
-      "source": "Three evidence streams",
-      "target": "Policy brief",
-      "meaning": "Combined interpretation",
-      "locator": "§9; memo"
+      "source": "Socioeconomic variables",
+      "target": "MIC and factor/regression analyses",
+      "meaning": "Parallel association analyses; factor subset excludes GDP",
+      "locator": "pp.18–20"
     }
   ],
   "references": [
     {
       "case_id": "f-cyber-policy-evidence-map",
-      "borrowed": "Unnumbered Our Work illustration on physical PDFp4 was visually inspected. Retain the three task groups but lay them out in parallel with an explicit advice merge.",
-      "not_borrowed": "Source pixels, layout coordinates, paper-specific numerical results, team/award labels and unsupported causal claims."
+      "borrowed": "Paper-specific objects and relations checked against the model-bearing PDF pages. Persistent identities and selective change from previously inspected Sivia examples; source models only from this PDF. No layout copied wholesale.",
+      "not_borrowed": "Source pixels, numerical results, conflicting signs/formulas, awards, or a compulsory panel layout."
     }
   ],
-  "caption": "Evidence-centered overview of the cybersecurity-policy study. Country-year records support descriptive national profiles, a symbolic treated/control before-after contrast and socioeconomic association analysis. Policy texts supply thematic context; shared covariates support adjustment. Cluster groups are not treatment groups. The figure shows operations and evidence structure, not estimated policy benefits, numerical results or a causal guarantee.",
-  "placement": "End of Introduction / Our Work, before assumptions. Intended 180mm full-text width; physical print proof pending.",
+  "caption": "Descriptive country profiles, a symbolic policy-adoption contrast and demographic association analysis are shown as distinct evidence structures. No policy-effect estimates are reproduced.",
+  "placement": "End of Introduction / Our Work, intended width 180 mm",
   "generation": {
     "backend": "built-in image_gen.imagegen",
     "status": "generated",
-    "artifact_id": "exec-da288e87-d718-4b87-b52a-94063848d3c2.png",
+    "artifact_id": "exec-a2a57d60-fff0-4343-a3dd-19782ad85ebd.png",
     "actual_size": [
       1536,
       1024
     ],
-    "image_sha256": "4db56745aca0f4c913897584fe6e3b679778e0c30d8fe8905606c57b7a99c46b",
+    "image_sha256": "5fd6afc42576971f6f05afb7230fcad53e7b7ea270e6666d213707cfe26f5c24",
     "chain": [
       {
         "operation": "generate",
         "prompt": "prompt.md",
         "output": "overview-v1.png",
         "artifact_id": "exec-9c88d354-b53e-48bb-95e6-963a51dc9935.png",
-        "sha256": "43d6b8f0df3465c6b686dcd0b1ab82c1f9ffe3e3da7ac4229b68781131e34d39"
+        "sha256": "43d6b8f0df3465c6b686dcd0b1ab82c1f9ffe3e3da7ac4229b68781131e34d39",
+        "status": "superseded_history"
       },
       {
         "operation": "edit",
@@ -102,7 +99,8 @@
         "input": "overview-v1.png",
         "output": "overview-v2.png",
         "artifact_id": "exec-477b9ce6-523e-443a-abc8-8a478b43bce6.png",
-        "sha256": "65a0104cecb9bed02238b1b2576bde3fc85c90fa79b884c7e45948cb6fc0ddf3"
+        "sha256": "65a0104cecb9bed02238b1b2576bde3fc85c90fa79b884c7e45948cb6fc0ddf3",
+        "status": "superseded_history"
       },
       {
         "operation": "edit",
@@ -133,7 +131,8 @@
           "passed": true,
           "template_bytes_verified": true,
           "scope": "Exact prompt-text length only; source/visual review and user approval are separate."
-        }
+        },
+        "status": "superseded_history"
       },
       {
         "operation": "edit",
@@ -164,13 +163,14 @@
           "passed": true,
           "template_bytes_verified": true,
           "scope": "Exact prompt-text length only; source/visual review and user approval are separate."
-        }
+        },
+        "status": "superseded_history"
       },
       {
         "operation": "edit",
         "prompt": "redesign-routing-prompt.md",
         "input": "overview-v4.png",
-        "output": "overview.png",
+        "output": "overview-v5.png",
         "artifact_id": "exec-da288e87-d718-4b87-b52a-94063848d3c2.png",
         "sha256": "4db56745aca0f4c913897584fe6e3b679778e0c30d8fe8905606c57b7a99c46b",
         "prompt_detail": {
@@ -195,41 +195,94 @@
           "passed": true,
           "template_bytes_verified": true,
           "scope": "Exact prompt-text length only; source/visual review and user approval are separate."
+        },
+        "status": "superseded_history"
+      },
+      {
+        "operation": "generate",
+        "prompt": "reread-prompt.md",
+        "output": "overview-reread-v1.png",
+        "artifact_id": "exec-1e22af37-f813-42ec-86b1-d8044bca551c.png",
+        "sha256": "78a8881174c03968ebda3908ab5c76aeca83a7507bd059b0543854bc437fe7f2",
+        "series": "pdf-reread-20260920",
+        "prompt_scope": "full_redesign",
+        "prompt_detail": {
+          "profile": "sivia-overview-v1",
+          "binding": {
+            "purpose": "Full English overview designs and substantial redesigns; not an arbitrary universal minimum for small unrelated edits.",
+            "source_repository": "https://github.com/exsinger-hub/Sivia",
+            "source_version": "1.1.0+codex.20260909060506",
+            "template_path": "skills/design-scientific-figure/references/templates/overview-template.txt",
+            "template_sha256": "cd73e60b51a15e005defd61190705846cb3f50a6582a33119be07b2fe78921f9",
+            "minimum_non_whitespace_characters": 15356,
+            "maximum_total_characters": 32000,
+            "metric": "Unicode code points excluding whitespace; count exact submitted prompt, one image call at a time",
+            "count_verified_on": "2026-09-20",
+            "limitation": "Length does not prove useful detail, source fidelity, image quality or user acceptance. Do not pad or concatenate prior calls to pass."
+          },
+          "total_characters": 25249,
+          "non_whitespace_characters": 21495,
+          "submitted_utf8_sha256": "2e87561c07e5264ace7a0c15eb318efe9ee974ae349bbb77e317f8e9a14af728",
+          "length_pass": true,
+          "tool_limit_pass": true,
+          "passed": true,
+          "template_bytes_verified": true,
+          "scope": "Exact prompt-text length only; source/visual review and user approval are separate."
         }
+      },
+      {
+        "operation": "edit",
+        "prompt": "reread-correction-v2.md",
+        "output": "overview.png",
+        "artifact_id": "exec-a2a57d60-fff0-4343-a3dd-19782ad85ebd.png",
+        "sha256": "5fd6afc42576971f6f05afb7230fcad53e7b7ea270e6666d213707cfe26f5c24",
+        "series": "pdf-reread-20260920",
+        "input": "overview-reread-v1.png",
+        "prompt_scope": "localized_correction",
+        "prompt_sha256": "9726821efeedc4ebf580409d8b6c1ed9333493e1bda8e7498ffd9b62f680432c"
       }
     ],
     "exact_prompt_record": "full-prompt.md",
     "empirical_rerun": false,
     "native_editability": false,
-    "prompt_detail_profile": "sivia-overview-v1"
+    "prompt_detail_profile": "sivia-overview-v1",
+    "selected_series": "pdf-reread-20260920"
   },
   "review": {
-    "status": "pending",
-    "review_type": "informed visual self-review of actual outputs; not independent acceptance",
-    "execution_test": "Completed full-image inspection of three real redesign/edit outputs; earlier versions retained, final selected for showcase.",
+    "status": "passed",
     "checks": [
-      "Replaced three equal method cards with a country-year ledger, document themes and a dominant symbolic before/after contrast.",
-      "K-means input explicitly restricted to NCSI and Legal Measures; grayscale profiles distinguished from treated/control colors.",
-      "Four symbolic outcomes and DID = treated change minus control change checked; no effect direction or estimate is reproduced.",
-      "LDA remains descriptive; MIC/factor/regression branch is explicitly associative, not causal.",
-      "Removed misleading outer synthesis routes; local evidence names identify the three interpretation inputs."
+      "Only NCSI and Legal Measures are marked clustering inputs; no cluster-to-treatment arrow remains.",
+      "T/C identities persist before and after; displayed contrast is ΔT−ΔC.",
+      "Policy themes are neutral, not color-coded efficacy rankings.",
+      "MIC no longer feeds factor analysis serially; selected factors precede regression."
     ],
+    "notes": [
+      "The source's case-count coefficient signs and efficacy interpretations conflict; results are omitted, not corrected.",
+      "Country dots and MIC points are explicitly schematic, not reproduced data.",
+      "Factor analysis and DID are design summaries, not claims of verified causality."
+    ],
+    "physical_print_proof": "not performed",
+    "independent_review": "not performed",
+    "user_approval": "approved",
+    "review_type": "Actual-image visual self-review with source notes; not independent review or physical print proof.",
+    "approval_evidence": {
+      "status": "approved",
+      "date": "2026-09-20",
+      "user_message": "同意,请推送, 并且为我写抖音和小红书的推送文稿",
+      "scope": "Five selected PDF-reread images, project showcase and case-specific knowledge-base guidance; not independent scientific validation."
+    },
+    "publication_gate": "approved_for_project_showcase",
     "issues": [
       {
-        "severity": "pending_gate",
-        "detail": "Physical 180mm print/grayscale proof and independent acceptance remain pending. README uses a raster preview; mathematical label readability should be checked in the target manuscript."
-      },
-      {
-        "severity": "minor_visual",
-        "detail": "A redundant short vertical guide remains beside the PC2 axis. It does not encode an additional variable; further cosmetic cleanup may be requested."
+        "severity": "remaining_check",
+        "detail": "Physical print proof and independent review not performed; review small labels at final manuscript size."
       }
-    ],
-    "publication_gate": "pending",
-    "user_approval": "not_recorded"
+    ]
   },
   "source_notes": [
-    "The source's policy-effect sign interpretations and some coefficient descriptions are internally inconsistent. The overview omits numeric effects, rankings and claims of validated effectiveness.",
-    "Shared indicators are shown at the policy-analysis grouping level; the figure does not specify a new regression."
+    "The source's case-count coefficient signs and efficacy interpretations conflict; results are omitted, not corrected.",
+    "Country dots and MIC points are explicitly schematic, not reproduced data.",
+    "Factor analysis and DID are design summaries, not claims of verified causality."
   ],
   "style_adaptation": {
     "source": "Sivia",
@@ -245,10 +298,17 @@
   },
   "design_revision": {
     "date": "2026-09-20",
-    "reason": "User feedback: excessive modularization and insufficient prompt detail.",
-    "status": "candidate_awaiting_user_feedback",
-    "latest_round": 5,
-    "old_image": "overview-v2.png",
-    "new_image": "overview.png"
+    "reason": "PDF-reread redraw approved by the user.",
+    "status": "user_approved_showcase",
+    "latest_round": 7,
+    "old_image": "overview-v5.png",
+    "new_image": "overview.png",
+    "superseded_rounds": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
   }
 }

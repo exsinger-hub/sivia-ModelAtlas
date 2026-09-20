@@ -264,8 +264,18 @@ def test_every_final_has_actual_generation_history_evidence_and_hashes():
             assert (directory / call["prompt"]).read_text(encoding="utf-8").strip() in full_prompt
             if "sha256" in call:
                 assert digest(directory / call["output"]) == call["sha256"]
-        assert brief["review"]["status"] == "pending"
-        assert brief["review"]["user_approval"] == "not_recorded"
+        if "approval" in case:
+            assert brief["review"]["status"] == "passed"
+            assert brief["review"]["user_approval"] == "approved"
+            assert brief["review"]["publication_gate"] == "approved_for_project_showcase"
+            assert brief["review"]["approval_evidence"] == case["approval"]
+            assert brief["review"]["physical_print_proof"] == "not performed"
+            assert brief["review"]["independent_review"] == "not performed"
+            assert brief["source"]["reread"]["physical_pages_visually_inspected"]
+        else:
+            assert case["paper_id"] == "icm-2025-e-2515324"
+            assert brief["review"]["status"] == "pending"
+            assert brief["review"]["user_approval"] == "not_recorded"
         assert brief["manuscript_evidence"] and brief["model_relationships"]
         audit = read_json(directory / "integrity-audit.json")
         assert audit["passed"] is True

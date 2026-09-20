@@ -13,122 +13,188 @@
     },
     "full_manuscript_read": true,
     "pdf_pages": 25,
-    "intake_format": "PDF"
+    "intake_format": "PDF",
+    "reread": {
+      "date": "2026-09-20",
+      "text_read": "1–25",
+      "physical_pages_visually_inspected": [
+        11,
+        18,
+        19
+      ],
+      "scope": "Model-bearing manuscript; AI-use appendices are not model authority."
+    }
   },
-  "claim": "Environmental motion prediction supplies a spatial search prior, while multi-objective equipment allocation supports deployment and Bayesian search updates.",
+  "claim": "Environmental fields constrain a drifting-position forecast. A grid search conditions the assumed location prior on no detection, excludes searched cells and redeploys available resources for the next interval.",
   "manuscript_evidence": [
     {
-      "locator": "PDF p6, §4; pp7–11, §5",
-      "supports": "Currents, density and seafloor support ARIMA/Monte Carlo forecasting, ridge spatial fields and a constrained Newtonian motion model."
+      "locator": "pp.7–11, §§5.1–5.3",
+      "supports": "ARIMA, ridge fields, forces and seafloor constraint"
     },
     {
-      "locator": "PDF pp12–16, §6",
-      "supports": "Genetic multi-objective equipment selection minimizes cost/readiness time and maximizes availability."
+      "locator": "pp.13–16, §6",
+      "supports": "Equipment objectives: cost, availability, readiness"
     },
     {
-      "locator": "PDF pp16–20, §7",
-      "supports": "Poisson-based grid prior follows predicted position; deploy, search and update probabilities using the paper's Bayesian model."
+      "locator": "pp.17–19, Eqs.25–35 / Fig.9",
+      "supports": "Manhattan shells, chosen cell, exclusion and probability update"
     },
     {
-      "locator": "PDF pp20–21, §8; p22, §9",
-      "supports": "Extensions to other sea areas and multiple independent submersibles; search-interval sensitivity."
+      "locator": "pp.20–22, §§8–9",
+      "supports": "Other-sea / multiple-target extension and interval sensitivity"
     }
   ],
   "model_relationships": [
     {
-      "source": "Environmental inputs",
-      "target": "Motion model",
-      "meaning": "Forecast current uncertainty, regress fields and impose seabed boundary",
-      "locator": "§5 pp7–11"
+      "source": "Environmental fields",
+      "target": "Drifting position",
+      "meaning": "Newtonian drift with current and seafloor constraints",
+      "locator": "pp.7–11"
     },
     {
-      "source": "Predicted position",
-      "target": "Poisson grid prior",
-      "meaning": "Center the spatial search prior",
-      "locator": "§7 pp16–18"
+      "source": "Assumed location prior and no detection",
+      "target": "Updated search grid",
+      "meaning": "Exclude searched cells and renormalize under perfect detection/no re-entry",
+      "locator": "pp.17–19"
     },
     {
-      "source": "Equipment allocation",
-      "target": "Deploy",
-      "meaning": "Use optimized allocated equipment",
-      "locator": "§6–7"
-    },
-    {
-      "source": "Search evidence",
-      "target": "Bayesian update",
-      "meaning": "Update after searching; the paper excludes searched cells",
-      "locator": "§7 pp18–20"
-    },
-    {
-      "source": "Bayesian update",
-      "target": "Deploy",
-      "meaning": "Choose next interval's search deployment",
-      "locator": "§7"
+      "source": "Available equipment",
+      "target": "Next eligible search cell",
+      "meaning": "Constrained redeployment as predicted location advances",
+      "locator": "pp.13–19"
     }
   ],
   "references": [
     {
       "case_id": "b-rescue-multiscale-overview",
-      "borrowed": "Source Figure1 on physical PDFp4 was visually inspected. Preserve locate/prepare/search functional separation and the physical-spatial context.",
-      "not_borrowed": "Source pixels, layout coordinates, paper-specific numerical results, team/award labels and unsupported causal claims."
+      "borrowed": "Paper-specific objects and relations checked against the model-bearing PDF pages. Persistent identities and selective change from previously inspected Sivia examples; source models only from this PDF. No layout copied wholesale.",
+      "not_borrowed": "Source pixels, numerical results, conflicting signs/formulas, awards, or a compulsory panel layout."
     }
   ],
-  "caption": "Overview of the deep-sea rescue framework. Environmental fields drive a constrained motion model and a spatial search prior. Multi-objective equipment allocation supports deployment. Search evidence updates grid probabilities for the next interval, with the source model's searched-cell exclusion made explicit. Sensitivity and geographic/multiple-target extensions are shown separately. All trajectories and grids are schematic.",
-  "placement": "End of Introduction / Our Work, before assumptions. Intended 180mm full-text width; physical print proof pending.",
+  "caption": "Environmental fields constrain a drifting-position forecast. A grid search conditions the assumed location prior on no detection, excludes searched cells and redeploys available resources for the next interval.",
+  "placement": "End of Introduction / Our Work, intended width 180 mm",
   "generation": {
     "backend": "built-in image_gen.imagegen",
     "status": "generated",
-    "artifact_id": "exec-8e193d2c-a800-4df8-b66a-6bb583147888.png",
+    "artifact_id": "exec-7c2e779a-6760-4762-b3e2-7e62ecd06291.png",
     "actual_size": [
       1536,
       1024
     ],
-    "image_sha256": "5bdec93b3d4238b62231244af2c604369569341471f8a7ef91beb1a6387d5002",
+    "image_sha256": "4d5badcd694b9585d2fa3736063ab20eca8b29bdfd74f97b457be924009b3beb",
     "chain": [
       {
         "operation": "generate",
         "prompt": "prompt.md",
         "output": "overview-v1.png",
         "artifact_id": "exec-a5a48898-6c3a-40ea-a4ac-b822eb854c7e.png",
-        "sha256": "116281d0f64cd4d6a0fc35151f5c839e0bd3fa2cd98f0fb97174f073a7fd844e"
+        "sha256": "116281d0f64cd4d6a0fc35151f5c839e0bd3fa2cd98f0fb97174f073a7fd844e",
+        "status": "superseded_history"
       },
       {
         "operation": "edit",
         "prompt": "correction-prompt.md",
         "input": "overview-v1.png",
-        "output": "overview.png",
+        "output": "overview-v2.png",
         "artifact_id": "exec-8e193d2c-a800-4df8-b66a-6bb583147888.png",
-        "sha256": "5bdec93b3d4238b62231244af2c604369569341471f8a7ef91beb1a6387d5002"
+        "sha256": "5bdec93b3d4238b62231244af2c604369569341471f8a7ef91beb1a6387d5002",
+        "status": "superseded_history"
+      },
+      {
+        "operation": "generate",
+        "prompt": "reread-prompt.md",
+        "output": "overview-reread-v1.png",
+        "artifact_id": "exec-6ce7862c-6f04-4a79-be14-935a168ac231.png",
+        "sha256": "4aa7baf34ab01639bdd1eec07dc376945b6e0246805941819d5f7c88ab503832",
+        "series": "pdf-reread-20260920",
+        "prompt_scope": "full_redesign",
+        "prompt_detail": {
+          "profile": "sivia-overview-v1",
+          "binding": {
+            "purpose": "Full English overview designs and substantial redesigns; not an arbitrary universal minimum for small unrelated edits.",
+            "source_repository": "https://github.com/exsinger-hub/Sivia",
+            "source_version": "1.1.0+codex.20260909060506",
+            "template_path": "skills/design-scientific-figure/references/templates/overview-template.txt",
+            "template_sha256": "cd73e60b51a15e005defd61190705846cb3f50a6582a33119be07b2fe78921f9",
+            "minimum_non_whitespace_characters": 15356,
+            "maximum_total_characters": 32000,
+            "metric": "Unicode code points excluding whitespace; count exact submitted prompt, one image call at a time",
+            "count_verified_on": "2026-09-20",
+            "limitation": "Length does not prove useful detail, source fidelity, image quality or user acceptance. Do not pad or concatenate prior calls to pass."
+          },
+          "total_characters": 26322,
+          "non_whitespace_characters": 22322,
+          "submitted_utf8_sha256": "d0e126d2f8a8378ab9f7688edb418f385292a72a1f90532caec25ab8ef03e2c7",
+          "length_pass": true,
+          "tool_limit_pass": true,
+          "passed": true,
+          "template_bytes_verified": true,
+          "scope": "Exact prompt-text length only; source/visual review and user approval are separate."
+        }
+      },
+      {
+        "operation": "edit",
+        "prompt": "reread-correction-v2.md",
+        "output": "overview.png",
+        "artifact_id": "exec-7c2e779a-6760-4762-b3e2-7e62ecd06291.png",
+        "sha256": "4d5badcd694b9585d2fa3736063ab20eca8b29bdfd74f97b457be924009b3beb",
+        "series": "pdf-reread-20260920",
+        "input": "overview-reread-v1.png",
+        "prompt_scope": "localized_correction",
+        "prompt_sha256": "0d283c088c65e53661d2c1f0dd69bd3de23bac3178acb5a5a66160f9d844f3d1"
       }
     ],
     "exact_prompt_record": "full-prompt.md",
     "empirical_rerun": false,
-    "native_editability": false
+    "native_editability": false,
+    "selected_series": "pdf-reread-20260920"
   },
   "review": {
-    "status": "pending",
-    "review_type": "informed visual self-review; not independent acceptance",
-    "execution_test": "completed: full paper read, reference viewed, actual image generated, inspected and corrected where needed",
+    "status": "passed",
     "checks": [
-      "Removed unrequested team/contest attribution from the generated illustration.",
-      "Removed the disconnected duplicate Deploy box; the single actual deployment now says Uses allocated equipment.",
-      "Currents/density/seafloor feed supported forecasting and motion methods.",
-      "GA objective arrows retain cost down, availability up and readiness time down.",
-      "Grid prior -> deploy -> search evidence -> Bayesian update and next-interval feedback are visible.",
-      "Searched-cells exclusion explicitly says in this model; trajectory and search cycle are conceptual.",
-      "Final image viewed; no fabricated quantitative trajectory or performance metric."
+      "Both maps use a 7×7 frame and retain the old four-cell exclusion region.",
+      "Cell r remains at row4/column5: searched before, hatched after.",
+      "Next cell s is unsearched, at row6/column5; predicted position moves from row4/column4 to row5/column4.",
+      "No numeric rescue probabilities or empirical uncertainty bounds are fabricated."
     ],
+    "notes": [
+      "The source assumes searched cells are empty and neglects re-entry; that note is in the figure.",
+      "Eq.18 force-component duplication and Eqs.30/35 probability normalization conflicts are not silently repaired.",
+      "The top-view projection is schematic; it is not an operational rescue tool."
+    ],
+    "physical_print_proof": "not performed",
+    "independent_review": "not performed",
+    "user_approval": "approved",
+    "review_type": "Actual-image visual self-review with source notes; not independent review or physical print proof.",
+    "approval_evidence": {
+      "status": "approved",
+      "date": "2026-09-20",
+      "user_message": "同意,请推送, 并且为我写抖音和小红书的推送文稿",
+      "scope": "Five selected PDF-reread images, project showcase and case-specific knowledge-base guidance; not independent scientific validation."
+    },
+    "publication_gate": "approved_for_project_showcase",
     "issues": [
       {
-        "severity": "pending_gate",
-        "detail": "180mm physical-size/grayscale proof and independent review not performed. Small connector labels require checking in the manuscript layout."
+        "severity": "remaining_check",
+        "detail": "Physical print proof and independent review not performed; review small labels at final manuscript size."
       }
-    ],
-    "publication_gate": "pending",
-    "user_approval": "not_recorded"
+    ]
   },
   "source_notes": [
-    "Excluding previously searched cells is a source-model assumption, not a real rescue safety guarantee.",
-    "Only a method overview is produced; no field search, environmental forecast or numerical solver was run."
-  ]
+    "The source assumes searched cells are empty and neglects re-entry; that note is in the figure.",
+    "Eq.18 force-component duplication and Eqs.30/35 probability normalization conflicts are not silently repaired.",
+    "The top-view projection is schematic; it is not an operational rescue tool."
+  ],
+  "design_revision": {
+    "date": "2026-09-20",
+    "reason": "PDF-reread redraw approved by the user.",
+    "status": "user_approved_showcase",
+    "latest_round": 4,
+    "old_image": "overview-v2.png",
+    "new_image": "overview.png",
+    "superseded_rounds": [
+      1,
+      2
+    ]
+  }
 }

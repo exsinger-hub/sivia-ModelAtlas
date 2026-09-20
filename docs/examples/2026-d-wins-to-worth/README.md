@@ -2,13 +2,13 @@
 
 [English](README.en.md) · [全部成图](../../../README.md#showcase)
 
-来源论文：*From Wins to Worth: A Quantitative Model of Performance, Attendance, Revenue, and Valuation for Sports Teams* · Finalist · Team 2608869.
+来源论文: *From Wins to Worth: A Quantitative Model of Performance, Attendance, Revenue, and Valuation for Sports Teams* · Finalist · Team 2608869.
 
-[![用球馆座位解释容量截断，再连接票价×人数、收支账目和滚动决策。](overview.png)](overview.png)
+[![截断需求、票务收入与现金／债务恒等式，连接到球员行动和滚动状态更新。](overview.png)](overview.png)
 
-用球馆座位解释容量截断，再连接票价×人数、收支账目和滚动决策。
+截断需求、票务收入与现金／债务恒等式，连接到球员行动和滚动状态更新。
 
-[完整 prompt](full-prompt.md) · [论文依据与图注](brief.json) · [文件校验](integrity-audit.json)
+[完整 prompt 与调用记录](full-prompt.md) · [论文依据与图注](brief.json) · [文件校验](integrity-audit.json)
 
 ## 论文来源
 
@@ -16,22 +16,19 @@
 - [COMAP 官方奖项](https://www.contest.comap.com/undergraduate/contests/mcm/contests/2026/results/2026_ICM_Problem_D_Results.pdf): PDF physical page 3, first row: Team 2608869, Problem D, Finalist.
 - PDF SHA-256: `af57e494a2cb0713b881c64ebd02b16686f9df0992b33562a7919cd1981fd161`.
 
-已阅读全文（32 页）并查看原 overview。这里展示的是实际 ImageGen 新成图，不是论文截图，也没有重跑数值实验。奖项属于来源论文。
+已重新核对建模正文（Main pp.1–25, including preceding-turn equation inspection），本轮目视检查公式／图页：13, 14, 16, 19, 20, 24。新图由 ImageGen 生成，不是论文截图，也没有重跑数值实验；奖项属于来源论文。
 
-## 图中保留什么
+## 原文依据
 
 | 图中内容 | 物理 PDF 页 / 章节 |
 | --- | --- |
-| Elo performance model maps game information to expected wins. | PDF pp9–10, §5 |
-| Capacity-censored attendance demand and dynamic ticket pricing. | PDF pp11–13, §6 |
-| Revenue, operating/salary costs, interest, profit and cash; revenue/EBITDA/DCF valuation lenses; target-leverage borrowing/repayment. | PDF pp13–15, §7 |
-| No move/sign/trade decisions, salary/cash/debt feasibility and rolling updates using available information. | PDF pp15–18, §8 |
-| Injury, interest-rate and market-size scenarios; Monte Carlo and sensitivity analysis. | PDF pp18–20, §9; pp20–23, §10 |
+| Elo, right-censored lognormal demand and pricing assumptions | pp.9–12, §§5–6 |
+| Revenue, profit, simplified cash book, valuation methods and leverage | pp.13–15, Eqs.22–29 |
+| Four-component state, action increments, optimization and rolling updates | pp.15–18, Eqs.30–35 |
+| Other-revenue market scaling and conflicting valuation/injury descriptions | pp.19–24, §§9–11 |
 
 ## 检查与交付
 
-最终 PNG 为 1536 × 1024，已自审文字、模型边界和连线方向。完整 prompt、实际生成调用、图片哈希和内容取舍留在上述记录中；本页仅展示选定成图。
+2026-09-20 经用户确认用于项目发布。选定 PNG 为 1536 × 1024，已目视检查；完整 prompt、来源冲突、修订记录和图片哈希保留在上述文件中。旧调用只作历史留档，不作当前绘图依据。
 
-物理印刷尺寸、独立审查和用户验收仍待确认；当前交付是位图。建议放在 Our Work 通栏位置，英文图注见 `brief.json`。
-
-该 PDF 部分字形编码异常，入稿使用已有全文提取文本，原图布局另行目视检查。作者仓库赛后重建的代码未作为比赛实测结果。
+尚未进行物理印刷校样或独立审查。当前交付为位图，放入论文时仍需检查小字与公式；建议置于 Our Work 通栏（180 mm），英文图注见 `brief.json`。

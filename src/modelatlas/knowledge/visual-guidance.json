@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "scope": "Composition guidance only. Manuscripts remain authoritative for models, edges and results. Generated redesigns are candidates pending user acceptance, not new award references.",
+  "scope": "Composition guidance only. Manuscripts remain authoritative for models, edges and results. The five PDF-reread examples were approved for the project showcase on 2026-09-20; they are not new award references or independently validated results.",
   "sivia_reference": {
     "repository": "https://github.com/exsinger-hub/Sivia",
     "installed_version": "1.1.0+codex.20260909060506",
@@ -155,6 +155,36 @@
     }
   },
   "case_notes": {
+    "a-typed-ecological-relations": {
+      "critique": "A generic ecological overview hid the sign and population-level meaning of the resource feedback.",
+      "replacement": "Shared resource and host-parasite relations feed a decreasing male-fraction response and recruitment loop; compare sex-ratio settings separately.",
+      "scientific_guards": [
+        "Eq.12 and its prose imply a decreasing male fraction as resources rise; Fig.7's conflicting positive sign is not copied.",
+        "Resource per individual is lambda/(N + sum Ni), not lambda/N.",
+        "k(1-m)^1.25 is a recruitment factor with a host-dependent term, not the complete population update.",
+        "Population/cohort sex composition is not individual adult sex change.",
+        "The ESI uses standardized resources and surviving species, not lamprey abundance as an additional operand."
+      ],
+      "evidence": "docs/examples/2024-a-lamprey/brief.json",
+      "prompt_example": "docs/examples/2024-a-lamprey/reread-prompt.md",
+      "status": "user_approved_showcase",
+      "approved_on": "2026-09-20"
+    },
+    "b-rescue-multiscale-overview": {
+      "critique": "A generic search pipeline did not preserve the identity of the searched cells across the update.",
+      "replacement": "A drift cross-section and two matched 7-by-7 maps show prior, no detection, exclusion, drift and redeployment.",
+      "scientific_guards": [
+        "The Manhattan-distance Poisson-shell prior is assumed, not a calibrated posterior derived from Monte Carlo trajectories.",
+        "Excluding searched cells assumes perfect detection and no re-entry; show this limitation.",
+        "Eq.18 repeats a force component; Eqs.30/35 and the normalization prose conflict. Do not silently repair or certify these formulas.",
+        "Keep old excluded cells and the chosen cell at the same coordinates in both maps.",
+        "Summed probabilities over independent targets represent an expected count, not the probability of finding any target."
+      ],
+      "evidence": "docs/examples/2024-b-deep-sea-rescue/brief.json",
+      "prompt_example": "docs/examples/2024-b-deep-sea-rescue/reread-prompt.md",
+      "status": "user_approved_showcase",
+      "approved_on": "2026-09-20"
+    },
     "c-infer-compare-redesign": {
       "critique": "Previous redesign split inference, rules, traits and MARS into repeated framed modules; few objects explained the actual operations.",
       "replacement": "Feasible share simplex → shared rule-conditional shares → two parallel analyses; enlarge rank rails and the AND-gated subtraction.",
@@ -163,22 +193,30 @@
         "Feasible-set and likelihood estimators have separate raw-data inputs.",
         "Observed judges feed Judge outcome; inferred shares feed Inferred fan outcome.",
         "Judge elite AND worse fan rank; otherwise S = S0; eliminate argmax S.",
-        "Weekly counterfactuals, not a full-season replay; keep tune/test seasons separate."
+        "Weekly counterfactuals, not a full-season replay; keep tune/test seasons separate.",
+        "Fig.4's rank-sum argmin conflicts with rank 1 being best; follow the larger-risk/argmax convention in section 7.2.",
+        "Both outcome models have fixed plus random effects. Inferred-share uncertainty is not fully propagated into these fits."
       ],
-      "prompt_example": "docs/examples/2026-c-ballroom-voting/redesign-routing-prompt.md",
-      "status": "redesigned_candidate_not_user_approved"
+      "evidence": "docs/examples/2026-c-ballroom-voting/brief.json",
+      "prompt_example": "docs/examples/2026-c-ballroom-voting/reread-prompt.md",
+      "status": "user_approved_showcase",
+      "approved_on": "2026-09-20"
     },
     "d-wins-to-value-chain": {
       "critique": "Five equal business cards and stock icons hid capacity censoring, accounting and the decision state.",
-      "replacement": "Arena capacity and latent-demand overflow dominate; show min(D*,K), price × attendance, additive ledger, baseline valuation and forward decisions.",
+      "replacement": "Censored-demand density, explicit revenue and cash/debt identities, named action increments and a rolling state transition replace decorative arena and business cards.",
       "scientific_guards": [
-        "Price influences demand, never physical capacity K.",
+        "Expected attendance is E[min(d,K)|x], not min(E[d],K). Estimated demand covariates do not include fitted price elasticity; pricing response is an assumption.",
         "Revenue sums streams; profit subtracts costs; cash is a separate state.",
-        "Revenue-multiple valuation is the baseline; EBITDA and DCF are checks, not an average.",
-        "Financing updates cash and debt; known state advances to the next segment."
+        "Section 7.2 states weighted Revenue/EBITDA/DCF aggregation without weights; later scenarios use revenue multiples and section 11 defers other methods. Preserve this source inconsistency; invent neither weights nor a blanket ban on aggregation.",
+        "Financing updates cash and debt; the source's simplified cash book adds profit, not a fully specified operating-cash-flow model.",
+        "Market-size scenarios scale other revenue; do not add an unsupported market-to-popularity or demand edge.",
+        "Joint roster/leverage choices use known state. Pricing remains a separate layer; injury is an exogenous scenario, not a validated stochastic process."
       ],
-      "prompt_example": "docs/examples/2026-d-wins-to-worth/redesign-routing-prompt.md",
-      "status": "redesigned_candidate_not_user_approved"
+      "evidence": "docs/examples/2026-d-wins-to-worth/brief.json",
+      "prompt_example": "docs/examples/2026-d-wins-to-worth/reread-prompt.md",
+      "status": "user_approved_showcase",
+      "approved_on": "2026-09-20"
     },
     "f-cyber-policy-evidence-map": {
       "critique": "Three equal method panels replaced evidence with repeated icons and hid the comparison actually made.",
@@ -188,10 +226,14 @@
         "Descriptive clusters are not policy treatment groups; distinguish them by color and labels.",
         "DID subtracts the control change from the treated change; no invented effects or signs.",
         "LDA describes topics; MIC/regression associations do not establish causation.",
-        "Source sign interpretations conflict; depict symbolic contrasts, not a claimed empirical benefit."
+        "Source sign interpretations and significance statements conflict; depict symbolic contrasts, not a claimed empirical benefit.",
+        "MIC and factor analysis are parallel association analyses; the factor subset excludes GDP. Clustering K-selection prose also conflicts with its figure.",
+        "Underreporting and comparison-group limitations are not removed by the source's noise sensitivity analysis."
       ],
-      "prompt_example": "docs/examples/2025-f-cyber-policy/redesign-routing-prompt.md",
-      "status": "redesigned_candidate_not_user_approved"
+      "evidence": "docs/examples/2025-f-cyber-policy/brief.json",
+      "prompt_example": "docs/examples/2025-f-cyber-policy/reread-prompt.md",
+      "status": "user_approved_showcase",
+      "approved_on": "2026-09-20"
     }
   }
 }

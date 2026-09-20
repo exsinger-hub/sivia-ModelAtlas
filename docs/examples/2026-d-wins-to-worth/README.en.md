@@ -2,13 +2,13 @@
 
 [中文](README.md) · [All examples](../../../README.en.md#showcase)
 
-Source paper：*From Wins to Worth: A Quantitative Model of Performance, Attendance, Revenue, and Valuation for Sports Teams* · Finalist · Team 2608869.
+Source paper: *From Wins to Worth: A Quantitative Model of Performance, Attendance, Revenue, and Valuation for Sports Teams* · Finalist · Team 2608869.
 
-[![Arena seats explain capacity censoring; explicit revenue terms and a forward timeline connect operations to decisions.](overview.png)](overview.png)
+[![Censored demand, ticket revenue and cash/debt identities connect roster actions to the next decision state.](overview.png)](overview.png)
 
-Arena seats explain capacity censoring; explicit revenue terms and a forward timeline connect operations to decisions.
+Censored demand, ticket revenue and cash/debt identities connect roster actions to the next decision state.
 
-[Full prompt](full-prompt.md) · [Evidence & caption](brief.json) · [File integrity](integrity-audit.json)
+[Full prompt & call history](full-prompt.md) · [Evidence & caption](brief.json) · [File integrity](integrity-audit.json)
 
 ## Source
 
@@ -16,22 +16,19 @@ Arena seats explain capacity censoring; explicit revenue terms and a forward tim
 - [Official COMAP award](https://www.contest.comap.com/undergraduate/contests/mcm/contests/2026/results/2026_ICM_Problem_D_Results.pdf): PDF physical page 3, first row: Team 2608869, Problem D, Finalist.
 - PDF SHA-256: `af57e494a2cb0713b881c64ebd02b16686f9df0992b33562a7919cd1981fd161`.
 
-The complete 32-page paper and its original overview were read. The images are new ImageGen illustrations, not screenshots or simulation reruns. Awards belong to the source papers, not to these redesigns.
+Model-bearing text reread: Main pp.1–25, including preceding-turn equation inspection. Equation/figure pages visually inspected this round: 13, 14, 16, 19, 20, 24. New ImageGen illustration, not a paper screenshot or a numerical rerun. Awards belong to the source paper.
 
 ## Figure scope
 
 | Figure content | Physical PDF pages / section |
 | --- | --- |
-| Elo performance model maps game information to expected wins. | PDF pp9–10, §5 |
-| Capacity-censored attendance demand and dynamic ticket pricing. | PDF pp11–13, §6 |
-| Revenue, operating/salary costs, interest, profit and cash; revenue/EBITDA/DCF valuation lenses; target-leverage borrowing/repayment. | PDF pp13–15, §7 |
-| No move/sign/trade decisions, salary/cash/debt feasibility and rolling updates using available information. | PDF pp15–18, §8 |
-| Injury, interest-rate and market-size scenarios; Monte Carlo and sensitivity analysis. | PDF pp18–20, §9; pp20–23, §10 |
+| Elo, right-censored lognormal demand and pricing assumptions | pp.9–12, §§5–6 |
+| Revenue, profit, simplified cash book, valuation methods and leverage | pp.13–15, Eqs.22–29 |
+| Four-component state, action increments, optimization and rolling updates | pp.15–18, Eqs.30–35 |
+| Other-revenue market scaling and conflicting valuation/injury descriptions | pp.19–24, §§9–11 |
 
 ## Review
 
-The final 1536 × 1024 PNG was visually checked for labels, model boundaries and connector directions. Full prompts, actual generation/edit calls, image hashes and content notes are retained in the linked records. Only the selected final image is displayed here.
+Approved by the user for project publication on 2026-09-20. The selected 1536 × 1024 PNG was visually reviewed; exact prompts, source conflicts and generation hashes are recorded above. Earlier calls remain as history, not current design guidance.
 
-Physical print-size proof, independent review and user approval remain pending. The output is raster, not natively editable. Suggested placement: Our Work, full text width. The English caption is in `brief.json`.
-
-Intake used extracted text because some PDF font glyphs were malformed; original figure layout was checked visually. Later reconstructed repository code was not treated as submitted results.
+Physical print proof and independent review were not performed. This is a raster image; check small mathematical labels in the target manuscript. Suggested placement: Our Work, full text width (180 mm). The English caption is in `brief.json`.

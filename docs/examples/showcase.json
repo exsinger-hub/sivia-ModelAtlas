@@ -64,7 +64,7 @@
       "brief": "docs/examples/2026-c-ballroom-voting/brief.json",
       "full_prompt": "docs/examples/2026-c-ballroom-voting/full-prompt.md",
       "final_image": "docs/examples/2026-c-ballroom-voting/overview.png",
-      "latest_round": 5,
+      "latest_round": 8,
       "rounds": [
         {
           "number": 1,
@@ -93,10 +93,34 @@
         {
           "number": 5,
           "operation": "edit",
-          "image": "docs/examples/2026-c-ballroom-voting/overview.png",
+          "image": "docs/examples/2026-c-ballroom-voting/overview-v5.png",
           "prompt": "docs/examples/2026-c-ballroom-voting/redesign-routing-prompt.md"
+        },
+        {
+          "number": 6,
+          "operation": "generate",
+          "image": "docs/examples/2026-c-ballroom-voting/overview-reread-v1.png",
+          "prompt": "docs/examples/2026-c-ballroom-voting/reread-prompt.md"
+        },
+        {
+          "number": 7,
+          "operation": "edit",
+          "image": "docs/examples/2026-c-ballroom-voting/overview-reread-v2.png",
+          "prompt": "docs/examples/2026-c-ballroom-voting/reread-correction-v2.md"
+        },
+        {
+          "number": 8,
+          "operation": "edit",
+          "image": "docs/examples/2026-c-ballroom-voting/overview.png",
+          "prompt": "docs/examples/2026-c-ballroom-voting/reread-correction-v3.md"
         }
-      ]
+      ],
+      "approval": {
+        "status": "approved",
+        "date": "2026-09-20",
+        "user_message": "同意,请推送, 并且为我写抖音和小红书的推送文稿",
+        "scope": "Five selected PDF-reread images, project showcase and case-specific knowledge-base guidance; not independent scientific validation."
+      }
     },
     {
       "id": "2024-a-lamprey",
@@ -121,15 +145,39 @@
       "brief": "docs/examples/2024-a-lamprey/brief.json",
       "full_prompt": "docs/examples/2024-a-lamprey/full-prompt.md",
       "final_image": "docs/examples/2024-a-lamprey/overview.png",
-      "latest_round": 1,
+      "latest_round": 4,
       "rounds": [
         {
           "number": 1,
           "operation": "generate",
-          "image": "docs/examples/2024-a-lamprey/overview.png",
+          "image": "docs/examples/2024-a-lamprey/overview-v1.png",
           "prompt": "docs/examples/2024-a-lamprey/prompt.md"
+        },
+        {
+          "number": 2,
+          "operation": "generate",
+          "image": "docs/examples/2024-a-lamprey/overview-reread-v1.png",
+          "prompt": "docs/examples/2024-a-lamprey/reread-prompt.md"
+        },
+        {
+          "number": 3,
+          "operation": "edit",
+          "image": "docs/examples/2024-a-lamprey/overview-reread-v2.png",
+          "prompt": "docs/examples/2024-a-lamprey/reread-correction-v2.md"
+        },
+        {
+          "number": 4,
+          "operation": "edit",
+          "image": "docs/examples/2024-a-lamprey/overview.png",
+          "prompt": "docs/examples/2024-a-lamprey/reread-correction-v3.md"
         }
-      ]
+      ],
+      "approval": {
+        "status": "approved",
+        "date": "2026-09-20",
+        "user_message": "同意,请推送, 并且为我写抖音和小红书的推送文稿",
+        "scope": "Five selected PDF-reread images, project showcase and case-specific knowledge-base guidance; not independent scientific validation."
+      }
     },
     {
       "id": "2024-b-deep-sea-rescue",
@@ -154,7 +202,7 @@
       "brief": "docs/examples/2024-b-deep-sea-rescue/brief.json",
       "full_prompt": "docs/examples/2024-b-deep-sea-rescue/full-prompt.md",
       "final_image": "docs/examples/2024-b-deep-sea-rescue/overview.png",
-      "latest_round": 2,
+      "latest_round": 4,
       "rounds": [
         {
           "number": 1,
@@ -165,10 +213,28 @@
         {
           "number": 2,
           "operation": "edit",
-          "image": "docs/examples/2024-b-deep-sea-rescue/overview.png",
+          "image": "docs/examples/2024-b-deep-sea-rescue/overview-v2.png",
           "prompt": "docs/examples/2024-b-deep-sea-rescue/correction-prompt.md"
+        },
+        {
+          "number": 3,
+          "operation": "generate",
+          "image": "docs/examples/2024-b-deep-sea-rescue/overview-reread-v1.png",
+          "prompt": "docs/examples/2024-b-deep-sea-rescue/reread-prompt.md"
+        },
+        {
+          "number": 4,
+          "operation": "edit",
+          "image": "docs/examples/2024-b-deep-sea-rescue/overview.png",
+          "prompt": "docs/examples/2024-b-deep-sea-rescue/reread-correction-v2.md"
         }
-      ]
+      ],
+      "approval": {
+        "status": "approved",
+        "date": "2026-09-20",
+        "user_message": "同意,请推送, 并且为我写抖音和小红书的推送文稿",
+        "scope": "Five selected PDF-reread images, project showcase and case-specific knowledge-base guidance; not independent scientific validation."
+      }
     },
     {
       "id": "2025-f-cyber-policy",
@@ -193,7 +259,7 @@
       "brief": "docs/examples/2025-f-cyber-policy/brief.json",
       "full_prompt": "docs/examples/2025-f-cyber-policy/full-prompt.md",
       "final_image": "docs/examples/2025-f-cyber-policy/overview.png",
-      "latest_round": 5,
+      "latest_round": 7,
       "rounds": [
         {
           "number": 1,
@@ -222,10 +288,28 @@
         {
           "number": 5,
           "operation": "edit",
-          "image": "docs/examples/2025-f-cyber-policy/overview.png",
+          "image": "docs/examples/2025-f-cyber-policy/overview-v5.png",
           "prompt": "docs/examples/2025-f-cyber-policy/redesign-routing-prompt.md"
+        },
+        {
+          "number": 6,
+          "operation": "generate",
+          "image": "docs/examples/2025-f-cyber-policy/overview-reread-v1.png",
+          "prompt": "docs/examples/2025-f-cyber-policy/reread-prompt.md"
+        },
+        {
+          "number": 7,
+          "operation": "edit",
+          "image": "docs/examples/2025-f-cyber-policy/overview.png",
+          "prompt": "docs/examples/2025-f-cyber-policy/reread-correction-v2.md"
         }
-      ]
+      ],
+      "approval": {
+        "status": "approved",
+        "date": "2026-09-20",
+        "user_message": "同意,请推送, 并且为我写抖音和小红书的推送文稿",
+        "scope": "Five selected PDF-reread images, project showcase and case-specific knowledge-base guidance; not independent scientific validation."
+      }
     },
     {
       "id": "2026-d-wins-to-worth",
@@ -250,7 +334,7 @@
       "brief": "docs/examples/2026-d-wins-to-worth/brief.json",
       "full_prompt": "docs/examples/2026-d-wins-to-worth/full-prompt.md",
       "final_image": "docs/examples/2026-d-wins-to-worth/overview.png",
-      "latest_round": 5,
+      "latest_round": 8,
       "rounds": [
         {
           "number": 1,
@@ -279,10 +363,34 @@
         {
           "number": 5,
           "operation": "edit",
-          "image": "docs/examples/2026-d-wins-to-worth/overview.png",
+          "image": "docs/examples/2026-d-wins-to-worth/overview-v5.png",
           "prompt": "docs/examples/2026-d-wins-to-worth/redesign-routing-prompt.md"
+        },
+        {
+          "number": 6,
+          "operation": "generate",
+          "image": "docs/examples/2026-d-wins-to-worth/overview-reread-v1.png",
+          "prompt": "docs/examples/2026-d-wins-to-worth/reread-prompt.md"
+        },
+        {
+          "number": 7,
+          "operation": "edit",
+          "image": "docs/examples/2026-d-wins-to-worth/overview-reread-v2.png",
+          "prompt": "docs/examples/2026-d-wins-to-worth/reread-correction-v2.md"
+        },
+        {
+          "number": 8,
+          "operation": "edit",
+          "image": "docs/examples/2026-d-wins-to-worth/overview.png",
+          "prompt": "docs/examples/2026-d-wins-to-worth/reread-correction-v3.md"
         }
-      ]
+      ],
+      "approval": {
+        "status": "approved",
+        "date": "2026-09-20",
+        "user_message": "同意,请推送, 并且为我写抖音和小红书的推送文稿",
+        "scope": "Five selected PDF-reread images, project showcase and case-specific knowledge-base guidance; not independent scientific validation."
+      }
     }
   ]
 }

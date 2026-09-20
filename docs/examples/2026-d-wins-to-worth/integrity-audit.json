@@ -6,38 +6,67 @@
     "prompt.md": true
   },
   "visual_review": {
-    "status": "pending",
-    "review_type": "informed visual self-review of actual outputs; not independent acceptance",
-    "execution_test": "Completed full-image inspection of three real redesign/edit outputs; earlier versions retained, final selected for showcase.",
+    "status": "passed",
     "checks": [
-      "Replaced five equal business panels with an arena-capacity mechanism, revenue/cost ledger and forward decision timeline.",
-      "Attendance = min(D*, K); price and attendance multiply for ticket revenue; no price-to-capacity operand route.",
-      "Revenue and costs remain additive/subtractive; cash is a separate state affected by financing.",
-      "Baseline revenue-multiple valuation is expressed explicitly; EBITDA and DCF remain cross-checks, not a weighted average.",
-      "Removed the ambiguous outer return loop in favor of explicit local roster-to-strength/popularity/salary labels.",
-      "Schematic cap curve has no fitted parameters; no financial outcome or numerical forecast is claimed."
+      "Stadium removed; the distribution/capacity relation and state equations are primary.",
+      "Attendance remains expectation of min(d,K), not min(E[d],K).",
+      "Price response is explicitly assumed; no estimated elasticity is claimed.",
+      "Revenue adds ticket and other revenue; borrowing/valuation arrows into profit were removed.",
+      "Profit, interest and cash/debt stock identities are visible and source-grounded.",
+      "ΔE/ΔP and leverage use named ports; a leftward next-iteration arrow replaces the erroneous two-ended return."
     ],
+    "notes": [
+      "§7.2 states weighted aggregation, while later scenarios use revenue multiples. This contradiction is explicitly retained in the figure; no weights invented.",
+      "Profit is used in the source's simplified cash book, not relabelled as a fully specified cash-flow model.",
+      "Some connections are communicated by repeated variable names / ports, not continuous cables. This is a conceptual overview, not an executable wiring specification.",
+      "Typographic/density refinement can be judged by the user; no production-quality or user-acceptance seal is claimed."
+    ],
+    "physical_print_proof": "not performed",
+    "independent_review": "not performed",
+    "user_approval": "approved",
+    "review_type": "Actual-image visual self-review with source notes; not independent review or physical print proof.",
+    "approval_evidence": {
+      "status": "approved",
+      "date": "2026-09-20",
+      "user_message": "同意,请推送, 并且为我写抖音和小红书的推送文稿",
+      "scope": "Five selected PDF-reread images, project showcase and case-specific knowledge-base guidance; not independent scientific validation."
+    },
+    "publication_gate": "approved_for_project_showcase",
     "issues": [
       {
-        "severity": "pending_gate",
-        "detail": "Physical 180mm print/grayscale proof and independent acceptance remain pending. README uses a raster preview; mathematical label readability should be checked in the target manuscript."
+        "severity": "remaining_check",
+        "detail": "Physical print proof and independent review not performed; review small labels at final manuscript size."
       }
-    ],
-    "publication_gate": "pending",
-    "user_approval": "not_recorded"
+    ]
   },
-  "user_approval": "not_recorded",
+  "user_approval": "approved",
   "scope": "File integrity only; not source fidelity, image quality or award verification.",
-  "hashes": {
-    "overview.png": "46973b9a6fa3348ce0bc367a2ddea8dbe608c3a92d5905679441d9bebe833253",
-    "full-prompt.md": "ba0e1b04a172e80de1b9f4f35f79e52f700004cdb42ca1e3ad16e743c36cfd34",
-    "brief.json": "ff3da550545b00facaf4e89a8ba7a6b8a9b600c3fcf064d1de10ef505f4d6069"
+  "approval_evidence": {
+    "status": "approved",
+    "date": "2026-09-20",
+    "user_message": "同意,请推送, 并且为我写抖音和小红书的推送文稿",
+    "scope": "Five selected PDF-reread images, project showcase and case-specific knowledge-base guidance; not independent scientific validation."
   },
-  "paired_copy_hashes": {
-    "brief.json": "aa478e2967260e557552f45482b4c474b04f3767a38e56ef5a9e3a5f9ed11059",
-    "overview.png": "46973b9a6fa3348ce0bc367a2ddea8dbe608c3a92d5905679441d9bebe833253",
-    "prompt.md": "16b3ce8290e661749d75a000ab5bc1eab03d36ea26d46dc4f572ddee4f8d3b67"
+  "hashes": {
+    "overview.png": "74676a584d037bdaf35053d738d5bbf1ca8bdbde986c7405f8d019b20a2b7602",
+    "full-prompt.md": "dbb700ce0459e8d3d0ab3a22791222ff278862163aef0784846a6077b5dcaca1",
+    "brief.json": "56670f2568c1e00cfc97891e80da3b2e325ca4da7e07fe822fa1a5ac7fdfd0f7",
+    "prompt.md": "d4547c72e0d0e18c74482d9b87c5a7010b32bdd20127d473153ec3863fd7c91a",
+    "correction-prompt.md": "9d9835b7092771f2489f02d4cf7fa624ddaa0918f03979c443ba00e95d10dec6",
+    "redesign-prompt.md": "50588b8ebee76546459d3b5a462160baac38ea06a85c27d1953b17a86917c8fb",
+    "redesign-correction-prompt.md": "a84bc58978022ee7bbee5f9c25f5ebb0829d7926ee2a0a3e7b68130231a42308",
+    "redesign-routing-prompt.md": "8c9ddc67e505add86ed71b8e6bf8cd89aa24e4348dcd4be3c43115912766ae00",
+    "reread-prompt.md": "5aa527825c8e1e2365e0a7f5e83cae101883e8eba0e6c71288cedf6f270fb574",
+    "reread-correction-v2.md": "58a3a4674ea93797a6a48f4934c14421807b08c7e5a09771ebf4c4ffad5050b1",
+    "reread-correction-v3.md": "27f413d22553aa1b0db87129b7abaf9c66c9172cc9e8dced153d8d732a2c71d2",
+    "overview-v1.png": "0545afa7fd83eecc082caa56b403f405edc5ceecee7f1b1c4a0021e78d2a6261",
+    "overview-v2.png": "d47578483dd6755145d79cd8614ca76297e9b0e4febc0d22d2bcc976a556fe5e",
+    "overview-v3.png": "e20332f898f9e24bbc1528676e0236078d5d3087fa168e2192bf8b49851972ab",
+    "overview-v4.png": "b82a5765d93f1e3f995c90c3438124600b6f8dfc0615f192c137df22e02225ca",
+    "overview-v5.png": "46973b9a6fa3348ce0bc367a2ddea8dbe608c3a92d5905679441d9bebe833253",
+    "overview-reread-v1.png": "26b50c87fb39f6928d0e72fb1c446c5293959bc591272b91f6f6b8f63cf720ea",
+    "overview-reread-v2.png": "1c8bce36baee66ce32659125ade5fb599f0896113856ace5310cf11c8ed65979"
   },
   "intake_sha256": "73646259b2dd433de1b194fafd7233c29b33ce08a8138defab21381f903a6522",
-  "copy_note": "Published hashes cover exact repository bytes; paired copies may normalize newlines/JSON formatting. Each set was independently verified."
+  "copy_note": "Repository hashes cover exact public bytes. The private pairing audit passed; public approval is recorded from the explicit user message, not inferred by the pairing API."
 }

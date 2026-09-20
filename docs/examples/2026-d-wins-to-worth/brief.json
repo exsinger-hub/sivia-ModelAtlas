@@ -14,88 +14,92 @@
     },
     "full_manuscript_read": true,
     "pdf_pages": 32,
-    "intake_format": "extracted text; source PDF has malformed glyphs"
+    "intake_format": "extracted text; source PDF has malformed glyphs",
+    "reread": {
+      "date": "2026-09-20",
+      "text_read": "Main pp.1–25, including preceding-turn equation inspection",
+      "physical_pages_visually_inspected": [
+        13,
+        14,
+        16,
+        19,
+        20,
+        24
+      ],
+      "scope": "Model-bearing manuscript; AI-use appendices are not model authority."
+    }
   },
-  "claim": "Performance and capacity-censored demand feed a financial chain whose valuation and feasibility constraints support rolling player and leverage decisions.",
+  "claim": "Action-dependent strength, popularity and salary connect to capacity-censored attendance, assumed pricing response and financial identities. Joint roster/leverage choices are evaluated subject to cash and debt limits, with a rolling next-state interpretation.",
   "manuscript_evidence": [
     {
-      "locator": "PDF pp9–10, §5",
-      "supports": "Elo performance model maps game information to expected wins."
+      "locator": "pp.9–12, §§5–6",
+      "supports": "Elo, right-censored lognormal demand and pricing assumptions"
     },
     {
-      "locator": "PDF pp11–13, §6",
-      "supports": "Capacity-censored attendance demand and dynamic ticket pricing."
+      "locator": "pp.13–15, Eqs.22–29",
+      "supports": "Revenue, profit, simplified cash book, valuation methods and leverage"
     },
     {
-      "locator": "PDF pp13–15, §7",
-      "supports": "Revenue, operating/salary costs, interest, profit and cash; revenue/EBITDA/DCF valuation lenses; target-leverage borrowing/repayment."
+      "locator": "pp.15–18, Eqs.30–35",
+      "supports": "Four-component state, action increments, optimization and rolling updates"
     },
     {
-      "locator": "PDF pp15–18, §8",
-      "supports": "No move/sign/trade decisions, salary/cash/debt feasibility and rolling updates using available information."
-    },
-    {
-      "locator": "PDF pp18–20, §9; pp20–23, §10",
-      "supports": "Injury, interest-rate and market-size scenarios; Monte Carlo and sensitivity analysis."
+      "locator": "pp.19–24, §§9–11",
+      "supports": "Other-revenue market scaling and conflicting valuation/injury descriptions"
     }
   ],
   "model_relationships": [
     {
-      "source": "Performance",
-      "target": "Demand",
-      "meaning": "Expected wins inform attendance",
-      "locator": "§5–6"
+      "source": "Strength, popularity and game context",
+      "target": "Expected attendance",
+      "meaning": "Elo-informed covariates; E[min(d,K)|x] under censored demand",
+      "locator": "pp.9–12"
     },
     {
-      "source": "Demand",
+      "source": "Assumed price response and attendance",
       "target": "Revenue",
-      "meaning": "Attendance and pricing drive ticket revenue",
-      "locator": "§6"
+      "meaning": "Ticket revenue plus other revenue; market scenario scales the latter",
+      "locator": "pp.11–15; pp.19–24"
     },
     {
-      "source": "Revenue",
-      "target": "Cash flow",
-      "meaning": "Subtract operating costs, salaries and interest",
-      "locator": "§7"
+      "source": "Revenue, salary, operations and interest",
+      "target": "Profit",
+      "meaning": "Subtract costs; keep borrowing and repayment outside profit",
+      "locator": "pp.13–15"
     },
     {
-      "source": "Cash flow",
-      "target": "Valuation and decisions",
-      "meaning": "Financial position supports valuation checks and constrained decisions",
-      "locator": "§7–8"
-    },
-    {
-      "source": "Rolling decisions",
-      "target": "Performance and next state",
-      "meaning": "Player-action changes and information updates; not look-ahead forecasting",
-      "locator": "§8"
+      "source": "Roster and leverage decisions",
+      "target": "Next strength, popularity, cash and debt",
+      "meaning": "Action increments and the source simplified cash/debt book under feasibility limits",
+      "locator": "pp.15–18"
     }
   ],
   "references": [
     {
       "case_id": "d-wins-to-value-chain",
-      "borrowed": "Source Our Works overview at PDFp4 was visually inspected. Retain the performance-to-value chain and decision constraints; replace crowded serpentine boxes with a straight chain and outer feedback route.",
-      "not_borrowed": "Source pixels, layout coordinates, paper-specific numerical results, team/award labels and unsupported causal claims."
+      "borrowed": "Paper-specific objects and relations checked against the model-bearing PDF pages. Persistent identities and selective change from previously inspected Sivia examples; source models only from this PDF. No layout copied wholesale.",
+      "not_borrowed": "Source pixels, numerical results, conflicting signs/formulas, awards, or a compulsory panel layout."
     }
   ],
-  "caption": "The team decision model shown through its operative quantities. Competitive strength and demand lead to attendance limited by arena capacity. Price and attendance generate ticket revenue, which joins other income before costs are deducted. Baseline valuation, liquidity and leverage remain distinct, while roster and financing choices advance with the available state. The arena, cap relationship and decision timeline are schematic, not a simulation rerun.",
-  "placement": "End of Introduction / Our Work, before assumptions. Intended 180mm full-text width; physical print proof pending.",
+  "caption": "Action-dependent strength, popularity and salary connect to capacity-censored attendance, assumed pricing response and financial identities. Joint roster/leverage choices are evaluated subject to cash and debt limits, with a rolling next-state interpretation.",
+  "placement": "End of Introduction / Our Work, intended width 180 mm",
   "generation": {
     "backend": "built-in image_gen.imagegen",
     "status": "generated",
-    "artifact_id": "exec-15f1dc94-182a-4b08-b5b7-b87d28dadd34.png",
+    "artifact_id": "exec-b83c7821-0cc1-4db7-b9b8-4f5bb1f45c8c.png",
     "actual_size": [
       1536,
       1024
     ],
-    "image_sha256": "46973b9a6fa3348ce0bc367a2ddea8dbe608c3a92d5905679441d9bebe833253",
+    "image_sha256": "74676a584d037bdaf35053d738d5bbf1ca8bdbde986c7405f8d019b20a2b7602",
     "chain": [
       {
         "operation": "generate",
         "prompt": "prompt.md",
         "output": "overview-v1.png",
         "artifact_id": "exec-7f808b0f-8b69-437e-9d6b-e4bdd00cc5bb.png",
-        "sha256": "0545afa7fd83eecc082caa56b403f405edc5ceecee7f1b1c4a0021e78d2a6261"
+        "sha256": "0545afa7fd83eecc082caa56b403f405edc5ceecee7f1b1c4a0021e78d2a6261",
+        "status": "superseded_history"
       },
       {
         "operation": "edit",
@@ -103,7 +107,8 @@
         "input": "overview-v1.png",
         "output": "overview-v2.png",
         "artifact_id": "exec-d6a1eae9-d4a5-4481-b119-79b8a2b859b7.png",
-        "sha256": "d47578483dd6755145d79cd8614ca76297e9b0e4febc0d22d2bcc976a556fe5e"
+        "sha256": "d47578483dd6755145d79cd8614ca76297e9b0e4febc0d22d2bcc976a556fe5e",
+        "status": "superseded_history"
       },
       {
         "operation": "edit",
@@ -134,7 +139,8 @@
           "passed": true,
           "template_bytes_verified": true,
           "scope": "Exact prompt-text length only; source/visual review and user approval are separate."
-        }
+        },
+        "status": "superseded_history"
       },
       {
         "operation": "edit",
@@ -165,13 +171,14 @@
           "passed": true,
           "template_bytes_verified": true,
           "scope": "Exact prompt-text length only; source/visual review and user approval are separate."
-        }
+        },
+        "status": "superseded_history"
       },
       {
         "operation": "edit",
         "prompt": "redesign-routing-prompt.md",
         "input": "overview-v4.png",
-        "output": "overview.png",
+        "output": "overview-v5.png",
         "artifact_id": "exec-15f1dc94-182a-4b08-b5b7-b87d28dadd34.png",
         "sha256": "46973b9a6fa3348ce0bc367a2ddea8dbe608c3a92d5905679441d9bebe833253",
         "prompt_detail": {
@@ -196,39 +203,109 @@
           "passed": true,
           "template_bytes_verified": true,
           "scope": "Exact prompt-text length only; source/visual review and user approval are separate."
+        },
+        "status": "superseded_history"
+      },
+      {
+        "operation": "generate",
+        "prompt": "reread-prompt.md",
+        "output": "overview-reread-v1.png",
+        "artifact_id": "exec-d5a2c3f6-850d-4554-98d2-f88479a1a647.png",
+        "sha256": "26b50c87fb39f6928d0e72fb1c446c5293959bc591272b91f6f6b8f63cf720ea",
+        "series": "pdf-reread-20260920",
+        "prompt_scope": "full_redesign",
+        "prompt_detail": {
+          "profile": "sivia-overview-v1",
+          "binding": {
+            "purpose": "Full English overview designs and substantial redesigns; not an arbitrary universal minimum for small unrelated edits.",
+            "source_repository": "https://github.com/exsinger-hub/Sivia",
+            "source_version": "1.1.0+codex.20260909060506",
+            "template_path": "skills/design-scientific-figure/references/templates/overview-template.txt",
+            "template_sha256": "cd73e60b51a15e005defd61190705846cb3f50a6582a33119be07b2fe78921f9",
+            "minimum_non_whitespace_characters": 15356,
+            "maximum_total_characters": 32000,
+            "metric": "Unicode code points excluding whitespace; count exact submitted prompt, one image call at a time",
+            "count_verified_on": "2026-09-20",
+            "limitation": "Length does not prove useful detail, source fidelity, image quality or user acceptance. Do not pad or concatenate prior calls to pass."
+          },
+          "total_characters": 24419,
+          "non_whitespace_characters": 20728,
+          "submitted_utf8_sha256": "5aa527825c8e1e2365e0a7f5e83cae101883e8eba0e6c71288cedf6f270fb574",
+          "length_pass": true,
+          "tool_limit_pass": true,
+          "passed": true,
+          "template_bytes_verified": true,
+          "scope": "Exact prompt-text length only; source/visual review and user approval are separate."
         }
+      },
+      {
+        "operation": "edit",
+        "prompt": "reread-correction-v2.md",
+        "output": "overview-reread-v2.png",
+        "artifact_id": "exec-109847c0-223e-4e79-a779-64bb17f85d31.png",
+        "sha256": "1c8bce36baee66ce32659125ade5fb599f0896113856ace5310cf11c8ed65979",
+        "series": "pdf-reread-20260920",
+        "input": "overview-reread-v1.png",
+        "prompt_scope": "localized_correction",
+        "prompt_sha256": "58a3a4674ea93797a6a48f4934c14421807b08c7e5a09771ebf4c4ffad5050b1"
+      },
+      {
+        "operation": "edit",
+        "prompt": "reread-correction-v3.md",
+        "output": "overview.png",
+        "artifact_id": "exec-b83c7821-0cc1-4db7-b9b8-4f5bb1f45c8c.png",
+        "sha256": "74676a584d037bdaf35053d738d5bbf1ca8bdbde986c7405f8d019b20a2b7602",
+        "series": "pdf-reread-20260920",
+        "input": "overview-reread-v2.png",
+        "prompt_scope": "localized_correction",
+        "prompt_sha256": "27f413d22553aa1b0db87129b7abaf9c66c9172cc9e8dced153d8d732a2c71d2"
       }
     ],
     "exact_prompt_record": "full-prompt.md",
     "empirical_rerun": false,
     "native_editability": false,
-    "prompt_detail_profile": "sivia-overview-v1"
+    "prompt_detail_profile": "sivia-overview-v1",
+    "selected_series": "pdf-reread-20260920"
   },
   "review": {
-    "status": "pending",
-    "review_type": "informed visual self-review of actual outputs; not independent acceptance",
-    "execution_test": "Completed full-image inspection of three real redesign/edit outputs; earlier versions retained, final selected for showcase.",
+    "status": "passed",
     "checks": [
-      "Replaced five equal business panels with an arena-capacity mechanism, revenue/cost ledger and forward decision timeline.",
-      "Attendance = min(D*, K); price and attendance multiply for ticket revenue; no price-to-capacity operand route.",
-      "Revenue and costs remain additive/subtractive; cash is a separate state affected by financing.",
-      "Baseline revenue-multiple valuation is expressed explicitly; EBITDA and DCF remain cross-checks, not a weighted average.",
-      "Removed the ambiguous outer return loop in favor of explicit local roster-to-strength/popularity/salary labels.",
-      "Schematic cap curve has no fitted parameters; no financial outcome or numerical forecast is claimed."
+      "Stadium removed; the distribution/capacity relation and state equations are primary.",
+      "Attendance remains expectation of min(d,K), not min(E[d],K).",
+      "Price response is explicitly assumed; no estimated elasticity is claimed.",
+      "Revenue adds ticket and other revenue; borrowing/valuation arrows into profit were removed.",
+      "Profit, interest and cash/debt stock identities are visible and source-grounded.",
+      "ΔE/ΔP and leverage use named ports; a leftward next-iteration arrow replaces the erroneous two-ended return."
     ],
+    "notes": [
+      "§7.2 states weighted aggregation, while later scenarios use revenue multiples. This contradiction is explicitly retained in the figure; no weights invented.",
+      "Profit is used in the source's simplified cash book, not relabelled as a fully specified cash-flow model.",
+      "Some connections are communicated by repeated variable names / ports, not continuous cables. This is a conceptual overview, not an executable wiring specification.",
+      "Typographic/density refinement can be judged by the user; no production-quality or user-acceptance seal is claimed."
+    ],
+    "physical_print_proof": "not performed",
+    "independent_review": "not performed",
+    "user_approval": "approved",
+    "review_type": "Actual-image visual self-review with source notes; not independent review or physical print proof.",
+    "approval_evidence": {
+      "status": "approved",
+      "date": "2026-09-20",
+      "user_message": "同意,请推送, 并且为我写抖音和小红书的推送文稿",
+      "scope": "Five selected PDF-reread images, project showcase and case-specific knowledge-base guidance; not independent scientific validation."
+    },
+    "publication_gate": "approved_for_project_showcase",
     "issues": [
       {
-        "severity": "pending_gate",
-        "detail": "Physical 180mm print/grayscale proof and independent acceptance remain pending. README uses a raster preview; mathematical label readability should be checked in the target manuscript."
+        "severity": "remaining_check",
+        "detail": "Physical print proof and independent review not performed; review small labels at final manuscript size."
       }
-    ],
-    "publication_gate": "pending",
-    "user_approval": "not_recorded"
+    ]
   },
   "source_notes": [
-    "Direct PDF intake encountered malformed font surrogate text. The session uses the previously extracted complete 32-page text with affected glyphs replaced; the original overview was visually inspected. PDF SHA remains recorded separately.",
-    "Author repository code is a later reconstruction, not independently verified competition execution. This example uses the paper only.",
-    "Source baseline uses revenue multiples; EBITDA/DCF are comparison lenses. Injury is drawn as a scenario, not a validated stochastic process."
+    "§7.2 states weighted aggregation, while later scenarios use revenue multiples. This contradiction is explicitly retained in the figure; no weights invented.",
+    "Profit is used in the source's simplified cash book, not relabelled as a fully specified cash-flow model.",
+    "Some connections are communicated by repeated variable names / ports, not continuous cables. This is a conceptual overview, not an executable wiring specification.",
+    "Typographic/density refinement can be judged by the user; no production-quality or user-acceptance seal is claimed."
   ],
   "style_adaptation": {
     "source": "Sivia",
@@ -244,10 +321,17 @@
   },
   "design_revision": {
     "date": "2026-09-20",
-    "reason": "User feedback: excessive modularization and insufficient prompt detail.",
-    "status": "candidate_awaiting_user_feedback",
-    "latest_round": 5,
-    "old_image": "overview-v2.png",
-    "new_image": "overview.png"
+    "reason": "PDF-reread redraw approved by the user.",
+    "status": "user_approved_showcase",
+    "latest_round": 8,
+    "old_image": "overview-v5.png",
+    "new_image": "overview.png",
+    "superseded_rounds": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
   }
 }

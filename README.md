@@ -90,7 +90,7 @@
 
 生态反馈 · 来源论文 Outstanding Winner
 
-<a href="docs/examples/2024-a-lamprey/overview.png"><img src="docs/examples/2024-a-lamprey/overview.png" width="100%" alt="ModelAtlas: 三种生态情景与资源—性别比例—繁殖的反馈环。"></a>
+<a href="docs/examples/2024-a-lamprey/overview.png"><img src="docs/examples/2024-a-lamprey/overview.png" width="100%" alt="ModelAtlas: 共享资源、宿主与七鳃鳗的作用关系，以及性别比例与繁殖的负反馈。"></a>
 
 [论文与图注](docs/examples/2024-a-lamprey/README.md) · [完整 prompt](docs/examples/2024-a-lamprey/full-prompt.md)
 
@@ -101,7 +101,7 @@
 
 定位与搜救 · 来源论文 Outstanding Winner
 
-<a href="docs/examples/2024-b-deep-sea-rescue/overview.png"><img src="docs/examples/2024-b-deep-sea-rescue/overview.png" width="100%" alt="ModelAtlas: 定位预测、装备选择与逐轮更新的搜索策略。"></a>
+<a href="docs/examples/2024-b-deep-sea-rescue/overview.png"><img src="docs/examples/2024-b-deep-sea-rescue/overview.png" width="100%" alt="ModelAtlas: 漂移预测与同坐标搜索前后对照，保留已搜索区域并选择下一格。"></a>
 
 [论文与图注](docs/examples/2024-b-deep-sea-rescue/README.md) · [完整 prompt](docs/examples/2024-b-deep-sea-rescue/full-prompt.md)
 
@@ -123,7 +123,7 @@
 
 经营与决策 · 来源论文 Finalist
 
-<a href="docs/examples/2026-d-wins-to-worth/overview.png"><img src="docs/examples/2026-d-wins-to-worth/overview.png" width="100%" alt="ModelAtlas: 球馆容量、票价×人数、收支账目与滚动决策。"></a>
+<a href="docs/examples/2026-d-wins-to-worth/overview.png"><img src="docs/examples/2026-d-wins-to-worth/overview.png" width="100%" alt="ModelAtlas: 截断需求、票务收入与现金／债务恒等式，连接到球员行动和滚动状态更新。"></a>
 
 [论文与图注](docs/examples/2026-d-wins-to-worth/README.md) · [完整 prompt](docs/examples/2026-d-wins-to-worth/full-prompt.md)
 

@@ -2,6 +2,12 @@
 
 ## Unreleased — 2026-09-20
 
+- Publish the user-approved PDF-reread redraws of 2024 A/B, 2025 F and 2026 C/D; retain 2025 E and the final-only bilingual showcase.
+- Preserve exact per-call prompts, all actual image revisions, source locators and explicit user acceptance; source PDFs and rendered pages remain private.
+- Correct paper-specific library guards, including source contradictions in A/B/C/F and the valuation/pricing/cash distinctions in D. Library source counts stay unchanged.
+
+### Earlier candidate revisions (superseded by the approved redraws above)
+
 - Recompose 2026 C, 2026 D and 2025 F around actual constraints, quantities and comparisons; keep the bilingual eight-image showcase and all real generation history.
 - Add object-level A–F visual guidance plus paper-specific scientific guards to style search and reference responses. Source counts and award evidence are unchanged.
 - Bind full-overview prompt checks to the inspected Sivia template version/hash (15,356 non-whitespace characters), verify exact per-call text and enforce the current 32,000-character tool limit.

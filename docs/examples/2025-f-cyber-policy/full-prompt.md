@@ -1,8 +1,123 @@
-# Complete ImageGen prompt record
+# Exact prompts and generation history
 
-## Call 1 · generate
+The selected PDF-reread series was approved by the user on 2026-09-20. Each call below preserves its exact prompt separately. Length checks apply to each complete design call, never to this concatenated history.
 
-Output: `overview-v1.png` · artifact `exec-9c88d354-b53e-48bb-95e6-963a51dc9935.png`.
+## Selected series
+
+### Call 6 · generate · reread-prompt.md
+
+Create one original publication-ready scientific overview illustration, not a poster, slide, dashboard, product interface, or collection of method cards. This is a manuscript-to-figure task. The manuscript-specific scientific specification below is the authority. Generate a completely new composition; nothing about an earlier generated layout has to survive. Output a single high-resolution landscape raster image on pure white, approximately 3:2. The intended placement is the end of the Introduction at 180 mm print width. The language of every visible label is English. Do not show a title banner, team number, contest award, institutional logo, model branding, filename, source-page thumbnail, or watermark. Use the short panel labels specified below, with the dominant scientific operation taking most of the area.
+
+ART DIRECTION AND MANUSCRIPT TRANSLATION
+Aim for the restrained precision of a carefully drawn journal methods figure: charcoal strokes, warm muted accent, a cool muted accent, and large clean white spaces that separate different operations. Make each line mean something. A background field, a border, an axis, a bracket and an arrow are different marks and must not be substituted for one another. The visual should still communicate its essential operation if the panel titles are hidden. Avoid shiny illustration, pseudo-three-dimensional props, gradient cards, drop shadows, decorative ribbons, stock science icons, anonymous neuron clouds, gears, trophies, shields, and thick arrows between isolated boxes. The actual entities and their change are the diagram. Only a genuine coordinate frame, table, matrix, state tuple or constraint boundary may create an enclosure. Do not place an enclosing rounded rectangle around every method. Do not distribute items evenly just because there are several methods. Reserve the densest and largest drawing for the paper's central relation, keep auxiliary methods quiet, and omit full derivations from visible text.
+
+Think in an invisible 1500 by 1000 coordinate canvas with outer margins of approximately 60 units. Coordinates in this specification describe visual hierarchy, not text that should be drawn. Use comfortable margins within plots and between labels and edges. The shortest route that preserves meaning is preferred. A routed connector must end at a particular variable, operation or object, not an arbitrary panel boundary. Use small restrained arrowheads; no chevrons or arrow ribbons. If a connection would cross a label, move that connection into a reserved empty lane, preserving both its source and target. Do not delete a scientific feedback to avoid an overlap. No connector should run through an equation, rank list, organism, map cell label or boundary condition. Local labels must be adjacent to their own objects. Use a readable editorial sans serif for words and a compatible mathematical serif for variables. Sentence case, medium weight, dark text; no all-caps paragraphs or fashionable wide tracking.
+
+TEXT AND SCALE DISCIPLINE
+The manuscript-specific visible-label inventory below is intentionally much shorter than these drawing instructions. Print only the specified labels, equations, panel letters and tiny contextual notes, not the explanatory prose or source audit. Long source explanations are for your understanding, not for placement in the image. Most labels should be one to five words. Typeset mathematical subscripts distinctly, signs correctly, and operators with adequate spacing. The final drawing must not contain escaped LaTeX delimiters, raw backslashes, missing-glyph squares, duplicate words, gibberish, or a mix of near-identical variable names. At the intended print width aim for primary labels near 10 pt, ordinary labels near 9 pt, and exceptional notes at least 8 pt; shorten or reposition before making type smaller. Keep at most two text weights plus italic mathematics. Do not manufacture apparent detail by adding dozens of captions. Use the same symbol for the same entity each time, with an explicit time index where it changes.
+
+EVIDENCE AND VISUAL INFERENCE
+This is a conceptual reconstruction of a specific paper, not a new empirical analysis. Illustrative locations, curves and arrangements must be visibly schematic and must not look like measured results, fitted confidence bands or newly run simulations. Numerical quantities are permitted only when explicitly authorized below as mathematical endpoints, model constants or a labeled synthetic example. Do not create convincing-looking data, effect sizes, significance stars, forecasts, benchmark victories or performance percentages. A supplied formula defines a relationship; a source-reported claim is not permission to draw an invented dataset. Preserve boundaries between observed information, inferred variables, proposed controls, model assumptions and evaluation. Inconsistencies in the original paper must be handled exactly as specified, rather than silently inventing a corrected model.
+
+QUALITY CRITERIA
+Check every visible mathematical sign and direction against the manuscript-specific specification before completing the image. Check that an input does not become an output by accident, an association does not become a causal arrow, an estimate does not become an observation, and an illustrative example does not become a factual result. Check the whole composition in a reduced view: the dominant operation must remain identifiable, secondary branches must remain subordinate, and no dense footnote block may overwhelm the figure. The result should feel designed by someone who understood the scientific object, with deliberate asymmetry and generous negative space, not by a generator arranging a list of topics. The following detailed paper-specific instructions resolve any ambiguity in these general instructions.
+
+MANUSCRIPT: CRACKING THE CYBER-PUZZLE — POLICY EVIDENCE, NOT A CYBERSECURITY INFOGRAPHIC
+
+Scientific claim and scope. This paper uses different evidence for three questions: national cybersecurity profiles are descriptive, policy adoption is examined with a treated/control before–after contrast, and socioeconomic variables are examined for association with recorded cybercrime. The key figure must expose those different comparison structures rather than connect four algorithm names in a pipeline. The policy contrast is the dominant object. A smaller profile view and an association view provide context, without pretending they identify treatment effects. Draw a restrained analytical evidence plate; no globe, shields, locks, hacker silhouettes, digital rain, server racks, neon circuits or country-flag collage.
+
+Source authority. Physical pages 6–12 discuss four descriptive indicators and K-means on only two of them. Pages 13–17 describe LDA themes and DID with selected policy-adopting countries, comparison countries and covariates. Pages 17–20 describe MIC, factor analysis and stepwise regression. Pages 21–23 discuss sensitivity, underreporting and comparison-group limitations. The source's positive DID coefficients for normalized case counts are interpreted as reductions in the prose; some table values and p-values are reused inconsistently. This drawing must not reproduce a numerical efficacy ranking or show some policy themes as successful and others as failed. It shows the analysis design, not a newly validated causal conclusion. A small local note under the dominant contrast says "Design schematic; no policy-effect estimates shown."
+
+Composition. Let the policy analysis take the central 65 percent of the figure and extend nearly its full height. Reserve a slim left strip for national profiles and a low right strip for demographic association. Do not make the three questions equal-sized rectangles. Use an asymmetrical editorial layout, with the country-profile coordinate sketch on the left x80–400,y200–500, the policy timeline/contrast x520–1400,y270–650, topic extraction x520–1120,y100–230, and an association/compression diagram x700–1380,y770–890. White space separates these objects, not a patchwork of pale colored cards. The central contrast can use a minimal ruled arrangement because the row×time structure is mathematically meaningful. It must not look like a spreadsheet screenshot or an empty business dashboard.
+
+Panel labels are "a  National profiles" and "b  Policy adoption contrast". The association support has a small subordinate heading "Demographic associations", not a third giant panel. No top title banner. Two small structural words near the lower margin may distinguish "Description" from "Policy contrast" and "Association", but do not print the entire paper title or model acronym. The purpose is an instantly readable evidence architecture, not branding for KDMF.
+
+PERSISTENT UNIT AND DATA BOUNDARIES
+The DID outcome is a country-year record Y_it of reported cybercrime cases, normalized in the source's analysis. Use the visible label "Recorded cases  Y_it" and, nearby, "Country i · year t". A generic country-year key can be represented by a small open coordinate pair (i,t), not a giant ledger of made-up rows. There are no actual incident records to draw. Avoid sample dates, fictitious country codes, arbitrary counts, country rankings or generated data tables. The manuscript's known unit is country-year for the policy comparison; the figure must not assert that every descriptive index or MIC sample uses an identical synchronized panel if the source does not establish that.
+
+The four descriptive indicators are NCSI, Legal Measures, Exposure and Reporting. Write their names in an unobtrusive left-aligned list above or beside the profile sketch. The exposure quantity is transformed as 100(1−CEI) so higher means less exposure. Reporting rate depends on recorded cases relative to internet users and is not the true underlying crime rate. Indicate this with the small phrase "Reported incidents ≠ all incidents", preferably next to the outcome boundary rather than repeated under every method. This note is scientifically necessary but should not dominate the figure.
+
+For the profile clustering, highlight only "NCSI" and "Legal Measures" in muted teal; the other two indicator names stay charcoal. A small bracket links those two highlighted names to the profile coordinate sketch. Do not draw four arrows into K-means, because the paper clusters only the two highlighted features. Do not send the resulting clusters to the treated/control group labels. Country profiles are descriptive strata, not policy treatment assignment. This absent edge is one of the most important distinctions in the figure.
+
+NATIONAL-PROFILE SKETCH
+Use one small open scatter coordinate frame with horizontal axis "Standardized NCSI" and vertical axis "Standardized legal measures". Place three modest groups of about four to six schematic dots, with different marker shapes or understated shades. Use local labels "Profile 1", "Profile 2", "Profile 3" rather than “safe countries”, “dangerous countries” or real nation names. The dots are illustrative arrangements, not reproduced observations. A label below reads "K-means, K = 3 · schematic". Do not use a rainbow background, soft colored region rectangles, a dense synthetic point cloud or numerical tick labels. The coordinates indicate the two input dimensions, not a replicated PCA projection. Thus there are no PC1/PC2 labels to confuse with the actual feature axes.
+
+The source uses PCA for display after clustering, but the figure need not repeat that projection. A directly labelled feature plane makes the two-input clustering clearer. Do not write “PCA results” on the new sketch. No elbow or silhouette chart is required. The manuscript's choice-of-K prose conflicts with its displayed silhouette values, so showing a smooth invented K-selection curve would falsely resolve that issue. Retain only the source-stated three-profile structure. It is a descriptive representation, not proof that three is the optimal universal number of cybersecurity types.
+
+Give the profile object an output label "Descriptive country groups". Let it end there. A fine association of evidence to the overall study can be conveyed by spatial adjacency, not an arrow from descriptive cluster to policy effectiveness. If any arrow leaves it, it must terminate at the word "Context", not at treated countries or a DID estimate. This protects the source's independent analysis branches without putting a paragraph of methodological disclaimers in the image.
+
+POLICY TEXT AND THEMES
+At the top center, draw a short stack of two clean policy document outlines, each with three or four plain gray text lines. Highlight one brief phrase such as "personal data" and one such as "network operator" using subtle underline or tint. These phrases are topic exemplars, not quotes from a particular national law. The document is a text-analysis operand, not a stock “paper” icon repeated at each step. A thin connector labelled "LDA" leads from highlighted spans to a single compact six-item topic list.
+
+The list has exactly these short topic labels, arranged in two columns of three lines with no individual boxes: "Criminal legislation", "Privacy", "Network operators", "Critical infrastructure", "Emergency response", "Cross-border data". All are equal neutral weight. Do not color privacy and network operators green, add success ticks, draw stars or order topics by effectiveness. The source selected six themes; the illustration is not a new topic model or a term-frequency visualization. No word cloud, fabricated term probabilities or numerical theme proportions should appear.
+
+From the topic list, a small bracket labelled "Evaluate by policy theme" points toward the central contrast. A second input, "Adoption year", reaches the vertical time boundary in that contrast. Topic content and adoption timing are different inputs and should have different endpoints: themes identify the policy being compared; adoption timing defines pre/post. Do not send the adoption-year line into a clustering centroid. Do not use an arrow to imply LDA itself estimates causal effects. The selected theme and observed adoption metadata inform the DID design.
+
+THE DOMINANT BEFORE–AFTER CONTRAST
+Construct a wide two-row timeline with identical pre/post positions. Row labels on the left are "Adopting group T" and "Comparison group C". Above the two columns write "Before" and "After". A thin vertical gray rule between the columns is labelled "Policy adoption". Each row has two simple filled circles or short horizontal means markers, labelled symbolically "Ȳ_T,pre", "Ȳ_T,post" and "Ȳ_C,pre", "Ȳ_C,post". No numeric y-axis, year ticks or rising/falling empirical trend should be drawn. Put the four symbolic markers in a balanced horizontal arrangement; their vertical positions within the two rows are organizational, not quantitative. The horizontal direction represents time only.
+
+Between the pre and post marker within each row, draw a small right-facing arrow or subtraction bracket carrying "Δ_T" for adopters and "Δ_C" for comparison. Below the two rows, show the single primary equation:
+"DID contrast = Δ_T − Δ_C"
+A second compact equality may expand it as
+"(Ȳ_T,post − Ȳ_T,pre) − (Ȳ_C,post − Ȳ_C,pre)"
+but do not duplicate both if it reduces legibility. A clean brace can connect the two within-group changes to the between-group subtraction. The subtraction sign must be unmistakable. Do not show Δ_T + Δ_C or a simple before–after difference with the comparison row visually detached.
+
+Use muted rust for the adopting group and muted slate for the comparison group. The same group color persists before and after. The policy intervention is a small vertical notch at the shared adoption boundary on the treated row, not a color change that turns a country into a different category. The comparison row crosses the same calendar boundary without that intervention notch. Keep the time boundary consistent across both rows. Do not imply actual adoption dates are known from the schematic. Do not draw a counterfactual extrapolation line with fitted-looking confidence bands, because no source trend values have been provided for reconstruction.
+
+Near the left of the comparison row attach a tiny phrase "Similar internet penetration". This reflects the manuscript's selection criterion, not a guarantee of causal comparability. Add one small open bracket labelled "Covariates X_it" feeding the contrast model from below. Its accompanying short list may contain "GDP · internet · mobile · education · legal capacity/cooperation". Use at most two lines. These variables enter an adjustment model; they are not observed proof of parallel trends. The bracket terminates at the contrast equation or regression specification, not at the temporal markers individually.
+
+If one regression formula appears, place it in small but readable type below the symbolic difference:
+"Y_it = α + β₁T_i + β₂Post_t + β₃(T_i×Post_t) + γᵀX_it + ε_it"
+This is a conventional notation harmonization of the source's treated/time model used to explain the intended DID contrast. The manuscript inconsistently defines treated_it as adoption status rather than a time-invariant group variable. Do not silently present this notation as a proof that its implementation was correctly coded. The exact source reproduction is not the purpose; the accompanying audit records the ambiguity. Prefer the four-cell symbolic contrast alone if the formula would overload the figure. In either case, never label β₃ “crime reduction” with a fixed positive sign. It is an estimated contrast whose outcome/sign interpretation requires care.
+
+Place two tiny methodological requirements as a single line under the contrast: "Comparable groups; common-trend assumption". Do not show a checkmark or passed diagnostic beside them. The paper does not provide sufficient evidence here to claim the design's assumptions are verified. Immediately below, the required note "Design schematic; no policy-effect estimates shown" keeps the semantic boundary explicit. This concise qualification is better than inventing an apparently successful causal result.
+
+DEMOGRAPHIC ASSOCIATION, LOWER SUPPORT
+The demographic branch is not downstream of the DID coefficient. It shares the interest in recorded cybercrime, but asks a separate association question. At the lower right, place a short vector of named features:
+"Internet · mobile broadband · income · growth · education"
+with a small supplementary "GDP" label if the six original MIC variables are enumerated. The source's MIC analysis uses GDP, internet penetration, active mobile subscriptions, tertiary education, GDP per-capita growth and GNI per-capita. Factor analysis uses a subset of five without GDP. Preserve that distinction through a small bracket separating the GDP label from the factor subset, rather than drawing all six into the same factor score automatically.
+
+Show a simple pairwise operation "X_j ↔ recorded cases" with no arrowheads if possible, labelled "MIC association". A minimal little gridded scatter pictogram may contain six or eight symbolic points and two alternative rectangular partitions, but it must be labelled "Schematic" and must not look like a real MIC ranking. Do not reproduce the source's mean MIC values or manufacture bar lengths. The association is symmetric; it does not identify causality. Use a double-ended relation bar or no arrowhead for the feature/outcome association. A directed arrow labelled “causes cybercrime” is forbidden.
+
+Alongside, a slender projection-like drawing can show five input strokes merging into two latent-factor strokes labelled "Factor 1" and "Factor 2", followed by a short arrow labelled "Regression". This describes dimensional reduction and subsequent association modeling. It is not a neural network. Use no hidden-layer circles, activation functions or random-weight matrix. The source later retains only Factor 1 in a stepwise regression, but without reproducing coefficient results the overview can use "Selected factor(s)" at the regression input. Avoid a false claim that both factors are proven causal mechanisms.
+
+The association support should occupy no more than a fifth of the usable figure area. Its labels must remain larger than microscopic text. If necessary, omit the little grid pictogram and retain the pairwise relation, factor-compression strokes and the note "Association, not causation". Do not let the support branch become another large infographic filled with outcome arrows. It contributes context, not an all-encompassing policy mechanism.
+
+Do not connect the source's demographic regression coefficient to the DID policy coefficient by a sum or product. They answer different questions and use different model structures. Do not feed country-profile cluster identities into the MIC outcome. Do not draw an all-to-all evidence bus at the bottom just to make every method connected. A methods overview can have parallel questions sharing a scientific topic without claiming a data-flow edge that the manuscript does not establish.
+
+SOURCE AMBIGUITIES AND OUTCOME LANGUAGE
+Recorded breach cases do not equal all cybercrime. Reporting varies by country and is a limitation of the source. The four indicators have different meanings; high modified exposure score means lower exposure, not higher attack volume. High NCSI is preparedness, not a directly measured probability that crime is thwarted. Legal Measures is an index, not a count of prosecutions. Country clusters must remain descriptive “profiles” rather than named success/failure populations. No visual hierarchy should imply that developed-country profiles were assigned policy treatment experimentally.
+
+The source's prose says some policies reduced crime even though its reported interaction coefficients on normalized case counts are positive. Tables and significance statements disagree for cross-border rules. The figure therefore shows no policy-benefit arrows, performance numbers, error bars, significant stars, six-theme ranking or recommended top-three policy stack. This is a faithful reconstruction of the analysis design while preserving uncertainty in results; it is not a corrected reanalysis. The original PDF is authoritative about what methods were attempted, but not a license to resolve its numerical contradictions through plausible artwork.
+
+Sensitivity tests in the paper perturb a DID coefficient and add noise for MIC. They are not evidence that underreporting has been corrected or unobserved confounding removed. The main drawing can acknowledge “Sensitivity checks” as a quiet footer attached to the relevant methods, but it must not show a verification shield, green seal or “robust causal evidence” label. Do not draw a bootstrapped confidence distribution absent from this reconstruction. Any source-quality warning is represented locally and concisely rather than as a large warning icon.
+
+VISUAL HIERARCHY AND ROUTING
+The two-row before/after contrast has the greatest width and the clearest text. The policy-text example enters it from above; the covariate vector enters it from below; the profile sketch is visually adjacent but scientifically separate. The demographic support remains below and to the right with undirected associations. Keep all three regions in the same restrained stroke and type system so the plate feels coherent without equal containers. Two or three quiet color roles suffice: teal for profile features, rust/slate for treated/comparison identity, charcoal for text and neutral evidence. Do not assign each method a different bright hue.
+
+Route the LDA arrow only from document spans to the six themes. Route adoption timing only to the time boundary. Route theme selection to the policy contrast. Route covariate adjustment to the model, not to policy creation. Source-reported cases appear as Y symbols in the contrast and as the recorded-case label in the association branch, but do not draw a huge central database cylinder. Observation and analysis can be linked by repeated clearly labelled unit names without several lines crossing the canvas. Avoid a hub-and-spoke layout with eight orphan algorithm labels.
+
+At thumbnail size, the reader should recognize the two temporal rows and subtraction before noticing the method acronyms. At 180 mm print width, the group labels, time labels and Δ_T−Δ_C expression must be comfortable to read. No paragraph should appear inside the illustration. Use the private source-audit notes for detailed qualifications; keep only the indispensable local short notes in the artwork.
+
+Final checks. There are four descriptive indicators but two K-means inputs. Three descriptive profiles are not treatment groups. Six policy themes are not six ranked winners. The adopting and comparison groups each have a before and after marker, and those group identities persist. The difference is treated change minus comparison change. The source's policy and outcome ambiguities are not disguised as certainty. The demographic relation is explicitly association, and factor reduction is distinct from MIC. The finished figure should resemble an economist's careful study-design plate with concise NLP and statistical context, not a cybersecurity marketing illustration.
+
+### Call 7 · edit · reread-correction-v2.md
+
+Edit the supplied cybersecurity-policy evidence figure locally. Keep the large two-row DID contrast, source-correct four indicators and two clustering inputs, six theme labels and group colors. Fix the lower association branch and remove visual clutter.
+1. Remove the pale background behind the large DID area and all rounded card backgrounds elsewhere. Retain the four symbolic means, common policy-adoption boundary, Δ_T−Δ_C expression and covariate arrow on pure white.
+2. Delete the three bottom colored braces and their labels Description / Policy contrast / Association. Their spans are misleading and redundant. Do not replace them with a footer banner.
+3. Delete the dashed "Context only" arrow from descriptive country groups toward the DID area. These descriptive clusters do not define treatment groups. Leave a short label "Descriptive country groups" under the profile sketch without enclosure.
+4. In the lower demographic support, MIC and factor analysis must be PARALLEL analyses of relevant socioeconomic variables, not a serial pipeline. Remove all arrows from the MIC scatter/points to Factor analysis. Keep MIC as X_j ↔ recorded cases, with the small schematic scatter. Independently route the five-feature subset bracket (excluding GDP) to Factor analysis. Factor analysis → Factor 1 / Factor 2 → Selected factor(s) → Regression. The selection comes BEFORE regression, not after. Use only short word labels and thin connectors, no gray cards.
+5. Delete the dashed "Sensitivity checks (e.g. underreporting)" box and its arrow. Noise sensitivity is not a correction for underreporting; no such implication should remain.
+6. Preserve "Reported incidents ≠ all incidents", "Comparable groups; common-trend assumption", "Design schematic: no policy-effect estimates shown" and "Association, not causation". Do not add estimates, significance stars or policy rankings.
+7. Make "Adoption year" a short independent input arrow that ends exactly on the vertical Policy adoption boundary, rather than seeming to be extracted from one topic label. Themes identify which policy is compared; timing defines pre/post.
+All labels should remain legible on a clean journal-style white canvas. Do not create new modules or enlarge the support branch.
+
+## Superseded history — not current scientific guidance
+
+These earlier prompts are preserved verbatim for traceability. They can contain assumptions or source interpretations corrected by the selected series; do not reuse them as current guidance.
+
+### Call 1 · generate · prompt.md
 
 Use case: infographic-diagram
 Asset: a paper-specific scientific Overview, English, landscape 1536 x 1024, intended full-text-width 180 mm at the end of Introduction.
@@ -28,11 +143,7 @@ Reference adaptation: borrow the inspected source overview's division into three
 
 Final checks: country profile input specifically NCSI + legal measures; all three branches remain complementary; six readable policy themes; DID treated/control before/after; MIC not causal; all branches converge on policy brief; no fake numbers or ambiguous arrows.
 
-## Call 2 · edit
-
-Input: `overview-v1.png`.
-
-Output: `overview.png` · artifact `exec-477b9ce6-523e-443a-abc8-8a478b43bce6.png`.
+### Call 2 · edit · correction-prompt.md
 
 Use case: precise-object-edit. Input is the draft cybersecurity methods overview. Preserve all three columns, semantic colors, exact methodological labels, illustration content, theme names, and layout.
 Correct the background and one dependency:
@@ -41,9 +152,7 @@ Correct the background and one dependency:
 - Make the shared-data line unambiguous: country indicators contribute to the DID analysis, not to the demographics stream. Stop the shared indicator line at the central policy branch; do not merge it with the amber covariate line.
 Invariants: NCSI + legal measures are the only clustering input; K-means descriptive clusters; six LDA themes; before/after treated/control DID; MIC and factor analysis + regression are context associations; three branches merge into Policy brief. No empirical metrics, causal proof, team IDs, badges, or new scientific content. White clean journal page, not a dark cinematic poster.
 
-## Round 3 — mechanism-focused redesign
-
-Exact submitted text. ImageGen edit; input: `overview-v2.png`; output: `overview-v3.png`.
+### Call 3 · edit · redesign-prompt.md
 
 RENDERING CONTRACT — read this as drawing instructions, not as text to print.
 Recompose the supplied earlier overview completely. It is the previous version of this figure, supplied only to identify the subject being revised. Its repeated cards, thick colored frames, oversized title bands, clip-art fillers and evenly divided dashboard layout are exactly what must change. Preserve the paper-specific scientific facts specified below; do not preserve the old arrangement, old typography, decorative objects, enclosure count or generic icons. Produce one finished landscape scientific illustration, about 3:2, with a white background. Use the largest available native output resolution. This is a manuscript overview at approximately 180 mm print width, not a presentation slide or a website. The illustration must be recognizable through its scientific objects even with the title concealed.
@@ -142,10 +251,7 @@ Reference adaptation: borrow Sivia's practice of carrying identifiable evidence 
 
 Final review should verify that exactly two source indicators feed K-means; three profile groups are not confused with treated/control; six LDA themes remain descriptive; the four outcomes are in their correct cells; Δ_T and Δ_C are within-group time changes; DID subtracts control change from treated change; covariate adjustment is shared; social associations do not feed the DID coefficient backward; and no numerical effect or sign is asserted. At thumbnail size the eye should see evidence rows, document spans and a large paired contrast, not a row of interchangeable colored modules. Place one small bottom-left note "Schematic · symbolic outcomes, not estimates". Return the finished illustration only.
 
-
-## Round 4 — inspected correction
-
-Exact submitted text. ImageGen edit; input: `overview-v3.png`; output: `overview-v4.png`.
+### Call 4 · edit · redesign-correction-prompt.md
 
 RENDERING CONTRACT — read this as drawing instructions, not as text to print.
 Recompose the supplied earlier overview completely. It is the previous version of this figure, supplied only to identify the subject being revised. Its repeated cards, thick colored frames, oversized title bands, clip-art fillers and evenly divided dashboard layout are exactly what must change. Preserve the paper-specific scientific facts specified below; do not preserve the old arrangement, old typography, decorative objects, enclosure count or generic icons. Produce one finished landscape scientific illustration, about 3:2, with a white background. Use the largest available native output resolution. This is a manuscript overview at approximately 180 mm print width, not a presentation slide or a website. The illustration must be recognizable through its scientific objects even with the title concealed.
@@ -258,10 +364,7 @@ Keep DID coefficient perturbation as a small local annotation adjacent to DID, r
 
 Make "policy change" land at the before/after column boundary with a short leader, not at a floating heading. The source policy context does not define the K-means groups, so keep that top route independent from the new grayscale clustering input lane. Keep the main heading restrained and all outer spaces white. Do not add checkmarks, shields, metric strips, cards or a synthetic empirical time-series plot.
 
-
-## Round 5 — inspected correction
-
-Exact submitted text. ImageGen edit; input: `overview-v4.png`; output: `overview.png`.
+### Call 5 · edit · redesign-routing-prompt.md
 
 RENDERING CONTRACT — read this as drawing instructions, not as text to print.
 Recompose the supplied earlier overview completely. It is the previous version of this figure, supplied only to identify the subject being revised. Its repeated cards, thick colored frames, oversized title bands, clip-art fillers and evenly divided dashboard layout are exactly what must change. Preserve the paper-specific scientific facts specified below; do not preserve the old arrangement, old typography, decorative objects, enclosure count or generic icons. Produce one finished landscape scientific illustration, about 3:2, with a white background. Use the largest available native output resolution. This is a manuscript overview at approximately 180 mm print width, not a presentation slide or a website. The illustration must be recognizable through its scientific objects even with the title concealed.

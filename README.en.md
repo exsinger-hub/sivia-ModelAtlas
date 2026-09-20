@@ -90,7 +90,7 @@ Latent-variable inference · Source paper Finalist · Team 2627351
 
 Ecological feedback · Source paper Outstanding Winner
 
-<a href="docs/examples/2024-a-lamprey/overview.png"><img src="docs/examples/2024-a-lamprey/overview.png" width="100%" alt="ModelAtlas: Three ecological scenarios and the resource–sex-ratio–reproduction feedback loop."></a>
+<a href="docs/examples/2024-a-lamprey/overview.png"><img src="docs/examples/2024-a-lamprey/overview.png" width="100%" alt="ModelAtlas: Shared resources and host–parasite relations feed a resource–sex-ratio–recruitment loop."></a>
 
 [Paper & caption](docs/examples/2024-a-lamprey/README.en.md) · [Full prompt](docs/examples/2024-a-lamprey/full-prompt.md)
 
@@ -101,7 +101,7 @@ Ecological feedback · Source paper Outstanding Winner
 
 Localization & rescue · Source paper Outstanding Winner
 
-<a href="docs/examples/2024-b-deep-sea-rescue/overview.png"><img src="docs/examples/2024-b-deep-sea-rescue/overview.png" width="100%" alt="ModelAtlas: Position prediction, equipment allocation and an updating search strategy."></a>
+<a href="docs/examples/2024-b-deep-sea-rescue/overview.png"><img src="docs/examples/2024-b-deep-sea-rescue/overview.png" width="100%" alt="ModelAtlas: Drift prediction and matched search grids preserve excluded cells while selecting the next search cell."></a>
 
 [Paper & caption](docs/examples/2024-b-deep-sea-rescue/README.en.md) · [Full prompt](docs/examples/2024-b-deep-sea-rescue/full-prompt.md)
 
@@ -123,7 +123,7 @@ Policy evaluation · Source paper Outstanding Winner
 
 Operations & decisions · Source paper Finalist
 
-<a href="docs/examples/2026-d-wins-to-worth/overview.png"><img src="docs/examples/2026-d-wins-to-worth/overview.png" width="100%" alt="ModelAtlas: Arena capacity, price × attendance, an accounting ledger and rolling decisions."></a>
+<a href="docs/examples/2026-d-wins-to-worth/overview.png"><img src="docs/examples/2026-d-wins-to-worth/overview.png" width="100%" alt="ModelAtlas: Censored demand, ticket revenue and cash/debt identities connect roster actions to the next decision state."></a>
 
 [Paper & caption](docs/examples/2026-d-wins-to-worth/README.en.md) · [Full prompt](docs/examples/2026-d-wins-to-worth/full-prompt.md)
 

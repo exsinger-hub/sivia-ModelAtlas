@@ -6,37 +6,56 @@
     "prompt.md": true
   },
   "visual_review": {
-    "status": "pending",
-    "review_type": "informed visual self-review; not independent acceptance",
-    "execution_test": "completed: full paper read, reference viewed, actual image generated, inspected and corrected where needed",
+    "status": "passed",
     "checks": [
-      "Three scenarios are distinct: no parasite, fixed sex ratio, resource-dependent sex ratio.",
-      "Four loop signs and directions checked: resources -> male fraction (minus), male fraction -> reproduction (minus), reproduction -> abundance (plus), abundance -> resources (minus).",
-      "Host–parasite scene is associated with the population, not drawn as an additional trophic edge.",
-      "Labels retain Lotka–Volterra, Nicholson–Bailey and entropy-weighted stability; no invented numerical results.",
-      "Final 1536x1024 image viewed; no visibly clipped labels."
+      "Host support arrow runs from fish toward lamprey; parasitism runs from lamprey toward hosts with a negative sign.",
+      "Male fraction decreases from the s0 endpoint toward 0.50; factor uses (1−m)^1.25.",
+      "Negative recruitment relation and population/resource-share return are visible.",
+      "Fixed m=0.67 and adaptive m(s) are alternative systems, not temporal stages."
     ],
+    "notes": [
+      "Eq.12 is followed instead of Fig.7's conflicting resource-to-male sign.",
+      "The resource-share loop is a population/cohort mechanism, not individual sex change.",
+      "Biological shapes and response display are conceptual; no new simulation or field results."
+    ],
+    "physical_print_proof": "not performed",
+    "independent_review": "not performed",
+    "user_approval": "approved",
+    "review_type": "Actual-image visual self-review with source notes; not independent review or physical print proof.",
+    "approval_evidence": {
+      "status": "approved",
+      "date": "2026-09-20",
+      "user_message": "同意,请推送, 并且为我写抖音和小红书的推送文稿",
+      "scope": "Five selected PDF-reread images, project showcase and case-specific knowledge-base guidance; not independent scientific validation."
+    },
+    "publication_gate": "approved_for_project_showcase",
     "issues": [
       {
-        "severity": "pending_gate",
-        "detail": "180mm physical-size/grayscale proof and independent review not performed. Small connector labels require checking in the manuscript layout."
+        "severity": "remaining_check",
+        "detail": "Physical print proof and independent review not performed; review small labels at final manuscript size."
       }
-    ],
-    "publication_gate": "pending",
-    "user_approval": "not_recorded"
+    ]
   },
-  "user_approval": "not_recorded",
+  "user_approval": "approved",
   "scope": "File integrity only; not source fidelity, image quality or award verification.",
+  "approval_evidence": {
+    "status": "approved",
+    "date": "2026-09-20",
+    "user_message": "同意,请推送, 并且为我写抖音和小红书的推送文稿",
+    "scope": "Five selected PDF-reread images, project showcase and case-specific knowledge-base guidance; not independent scientific validation."
+  },
   "hashes": {
-    "overview.png": "bf37fcd2754f138c052013ac19a6b1b7b6bc2f63f6b2fdba5d05637dbfd0398d",
-    "full-prompt.md": "a22a6ecdfa595a27469a7889d31214c643c74978f80d1c946b0b9be67b843b1e",
-    "brief.json": "5bf397e4f96172c56e6b2f5e77e72bfc1ef2482073278e323caf016e730564c0"
+    "overview.png": "86fc7c262add67ce0469b4c20f03ea2d52e1f562849930272e6120c849266025",
+    "full-prompt.md": "849de94e499a9b1349ccd2842f4267a087afae21b1398b4fd923ca58a00afa97",
+    "brief.json": "3eff9f8690edcead7a9174fa4c3eecaa641cf7751fd455092071981df5505090",
+    "prompt.md": "9413c2695973970287e78ae8dddbfce6da1f0d83485467b6c6f8c057bdd785c8",
+    "reread-prompt.md": "845709e84c523c030ad04726a1e56bb7bfea77b3aefad9f5b8b74f097964a4d4",
+    "reread-correction-v2.md": "f7d4b5bfe75e7711d44fa3591173e63a0ae5fe2cb9b8b2501130decf955737f7",
+    "reread-correction-v3.md": "92a2b79e5a8b5fdad27d7afff6a7341d7fc9435ecbeed5de2a90c9567b8a919f",
+    "overview-v1.png": "bf37fcd2754f138c052013ac19a6b1b7b6bc2f63f6b2fdba5d05637dbfd0398d",
+    "overview-reread-v1.png": "e3d57083f2667071e85e3728bbf5f27a28a690fe88491bf7e220df03b7f3d5a8",
+    "overview-reread-v2.png": "cb56e575c939f5612af4c5fc020626296d583fd383fbd8c82801bb52b347aeb0"
   },
   "intake_sha256": "3976866832e31712b42c11a241c413db2f056e48c24a3768ff0c41c1460b44c6",
-  "paired_copy_hashes": {
-    "brief.json": "458cdd151cab4f916d1ac896fb0b315f24028bc09b17f8b133298617e3148b42",
-    "overview.png": "bf37fcd2754f138c052013ac19a6b1b7b6bc2f63f6b2fdba5d05637dbfd0398d",
-    "prompt.md": "76b6880866ee136130383ddf1465a2213586c6ec6ed5e73c5b11eb558f13b7f2"
-  },
-  "copy_note": "Local pairing preserves text content but may normalize line endings on Windows. hashes refers to published files; paired_copy_hashes refers to the audited local bundle."
+  "copy_note": "Repository hashes cover exact public bytes. The private pairing audit passed; public approval is recorded from the explicit user message, not inferred by the pairing API."
 }

@@ -6,37 +6,66 @@
     "prompt.md": true
   },
   "visual_review": {
-    "status": "pending",
-    "review_type": "informed visual self-review of actual outputs; not independent acceptance",
-    "execution_test": "Completed full-image inspection of three real redesign/edit outputs; earlier versions retained, final selected for showcase.",
+    "status": "passed",
     "checks": [
-      "Replaced repeated colored panels with a feasible-share domain, matched-rule table and dominant conditional rank operation.",
-      "Final review: fan inference has no route to Judge outcome; observed-judge input is locally labeled.",
-      "Feasible-set bounds and complementary likelihood point share the inferred-output junction; no simplex-vertex input to likelihood.",
-      "MARS retains judge-elite AND worse-fan-rank conditions, positive-part gate, targeted subtraction and argmax elimination.",
-      "No empirical vote totals or performance claims; earlier/later season evaluation remains distinct."
+      "Feasible/likelihood branches share observed inputs rather than form a serial pipeline.",
+      "Rule-conditional shares feed both audit and correction.",
+      "Gate uses q<α AND RF>RJ; g=(1−q/α)_+^p has no spurious prime symbols.",
+      "Active correction moves risk left; largest adjusted risk is eliminated.",
+      "Both outcomes use a fixed-plus-random effects specification; the erroneous one-component-per-outcome arrows were removed."
     ],
+    "notes": [
+      "The source's Fig.4 argmin rank-sum error is not copied; §7.2's larger-risk/argmax convention is used.",
+      "Simplex and risk markers are symbolic, not real contestant outcomes.",
+      "Inference uncertainty is not claimed to be fully propagated into the mixed-effects fit.",
+      "Fine baseline/adjusted marker alignment is illustrative; physical print proof remains pending."
+    ],
+    "physical_print_proof": "not performed",
+    "independent_review": "not performed",
+    "user_approval": "approved",
+    "review_type": "Actual-image visual self-review with source notes; not independent review or physical print proof.",
+    "approval_evidence": {
+      "status": "approved",
+      "date": "2026-09-20",
+      "user_message": "同意,请推送, 并且为我写抖音和小红书的推送文稿",
+      "scope": "Five selected PDF-reread images, project showcase and case-specific knowledge-base guidance; not independent scientific validation."
+    },
+    "publication_gate": "approved_for_project_showcase",
     "issues": [
       {
-        "severity": "pending_gate",
-        "detail": "Physical 180mm print/grayscale proof and independent acceptance remain pending. README uses a raster preview; mathematical label readability should be checked in the target manuscript."
+        "severity": "remaining_check",
+        "detail": "Physical print proof and independent review not performed; review small labels at final manuscript size."
       }
-    ],
-    "publication_gate": "pending",
-    "user_approval": "not_recorded"
+    ]
   },
-  "user_approval": "not_recorded",
+  "user_approval": "approved",
   "scope": "File integrity only; not source fidelity, image quality or award verification.",
-  "hashes": {
-    "overview.png": "a2c2f03a89584d1fdf00679d1130b9ff48a837547912e9cf5607d3c2e6b15b93",
-    "full-prompt.md": "b3802bf5183d5c469acfd1117a26ba72f1395f73de0c275b4619df2cfd7fd355",
-    "brief.json": "f91e766dff3cefc6ed0f6543416c14a855f2c35ee3087c9cfe83806dbde20306"
+  "approval_evidence": {
+    "status": "approved",
+    "date": "2026-09-20",
+    "user_message": "同意,请推送, 并且为我写抖音和小红书的推送文稿",
+    "scope": "Five selected PDF-reread images, project showcase and case-specific knowledge-base guidance; not independent scientific validation."
   },
-  "paired_copy_hashes": {
-    "brief.json": "d19451b2cb9234e31a94a22e67df6390aeb593067870f727fe965491018fcdaf",
-    "overview.png": "a2c2f03a89584d1fdf00679d1130b9ff48a837547912e9cf5607d3c2e6b15b93",
-    "prompt.md": "4adfdb1c772546e88e8a89e297f313a454ef5549f51ba3f31b25fe93a1e45b42"
+  "hashes": {
+    "overview.png": "a11a263f688803b1a34ca0605bbb3ae3ade91fb30d4f9b6de44ef36ce16269eb",
+    "full-prompt.md": "74936e3d3755a9e6698506ed2fd83594fc736f635f27e92b883db8b32f6e545c",
+    "brief.json": "dcb0410cfbdb5c70ba99789b724bcb9360f0c43de99469cb5c99a2bb2d6af4df",
+    "prompt.md": "9d652737684d060f9b94f3506f9521a19bee49ec1abb00b03925c1accbe45393",
+    "correction-prompt.md": "789337a845225a175755d02922158b3a04bb165db6cc2b93fba5c23e713d8b4e",
+    "redesign-prompt.md": "c144cc15ac98114406eb27e98282c56a3a8bc697a903d302cb39cac6a111800d",
+    "redesign-correction-prompt.md": "1555ad5a0bfe0e5787bb7d3e52b03080bee82581430b7e35ebba11860b174926",
+    "redesign-routing-prompt.md": "07c15b37e8ff941d6602658e3b7bf90e5721eed6e002ca08ff1f4be62beb6735",
+    "reread-prompt.md": "7cb5972cd910930342d586a75f60467d2a46cdd14f5d36161e124c32423bd501",
+    "reread-correction-v2.md": "791332a7a3d9528df2158dada127e9c5ecf36c6017667131af20275a7eef93b5",
+    "reread-correction-v3.md": "1707c1523fd87cfa621cf474b3dd240001545da9f10d20a238d8d90df2bf57ab",
+    "overview-v1.png": "00b1a3a644c0663a126e09ee1323b11575203fc31f14792d9c8f27372c790c43",
+    "overview-v2.png": "7d1536e95f53007cbdecb14d0cbaa61f1d22b42fa0b3c6bc8ea40a22b1de41b9",
+    "overview-v3.png": "6171f66b189f63ec0179ee5e61d4043b858d6f49c4e9ac3f592392a085f73d6c",
+    "overview-v4.png": "bea109583614dc2f3a95fb793faf83b6d37d808fe59e0d1948309f0680dafd18",
+    "overview-v5.png": "a2c2f03a89584d1fdf00679d1130b9ff48a837547912e9cf5607d3c2e6b15b93",
+    "overview-reread-v1.png": "362a256e43861f6b5ce2bc36f62c7e672725854be07efcd6645923475b948529",
+    "overview-reread-v2.png": "465a49c6819e88ff62d9ecee5b62eeb14922f284ed5e2094138d49c14e2b734f"
   },
   "intake_sha256": "ab837f28944fce38f7677fe833ed89360ff38da754e47f7f406273dfae31bf55",
-  "copy_note": "Published hashes cover exact repository bytes; paired copies may normalize newlines/JSON formatting. Each set was independently verified."
+  "copy_note": "Repository hashes cover exact public bytes. The private pairing audit passed; public approval is recorded from the explicit user message, not inferred by the pairing API."
 }
